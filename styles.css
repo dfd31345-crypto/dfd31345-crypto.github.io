@@ -1,0 +1,5 @@
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:2rem;background:#f7f7fb;color:#111}
+main{max-width:740px;margin:0 auto;padding:1.5rem;background:#fff;border-radius:8px;box-shadow:0 6px 18px rgba(20,20,40,0.06)}
+h1{color:#0b5cff;margin-top:0}
+a{color:#0b5cff}
+code{background:#eef2ff;padding:0.15rem 0.35rem;border-radius:4px}
