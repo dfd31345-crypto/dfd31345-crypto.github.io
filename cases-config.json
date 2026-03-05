@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "id": "1 - FreeCase",
+      "name": "FreeCase",
+      "preview": "cases/1 - FreeCase.png",
+      "rarities": []
+    },
+    {
+      "id": "10 - MilitaryCase",
+      "name": "MilitaryCase",
+      "preview": "cases/10 - MilitaryCase.png",
+      "rarities": []
+    },
+    {
+      "id": "2 - LowCase",
+      "name": "LowCase",
+      "preview": "cases/2 - LowCase.png",
+      "rarities": []
+    },
+    {
+      "id": "3 - IndirectCase",
+      "name": "IndirectCase",
+      "preview": "cases/3 - IndirectCase.png",
+      "rarities": []
+    },
+    {
+      "id": "4 - MediumCase",
+      "name": "MediumCase",
+      "preview": "cases/4 - MediumCase.png",
+      "rarities": []
+    },
+    {
+      "id": "5 - UltraCase",
+      "name": "UltraCase",
+      "preview": "cases/5 - UltraCase.png",
+      "rarities": []
+    },
+    {
+      "id": "6 - AmmoCase",
+      "name": "AmmoCase",
+      "preview": "cases/6 - AmmoCase.png",
+      "rarities": []
+    },
+    {
+      "id": "7 - RustCase",
+      "name": "RustCase",
+      "preview": "cases/7 - RustCase.png",
+      "rarities": []
+    },
+    {
+      "id": "8 - C4Case",
+      "name": "C4Case",
+      "preview": "cases/8 - C4Case.png",
+      "rarities": []
+    },
+    {
+      "id": "9 - EmberCase",
+      "name": "EmberCase",
+      "preview": "cases/9 - EmberCase.png",
+      "rarities": []
+    }
+  ]
+}

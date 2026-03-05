@@ -3,19 +3,155 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>shipzibi.com — Test Page</title>
+  <title>CS2 Case Spin — shipzibi.com</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>shipzibi.com — Test Page</h1>
-    <p>Hi — this is a simple test page for <strong>shipzibi.com</strong>. It shows your site is set up and ready to publish.</p>
-    <p>Edit <strong>index.html</strong> or <strong>styles.css</strong> in this folder to change the content and look.</p>
-    <p>If you publish to GitHub Pages, the site will go live at <strong>shipzibi.com</strong> once DNS and the repo are configured.</p>
-    <hr>
-    <p>Local preview: run the command below inside the <strong>site</strong> folder and open <a href="http://localhost:8000">http://localhost:8000</a>.</p>
-    <pre><code>python3 -m http.server 8000</code></pre>
-    <p>GitHub username: <strong>dfd31345-crypto</strong></p>
-  </main>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">CS2 Case Spin</h1>
+      <p class="tagline">Spin rare Counter-Strike 2 cases</p>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Spin the Best CS2 Cases</h2>
+      <p>Download the desktop app to start spinning rare Counter-Strike 2 cases.</p>
+      <button class="btn-primary">Download App</button>
+    </div>
+  </section>
+
+  <!-- Search & Filter -->
+  <section class="search-section">
+    <div class="container">
+      <input type="text" id="searchBox" class="search-box" placeholder="Search cases...">
+    </div>
+  </section>
+
+  <!-- Case Gallery -->
+  <section class="cases-section">
+    <div class="container">
+      <h3>Available Cases</h3>
+      <div class="cases-grid" id="casesGrid">
+        <!-- Cases are inserted here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Case Details -->
+  <div id="caseModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalCaseTitle"></h2>
+      <div id="modalRarities" class="rarities-container">
+        <!-- Rarities and weapons inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 CS2 Case Spin. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const casesGrid = document.getElementById("casesGrid");
+    const searchBox = document.getElementById("searchBox");
+    const modal = document.getElementById("caseModal");
+    const closeBtn = document.querySelector(".close");
+    let casesData = [];
+
+    // Load cases configuration
+    async function loadCases() {
+      try {
+        const response = await fetch("cases-config.json");
+        if (!response.ok) throw new Error("cases-config.json not found");
+        const data = await response.json();
+        casesData = data.cases || [];
+        renderCases(casesData);
+      } catch (error) {
+        console.error("Error loading cases:", error);
+        casesGrid.innerHTML = `<p style="color: #ff6b35; grid-column: 1/-1;">Error: Run <code>python3 build-cases.py</code> in the site folder first.</p>`;
+      }
+    }
+
+    function renderCases(casesToShow) {
+      casesGrid.innerHTML = "";
+      casesToShow.forEach((cs, idx) => {
+        const card = document.createElement("div");
+        card.className = "case-card";
+        const totalWeapons = cs.rarities.reduce((sum, r) => sum + r.weapons.length, 0);
+        
+        // Use preview image from config if available
+        const previewImage = cs.preview || `cases/${cs.id}.png`;
+        
+        card.innerHTML = `
+          <div class="case-placeholder">
+            <img src="${previewImage}" alt="${cs.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;">
+          </div>
+          <div class="case-info">
+            <h4>${cs.name}</h4>
+            <p class="weapon-count">${totalWeapons} Weapons Available</p>
+            <button class="btn-spin">View Weapons</button>
+          </div>
+        `;
+        card.addEventListener("click", () => openModal(cs));
+        casesGrid.appendChild(card);
+      });
+    }
+
+    function openModal(caseData) {
+      document.getElementById("modalCaseTitle").textContent = caseData.name;
+      const rarityContainer = document.getElementById("modalRarities");
+      rarityContainer.innerHTML = "";
+
+      caseData.rarities.forEach(rarity => {
+        const rarityDiv = document.createElement("div");
+        rarityDiv.className = "rarity-section";
+        rarityDiv.innerHTML = `<h3>${rarity.name}</h3>`;
+
+        const weaponsGrid = document.createElement("div");
+        weaponsGrid.className = "weapons-grid";
+
+        rarity.weapons.forEach(weapon => {
+          const weaponCard = document.createElement("div");
+          weaponCard.className = "weapon-card";
+          weaponCard.innerHTML = `
+            <img src="cases/${caseData.id}/${rarity.name}/${weapon.image}" alt="${weapon.image}" class="weapon-image">
+            <p class="chance">${weapon.chance}%</p>
+          `;
+          weaponsGrid.appendChild(weaponCard);
+        });
+
+        rarityDiv.appendChild(weaponsGrid);
+        rarityContainer.appendChild(rarityDiv);
+      });
+
+      modal.style.display = "block";
+    }
+
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+
+    searchBox.addEventListener("input", (e) => {
+      const filtered = casesData.filter(cs =>
+        cs.name.toLowerCase().includes(e.target.value.toLowerCase())
+      );
+      renderCases(filtered);
+    });
+
+    // Load cases on page load
+    loadCases();
+  </script>
 </body>
 </html>
