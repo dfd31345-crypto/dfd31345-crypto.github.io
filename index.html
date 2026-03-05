@@ -84,10 +84,7 @@
         const card = document.createElement("div");
         card.className = "case-card";
         const totalWeapons = cs.rarities.reduce((sum, r) => sum + r.weapons.length, 0);
-        
-        // Use preview image from config if available
         const previewImage = cs.preview || `cases/${cs.id}.png`;
-        
         card.innerHTML = `
           <div class="case-placeholder">
             <img src="${previewImage}" alt="${cs.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;">
@@ -107,31 +104,29 @@
       document.getElementById("modalCaseTitle").textContent = caseData.name;
       const rarityContainer = document.getElementById("modalRarities");
       rarityContainer.innerHTML = "";
-
       caseData.rarities.forEach(rarity => {
         const rarityDiv = document.createElement("div");
         rarityDiv.className = "rarity-section";
         rarityDiv.innerHTML = `<h3>${rarity.name}</h3>`;
-
         const weaponsGrid = document.createElement("div");
         weaponsGrid.className = "weapons-grid";
-
         rarity.weapons.forEach(weapon => {
           const weaponCard = document.createElement("div");
           weaponCard.className = "weapon-card";
+          // Use correct path for FreeCase
+          let imgPath = `cases/${caseData.id}/${rarity.name}/${weapon.image}`;
           weaponCard.innerHTML = `
-            <img src="cases/${caseData.id}/${rarity.name}/${weapon.image}" alt="${weapon.image}" class="weapon-image">
-            <p class="chance">${weapon.chance}%</p>
+            <img src="${imgPath}" alt="${weapon.image}" class="weapon-image">
+            <p class="chance">${weapon.chance ? weapon.chance + '%' : ''}</p>
           `;
           weaponsGrid.appendChild(weaponCard);
         });
-
         rarityDiv.appendChild(weaponsGrid);
         rarityContainer.appendChild(rarityDiv);
       });
-
       modal.style.display = "block";
     }
+
 
     closeBtn.addEventListener("click", () => {
       modal.style.display = "none";

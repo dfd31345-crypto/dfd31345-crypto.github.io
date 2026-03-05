@@ -65,12 +65,23 @@ def build_cases_config():
                 "rarities": []
             }
 
+
     # Then, detect weapon folders and their rarities
     case_folders = sorted([d for d in os.listdir(CASES_DIR) 
                           if os.path.isdir(os.path.join(CASES_DIR, d))])
 
+    # Also check for '1 - FreeCase' in the site root if not found in cases
+    site_root = os.path.dirname(os.path.abspath(__file__))
+    freecase_root_path = os.path.join(site_root, '1 - FreeCase')
+    if '1 - FreeCase' not in case_folders and os.path.isdir(freecase_root_path):
+        case_folders.append('1 - FreeCase')
+
     for case_folder in case_folders:
-        case_path = os.path.join(CASES_DIR, case_folder)
+        # Use correct path for FreeCase
+        if case_folder == '1 - FreeCase' and os.path.isdir(freecase_root_path):
+            case_path = freecase_root_path
+        else:
+            case_path = os.path.join(CASES_DIR, case_folder)
         rarity_folders = sorted([d for d in os.listdir(case_path) 
                                 if os.path.isdir(os.path.join(case_path, d))])
 
