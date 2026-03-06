@@ -9,9 +9,15 @@
 <body>
   <!-- Navigation -->
   <nav class="navbar">
-    <div class="container">
-      <h1 class="logo">CS2 Case Spin</h1>
-      <p class="tagline">Spin rare Counter-Strike 2 cases</p>
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+      <div>
+        <h1 class="logo">CS2 Case Spin</h1>
+        <p class="tagline">Spin rare Counter-Strike 2 cases</p>
+      </div>
+      <div class="nav-auth-btns">
+        <button id="navLoginBtn" class="btn-primary" style="margin-right: 1rem; padding: 0.6rem 1.5rem; font-size: 1rem;">Log In</button>
+        <button id="navSignupBtn" class="btn-primary" style="background: #222; color: #00d4ff; border: 1px solid #00d4ff; padding: 0.6rem 1.5rem; font-size: 1rem;">Create Account</button>
+      </div>
     </div>
   </nav>
 
@@ -19,8 +25,8 @@
   <section class="hero">
     <div class="container">
       <h2>Spin the Best CS2 Cases</h2>
-      <p>Download the desktop app to start spinning rare Counter-Strike 2 cases.</p>
-      <button class="btn-primary">Download App</button>
+      <p>Log in to start spinning rare Counter-Strike 2 cases.</p>
+      <button class="btn-primary">Login</button>
     </div>
   </section>
 
@@ -57,8 +63,42 @@
     <p>&copy; 2026 CS2 Case Spin. All rights reserved.</p>
   </footer>
 
+  <!-- Login/Create Account Modal -->
+  <div id="authModal" class="modal">
+    <div class="modal-content" style="max-width: 400px;">
+      <span class="close-auth">&times;</span>
+      <div id="authForms">
+        <form id="loginForm" style="display: block;">
+          <h2>Login</h2>
+          <input type="text" id="loginUser" placeholder="Username or Email" required style="width:100%;margin-bottom:1rem;">
+          <input type="password" id="loginPass" placeholder="Password" required style="width:100%;margin-bottom:1rem;">
+          <button type="submit" class="btn-primary" style="width:100%;margin-bottom:1rem;">Login</button>
+          <button type="button" id="showSignup" style="width:100%;background:#222;color:#00d4ff;border:none;padding:0.7rem 0;border-radius:6px;">Create Account</button>
+        </form>
+        <form id="signupForm" style="display: none;">
+          <h2>Create Account</h2>
+          <input type="text" id="signupUser" placeholder="Username" required style="width:100%;margin-bottom:1rem;">
+          <input type="email" id="signupEmail" placeholder="Email" required style="width:100%;margin-bottom:1rem;">
+          <input type="password" id="signupPass" placeholder="Password" required style="width:100%;margin-bottom:1rem;">
+          <input type="tel" id="signupPhone" placeholder="Phone (for 2FA)" required style="width:100%;margin-bottom:1rem;">
+          <button type="submit" class="btn-primary" style="width:100%;margin-bottom:1rem;">Sign Up</button>
+          <button type="button" id="showLogin" style="width:100%;background:#222;color:#00d4ff;border:none;padding:0.7rem 0;border-radius:6px;">Back to Login</button>
+        </form>
+        <form id="otpForm" style="display: none;">
+          <h2>Enter OTP</h2>
+          <input type="text" id="otpCode" placeholder="6-digit code" required style="width:100%;margin-bottom:1rem;">
+          <button type="submit" class="btn-primary" style="width:100%;margin-bottom:1rem;">Verify</button>
+        </form>
+      </div>
+      <div id="authMsg" style="color:#ff6b35;text-align:center;margin-top:1rem;"></div>
+    </div>
+  </div>
+
   <script>
     const casesGrid = document.getElementById("casesGrid");
+    // Navbar auth buttons
+    const navLoginBtn = document.getElementById("navLoginBtn");
+    const navSignupBtn = document.getElementById("navSignupBtn");
     const searchBox = document.getElementById("searchBox");
     const modal = document.getElementById("caseModal");
     const closeBtn = document.querySelector(".close");
@@ -113,10 +153,9 @@
         rarity.weapons.forEach(weapon => {
           const weaponCard = document.createElement("div");
           weaponCard.className = "weapon-card";
-          // Use correct path for FreeCase
           let imgPath = `cases/${caseData.id}/${rarity.name}/${weapon.image}`;
           weaponCard.innerHTML = `
-            <img src="${imgPath}" alt="${weapon.image}" class="weapon-image">
+            <img src="${imgPath}" alt="${weapon.image}" class="weapon-image" style="width:120px;height:120px;object-fit:contain;display:block;margin:0 auto 0.5rem auto;">
             <p class="chance">${weapon.chance ? weapon.chance + '%' : ''}</p>
           `;
           weaponsGrid.appendChild(weaponCard);
@@ -143,6 +182,121 @@
         cs.name.toLowerCase().includes(e.target.value.toLowerCase())
       );
       renderCases(filtered);
+    });
+
+    // --- Auth Modal Logic ---
+    const authModal = document.getElementById("authModal");
+    // Remove old hero login button logic
+    // const btnPrimary = document.querySelector(".btn-primary");
+    const closeAuthBtn = document.querySelector(".close-auth");
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");
+    const otpForm = document.getElementById("otpForm");
+    const showSignup = document.getElementById("showSignup");
+    const showLogin = document.getElementById("showLogin");
+    const authMsg = document.getElementById("authMsg");
+
+    navLoginBtn.addEventListener("click", () => {
+      authModal.style.display = "block";
+      loginForm.style.display = "block";
+      signupForm.style.display = "none";
+      otpForm.style.display = "none";
+      authMsg.textContent = "";
+    });
+    navSignupBtn.addEventListener("click", () => {
+      authModal.style.display = "block";
+      loginForm.style.display = "none";
+      signupForm.style.display = "block";
+      otpForm.style.display = "none";
+      authMsg.textContent = "";
+    });
+    closeAuthBtn.addEventListener("click", () => {
+      authModal.style.display = "none";
+    });
+    window.addEventListener("click", (e) => {
+      if (e.target === authModal) authModal.style.display = "none";
+    });
+    showSignup.addEventListener("click", () => {
+      loginForm.style.display = "none";
+      signupForm.style.display = "block";
+      otpForm.style.display = "none";
+      authMsg.textContent = "";
+    });
+    showLogin.addEventListener("click", () => {
+      loginForm.style.display = "block";
+      signupForm.style.display = "none";
+      otpForm.style.display = "none";
+      authMsg.textContent = "";
+    });
+    // --- API Integration ---
+    const API_URL = "http://localhost:3001/api";
+
+    loginForm.addEventListener("submit", async function(e) {
+      e.preventDefault();
+      authMsg.textContent = "";
+      const user = document.getElementById("loginUser").value;
+      const pass = document.getElementById("loginPass").value;
+      try {
+        const res = await fetch(`${API_URL}/login`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username: user, email: user, password: pass })
+        });
+        const data = await res.json();
+        if (!data.success) throw new Error(data.error || "Login failed");
+        loginForm.style.display = "none";
+        signupForm.style.display = "none";
+        otpForm.style.display = "block";
+        otpForm.dataset.userId = data.userId;
+        authMsg.textContent = "A verification code has been sent to your phone/email.";
+      } catch (err) {
+        authMsg.textContent = err.message;
+      }
+    });
+
+    signupForm.addEventListener("submit", async function(e) {
+      e.preventDefault();
+      authMsg.textContent = "";
+      const username = document.getElementById("signupUser").value;
+      const email = document.getElementById("signupEmail").value;
+      const password = document.getElementById("signupPass").value;
+      const phone = document.getElementById("signupPhone").value;
+      try {
+        const res = await fetch(`${API_URL}/register`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username, email, password, phone })
+        });
+        const data = await res.json();
+        if (!data.success) throw new Error(data.error || "Signup failed");
+        loginForm.style.display = "none";
+        signupForm.style.display = "none";
+        otpForm.style.display = "block";
+        otpForm.dataset.userId = data.userId;
+        authMsg.textContent = "A verification code has been sent to your phone/email.";
+      } catch (err) {
+        authMsg.textContent = err.message;
+      }
+    });
+
+    otpForm.addEventListener("submit", async function(e) {
+      e.preventDefault();
+      authMsg.textContent = "";
+      const otp = document.getElementById("otpCode").value;
+      const userId = otpForm.dataset.userId;
+      try {
+        const res = await fetch(`${API_URL}/verify-otp`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId, otp })
+        });
+        const data = await res.json();
+        if (!data.success) throw new Error(data.error || "OTP verification failed");
+        authMsg.textContent = "Verification successful!";
+        setTimeout(() => { authModal.style.display = "none"; }, 1200);
+      } catch (err) {
+        authMsg.textContent = err.message;
+      }
     });
 
     // Load cases on page load
