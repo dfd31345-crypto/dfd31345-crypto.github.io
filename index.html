@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CS2 Case Spin — shipzibi.com</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -26,9 +28,7 @@
     <div class="container">
       <h2>Spin the Best CS2 Cases</h2>
       <p>Log in to start spinning rare Counter-Strike 2 cases.</p>
-      <button class="btn-primary" id="heroLoginBtn">Login</button>
-    <span id="heroLoginState"></span>
-    <button class="btn-primary" id="heroLoginBtn">Login</button>
+      <span id="heroLoginState"></span>
     </div>
   </section>
 
@@ -74,6 +74,7 @@
           <h2>Login</h2>
           <input type="text" id="loginUser" placeholder="Username or Email" required style="width:100%;margin-bottom:1rem;">
           <input type="password" id="loginPass" placeholder="Password" required style="width:100%;margin-bottom:1rem;">
+          <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
           <button type="submit" class="btn-primary" style="width:100%;margin-bottom:1rem;">Login</button>
           <button type="button" id="showSignup" style="width:100%;background:#222;color:#00d4ff;border:none;padding:0.7rem 0;border-radius:6px;">Create Account</button>
         </form>
@@ -83,6 +84,7 @@
           <input type="email" id="signupEmail" placeholder="Email" required style="width:100%;margin-bottom:1rem;">
           <input type="password" id="signupPass" placeholder="Password" required style="width:100%;margin-bottom:1rem;">
           <input type="tel" id="signupPhone" placeholder="Phone (for 2FA)" required style="width:100%;margin-bottom:1rem;">
+          <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
           <button type="submit" class="btn-primary" style="width:100%;margin-bottom:1rem;">Sign Up</button>
           <button type="button" id="showLogin" style="width:100%;background:#222;color:#00d4ff;border:none;padding:0.7rem 0;border-radius:6px;">Back to Login</button>
         </form>
@@ -101,7 +103,32 @@
     // Navbar auth buttons
     const navLoginBtn = document.getElementById("navLoginBtn");
     const navSignupBtn = document.getElementById("navSignupBtn");
-    const heroLoginBtn = document.getElementById("heroLoginBtn");
+    // Dynamically render hero login button or welcome message
+    function renderHeroLogin() {
+      const heroLoginState = document.getElementById("heroLoginState");
+      const user = getUser();
+      if (user) {
+        heroLoginState.innerHTML = `Welcome <b>${user.username}</b>! <button id='viewAccountBtn' class='btn-primary' style='margin-left:1rem;'>View Account</button>`;
+        document.getElementById('viewAccountBtn').onclick = function() {
+          alert('Account page coming soon!');
+        };
+      } else {
+        heroLoginState.innerHTML = `<button class='btn-primary' id='heroLoginBtn'>Login</button>`;
+        document.getElementById('heroLoginBtn').onclick = () => {
+          authModal.style.display = "block";
+          loginForm.style.display = "block";
+          signupForm.style.display = "none";
+          otpForm.style.display = "none";
+          authMsg.textContent = "";
+        };
+      }
+    }
+    // Call on page load and after login/logout
+    renderHeroLogin();
+    const origSetUser = setUser;
+    setUser = function(token, username) { origSetUser(token, username); updateNavbarAuth(); renderHeroLogin(); };
+    const origClearUser = clearUser;
+    clearUser = function() { origClearUser(); updateNavbarAuth(); renderHeroLogin(); };
     // Helper: Check login state
     function getUser() {
       const token = localStorage.getItem("token");
@@ -175,39 +202,22 @@
     setUser = function(token, username) { origSetUser(token, username); updateHeroLoginState(); };
     const origClearUser = clearUser;
     clearUser = function() { origClearUser(); updateHeroLoginState(); };
-    // Add simple captcha to login/signup
-    function showCaptcha(form, callback) {
-      const captchaNum1 = Math.floor(Math.random()*10+1);
-      const captchaNum2 = Math.floor(Math.random()*10+1);
-      let captchaDiv = form.querySelector('.captcha-div');
-      if (!captchaDiv) {
-        captchaDiv = document.createElement('div');
-        captchaDiv.className = 'captcha-div';
-        captchaDiv.style = 'margin-bottom:1rem;';
-        form.insertBefore(captchaDiv, form.querySelector('button'));
-      }
-      captchaDiv.innerHTML = `<label>Solve: ${captchaNum1} + ${captchaNum2} = <input type='number' class='captcha-input' style='width:60px;'></label>`;
-      form.onsubmit = function(e) {
-        e.preventDefault();
-        const val = captchaDiv.querySelector('.captcha-input').value;
-        if (parseInt(val) !== captchaNum1 + captchaNum2) {
-          authMsg.textContent = 'Captcha incorrect!';
-          return;
-        }
-        callback();
-      };
-    }
-    // Login form with captcha and OTP
-    loginForm.addEventListener("submit", function(e) { e.preventDefault(); });
-    showCaptcha(loginForm, async function() {
+    // Login form with reCAPTCHA and OTP
+    loginForm.addEventListener("submit", async function(e) {
+      e.preventDefault();
       authMsg.textContent = "";
+      const recaptcha = loginForm.querySelector('.g-recaptcha-response').value;
+      if (!recaptcha) {
+        authMsg.textContent = "Please complete the reCAPTCHA.";
+        return;
+      }
       const user = document.getElementById("loginUser").value;
       const pass = document.getElementById("loginPass").value;
       try {
         const res = await fetch(`${API_URL}/login`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ username: user, email: user, password: pass })
+          body: JSON.stringify({ username: user, email: user, password: pass, recaptcha })
         });
         const data = await res.json();
         if (!data.success) throw new Error(data.error || "Login failed");
@@ -221,10 +231,15 @@
         authMsg.textContent = err.message;
       }
     });
-    // Signup form with captcha and OTP
-    signupForm.addEventListener("submit", function(e) { e.preventDefault(); });
-    showCaptcha(signupForm, async function() {
+    // Signup form with reCAPTCHA and OTP
+    signupForm.addEventListener("submit", async function(e) {
+      e.preventDefault();
       authMsg.textContent = "";
+      const recaptcha = signupForm.querySelector('.g-recaptcha-response').value;
+      if (!recaptcha) {
+        authMsg.textContent = "Please complete the reCAPTCHA.";
+        return;
+      }
       const username = document.getElementById("signupUser").value;
       const email = document.getElementById("signupEmail").value;
       const password = document.getElementById("signupPass").value;
@@ -233,7 +248,7 @@
         const res = await fetch(`${API_URL}/register`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ username, email, password, phone })
+          body: JSON.stringify({ username, email, password, phone, recaptcha })
         });
         const data = await res.json();
         if (!data.success) throw new Error(data.error || "Signup failed");
