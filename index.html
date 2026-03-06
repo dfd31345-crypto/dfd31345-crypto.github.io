@@ -247,7 +247,11 @@
           body: JSON.stringify({ username, email, password, recaptcha })
         });
         const data = await res.json();
-        if (!data.success) return showAuthMsg(data.error || 'Signup failed');
+        if (!data.success) {
+          let debugMsg = data.error ? `Signup failed: ${data.error}` : 'Signup failed';
+          if (data.stack) debugMsg += `\n${data.stack}`;
+          return showAuthMsg(debugMsg);
+        }
         setUser(data.token, data.username);
         showAuthMsg('Account created! Redirecting...','green');
         setTimeout(() => {
