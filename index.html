@@ -84,7 +84,6 @@
           <input type="text" id="signupUser" placeholder="Username" required style="width:100%;margin-bottom:1rem;">
           <input type="email" id="signupEmail" placeholder="Email" required style="width:100%;margin-bottom:1rem;">
           <input type="password" id="signupPass" placeholder="Password" required style="width:100%;margin-bottom:1rem;">
-          <input type="tel" id="signupPhone" placeholder="Phone (for 2FA)" required style="width:100%;margin-bottom:1rem;">
           <div class="g-recaptcha" data-sitekey="6LdSeYEsAAAAAEJdUvPIGg2WtzPWXe_7xBVEZrN0"></div>
           <button type="submit" class="btn-primary" style="width:100%;margin-bottom:1rem;">Sign Up</button>
           <button type="button" id="showLogin" style="width:100%;background:#222;color:#00d4ff;border:none;padding:0.7rem 0;border-radius:6px;">Back to Login</button>
@@ -221,6 +220,94 @@
     attachAuthModalListeners();
     // --- Ensure case gallery always renders ---
     // (loadCases is already called on page load)
+
+    // --- SIGNUP/LOGIN/OTP LOGIC (EMAIL ONLY) ---
+    // Helper: Show message
+    function showAuthMsg(msg, color = '#ff6b35') {
+      authMsg.textContent = msg;
+      authMsg.style.color = color;
+    }
+
+    // Signup form submit
+    signupForm.onsubmit = async function(e) {
+      e.preventDefault();
+      showAuthMsg('Creating account...','');
+      const username = signupUser.value.trim();
+      const email = signupEmail.value.trim();
+      const password = signupPass.value;
+      const recaptcha = signupForm.querySelector('.g-recaptcha-response').value;
+      if (!username || !email || !password || !recaptcha) return showAuthMsg('All fields required');
+      try {
+        const res = await fetch('/api/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, email, password, recaptcha })
+        });
+        const data = await res.json();
+        if (!data.success) return showAuthMsg(data.error || 'Signup failed');
+        // Show OTP form
+        signupForm.style.display = 'none';
+        otpForm.style.display = 'block';
+        otpForm.dataset.userId = data.userId;
+        showAuthMsg('Enter the 6-digit code sent to your email.');
+      } catch {
+        showAuthMsg('Signup failed');
+      }
+    };
+
+    // Login form submit
+    loginForm.onsubmit = async function(e) {
+      e.preventDefault();
+      showAuthMsg('Logging in...','');
+      const username = loginUser.value.trim();
+      const email = loginUser.value.includes('@') ? loginUser.value.trim() : '';
+      const password = loginPass.value;
+      const recaptcha = loginForm.querySelector('.g-recaptcha-response').value;
+      if ((!username && !email) || !password || !recaptcha) return showAuthMsg('All fields required');
+      try {
+        const res = await fetch('/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, email, password, recaptcha })
+        });
+        const data = await res.json();
+        if (!data.success) return showAuthMsg(data.error || 'Login failed');
+        // Show OTP form
+        loginForm.style.display = 'none';
+        otpForm.style.display = 'block';
+        otpForm.dataset.userId = data.userId;
+        showAuthMsg('Enter the 6-digit code sent to your email.');
+      } catch {
+        showAuthMsg('Login failed');
+      }
+    };
+
+    // OTP form submit
+    otpForm.onsubmit = async function(e) {
+      e.preventDefault();
+      showAuthMsg('Verifying code...','');
+      const userId = otpForm.dataset.userId;
+      const otp = otpCode.value.trim();
+      if (!otp) return showAuthMsg('Enter the code sent to your email');
+      try {
+        const res = await fetch('/api/verify-otp', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ userId, otp })
+        });
+        const data = await res.json();
+        if (!data.success) return showAuthMsg(data.error || 'Invalid or expired code');
+        // Success: log in and redirect
+        setUser(data.token, loginUser.value || signupUser.value);
+        showAuthMsg('Account verified! Redirecting...','green');
+        setTimeout(() => {
+          authModal.style.display = 'none';
+          window.location.reload();
+        }, 2000);
+      } catch {
+        showAuthMsg('Verification failed');
+      }
+    };
 
     // --- CASE GALLERY RENDERING ---
     async function loadCases() {
