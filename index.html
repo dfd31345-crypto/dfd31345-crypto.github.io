@@ -84,6 +84,7 @@
           <input type="text" id="signupUser" placeholder="Username" required style="width:100%;margin-bottom:1rem;">
           <input type="email" id="signupEmail" placeholder="Email" required style="width:100%;margin-bottom:1rem;">
           <input type="password" id="signupPass" placeholder="Password" required style="width:100%;margin-bottom:1rem;">
+          <input type="password" id="signupPass2" placeholder="Verify Password" required style="width:100%;margin-bottom:1rem;">
           <div class="g-recaptcha" data-sitekey="6LdSeYEsAAAAAEJdUvPIGg2WtzPWXe_7xBVEZrN0"></div>
           <button type="submit" class="btn-primary" style="width:100%;margin-bottom:1rem;">Sign Up</button>
           <button type="button" id="showLogin" style="width:100%;background:#222;color:#00d4ff;border:none;padding:0.7rem 0;border-radius:6px;">Back to Login</button>
@@ -235,8 +236,10 @@
       const username = signupUser.value.trim();
       const email = signupEmail.value.trim();
       const password = signupPass.value;
+      const password2 = document.getElementById('signupPass2').value;
       const recaptcha = signupForm.querySelector('.g-recaptcha-response').value;
-      if (!username || !email || !password || !recaptcha) return showAuthMsg('All fields required');
+      if (!username || !email || !password || !password2 || !recaptcha) return showAuthMsg('All fields required');
+      if (password !== password2) return showAuthMsg('Passwords do not match');
       try {
         const res = await fetch('/api/register', {
           method: 'POST',
@@ -245,12 +248,12 @@
         });
         const data = await res.json();
         if (!data.success) return showAuthMsg(data.error || 'Signup failed');
-          setUser(data.token, data.username);
-          showAuthMsg('Account created! Redirecting...','green');
-          setTimeout(() => {
-            authModal.style.display = 'none';
-            window.location.reload();
-          }, 2000);
+        setUser(data.token, data.username);
+        showAuthMsg('Account created! Redirecting...','green');
+        setTimeout(() => {
+          authModal.style.display = 'none';
+          window.location.reload();
+        }, 2000);
       } catch {
         showAuthMsg('Signup failed');
       }
