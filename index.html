@@ -26,7 +26,9 @@
     <div class="container">
       <h2>Spin the Best CS2 Cases</h2>
       <p>Log in to start spinning rare Counter-Strike 2 cases.</p>
-      <button class="btn-primary">Login</button>
+      <button class="btn-primary" id="heroLoginBtn">Login</button>
+    <span id="heroLoginState"></span>
+    <button class="btn-primary" id="heroLoginBtn">Login</button>
     </div>
   </section>
 
@@ -99,140 +101,105 @@
     // Navbar auth buttons
     const navLoginBtn = document.getElementById("navLoginBtn");
     const navSignupBtn = document.getElementById("navSignupBtn");
-    const searchBox = document.getElementById("searchBox");
-    const modal = document.getElementById("caseModal");
-    const closeBtn = document.querySelector(".close");
-    let casesData = [];
-
-    // Load cases configuration
-    async function loadCases() {
-      try {
-        const response = await fetch("cases-config.json");
-        if (!response.ok) throw new Error("cases-config.json not found");
-        const data = await response.json();
-        casesData = data.cases || [];
-        renderCases(casesData);
-      } catch (error) {
-        console.error("Error loading cases:", error);
-        casesGrid.innerHTML = `<p style="color: #ff6b35; grid-column: 1/-1;">Error: Run <code>python3 build-cases.py</code> in the site folder first.</p>`;
+    const heroLoginBtn = document.getElementById("heroLoginBtn");
+    // Helper: Check login state
+    function getUser() {
+      const token = localStorage.getItem("token");
+      const username = localStorage.getItem("username");
+      return token && username ? { token, username } : null;
+    }
+    function setUser(token, username) {
+      localStorage.setItem("token", token);
+      localStorage.setItem("username", username);
+    }
+    function clearUser() {
+      localStorage.removeItem("token");
+      localStorage.removeItem("username");
+    }
+    // Update navbar for login state
+    function updateNavbarAuth() {
+      const navAuthBtns = document.querySelector(".nav-auth-btns");
+      const user = getUser();
+      if (user) {
+        navAuthBtns.innerHTML = `<span style="margin-right:1rem;">Logged in as <b>${user.username}</b></span><button id="navSignOutBtn" class="btn-primary" style="background:#ff6b35;color:#fff;">Sign Out</button>`;
+        document.getElementById("navSignOutBtn").onclick = () => {
+          clearUser();
+          updateNavbarAuth();
+        };
+      } else {
+        navAuthBtns.innerHTML = `<button id="navLoginBtn" class="btn-primary" style="margin-right: 1rem; padding: 0.6rem 1.5rem; font-size: 1rem;">Log In</button><button id="navSignupBtn" class="btn-primary" style="background: #222; color: #00d4ff; border: 1px solid #00d4ff; padding: 0.6rem 1.5rem; font-size: 1rem;">Create Account</button>`;
+        document.getElementById("navLoginBtn").onclick = () => {
+          authModal.style.display = "block";
+          loginForm.style.display = "block";
+          signupForm.style.display = "none";
+          otpForm.style.display = "none";
+          authMsg.textContent = "";
+        };
+        document.getElementById("navSignupBtn").onclick = () => {
+          authModal.style.display = "block";
+          loginForm.style.display = "none";
+          signupForm.style.display = "block";
+          otpForm.style.display = "none";
+          authMsg.textContent = "";
+        };
       }
     }
-
-    function renderCases(casesToShow) {
-      casesGrid.innerHTML = "";
-      casesToShow.forEach((cs, idx) => {
-        const card = document.createElement("div");
-        card.className = "case-card";
-        const totalWeapons = cs.rarities.reduce((sum, r) => sum + r.weapons.length, 0);
-        const previewImage = cs.preview || `cases/${cs.id}.png`;
-        card.innerHTML = `
-          <div class="case-placeholder">
-            <img src="${previewImage}" alt="${cs.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;">
-          </div>
-          <div class="case-info">
-            <h4>${cs.name}</h4>
-            <p class="weapon-count">${totalWeapons} Weapons Available</p>
-            <button class="btn-spin">View Weapons</button>
-          </div>
-        `;
-        card.addEventListener("click", () => openModal(cs));
-        casesGrid.appendChild(card);
-      });
-    }
-
-    function openModal(caseData) {
-      document.getElementById("modalCaseTitle").textContent = caseData.name;
-      const rarityContainer = document.getElementById("modalRarities");
-      rarityContainer.innerHTML = "";
-      caseData.rarities.forEach(rarity => {
-        const rarityDiv = document.createElement("div");
-        rarityDiv.className = "rarity-section";
-        rarityDiv.innerHTML = `<h3>${rarity.name}</h3>`;
-        const weaponsGrid = document.createElement("div");
-        weaponsGrid.className = "weapons-grid";
-        rarity.weapons.forEach(weapon => {
-          const weaponCard = document.createElement("div");
-          weaponCard.className = "weapon-card";
-          let imgPath = `cases/${caseData.id}/${rarity.name}/${weapon.image}`;
-          weaponCard.innerHTML = `
-            <img src="${imgPath}" alt="${weapon.image}" class="weapon-image" style="width:120px;height:120px;object-fit:contain;display:block;margin:0 auto 0.5rem auto;">
-            <p class="chance">${weapon.chance ? weapon.chance + '%' : ''}</p>
-          `;
-          weaponsGrid.appendChild(weaponCard);
-        });
-        rarityDiv.appendChild(weaponsGrid);
-        rarityContainer.appendChild(rarityDiv);
-      });
-      modal.style.display = "block";
-    }
-
-
-    closeBtn.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
-
-    window.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        modal.style.display = "none";
+    // On page load
+    updateNavbarAuth();
+    // Hero login button and state
+    function updateHeroLoginState() {
+      const heroLoginState = document.getElementById("heroLoginState");
+      const heroLoginBtn = document.getElementById("heroLoginBtn");
+      const user = getUser();
+      if (user) {
+        heroLoginBtn.style.display = "none";
+        heroLoginState.innerHTML = `Welcome <b>${user.username}</b>! <button id='viewAccountBtn' class='btn-primary' style='margin-left:1rem;'>View Account</button>`;
+        document.getElementById('viewAccountBtn').onclick = function() {
+          alert('Account page coming soon!');
+        };
+      } else {
+        heroLoginBtn.style.display = "inline-block";
+        heroLoginState.innerHTML = "";
+        heroLoginBtn.onclick = () => {
+          authModal.style.display = "block";
+          loginForm.style.display = "block";
+          signupForm.style.display = "none";
+          otpForm.style.display = "none";
+          authMsg.textContent = "";
+        };
       }
-    });
-
-    searchBox.addEventListener("input", (e) => {
-      const filtered = casesData.filter(cs =>
-        cs.name.toLowerCase().includes(e.target.value.toLowerCase())
-      );
-      renderCases(filtered);
-    });
-
-    // --- Auth Modal Logic ---
-    const authModal = document.getElementById("authModal");
-    // Remove old hero login button logic
-    // const btnPrimary = document.querySelector(".btn-primary");
-    const closeAuthBtn = document.querySelector(".close-auth");
-    const loginForm = document.getElementById("loginForm");
-    const signupForm = document.getElementById("signupForm");
-    const otpForm = document.getElementById("otpForm");
-    const showSignup = document.getElementById("showSignup");
-    const showLogin = document.getElementById("showLogin");
-    const authMsg = document.getElementById("authMsg");
-
-    navLoginBtn.addEventListener("click", () => {
-      authModal.style.display = "block";
-      loginForm.style.display = "block";
-      signupForm.style.display = "none";
-      otpForm.style.display = "none";
-      authMsg.textContent = "";
-    });
-    navSignupBtn.addEventListener("click", () => {
-      authModal.style.display = "block";
-      loginForm.style.display = "none";
-      signupForm.style.display = "block";
-      otpForm.style.display = "none";
-      authMsg.textContent = "";
-    });
-    closeAuthBtn.addEventListener("click", () => {
-      authModal.style.display = "none";
-    });
-    window.addEventListener("click", (e) => {
-      if (e.target === authModal) authModal.style.display = "none";
-    });
-    showSignup.addEventListener("click", () => {
-      loginForm.style.display = "none";
-      signupForm.style.display = "block";
-      otpForm.style.display = "none";
-      authMsg.textContent = "";
-    });
-    showLogin.addEventListener("click", () => {
-      loginForm.style.display = "block";
-      signupForm.style.display = "none";
-      otpForm.style.display = "none";
-      authMsg.textContent = "";
-    });
-    // --- API Integration ---
-    const API_URL = "http://localhost:3001/api";
-
-    loginForm.addEventListener("submit", async function(e) {
-      e.preventDefault();
+    }
+    updateHeroLoginState();
+    // Also update hero state on login/logout
+    const origSetUser = setUser;
+    setUser = function(token, username) { origSetUser(token, username); updateHeroLoginState(); };
+    const origClearUser = clearUser;
+    clearUser = function() { origClearUser(); updateHeroLoginState(); };
+    // Add simple captcha to login/signup
+    function showCaptcha(form, callback) {
+      const captchaNum1 = Math.floor(Math.random()*10+1);
+      const captchaNum2 = Math.floor(Math.random()*10+1);
+      let captchaDiv = form.querySelector('.captcha-div');
+      if (!captchaDiv) {
+        captchaDiv = document.createElement('div');
+        captchaDiv.className = 'captcha-div';
+        captchaDiv.style = 'margin-bottom:1rem;';
+        form.insertBefore(captchaDiv, form.querySelector('button'));
+      }
+      captchaDiv.innerHTML = `<label>Solve: ${captchaNum1} + ${captchaNum2} = <input type='number' class='captcha-input' style='width:60px;'></label>`;
+      form.onsubmit = function(e) {
+        e.preventDefault();
+        const val = captchaDiv.querySelector('.captcha-input').value;
+        if (parseInt(val) !== captchaNum1 + captchaNum2) {
+          authMsg.textContent = 'Captcha incorrect!';
+          return;
+        }
+        callback();
+      };
+    }
+    // Login form with captcha and OTP
+    loginForm.addEventListener("submit", function(e) { e.preventDefault(); });
+    showCaptcha(loginForm, async function() {
       authMsg.textContent = "";
       const user = document.getElementById("loginUser").value;
       const pass = document.getElementById("loginPass").value;
@@ -248,14 +215,15 @@
         signupForm.style.display = "none";
         otpForm.style.display = "block";
         otpForm.dataset.userId = data.userId;
+        otpForm.dataset.username = user;
         authMsg.textContent = "A verification code has been sent to your phone/email.";
       } catch (err) {
         authMsg.textContent = err.message;
       }
     });
-
-    signupForm.addEventListener("submit", async function(e) {
-      e.preventDefault();
+    // Signup form with captcha and OTP
+    signupForm.addEventListener("submit", function(e) { e.preventDefault(); });
+    showCaptcha(signupForm, async function() {
       authMsg.textContent = "";
       const username = document.getElementById("signupUser").value;
       const email = document.getElementById("signupEmail").value;
@@ -273,17 +241,19 @@
         signupForm.style.display = "none";
         otpForm.style.display = "block";
         otpForm.dataset.userId = data.userId;
+        otpForm.dataset.username = username;
         authMsg.textContent = "A verification code has been sent to your phone/email.";
       } catch (err) {
         authMsg.textContent = err.message;
       }
     });
-
+    // OTP form for both login and signup
     otpForm.addEventListener("submit", async function(e) {
       e.preventDefault();
       authMsg.textContent = "";
       const otp = document.getElementById("otpCode").value;
       const userId = otpForm.dataset.userId;
+      const username = otpForm.dataset.username;
       try {
         const res = await fetch(`${API_URL}/verify-otp`, {
           method: "POST",
@@ -292,8 +262,10 @@
         });
         const data = await res.json();
         if (!data.success) throw new Error(data.error || "OTP verification failed");
+        setUser(data.token, username);
+        updateNavbarAuth();
         authMsg.textContent = "Verification successful!";
-        setTimeout(() => { authModal.style.display = "none"; }, 1200);
+        setTimeout(() => { authModal.style.display = "none"; location.reload(); }, 1200);
       } catch (err) {
         authMsg.textContent = err.message;
       }
