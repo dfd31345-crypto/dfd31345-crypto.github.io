@@ -242,14 +242,12 @@ body {
 
 @keyframes shimmer {
   0% { transform: translateX(-100%) translateY(-100%); }
-  100% { transform: translateX(100%) translateY(100%); }
-}
-
-.case-placeholder img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    overflow: hidden;
   z-index: 1;
 }
 
@@ -399,12 +397,35 @@ body {
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #1a3a52 0%, #0f2438 100%);
-  position: relative;
-  z-index: 1;
-}
-
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
 .weapon-card .chance {
+/* Rarity overlay line for weapon images */
+.rarity-overlay-line {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  height: 3px;
+  border-radius: 2px;
+  z-index: 2;
+  opacity: 0.85;
+  pointer-events: none;
+}
+/* Rarity colors */
+.rarity-light-blue { background: #5edfff; }
+.rarity-dark-blue { background: #3b5fff; }
+.rarity-purple { background: #b366ff; }
+.rarity-pink { background: #ff69b4; }
+.rarity-red { background: #ff3b3b; }
+.rarity-gold { background: #ffd700; }
+.rarity-gray { background: #b0b0b0; }
   color: #ff6b35;
   font-weight: 700;
   font-size: 1.2rem;

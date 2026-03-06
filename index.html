@@ -246,18 +246,18 @@
         casesGrid.innerHTML = `<div style='color:#ff6b35;text-align:center;width:100%;font-size:1.2rem;'>No cases found.</div>`;
         return;
       }
-      casesGrid.innerHTML = cases.map(cs => `
-        <div class="case-card" data-case-id="${cs.id.replace(/"/g, '&quot;')}">
-          <div class="case-placeholder">
-            ${cs.preview ? `<img src="${cs.preview}" alt="${cs.name} Preview" style="width:100%;height:100%;object-fit:cover;">` : `<span>?</span>`}
+        casesGrid.innerHTML = cases.map(cs => `
+          <div class="case-card" data-case-id="${cs.id.replace(/"/g, '&quot;')}">
+            <div class="case-placeholder">
+              ${cs.preview ? `<img src="${cs.preview}" alt="${cs.name} Preview" style="width:100%;height:100%;object-fit:cover;">` : `<span>?</span>`}
+            </div>
+            <div class="case-info">
+              <h4>${cs.name}</h4>
+              <div class="weapon-count">${cs.rarities && cs.rarities.length ? cs.rarities.reduce((a, r) => a + (r.weapons ? r.weapons.length : 0), 0) : 0} Weapons</div>
+              <button class="btn-spin" data-case-id="${cs.id.replace(/"/g, '&quot;')}">View Case</button>
+            </div>
           </div>
-          <div class="case-info">
-            <h4>${cs.name}</h4>
-            <div class="weapon-count">${cs.rarities && cs.rarities.length ? cs.rarities.reduce((a, r) => a + (r.weapons ? r.weapons.length : 0), 0) : 0} Weapons</div>
-            <button class="btn-spin" data-case-id="${cs.id.replace(/"/g, '&quot;')}">View Case</button>
-          </div>
-        </div>
-      `).join('');
+        `).join('');
       // Attach click listeners for modal
       document.querySelectorAll('.btn-spin').forEach(btn => {
         btn.onclick = function(e) {
@@ -277,23 +277,35 @@
     };
     function showCaseModal(cs) {
       modalCaseTitle.textContent = cs.name;
-      if (!cs.rarities || !cs.rarities.length) {
-        modalRarities.innerHTML = '<div style="color:#ff6b35;text-align:center;">No weapon data for this case.</div>';
-      } else {
-        modalRarities.innerHTML = cs.rarities.map(r => `
-          <div class="rarity-section">
-            <h3>${r.name}</h3>
-            <div class="weapons-grid">
-              ${r.weapons.map(w => `
-                <div class="weapon-card">
-                  <div class="weapon-image">${w.image ? `<img src="cases/${cs.id}/${r.name}/${w.image}" alt="${w.image}" style="width:100%;height:100%;object-fit:cover;">` : '?'}</div>
-                  <div>${w.image.replace(/\.png$/i, '').replace(/-/g, ' ')}</div>
-                  <div class="chance">${w.chance ? w.chance + '%' : ''}</div>
-                </div>
-              `).join('')}
+        if (!cs.rarities || !cs.rarities.length) {
+          modalRarities.innerHTML = '<div style="color:#ff6b35;text-align:center;">No weapon data for this case.</div>';
+        } else {
+          // Helper to get rarity color class
+          function getRarityClass(rarityName) {
+            const name = rarityName.toLowerCase();
+            if (name.includes('light blue')) return 'rarity-light-blue';
+            if (name.includes('dark blue')) return 'rarity-dark-blue';
+            if (name.includes('purple')) return 'rarity-purple';
+            if (name.includes('pink')) return 'rarity-pink';
+            if (name.includes('red')) return 'rarity-red';
+            if (name.includes('gold')) return 'rarity-gold';
+            if (name.includes('gray')) return 'rarity-gray';
+            return '';
+          }
+          modalRarities.innerHTML = cs.rarities.map(r => `
+            <div class="rarity-section">
+              <h3>${r.name}</h3>
+              <div class="weapons-grid">
+                ${r.weapons.map(w => `
+                  <div class="weapon-card">
+                    <div class="weapon-image">${w.image ? `<img src="cases/${cs.id}/${r.name}/${w.image}" alt="${w.image}"><div class="rarity-overlay-line ${getRarityClass(r.name)}"></div>` : '?'}<div class="rarity-overlay-line ${getRarityClass(r.name)}"></div></div>
+                    <div>${w.image.replace(/\.png$/i, '').replace(/-/g, ' ')}</div>
+                    <div class="chance">${w.chance ? w.chance + '%' : ''}</div>
+                  </div>
+                `).join('')}
+              </div>
             </div>
-          </div>
-        `).join('');
+          `).join('');
       }
       caseModal.style.display = 'block';
     }
