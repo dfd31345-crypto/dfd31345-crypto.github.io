@@ -287,7 +287,22 @@
     });
 
     // Load cases on page load
-    loadCases();
+    async function loadCases() {
+      try {
+        const response = await fetch("cases-config.json");
+        if (!response.ok) throw new Error("cases-config.json not found");
+        const data = await response.json();
+        casesData = data.cases || [];
+        if (!casesData.length) {
+          casesGrid.innerHTML = `<p style='color:#ff6b35;grid-column:1/-1;'>No cases found. Please check your cases-config.json file.</p>`;
+        } else {
+          renderCases(casesData);
+        }
+      } catch (error) {
+        console.error("Error loading cases:", error);
+        casesGrid.innerHTML = `<p style="color: #ff6b35; grid-column: 1/-1;">Error: Could not load cases. <br>${error.message || error}</p>`;
+      }
+    }
   </script>
 </body>
 </html>
