@@ -280,7 +280,7 @@
         if (!cs.rarities || !cs.rarities.length) {
           modalRarities.innerHTML = '<div style="color:#ff6b35;text-align:center;">No weapon data for this case.</div>';
         } else {
-          // Helper to get rarity color class
+          // Helper to get rarity color class and color value
           function getRarityClass(rarityName) {
             const name = rarityName.toLowerCase();
             if (name.includes('light blue')) return 'rarity-light-blue';
@@ -292,13 +292,27 @@
             if (name.includes('gray')) return 'rarity-gray';
             return '';
           }
+          function getRarityColor(rarityName) {
+            const name = rarityName.toLowerCase();
+            if (name.includes('light blue')) return '#5edfff';
+            if (name.includes('dark blue')) return '#3b5fff';
+            if (name.includes('purple')) return '#b366ff';
+            if (name.includes('pink')) return '#ff69b4';
+            if (name.includes('red')) return '#ff3b3b';
+            if (name.includes('gold')) return '#ffd700';
+            if (name.includes('gray')) return '#b0b0b0';
+            return '#fff';
+          }
           modalRarities.innerHTML = cs.rarities.map(r => `
             <div class="rarity-section">
               <h3>${r.name}</h3>
               <div class="weapons-grid">
-                ${r.weapons.map(w => `
+                ${r.weapons.map((w, idx) => `
                   <div class="weapon-card">
-                    <div class="weapon-image">${w.image ? `<img src="cases/${cs.id}/${r.name}/${w.image}" alt="${w.image}"><div class="rarity-overlay-line ${getRarityClass(r.name)}"></div>` : '?'}<div class="rarity-overlay-line ${getRarityClass(r.name)}"></div></div>
+                    <div class="weapon-image" data-rarity="${r.name}">
+                      ${w.image ? `<img src="cases/${cs.id}/${r.name}/${w.image}" alt="${w.image}" data-rarity="${r.name}" style="max-width:100%;max-height:100%;object-fit:contain;">` : '?'}
+                      <div class="rarity-overlay-line ${getRarityClass(r.name)}"></div>
+                    </div>
                     <div>${w.image.replace(/\.png$/i, '').replace(/-/g, ' ')}</div>
                     <div class="chance">${w.chance ? w.chance + '%' : ''}</div>
                   </div>
@@ -306,6 +320,24 @@
               </div>
             </div>
           `).join('');
+          // After rendering, ensure all weapon images fit and have colored box-shadow
+          setTimeout(() => {
+            document.querySelectorAll('#modalRarities .weapon-image img').forEach(img => {
+              img.onload = function() {
+                // Always fit image in frame
+                img.style.width = 'auto';
+                img.style.height = '100%';
+                img.style.maxWidth = '100%';
+                img.style.maxHeight = '100%';
+                img.style.objectFit = 'contain';
+                // Add colored box-shadow for rarity
+                const rarity = img.getAttribute('data-rarity');
+                img.parentElement.style.boxShadow = `0 0 0 3px ${getRarityColor(rarity)}`;
+              };
+              // If already loaded (cache), trigger manually
+              if (img.complete) img.onload();
+            });
+          }, 0);
       }
       caseModal.style.display = 'block';
     }
