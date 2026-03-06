@@ -245,11 +245,12 @@
         });
         const data = await res.json();
         if (!data.success) return showAuthMsg(data.error || 'Signup failed');
-        // Show OTP form
-        signupForm.style.display = 'none';
-        otpForm.style.display = 'block';
-        otpForm.dataset.userId = data.userId;
-        showAuthMsg('Enter the 6-digit code sent to your email.');
+          setUser(data.token, data.username);
+          showAuthMsg('Account created! Redirecting...','green');
+          setTimeout(() => {
+            authModal.style.display = 'none';
+            window.location.reload();
+          }, 2000);
       } catch {
         showAuthMsg('Signup failed');
       }
@@ -272,16 +273,16 @@
         });
         const data = await res.json();
         if (!data.success) return showAuthMsg(data.error || 'Login failed');
-        // Show OTP form
-        loginForm.style.display = 'none';
-        otpForm.style.display = 'block';
-        otpForm.dataset.userId = data.userId;
-        showAuthMsg('Enter the 6-digit code sent to your email.');
+          setUser(data.token, data.username);
+          showAuthMsg('Login successful! Redirecting...','green');
+          setTimeout(() => {
+            authModal.style.display = 'none';
+            window.location.reload();
+          }, 2000);
       } catch {
         showAuthMsg('Login failed');
       }
     };
-
     // OTP form submit
     otpForm.onsubmit = async function(e) {
       e.preventDefault();
