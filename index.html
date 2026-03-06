@@ -249,7 +249,8 @@
         const data = await res.json();
         if (!data.success) {
           let debugMsg = data.error ? `Signup failed: ${data.error}` : 'Signup failed';
-          if (data.stack) debugMsg += `\n${data.stack}`;
+          // Show all returned data for debugging
+          debugMsg += '\n' + JSON.stringify(data, null, 2);
           return showAuthMsg(debugMsg);
         }
         setUser(data.token, data.username);
