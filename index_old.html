@@ -1,0 +1,448 @@
+<!-- CS2 Trading Platform - Professional Marketplace -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CS2 Trading — Premium Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app-config.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <h1 class="logo">CS2 TRADE</h1>
+      </div>
+      <div class="nav-menu">
+        <a href="#" onclick="showPage('marketplace'); return false;" class="nav-link active" data-page="marketplace">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+          Marketplace
+        </a>
+        <a href="#" onclick="showPage('inventory'); return false;" class="nav-link" data-page="inventory">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/></svg>
+          My Inventory
+        </a>
+        <a href="#" onclick="showPage('trades'); return false;" class="nav-link" data-page="trades">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"/><path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3zM11 4h3.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5H5V2.5A.5.5 0 0 1 5.5 2h5a.5.5 0 0 1 .5.5V4z"/></svg>
+          Trade Offers
+        </a>
+        <a href="#" onclick="showPage('profile'); return false;" class="nav-link" data-page="profile">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/></svg>
+          My Profile
+        </a>
+      </div>
+      <div class="nav-auth" id="navAuthSection">
+        <button id="navSteamLoginBtn" class="btn-steam">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.198 2.198 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.217 2.217 0 0 1-1.312-1.568L.33 10.333Z"/></svg>
+          Sign In With Steam
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Trade CS2 Skins Safely</h2>
+      <p>Instant trades, secure marketplace, best prices.</p>
+      <span id="heroLoginState"></span>
+    </div>
+  </section>
+
+  <!-- Marketplace Page -->
+  <section id="marketplacePage" class="page-section">
+    <div class="container">
+      <!-- Search & Filters -->
+      <div class="search-filter-bar" style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+        <input type="text" id="searchBox" class="search-box" placeholder="Search items..." style="flex: 1; min-width: 250px;">
+        <select id="categoryFilter" class="filter-select">
+          <option value="">All Categories</option>
+          <option value="rifle">Rifles</option>
+          <option value="pistol">Pistols</option>
+          <option value="smg">SMGs</option>
+          <option value="knife">Knives</option>
+          <option value="gloves">Gloves</option>
+        </select>
+        <select id="rarityFilter" class="filter-select">
+          <option value="">All Rarities</option>
+          <option value="consumer">Consumer Grade</option>
+          <option value="industrial">Industrial Grade</option>
+          <option value="milspec">Mil-Spec</option>
+          <option value="restricted">Restricted</option>
+          <option value="classified">Classified</option>
+          <option value="covert">Covert</option>
+          <option value="contraband">Contraband</option>
+        </select>
+        <select id="sortFilter" class="filter-select">
+          <option value="price_asc">Price: Low to High</option>
+          <option value="price_desc">Price: High to Low</option>
+          <option value="newest">Newest First</option>
+        </select>
+      </div>
+
+      <h3>Marketplace Listings</h3>
+      <div class="items-grid" id="marketplaceGrid">
+        <!-- Items inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Inventory Page -->
+  <section id="inventoryPage" class="page-section" style="display: none;">
+    <div class="container">
+      <h3>My CS2 Inventory</h3>
+      <div id="inventoryContent">
+        <p style="text-align: center; color: #888;">Sign in to view your Steam inventory</p>
+      </div>
+      <div class="items-grid" id="inventoryGrid">
+        <!-- Inventory items inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Trade Offers Page -->
+  <section id="tradesPage" class="page-section" style="display: none;">
+    <div class="container">
+      <h3>Trade Offers</h3>
+      <div class="trades-container">
+        <div class="trades-incoming">
+          <h4>Incoming Offers (<span id="incomingCount">0</span>)</h4>
+          <div id="incomingTrades">
+            <p style="text-align: center; color: #888;">No incoming trade offers</p>
+          </div>
+        </div>
+        <div class="trades-outgoing">
+          <h4>Sent Offers (<span id="outgoingCount">0</span>)</h4>
+          <div id="outgoingTrades">
+            <p style="text-align: center; color: #888;">No sent trade offers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sell Items Page -->
+  <section id="sellPage" class="page-section" style="display: none;">
+    <div class="container">
+      <h3>Sell Your Items</h3>
+      <div id="sellContent">
+        <p style="text-align: center; color: #888;">Select items from your inventory to list on the marketplace</p>
+      </div>
+      <div class="items-grid" id="sellGrid">
+        <!-- Sellable items inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Item Detail Modal -->
+  <div id="itemModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modalItemContent">
+        <!-- Item details inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 CS2 Trading. All rights reserved. Not affiliated with Valve Corporation.</p>
+  </footer>
+
+  <script>
+    const heroLoginState = document.getElementById("heroLoginState");
+    const navAuthBtns = document.querySelector(".nav-auth-btns");
+    const rawApiBase = (window.APP_CONFIG && window.APP_CONFIG.API_BASE_URL) ? String(window.APP_CONFIG.API_BASE_URL) : '';
+    const API_BASE_URL = rawApiBase.replace(/\/$/, '');
+    const STEAM_TOKEN_KEY = 'steam_auth_token';
+    let currentUser = null;
+    let currentPage = 'marketplace';
+
+    function apiUrl(path) {
+      return `${API_BASE_URL}${path}`;
+    }
+
+    function getAuthHeaders() {
+      const token = localStorage.getItem(STEAM_TOKEN_KEY);
+      if (token) {
+        return { 'Authorization': `Bearer ${token}` };
+      }
+      return {};
+    }
+
+    function startSteamLogin() {
+      const redirect = encodeURIComponent(window.location.origin);
+      window.location.href = apiUrl(`/api/auth/steam?redirect=${redirect}`);
+    }
+
+    async function getCurrentUser() {
+      try {
+        const res = await fetch(apiUrl('/api/auth/me'), { 
+          credentials: 'include',
+          headers: getAuthHeaders()
+        });
+        if (!res.ok) return null;
+        const data = await res.json();
+        return data && data.authenticated ? data.user : null;
+      } catch {
+        return null;
+      }
+    }
+
+    async function signOut() {
+      localStorage.removeItem(STEAM_TOKEN_KEY);
+      await fetch(apiUrl('/api/auth/logout'), { 
+        method: 'POST', 
+        credentials: 'include',
+        headers: getAuthHeaders()
+      });
+      currentUser = null;
+      await renderAuthState();
+      showPage('marketplace');
+    }
+
+    function captureTokenFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      const token = params.get('steam_token');
+      if (token) {
+        localStorage.setItem(STEAM_TOKEN_KEY, token);
+        const cleanUrl = window.location.pathname;
+        window.history.replaceState({}, document.title, cleanUrl);
+      }
+    }
+
+    function renderLoggedOutState() {
+      navAuthBtns.innerHTML = `<button id="navSteamLoginBtn" class="btn-primary" style="padding: 0.6rem 1.5rem; font-size: 1rem;">Sign In With Steam</button>`;
+      const navSteamLoginBtn = document.getElementById('navSteamLoginBtn');
+      if (navSteamLoginBtn) navSteamLoginBtn.onclick = startSteamLogin;
+
+      heroLoginState.innerHTML = `<button class='btn-primary' id='heroSteamLoginBtn'>Sign In With Steam</button>`;
+      const heroSteamLoginBtn = document.getElementById('heroSteamLoginBtn');
+      if (heroSteamLoginBtn) heroSteamLoginBtn.onclick = startSteamLogin;
+    }
+
+    function renderLoggedInState(user) {
+      const avatarHtml = user.avatar
+        ? `<img src="${user.avatar}" alt="${user.displayName}" style="width:32px;height:32px;border-radius:50%;object-fit:cover;margin-right:0.6rem;border:1px solid rgba(255,255,255,0.35);vertical-align:middle;">`
+        : '';
+      
+      const balanceUsd = (user.balanceUsd || 0).toFixed(2);
+      
+      navAuthBtns.innerHTML = `
+        <span style="margin-right:1.5rem;display:inline-flex;align-items:center;font-weight:600;color:#4ade80;">
+          $${balanceUsd}
+        </span>
+        <span style="margin-right:1rem;display:inline-flex;align-items:center;">
+          ${avatarHtml}<b>${user.displayName}</b>
+        </span>
+        <button id="navSignOutBtn" class="btn-primary" style="background:#ff6b35;color:#fff;">Sign Out</button>
+      `;
+      
+      const navSignOutBtn = document.getElementById('navSignOutBtn');
+      if (navSignOutBtn) navSignOutBtn.onclick = signOut;
+
+      heroLoginState.innerHTML = `Balance: <b style="color:#4ade80;">$${balanceUsd}</b> | <a href="${user.profileUrl}" target="_blank" rel="noopener" class="btn-primary" style="margin-left:1rem;text-decoration:none;display:inline-block;">Steam Profile</a>`;
+    }
+
+    async function renderAuthState() {
+      currentUser = await getCurrentUser();
+      if (!currentUser) {
+        renderLoggedOutState();
+        return;
+      }
+      renderLoggedInState(currentUser);
+    }
+
+    async function trackRevisit() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const ref = document.referrer.toLowerCase();
+        const telegramSource =
+          params.has('tgWebAppData') ||
+          params.has('startapp') ||
+          params.has('startattach') ||
+          ref.includes('t.me') ||
+          ref.includes('telegram');
+
+        const source = telegramSource ? 'telegram' : 'web';
+        await fetch(apiUrl(`/api/telemetry/revisit?source=${source}`), {
+          method: 'POST',
+          credentials: 'include',
+          headers: getAuthHeaders()
+        });
+      } catch {
+        // Do not block page load on telemetry failures.
+      }
+    }
+
+    function showPage(pageName) {
+      currentPage = pageName;
+      document.querySelectorAll('.page-section').forEach(section => {
+        section.style.display = 'none';
+      });
+      
+      const targetPage = document.getElementById(pageName + 'Page');
+      if (targetPage) {
+        targetPage.style.display = 'block';
+      }
+      
+      // Update nav link active state
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.style.opacity = '0.7';
+        link.style.fontWeight = 'normal';
+      });
+      const links = document.querySelectorAll('.nav-link');
+      if (pageName === 'marketplace' && links[0]) {
+        links[0].style.opacity = '1';
+        links[0].style.fontWeight = 'bold';
+      }
+      if (pageName === 'inventory' && links[1]) {
+        links[1].style.opacity = '1';
+        links[1].style.fontWeight = 'bold';
+      }
+      if (pageName === 'trades' && links[2]) {
+        links[2].style.opacity = '1';
+        links[2].style.fontWeight = 'bold';
+      }
+      if (pageName === 'sell' && links[3]) {
+        links[3].style.opacity = '1';
+        links[3].style.fontWeight = 'bold';
+      }
+      
+      if (pageName === 'marketplace') loadMarketplace();
+      if (pageName === 'inventory') loadInventory();
+      if (pageName === 'trades') loadTrades();
+      if (pageName === 'sell') loadSellPage();
+    }
+
+    // Sample marketplace data
+    const marketplaceItems = [
+      { id: 1, name: 'AK-47 | Redline', category: 'Rifles', rarity: 'Classified', price: 45.50, wear: 'Field-Tested', float: 0.25, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV09-5lpKKqPrxN7LEmyUJ68J0judBgL7ww5br8kFqMG2gd9LDdQ44MluE8k_-n7mPgcCij5Ss3w/330fx248f' },
+      { id: 2, name: 'AWP | Asiimov', category: 'Rifles', rarity: 'Covert', price: 89.99, wear: 'Battle-Scarred', float: 0.52, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17PLfYQJD_9W7m5a0mvLwOq7c2G5U5cR_teTE8YXghRrk_ERpMT3xJ9XEI1A4NQnU-ADrk7q9m9bi6-02pCo/330fx248f' },
+      { id: 3, name: 'M4A4 | Howl', category: 'Rifles', rarity: 'Contraband', price: 5250.00, wear: 'Factory New', float: 0.03, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09izh4-HluXLP7LWnn8fvZJy2-qT9N6k0FHjrkJoYDr7LYbGIwFvMlHT_Vm2kOu5hZK06M_Pvno/330fx248f' },
+      { id: 4, name: 'Glock-18 | Fade', category: 'Pistols', rarity: 'Restricted', price: 325.00, wear: 'Minimal Wear', float: 0.07, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbaqKAxf0Ob3djFN79fnzL-KgPrxDLbUhH5V5cRiiOTE87P4jVWx5UU-YT3wLI-RcwZqYF-E-FS8wrzoh5G7u4OJlyXGrfTyVA/330fx248f' },
+      { id: 5, name: 'Desert Eagle | Blaze', category: 'Pistols', rarity: 'Restricted', price: 415.75, wear: 'Factory New', float: 0.01, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposr-kLAtl7PLZTjlH_9mkgIWKkPvLPr7Vn35cpsVw3bqVrd-kjQG38kc9Zj-nJoCVcVRqY1vVqAe7yLrxxcjrXnRj_w/330fx248f' },
+      { id: 6, name: 'Karambit | Doppler', category: 'Knives', rarity: 'Covert', price: 1850.00, wear: 'Factory New', float: 0.008, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJf2PLacDBA5ciJlY20k_jkI7fUhFRB4MZij-fF_Jn4xlHj_hU4YT-nJtfHIQ9qMAnW_1DtxOe8g5fo6pXOnHJh7nQl5yzfyRGy0h5SLrs4PsKw-lI/330fx248f' },
+      { id: 7, name: 'Butterfly Knife | Tiger Tooth', category: 'Knives', rarity: 'Covert', price: 2100.50, wear: 'Factory New', float: 0.02, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJf0ebcZThQ6tCvq4GGqPP7J6nUl35c-NZlmObEpMCt2gK3qEJka2-mJ4-RdlRqNQrW_lHvlebuhZ7uuJ6fzXthunRz7XfD30vgCHrUVSU/330fx248f' },
+      { id: 8, name: 'Sport Gloves | Pandora\'s Box', category: 'Gloves', rarity: 'Extraordinary', price: 8500.00, wear: 'Field-Tested', float: 0.35, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDKjFl2xU18l4juDU9LP5gVO8v11lYG3xIYTHcA44Zw6G_VO6x-vxxcjr2KhDl9U/330fx248f' },
+      { id: 9, name: 'P90 | Asiimov', category: 'SMGs', rarity: 'Covert', price: 12.50, wear: 'Minimal Wear', float: 0.09, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopujwezhjxszYI2gS09-5hoyKnPL6DLjQhH5U18t0i-3P-InKhVG9vh5yJyk9ZtDBJ1doN1HT-VO2wry6m9bi6-0VnePD/330fx248f' },
+      { id: 10, name: 'MAC-10 | Neon Rider', category: 'SMGs', rarity: 'Classified', price: 8.75, wear: 'Factory New', float: 0.04, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJgYGHnv74Y77VlXpfv5Ny2rzH8dGj0QWy_0RuZGuhIYfHIQ9tMF6DrwS9w-fm1565uZ_A1zI97TlFk1q0/330fx248f' }
+    ];
+
+    function loadMarketplace() {
+      const searchInput = document.getElementById('searchInput');
+      const categoryFilter = document.getElementById('categoryFilter');
+      const rarityFilter = document.getElementById('rarityFilter');
+      const sortFilter = document.getElementById('sortFilter');
+      const itemsGrid = document.querySelector('.items-grid');
+
+      function filterAndRender() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const category = categoryFilter.value;
+        const rarity = rarityFilter.value;
+        const sort = sortFilter.value;
+
+        let filtered = marketplaceItems.filter(item => {
+          const matchesSearch = item.name.toLowerCase().includes(searchTerm);
+          const matchesCategory = category === 'all' || item.category === category;
+          const matchesRarity = rarity === 'all' || item.rarity === rarity;
+          return matchesSearch && matchesCategory && matchesRarity;
+        });
+
+        if (sort === 'price-low') filtered.sort((a, b) => a.price - b.price);
+        if (sort === 'price-high') filtered.sort((a, b) => b.price - a.price);
+        if (sort === 'newest') filtered.sort((a, b) => b.id - a.id);
+
+        itemsGrid.innerHTML = filtered.map(item => `
+          <div class="item-card" onclick="showItemDetail(${item.id})">
+            <img src="${item.image}" alt="${item.name}">
+            <div style="padding:0.8rem;">
+              <div style="font-size:0.85rem;color:#888;margin-bottom:0.3rem;">${item.category} | ${item.wear}</div>
+              <h3 style="font-size:1rem;margin:0 0 0.5rem 0;">${item.name}</h3>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="color:${getRarityColor(item.rarity)};font-size:0.9rem;">${item.rarity}</span>
+                <span style="color:#4ade80;font-weight:bold;font-size:1.1rem;">$${item.price.toFixed(2)}</span>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      searchInput.addEventListener('input', filterAndRender);
+      categoryFilter.addEventListener('change', filterAndRender);
+      rarityFilter.addEventListener('change', filterAndRender);
+      sortFilter.addEventListener('change', filterAndRender);
+
+      filterAndRender();
+    }
+
+    function getRarityColor(rarity) {
+      const colors = {
+        'Consumer': '#b0c3d9',
+        'Industrial': '#5e98d9',
+        'Mil-Spec': '#4b69ff',
+        'Restricted': '#8847ff',
+        'Classified': '#d32ce6',
+        'Covert': '#eb4b4b',
+        'Contraband': '#e4ae39',
+        'Extraordinary': '#e4ae39'
+      };
+      return colors[rarity] || '#fff';
+    }
+
+    function showItemDetail(itemId) {
+      const item = marketplaceItems.find(i => i.id === itemId);
+      if (!item) return;
+
+      const modal = document.getElementById('itemDetailModal');
+      document.getElementById('itemDetailName').textContent = item.name;
+      document.getElementById('itemDetailImage').src = item.image;
+      document.getElementById('itemDetailCategory').textContent = `Category: ${item.category}`;
+      document.getElementById('itemDetailWear').textContent = `Wear: ${item.wear}`;
+      document.getElementById('itemDetailFloat').textContent = `Float: ${item.float}`;
+      document.getElementById('itemDetailRarity').textContent = `Rarity: ${item.rarity}`;
+      document.getElementById('itemDetailRarity').style.color = getRarityColor(item.rarity);
+      document.getElementById('itemDetailPrice').textContent = `$${item.price.toFixed(2)}`;
+
+      modal.style.display = 'flex';
+    }
+
+    function closeItemDetail() {
+      document.getElementById('itemDetailModal').style.display = 'none';
+    }
+
+    function buyItem() {
+      if (!currentUser) {
+        alert('Please sign in to purchase items');
+        return;
+      }
+      alert('Purchase functionality coming soon!');
+      closeItemDetail();
+    }
+
+    function loadInventory() {
+      const inventoryGrid = document.querySelector('.inventory-grid');
+      inventoryGrid.innerHTML = '<p style="text-align:center;color:#888;padding:2rem;">Connect your Steam account to view your inventory</p>';
+    }
+
+    function loadTrades() {
+      const incomingOffers = document.getElementById('incomingOffers');
+      const outgoingOffers = document.getElementById('outgoingOffers');
+      incomingOffers.innerHTML = '<p style="color:#888;padding:1rem;">No incoming trade offers</p>';
+      outgoingOffers.innerHTML = '<p style="color:#888;padding:1rem;">No outgoing trade offers</p>';
+    }
+
+    function loadSellPage() {
+      const sellGrid = document.querySelector('.sell-grid');
+      sellGrid.innerHTML = '<p style="text-align:center;color:#888;padding:2rem;">Select items from your inventory to list for sale</p>';
+    }
+
+    captureTokenFromUrl();
+    renderAuthState();
+    trackRevisit();
+    showPage('marketplace');
+  </script>
+</body>
+</html>

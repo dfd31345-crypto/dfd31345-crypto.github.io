@@ -1,148 +1,189 @@
-<!-- FORCE UPDATE 2026-03-07: CS2 Trading Marketplace -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CS2 Trading — shipzibi.com</title>
+  <title>CS2 Trading — Premium Marketplace</title>
   <link rel="stylesheet" href="styles.css">
   <script src="app-config.js"></script>
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar">
-    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
-      <div>
-        <h1 class="logo">CS2 Trading</h1>
-        <p class="tagline">Buy, Sell & Trade CS2 Skins</p>
+    <div class="nav-container">
+      <div class="nav-brand">
+        <h1 class="logo">CS2 TRADE</h1>
       </div>
-      <div class="nav-links" style="display: flex; gap: 1.5rem; align-items: center;">
-        <a href="#" onclick="showPage('marketplace'); return false;" class="nav-link">Marketplace</a>
-        <a href="#" onclick="showPage('inventory'); return false;" class="nav-link">My Inventory</a>
-        <a href="#" onclick="showPage('trades'); return false;" class="nav-link">Trade Offers</a>
-        <a href="#" onclick="showPage('sell'); return false;" class="nav-link">Sell Items</a>
+      <div class="nav-menu">
+        <a href="#" onclick="showPage('marketplace'); return false;" class="nav-link active" data-page="marketplace">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+          Marketplace
+        </a>
+        <a href="#" onclick="showPage('inventory'); return false;" class="nav-link" data-page="inventory">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/></svg>
+          My Inventory
+        </a>
+        <a href="#" onclick="showPage('trades'); return false;" class="nav-link" data-page="trades">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M1.5 14.5a.5.5 0 0 1-.5-.5V9.2a2.5 2.5 0 0 1 2.5-2.5h9.793l-3.347-3.346a.5.5 0 0 1 .708-.708l4.2 4.2a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 7.7H3.5A1.5 1.5 0 0 0 2 9.2V14a.5.5 0 0 1-.5.5z"/></svg>
+          Trade Offers
+        </a>
+        <a href="#" onclick="showPage('profile'); return false;" class="nav-link" data-page="profile">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/></svg>
+          My Profile
+        </a>
       </div>
-      <div class="nav-auth-btns">
-        <button id="navSteamLoginBtn" class="btn-primary" style="padding: 0.6rem 1.5rem; font-size: 1rem;">Sign In With Steam</button>
+      <div class="nav-auth" id="navAuthSection">
+        <button id="navSteamLoginBtn" class="btn-steam">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.198 2.198 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.217 2.217 0 0 1-1.312-1.568L.33 10.333Z"/></svg>
+          Sign In
+        </button>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h2>Trade CS2 Skins Safely</h2>
-      <p>Instant trades, secure marketplace, best prices.</p>
-      <span id="heroLoginState"></span>
-    </div>
-  </section>
-
-  <!-- Marketplace Page -->
-  <section id="marketplacePage" class="page-section">
-    <div class="container">
-      <!-- Search & Filters -->
-      <div class="search-filter-bar" style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
-        <input type="text" id="searchBox" class="search-box" placeholder="Search items..." style="flex: 1; min-width: 250px;">
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Marketplace Page -->
+    <section id="marketplacePage" class="page-section active">
+      <div class="content-header">
+        <h2>Marketplace</h2>
+        <div class="stats">
+          <span class="stat-item"><strong id="totalListings">0</strong> Active Listings</span>
+        </div>
+      </div>
+      
+      <div class="filter-bar">
+        <div class="search-wrapper">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
+          <input type="text" id="searchInput" placeholder="Search items...">
+        </div>
         <select id="categoryFilter" class="filter-select">
-          <option value="">All Categories</option>
-          <option value="rifle">Rifles</option>
-          <option value="pistol">Pistols</option>
-          <option value="smg">SMGs</option>
-          <option value="knife">Knives</option>
-          <option value="gloves">Gloves</option>
+          <option value="all">All Categories</option>
+          <option value="Rifles">Rifles</option>
+          <option value="Pistols">Pistols</option>
+          <option value="SMGs">SMGs</option>
+          <option value="Knives">Knives</option>
+          <option value="Gloves">Gloves</option>
         </select>
         <select id="rarityFilter" class="filter-select">
-          <option value="">All Rarities</option>
-          <option value="consumer">Consumer Grade</option>
-          <option value="industrial">Industrial Grade</option>
-          <option value="milspec">Mil-Spec</option>
-          <option value="restricted">Restricted</option>
-          <option value="classified">Classified</option>
-          <option value="covert">Covert</option>
-          <option value="contraband">Contraband</option>
+          <option value="all">All Rarities</option>
+          <option value="Consumer">Consumer</option>
+          <option value="Industrial">Industrial</option>
+          <option value="Mil-Spec">Mil-Spec</option>
+          <option value="Restricted">Restricted</option>
+          <option value="Classified">Classified</option>
+          <option value="Covert">Covert</option>
+          <option value="Contraband">Contraband</option>
         </select>
         <select id="sortFilter" class="filter-select">
-          <option value="price_asc">Price: Low to High</option>
-          <option value="price_desc">Price: High to Low</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
           <option value="newest">Newest First</option>
         </select>
       </div>
 
-      <h3>Marketplace Listings</h3>
       <div class="items-grid" id="marketplaceGrid">
-        <!-- Items inserted here -->
+        <!-- Marketplace items -->
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Inventory Page -->
-  <section id="inventoryPage" class="page-section" style="display: none;">
-    <div class="container">
-      <h3>My CS2 Inventory</h3>
-      <div id="inventoryContent">
-        <p style="text-align: center; color: #888;">Sign in to view your Steam inventory</p>
+    <!-- Inventory Page -->
+    <section id="inventoryPage" class="page-section">
+      <div class="content-header">
+        <h2>My CS2 Inventory</h2>
+        <button id="refreshInventoryBtn" class="btn-secondary" onclick="loadInventory()">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/><path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/></svg>
+          Refresh
+        </button>
       </div>
+      
+      <div id="inventoryStatus" class="status-message">Sign in with Steam to view your CS2 inventory</div>
       <div class="items-grid" id="inventoryGrid">
-        <!-- Inventory items inserted here -->
+        <!-- Inventory items -->
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Trade Offers Page -->
-  <section id="tradesPage" class="page-section" style="display: none;">
-    <div class="container">
-      <h3>Trade Offers</h3>
+    <!-- Trade Offers Page -->
+    <section id="tradesPage" class="page-section">
+      <div class="content-header">
+        <h2>Trade Offers</h2>
+      </div>
+      
       <div class="trades-container">
-        <div class="trades-incoming">
-          <h4>Incoming Offers (<span id="incomingCount">0</span>)</h4>
-          <div id="incomingTrades">
-            <p style="text-align: center; color: #888;">No incoming trade offers</p>
+        <div class="trade-section">
+          <h3>Incoming Offers <span class="badge" id="incomingCount">0</span></h3>
+          <div id="incomingOffers" class="trade-list">
+            <div class="empty-state">No incoming trade offers</div>
           </div>
         </div>
-        <div class="trades-outgoing">
-          <h4>Sent Offers (<span id="outgoingCount">0</span>)</h4>
-          <div id="outgoingTrades">
-            <p style="text-align: center; color: #888;">No sent trade offers</p>
+        
+        <div class="trade-section">
+          <h3>Sent Offers <span class="badge" id="outgoingCount">0</span></h3>
+          <div id="outgoingOffers" class="trade-list">
+            <div class="empty-state">No sent trade offers</div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Sell Items Page -->
-  <section id="sellPage" class="page-section" style="display: none;">
-    <div class="container">
-      <h3>Sell Your Items</h3>
-      <div id="sellContent">
-        <p style="text-align: center; color: #888;">Select items from your inventory to list on the marketplace</p>
+    <!-- Profile Page -->
+    <section id="profilePage" class="page-section">
+      <div class="content-header">
+        <h2>My CS2 Trading Profile</h2>
       </div>
-      <div class="items-grid" id="sellGrid">
-        <!-- Sellable items inserted here -->
+      
+      <div id="profileContent" class="profile-container">
+        <div class="empty-state">Sign in to view your trading profile</div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Item Detail Modal -->
-  <div id="itemModal" class="modal">
+  <div id="itemDetailModal" class="modal">
+    <div class="modal-overlay" onclick="closeItemDetail()"></div>
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <div id="modalItemContent">
-        <!-- Item details inserted here -->
+      <button class="modal-close" onclick="closeItemDetail()">&times;</button>
+      <div class="modal-body">
+        <div class="item-detail-image">
+          <img id="itemDetailImage" src="" alt="">
+        </div>
+        <div class="item-detail-info">
+          <h2 id="itemDetailName"></h2>
+          <div class="item-stats">
+            <div class="stat-row">
+              <span class="label">Category:</span>
+              <span id="itemDetailCategory"></span>
+            </div>
+            <div class="stat-row">
+              <span class="label">Wear:</span>
+              <span id="itemDetailWear"></span>
+            </div>
+            <div class="stat-row">
+              <span class="label">Float:</span>
+              <span id="itemDetailFloat"></span>
+            </div>
+            <div class="stat-row">
+              <span class="label">Rarity:</span>
+              <span id="itemDetailRarity" class="rarity-badge"></span>
+            </div>
+          </div>
+          <div class="item-price">
+            <span class="price-label">Price</span>
+            <span class="price-value" id="itemDetailPrice"></span>
+          </div>
+          <div class="item-actions">
+            <button class="btn-primary" onclick="buyItem()">Buy Now</button>
+            <button class="btn-secondary">Add to Watchlist</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2026 CS2 Trading. All rights reserved. Not affiliated with Valve Corporation.</p>
-  </footer>
-
   <script>
-    const heroLoginState = document.getElementById("heroLoginState");
-    const navAuthBtns = document.querySelector(".nav-auth-btns");
-    const rawApiBase = (window.APP_CONFIG && window.APP_CONFIG.API_BASE_URL) ? String(window.APP_CONFIG.API_BASE_URL) : '';
-    const API_BASE_URL = rawApiBase.replace(/\/$/, '');
+    const API_BASE_URL = (window.APP_CONFIG && window.APP_CONFIG.API_BASE_URL) ? String(window.APP_CONFIG.API_BASE_URL).replace(/\/$/, '') : '';
     const STEAM_TOKEN_KEY = 'steam_auth_token';
+    const STEAM_APP_ID = '730'; // CS2
     let currentUser = null;
     let currentPage = 'marketplace';
 
@@ -152,10 +193,7 @@
 
     function getAuthHeaders() {
       const token = localStorage.getItem(STEAM_TOKEN_KEY);
-      if (token) {
-        return { 'Authorization': `Bearer ${token}` };
-      }
-      return {};
+      return token ? { 'Authorization': `Bearer ${token}` } : {};
     }
 
     function startSteamLogin() {
@@ -185,7 +223,7 @@
         headers: getAuthHeaders()
       });
       currentUser = null;
-      await renderAuthState();
+      renderAuthState();
       showPage('marketplace');
     }
 
@@ -194,113 +232,62 @@
       const token = params.get('steam_token');
       if (token) {
         localStorage.setItem(STEAM_TOKEN_KEY, token);
-        const cleanUrl = window.location.pathname;
-        window.history.replaceState({}, document.title, cleanUrl);
+        window.history.replaceState({}, document.title, window.location.pathname);
       }
     }
 
-    function renderLoggedOutState() {
-      navAuthBtns.innerHTML = `<button id="navSteamLoginBtn" class="btn-primary" style="padding: 0.6rem 1.5rem; font-size: 1rem;">Sign In With Steam</button>`;
-      const navSteamLoginBtn = document.getElementById('navSteamLoginBtn');
-      if (navSteamLoginBtn) navSteamLoginBtn.onclick = startSteamLogin;
-
-      heroLoginState.innerHTML = `<button class='btn-primary' id='heroSteamLoginBtn'>Sign In With Steam</button>`;
-      const heroSteamLoginBtn = document.getElementById('heroSteamLoginBtn');
-      if (heroSteamLoginBtn) heroSteamLoginBtn.onclick = startSteamLogin;
-    }
-
-    function renderLoggedInState(user) {
-      const avatarHtml = user.avatar
-        ? `<img src="${user.avatar}" alt="${user.displayName}" style="width:32px;height:32px;border-radius:50%;object-fit:cover;margin-right:0.6rem;border:1px solid rgba(255,255,255,0.35);vertical-align:middle;">`
-        : '';
-      
-      const balanceUsd = (user.balanceUsd || 0).toFixed(2);
-      
-      navAuthBtns.innerHTML = `
-        <span style="margin-right:1.5rem;display:inline-flex;align-items:center;font-weight:600;color:#4ade80;">
-          $${balanceUsd}
-        </span>
-        <span style="margin-right:1rem;display:inline-flex;align-items:center;">
-          ${avatarHtml}<b>${user.displayName}</b>
-        </span>
-        <button id="navSignOutBtn" class="btn-primary" style="background:#ff6b35;color:#fff;">Sign Out</button>
-      `;
-      
-      const navSignOutBtn = document.getElementById('navSignOutBtn');
-      if (navSignOutBtn) navSignOutBtn.onclick = signOut;
-
-      heroLoginState.innerHTML = `Balance: <b style="color:#4ade80;">$${balanceUsd}</b> | <a href="${user.profileUrl}" target="_blank" rel="noopener" class="btn-primary" style="margin-left:1rem;text-decoration:none;display:inline-block;">Steam Profile</a>`;
-    }
-
-    async function renderAuthState() {
-      currentUser = await getCurrentUser();
+    function renderAuthState() {
+      const navAuth = document.getElementById('navAuthSection');
       if (!currentUser) {
-        renderLoggedOutState();
-        return;
+        navAuth.innerHTML = `
+          <button id="navSteamLoginBtn" class="btn-steam" onclick="startSteamLogin()">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.198 2.198 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.217 2.217 0 0 1-1.312-1.568L.33 10.333Z"/></svg>
+            Sign In
+          </button>
+        `;
+      } else {
+        const balanceUsd = (currentUser.balanceUsd || 0).toFixed(2);
+        navAuth.innerHTML = `
+          <div class="user-balance">$${balanceUsd}</div>
+          <div class="user-profile">
+            <img src="${currentUser.avatar}" alt="${currentUser.displayName}">
+            <span>${currentUser.displayName}</span>
+          </div>
+          <button class="btn-signout" onclick="signOut()">Sign Out</button>
+        `;
       }
-      renderLoggedInState(currentUser);
     }
 
     async function trackRevisit() {
       try {
         const params = new URLSearchParams(window.location.search);
         const ref = document.referrer.toLowerCase();
-        const telegramSource =
-          params.has('tgWebAppData') ||
-          params.has('startapp') ||
-          params.has('startattach') ||
-          ref.includes('t.me') ||
-          ref.includes('telegram');
-
+        const telegramSource = params.has('tgWebAppData') || params.has('startapp') || ref.includes('t.me');
         const source = telegramSource ? 'telegram' : 'web';
         await fetch(apiUrl(`/api/telemetry/revisit?source=${source}`), {
           method: 'POST',
           credentials: 'include',
           headers: getAuthHeaders()
         });
-      } catch {
-        // Do not block page load on telemetry failures.
-      }
+      } catch {}
     }
 
     function showPage(pageName) {
       currentPage = pageName;
       document.querySelectorAll('.page-section').forEach(section => {
-        section.style.display = 'none';
+        section.classList.remove('active');
       });
+      document.getElementById(pageName + 'Page').classList.add('active');
       
-      const targetPage = document.getElementById(pageName + 'Page');
-      if (targetPage) {
-        targetPage.style.display = 'block';
-      }
-      
-      // Update nav link active state
       document.querySelectorAll('.nav-link').forEach(link => {
-        link.style.opacity = '0.7';
-        link.style.fontWeight = 'normal';
+        link.classList.remove('active');
       });
-      const links = document.querySelectorAll('.nav-link');
-      if (pageName === 'marketplace' && links[0]) {
-        links[0].style.opacity = '1';
-        links[0].style.fontWeight = 'bold';
-      }
-      if (pageName === 'inventory' && links[1]) {
-        links[1].style.opacity = '1';
-        links[1].style.fontWeight = 'bold';
-      }
-      if (pageName === 'trades' && links[2]) {
-        links[2].style.opacity = '1';
-        links[2].style.fontWeight = 'bold';
-      }
-      if (pageName === 'sell' && links[3]) {
-        links[3].style.opacity = '1';
-        links[3].style.fontWeight = 'bold';
-      }
+      document.querySelector(`.nav-link[data-page="${pageName}"]`)?.classList.add('active');
       
       if (pageName === 'marketplace') loadMarketplace();
       if (pageName === 'inventory') loadInventory();
       if (pageName === 'trades') loadTrades();
-      if (pageName === 'sell') loadSellPage();
+      if (pageName === 'profile') loadProfile();
     }
 
     // Sample marketplace data
@@ -322,7 +309,7 @@
       const categoryFilter = document.getElementById('categoryFilter');
       const rarityFilter = document.getElementById('rarityFilter');
       const sortFilter = document.getElementById('sortFilter');
-      const itemsGrid = document.querySelector('.items-grid');
+      const grid = document.getElementById('marketplaceGrid');
 
       function filterAndRender() {
         const searchTerm = searchInput.value.toLowerCase();
@@ -341,15 +328,20 @@
         if (sort === 'price-high') filtered.sort((a, b) => b.price - a.price);
         if (sort === 'newest') filtered.sort((a, b) => b.id - a.id);
 
-        itemsGrid.innerHTML = filtered.map(item => `
+        document.getElementById('totalListings').textContent = filtered.length;
+
+        grid.innerHTML = filtered.map(item => `
           <div class="item-card" onclick="showItemDetail(${item.id})">
-            <img src="${item.image}" alt="${item.name}">
-            <div style="padding:0.8rem;">
-              <div style="font-size:0.85rem;color:#888;margin-bottom:0.3rem;">${item.category} | ${item.wear}</div>
-              <h3 style="font-size:1rem;margin:0 0 0.5rem 0;">${item.name}</h3>
-              <div style="display:flex;justify-content:space-between;align-items:center;">
-                <span style="color:${getRarityColor(item.rarity)};font-size:0.9rem;">${item.rarity}</span>
-                <span style="color:#4ade80;font-weight:bold;font-size:1.1rem;">$${item.price.toFixed(2)}</span>
+            <div class="item-image" style="background: linear-gradient(135deg, rgba(${getRarityRGB(item.rarity)},0.1) 0%, rgba(${getRarityRGB(item.rarity)},0.05) 100%);">
+              <img src="${item.image}" alt="${item.name}">
+              <div class="item-rarity" style="background: rgba(${getRarityRGB(item.rarity)},0.2); color: rgb(${getRarityRGB(item.rarity)});">${item.rarity}</div>
+            </div>
+            <div class="item-info">
+              <div class="item-wear">${item.wear}</div>
+              <h4 class="item-name">${item.name}</h4>
+              <div class="item-footer">
+                <div class="item-float">Float: ${item.float}</div>
+                <div class="item-price">$${item.price.toFixed(2)}</div>
               </div>
             </div>
           </div>
@@ -360,39 +352,39 @@
       categoryFilter.addEventListener('change', filterAndRender);
       rarityFilter.addEventListener('change', filterAndRender);
       sortFilter.addEventListener('change', filterAndRender);
-
       filterAndRender();
     }
 
-    function getRarityColor(rarity) {
+    function getRarityRGB(rarity) {
       const colors = {
-        'Consumer': '#b0c3d9',
-        'Industrial': '#5e98d9',
-        'Mil-Spec': '#4b69ff',
-        'Restricted': '#8847ff',
-        'Classified': '#d32ce6',
-        'Covert': '#eb4b4b',
-        'Contraband': '#e4ae39',
-        'Extraordinary': '#e4ae39'
+        'Consumer': '176, 195, 217',
+        'Industrial': '94, 152, 217',
+        'Mil-Spec': '75, 105, 255',
+        'Restricted': '136, 71, 255',
+        'Classified': '211, 44, 230',
+        'Covert': '235, 75, 75',
+        'Contraband': '228, 174, 57',
+        'Extraordinary': '228, 174, 57'
       };
-      return colors[rarity] || '#fff';
+      return colors[rarity] || '255, 255, 255';
     }
 
     function showItemDetail(itemId) {
       const item = marketplaceItems.find(i => i.id === itemId);
       if (!item) return;
 
-      const modal = document.getElementById('itemDetailModal');
       document.getElementById('itemDetailName').textContent = item.name;
       document.getElementById('itemDetailImage').src = item.image;
-      document.getElementById('itemDetailCategory').textContent = `Category: ${item.category}`;
-      document.getElementById('itemDetailWear').textContent = `Wear: ${item.wear}`;
-      document.getElementById('itemDetailFloat').textContent = `Float: ${item.float}`;
-      document.getElementById('itemDetailRarity').textContent = `Rarity: ${item.rarity}`;
-      document.getElementById('itemDetailRarity').style.color = getRarityColor(item.rarity);
+      document.getElementById('itemDetailCategory').textContent = item.category;
+      document.getElementById('itemDetailWear').textContent = item.wear;
+      document.getElementById('itemDetailFloat').textContent = item.float;
+      const rarityBadge = document.getElementById('itemDetailRarity');
+      rarityBadge.textContent = item.rarity;
+      rarityBadge.style.background = `rgba(${getRarityRGB(item.rarity)},0.2)`;
+      rarityBadge.style.color = `rgb(${getRarityRGB(item.rarity)})`;
       document.getElementById('itemDetailPrice').textContent = `$${item.price.toFixed(2)}`;
 
-      modal.style.display = 'flex';
+      document.getElementById('itemDetailModal').style.display = 'flex';
     }
 
     function closeItemDetail() {
@@ -408,27 +400,132 @@
       closeItemDetail();
     }
 
-    function loadInventory() {
-      const inventoryGrid = document.querySelector('.inventory-grid');
-      inventoryGrid.innerHTML = '<p style="text-align:center;color:#888;padding:2rem;">Connect your Steam account to view your inventory</p>';
+    async function loadInventory() {
+      const grid = document.getElementById('inventoryGrid');
+      const status = document.getElementById('inventoryStatus');
+      
+      if (!currentUser) {
+        status.textContent = 'Sign in with Steam to view your CS2 inventory';
+        status.style.display = 'block';
+        grid.innerHTML = '';
+        return;
+      }
+
+      status.textContent = 'Loading your CS2 inventory...';
+      status.style.display = 'block';
+      grid.innerHTML = '';
+
+      try {
+        // Extract Steam ID from user.steamId
+        const steamId = currentUser.steamId;
+        
+        // Fetch Steam inventory via proxy (CORS-enabled)
+        const inventoryUrl = `https://steamcommunity.com/inventory/${steamId}/${STEAM_APP_ID}/2?l=english&count=75`;
+        const response = await fetch(inventoryUrl);
+        
+        if (!response.ok) {
+          throw new Error('Unable to fetch inventory');
+        }
+
+        const data = await response.json();
+        
+        if (!data.assets || data.assets.length === 0) {
+          status.textContent = 'Your CS2 inventory is empty or private. Make sure your Steam inventory is set to public.';
+          return;
+        }
+
+        status.style.display = 'none';
+
+        // Map assets to descriptions
+        const items = data.assets.map(asset => {
+          const description = data.descriptions.find(d => 
+            d.classid === asset.classid && d.instanceid === asset.instanceid
+          );
+          return {
+            ...asset,
+            ...description,
+            image: description ? `https://community.cloudflare.steamstatic.com/economy/image/${description.icon_url}` : ''
+          };
+        });
+
+        grid.innerHTML = items.slice(0, 50).map((item, idx) => `
+          <div class="item-card">
+            <div class="item-image">
+              <img src="${item.image}" alt="${item.name || item.market_name}">
+            </div>
+            <div class="item-info">
+              <div class="item-wear">${item.type || 'CS2 Item'}</div>
+              <h4 class="item-name">${item.name || item.market_name}</h4>
+            </div>
+          </div>
+        `).join('');
+
+      } catch (error) {
+        console.error('Error loading inventory:', error);
+        status.textContent = 'Unable to load inventory. Your Steam profile may be private or inventory is unavailable.';
+        status.className = 'status-message error';
+      }
     }
 
     function loadTrades() {
-      const incomingOffers = document.getElementById('incomingOffers');
-      const outgoingOffers = document.getElementById('outgoingOffers');
-      incomingOffers.innerHTML = '<p style="color:#888;padding:1rem;">No incoming trade offers</p>';
-      outgoingOffers.innerHTML = '<p style="color:#888;padding:1rem;">No outgoing trade offers</p>';
+      // Placeholder for trade offers functionality
     }
 
-    function loadSellPage() {
-      const sellGrid = document.querySelector('.sell-grid');
-      sellGrid.innerHTML = '<p style="text-align:center;color:#888;padding:2rem;">Select items from your inventory to list for sale</p>';
+    function loadProfile() {
+      const profileContent = document.getElementById('profileContent');
+      
+      if (!currentUser) {
+        profileContent.innerHTML = '<div class="empty-state">Sign in to view your trading profile</div>';
+        return;
+      }
+
+      const balanceUsd = (currentUser.balanceUsd || 0).toFixed(2);
+      profileContent.innerHTML = `
+        <div class="profile-card">
+          <div class="profile-header">
+            <img src="${currentUser.avatar}" alt="${currentUser.displayName}" class="profile-avatar">
+            <div class="profile-info">
+              <h3>${currentUser.displayName}</h3>
+              <a href="${currentUser.profileUrl}" target="_blank" class="steam-link">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.198 2.198 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.217 2.217 0 0 1-1.312-1.568L.33 10.333Z"/></svg>
+                View Steam Profile
+              </a>
+            </div>
+          </div>
+          <div class="profile-stats">
+            <div class="stat-box">
+              <div class="stat-label">Balance</div>
+              <div class="stat-value">$${balanceUsd}</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Total Trades</div>
+              <div class="stat-value">0</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Items Sold</div>
+              <div class="stat-value">0</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Items Bought</div>
+              <div class="stat-value">0</div>
+            </div>
+          </div>
+          <div class="profile-actions">
+            <button class="btn-secondary">Deposit Funds</button>
+            <button class="btn-secondary">Withdraw</button>
+          </div>
+        </div>
+      `;
     }
 
+    // Initialize
     captureTokenFromUrl();
-    renderAuthState();
+    getCurrentUser().then(user => {
+      currentUser = user;
+      renderAuthState();
+      showPage('marketplace');
+    });
     trackRevisit();
-    showPage('marketplace');
   </script>
 </body>
 </html>
