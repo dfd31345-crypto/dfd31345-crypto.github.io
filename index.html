@@ -660,6 +660,18 @@
       return `rarity-btn-${rarityClass(rarity)}`;
     }
 
+    function setCaseThumbFallback(element) {
+      if (!element || !element.parentElement) return;
+      element.remove();
+      element.parentElement.innerHTML = '<div class="case-placeholder">Case Image</div>';
+    }
+
+    function setWeaponThumbFallback(element) {
+      if (!element || !element.parentElement) return;
+      element.remove();
+      element.parentElement.innerHTML = '<div class="weapon-placeholder">Weapon Image</div>';
+    }
+
     function renderHomeCases() {
       const caseGrid = document.getElementById('caseGrid');
       if (!caseGrid) return;
@@ -680,11 +692,11 @@
       `).join('');
 
       cs2Cases.forEach(async (cs, idx) => {
-        const snapshot = await fetchSnapshotWithRetry(cs.steamHashName, 4);
+        const snapshot = await fetchSnapshotWithRetry(cs.steamHashName, 6);
         if (!snapshot || !snapshot.iconUrl) return;
         const thumb = document.getElementById(`case-thumb-${idx}`);
         if (!thumb) return;
-        thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove(); this.parentElement.innerHTML='<div class=\"case-placeholder\">Case Image</div>';">`;
+        thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setCaseThumbFallback(this)">`;
       });
     }
 
@@ -740,7 +752,12 @@
       loading.style.display = 'block';
 
       await Promise.all(weaponItems.map(async (item, idx) => {
-        const snapshot = await fetchSnapshotWithRetry(item.marketHashName, 4);
+        let snapshot = await fetchSnapshotWithRetry(item.marketHashName, 6);
+        if ((!snapshot || !snapshot.iconUrl) && /\((Factory New|Minimal Wear|Field-Tested|Well-Worn|Battle-Scarred)\)$/i.test(item.marketHashName)) {
+          const wearlessName = item.marketHashName.replace(/\s*\((Factory New|Minimal Wear|Field-Tested|Well-Worn|Battle-Scarred)\)$/i, '').trim();
+          snapshot = await fetchSnapshotWithRetry(wearlessName, 3);
+        }
+
         const thumb = document.getElementById(`weapon-thumb-${idx}`);
         const btn = document.getElementById(`weapon-buy-${idx}`);
         if (!btn) return;
@@ -751,7 +768,7 @@
         btn.onclick = () => window.open(steamUrl, '_blank', 'noopener');
 
         if (snapshot && snapshot.iconUrl && thumb) {
-          thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove(); this.parentElement.innerHTML='<div class=\"weapon-placeholder\">Weapon Image</div>';">`;
+          thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
         }
         if (snapshot && snapshot.lowestPrice) {
           btn.textContent = `Buy Now ${snapshot.lowestPrice}`;
