@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CS2 Case Spin — shipzibi.com</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Google reCAPTCHA -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -18,8 +16,7 @@
         <p class="tagline">Spin rare Counter-Strike 2 cases</p>
       </div>
       <div class="nav-auth-btns">
-        <button id="navLoginBtn" class="btn-primary" style="margin-right: 1rem; padding: 0.6rem 1.5rem; font-size: 1rem;">Log In</button>
-        <button id="navSignupBtn" class="btn-primary" style="background: #222; color: #00d4ff; border: 1px solid #00d4ff; padding: 0.6rem 1.5rem; font-size: 1rem;">Create Account</button>
+        <button id="navSteamLoginBtn" class="btn-primary" style="padding: 0.6rem 1.5rem; font-size: 1rem;">Sign In With Steam</button>
       </div>
     </div>
   </nav>
@@ -28,7 +25,7 @@
   <section class="hero">
     <div class="container">
       <h2>Spin the Best CS2 Cases</h2>
-      <p>Log in to start spinning rare Counter-Strike 2 cases.</p>
+      <p>Sign in with Steam to start spinning rare Counter-Strike 2 cases.</p>
       <span id="heroLoginState"></span>
     </div>
   </section>
@@ -66,257 +63,83 @@
     <p>&copy; 2026 CS2 Case Spin. All rights reserved.</p>
   </footer>
 
-  <!-- Login/Create Account Modal -->
-  <div id="authModal" class="modal">
-    <div class="modal-content" style="max-width: 400px;">
-      <span class="close-auth">&times;</span>
-      <div id="authForms">
-        <form id="loginForm" style="display: block;">
-          <h2>Login</h2>
-          <input type="text" id="loginUser" placeholder="Username or Email" required style="width:100%;margin-bottom:1rem;">
-          <input type="password" id="loginPass" placeholder="Password" required style="width:100%;margin-bottom:1rem;">
-          <div class="g-recaptcha" data-sitekey="6LdSeYEsAAAAAEJdUvPIGg2WtzPWXe_7xBVEZrN0"></div>
-          <button type="submit" class="btn-primary" style="width:100%;margin-bottom:1rem;">Login</button>
-          <button type="button" id="showSignup" style="width:100%;background:#222;color:#00d4ff;border:none;padding:0.7rem 0;border-radius:6px;">Create Account</button>
-        </form>
-        <form id="signupForm" style="display: none;">
-          <h2>Create Account</h2>
-          <input type="text" id="signupUser" placeholder="Username" required style="width:100%;margin-bottom:1rem;">
-          <input type="email" id="signupEmail" placeholder="Email" required style="width:100%;margin-bottom:1rem;">
-          <input type="password" id="signupPass" placeholder="Password" required style="width:100%;margin-bottom:1rem;">
-          <input type="password" id="signupPass2" placeholder="Verify Password" required style="width:100%;margin-bottom:1rem;">
-          <div class="g-recaptcha" data-sitekey="6LdSeYEsAAAAAEJdUvPIGg2WtzPWXe_7xBVEZrN0"></div>
-          <button type="submit" class="btn-primary" style="width:100%;margin-bottom:1rem;">Sign Up</button>
-          <button type="button" id="showLogin" style="width:100%;background:#222;color:#00d4ff;border:none;padding:0.7rem 0;border-radius:6px;">Back to Login</button>
-        </form>
-        <form id="otpForm" style="display: none;">
-          <h2>Enter OTP</h2>
-          <input type="text" id="otpCode" placeholder="6-digit code" required style="width:100%;margin-bottom:1rem;">
-          <button type="submit" class="btn-primary" style="width:100%;margin-bottom:1rem;">Verify</button>
-        </form>
-      </div>
-      <div id="authMsg" style="color:#ff6b35;text-align:center;margin-top:1rem;"></div>
-    </div>
-  </div>
-
   <script>
     const casesGrid = document.getElementById("casesGrid");
-    // Navbar auth buttons
-    const navLoginBtn = document.getElementById("navLoginBtn");
-    const navSignupBtn = document.getElementById("navSignupBtn");
-    // Dynamically render hero login button or welcome message
-    function renderHeroLogin() {
-      const heroLoginState = document.getElementById("heroLoginState");
-      const user = getUser();
-      if (user) {
-        heroLoginState.innerHTML = `Welcome <b>${user.username}</b>! <button id='viewAccountBtn' class='btn-primary' style='margin-left:1rem;'>View Account</button>`;
-        document.getElementById('viewAccountBtn').onclick = function() {
-          alert('Account page coming soon!');
-        };
-      } else {
-        heroLoginState.innerHTML = `<button class='btn-primary' id='heroLoginBtn'>Login</button>`;
-        document.getElementById('heroLoginBtn').onclick = () => {
-          authModal.style.display = "block";
-          loginForm.style.display = "block";
-          signupForm.style.display = "none";
-          otpForm.style.display = "none";
-          authMsg.textContent = "";
-        };
-      }
-    }
-    // Call on page load and after login/logout
-    renderHeroLogin();
-    const origSetUser = setUser;
-    setUser = function(token, username) { origSetUser(token, username); updateNavbarAuth(); renderHeroLogin(); };
-    const origClearUser = clearUser;
-    clearUser = function() { origClearUser(); updateNavbarAuth(); renderHeroLogin(); };
-    // Helper: Check login state
-    function getUser() {
-      const token = localStorage.getItem("token");
-      const username = localStorage.getItem("username");
-      return token && username ? { token, username } : null;
-    }
-    function setUser(token, username) {
-      localStorage.setItem("token", token);
-      localStorage.setItem("username", username);
-    }
-    function clearUser() {
-      localStorage.removeItem("token");
-      localStorage.removeItem("username");
-    }
-    // Update navbar for login state
-    function updateNavbarAuth() {
-      const navAuthBtns = document.querySelector(".nav-auth-btns");
-      const user = getUser();
-      if (user) {
-        navAuthBtns.innerHTML = `<span style="margin-right:1rem;">Logged in as <b>${user.username}</b></span><button id="navSignOutBtn" class="btn-primary" style="background:#ff6b35;color:#fff;">Sign Out</button>`;
-        document.getElementById("navSignOutBtn").onclick = () => {
-          clearUser();
-          updateNavbarAuth();
-        };
-      } else {
-        navAuthBtns.innerHTML = `<button id="navLoginBtn" class="btn-primary" style="margin-right: 1rem; padding: 0.6rem 1.5rem; font-size: 1rem;">Log In</button><button id="navSignupBtn" class="btn-primary" style="background: #222; color: #00d4ff; border: 1px solid #00d4ff; padding: 0.6rem 1.5rem; font-size: 1rem;">Create Account</button>`;
-        document.getElementById("navLoginBtn").onclick = () => {
-          authModal.style.display = "block";
-          loginForm.style.display = "block";
-          signupForm.style.display = "none";
-          otpForm.style.display = "none";
-          authMsg.textContent = "";
-        };
-        document.getElementById("navSignupBtn").onclick = () => {
-          authModal.style.display = "block";
-          loginForm.style.display = "none";
-          signupForm.style.display = "block";
-          otpForm.style.display = "none";
-          authMsg.textContent = "";
-        };
-      }
-    }
-    // Always re-attach modal event listeners after DOM changes
-    function attachAuthModalListeners() {
-      const navLoginBtn = document.getElementById("navLoginBtn");
-      const navSignupBtn = document.getElementById("navSignupBtn");
-      if (navLoginBtn) navLoginBtn.onclick = () => {
-        authModal.style.display = "block";
-        loginForm.style.display = "block";
-        signupForm.style.display = "none";
-        otpForm.style.display = "none";
-        authMsg.textContent = "";
-      };
-      if (navSignupBtn) navSignupBtn.onclick = () => {
-        authModal.style.display = "block";
-        loginForm.style.display = "none";
-        signupForm.style.display = "block";
-        otpForm.style.display = "none";
-        authMsg.textContent = "";
-      };
-      const showSignup = document.getElementById("showSignup");
-      if (showSignup) showSignup.onclick = () => {
-        loginForm.style.display = "none";
-        signupForm.style.display = "block";
-        otpForm.style.display = "none";
-        authMsg.textContent = "";
-      };
-      const showLogin = document.getElementById("showLogin");
-      if (showLogin) showLogin.onclick = () => {
-        loginForm.style.display = "block";
-        signupForm.style.display = "none";
-        otpForm.style.display = "none";
-        authMsg.textContent = "";
-      };
-      const closeAuthBtn = document.querySelector(".close-auth");
-      if (closeAuthBtn) closeAuthBtn.onclick = () => {
-        authModal.style.display = "none";
-      };
-    }
-    // Call after any navbar or modal DOM update
-    function updateNavbarAuthAndListeners() {
-      updateNavbarAuth();
-      attachAuthModalListeners();
-    }
-    // Patch setUser/clearUser to always update listeners
-    setUser = function(token, username) { origSetUser(token, username); updateNavbarAuthAndListeners(); renderHeroLogin(); };
-    clearUser = function() { origClearUser(); updateNavbarAuthAndListeners(); renderHeroLogin(); };
-    // On page load
-    attachAuthModalListeners();
-    // --- Ensure case gallery always renders ---
-    // (loadCases is already called on page load)
+    const heroLoginState = document.getElementById("heroLoginState");
+    const navAuthBtns = document.querySelector(".nav-auth-btns");
 
-    // --- SIGNUP/LOGIN/OTP LOGIC (EMAIL ONLY) ---
-    // Helper: Show message
-    function showAuthMsg(msg, color = '#ff6b35') {
-      authMsg.textContent = msg;
-      authMsg.style.color = color;
+    function startSteamLogin() {
+      window.location.href = '/api/auth/steam';
     }
 
-    // Signup form submit
-    signupForm.onsubmit = async function(e) {
-      e.preventDefault();
-      showAuthMsg('Creating account...','');
-      const username = signupUser.value.trim();
-      const email = signupEmail.value.trim();
-      const password = signupPass.value;
-      const password2 = document.getElementById('signupPass2').value;
-      const recaptcha = signupForm.querySelector('.g-recaptcha-response').value;
-      if (!username || !email || !password || !password2 || !recaptcha) return showAuthMsg('All fields required');
-      if (password !== password2) return showAuthMsg('Passwords do not match');
+    async function getCurrentUser() {
       try {
-        const res = await fetch('/api/register', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ username, email, password, recaptcha })
-        });
+        const res = await fetch('/api/auth/me', { credentials: 'include' });
+        if (!res.ok) return null;
         const data = await res.json();
-        if (!data.success) {
-          let debugMsg = data.error ? `Signup failed: ${data.error}` : 'Signup failed';
-          // Show all returned data for debugging
-          debugMsg += '\n' + JSON.stringify(data, null, 2);
-          return showAuthMsg(debugMsg);
-        }
-        setUser(data.token, data.username);
-        showAuthMsg('Account created! Redirecting...','green');
-        setTimeout(() => {
-          authModal.style.display = 'none';
-          window.location.reload();
-        }, 2000);
+        return data && data.authenticated ? data.user : null;
       } catch {
-        showAuthMsg('Signup failed');
+        return null;
       }
-    };
+    }
 
-    // Login form submit
-    loginForm.onsubmit = async function(e) {
-      e.preventDefault();
-      showAuthMsg('Logging in...','');
-      const username = loginUser.value.trim();
-      const email = loginUser.value.includes('@') ? loginUser.value.trim() : '';
-      const password = loginPass.value;
-      const recaptcha = loginForm.querySelector('.g-recaptcha-response').value;
-      if ((!username && !email) || !password || !recaptcha) return showAuthMsg('All fields required');
-      try {
-        const res = await fetch('/api/login', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ username, email, password, recaptcha })
-        });
-        const data = await res.json();
-        if (!data.success) return showAuthMsg(data.error || 'Login failed');
-          setUser(data.token, data.username);
-          showAuthMsg('Login successful! Redirecting...','green');
-          setTimeout(() => {
-            authModal.style.display = 'none';
-            window.location.reload();
-          }, 2000);
-      } catch {
-        showAuthMsg('Login failed');
+    async function signOut() {
+      await fetch('/api/auth/logout', { method: 'POST', credentials: 'include' });
+      await renderAuthState();
+    }
+
+    function renderLoggedOutState() {
+      navAuthBtns.innerHTML = `<button id="navSteamLoginBtn" class="btn-primary" style="padding: 0.6rem 1.5rem; font-size: 1rem;">Sign In With Steam</button>`;
+      const navSteamLoginBtn = document.getElementById('navSteamLoginBtn');
+      if (navSteamLoginBtn) navSteamLoginBtn.onclick = startSteamLogin;
+
+      heroLoginState.innerHTML = `<button class='btn-primary' id='heroSteamLoginBtn'>Sign In With Steam</button>`;
+      const heroSteamLoginBtn = document.getElementById('heroSteamLoginBtn');
+      if (heroSteamLoginBtn) heroSteamLoginBtn.onclick = startSteamLogin;
+    }
+
+    function renderLoggedInState(user) {
+      navAuthBtns.innerHTML = `<span style="margin-right:1rem;">Logged in as <b>${user.displayName}</b></span><button id="navSignOutBtn" class="btn-primary" style="background:#ff6b35;color:#fff;">Sign Out</button>`;
+      const navSignOutBtn = document.getElementById('navSignOutBtn');
+      if (navSignOutBtn) navSignOutBtn.onclick = signOut;
+
+      heroLoginState.innerHTML = `Welcome <b>${user.displayName}</b>! <a href="${user.profileUrl}" target="_blank" rel="noopener" class="btn-primary" style="margin-left:1rem;text-decoration:none;display:inline-block;">View Steam Profile</a>`;
+    }
+
+    async function renderAuthState() {
+      const user = await getCurrentUser();
+      if (!user) {
+        renderLoggedOutState();
+        return;
       }
-    };
-    // OTP form submit
-    otpForm.onsubmit = async function(e) {
-      e.preventDefault();
-      showAuthMsg('Verifying code...','');
-      const userId = otpForm.dataset.userId;
-      const otp = otpCode.value.trim();
-      if (!otp) return showAuthMsg('Enter the code sent to your email');
+      renderLoggedInState(user);
+    }
+
+    async function trackRevisit() {
       try {
-        const res = await fetch('/api/verify-otp', {
+        const params = new URLSearchParams(window.location.search);
+        const ref = document.referrer.toLowerCase();
+        const ua = navigator.userAgent.toLowerCase();
+        const telegramSource =
+          params.has('tgWebAppData') ||
+          params.has('startapp') ||
+          params.has('startattach') ||
+          ref.includes('t.me') ||
+          ref.includes('telegram') ||
+          ua.includes('telegram');
+
+        const source = telegramSource ? 'telegram' : 'web';
+        await fetch(`/api/telemetry/revisit?source=${source}`, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ userId, otp })
+          credentials: 'include'
         });
-        const data = await res.json();
-        if (!data.success) return showAuthMsg(data.error || 'Invalid or expired code');
-        // Success: log in and redirect
-        setUser(data.token, loginUser.value || signupUser.value);
-        showAuthMsg('Account verified! Redirecting...','green');
-        setTimeout(() => {
-          authModal.style.display = 'none';
-          window.location.reload();
-        }, 2000);
       } catch {
-        showAuthMsg('Verification failed');
+        // Do not block page load on telemetry failures.
       }
-    };
+    }
+
+    renderAuthState();
+    trackRevisit();
 
     // --- CASE GALLERY RENDERING ---
     async function loadCases() {
