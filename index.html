@@ -684,7 +684,7 @@
         if (!snapshot || !snapshot.iconUrl) return;
         const thumb = document.getElementById(`case-thumb-${idx}`);
         if (!thumb) return;
-        thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="${cs.name}">`;
+        thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="${cs.name}" onerror="this.remove(); this.parentElement.innerHTML='<div class=\"case-placeholder\">${cs.name}</div>';">`;
       });
     }
 
@@ -751,7 +751,7 @@
         btn.onclick = () => window.open(steamUrl, '_blank', 'noopener');
 
         if (snapshot && snapshot.iconUrl && thumb) {
-          thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="${item.name}">`;
+          thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="${item.name}" onerror="this.remove(); this.parentElement.innerHTML='<div class=\"weapon-placeholder\">${item.name}</div>';">`;
         }
         if (snapshot && snapshot.lowestPrice) {
           btn.textContent = `Buy Now ${snapshot.lowestPrice}`;
