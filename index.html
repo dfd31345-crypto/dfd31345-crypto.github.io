@@ -15,7 +15,11 @@
         <h1 class="logo">CS2 TRADE</h1>
       </div>
       <div class="nav-menu">
-        <a href="#" onclick="showPage('marketplace'); return false;" class="nav-link active" data-page="marketplace">
+        <a href="#" onclick="showPage('home'); return false;" class="nav-link active" data-page="home">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 2 8h1v6a1 1 0 0 0 1 1h3v-4a1 1 0 0 1 2 0v4h3a1 1 0 0 0 1-1V8h1a.5.5 0 0 0 .354-.854l-6-6z"/></svg>
+          Home
+        </a>
+        <a href="#" onclick="showPage('marketplace'); return false;" class="nav-link" data-page="marketplace">
           <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
           Marketplace
         </a>
@@ -43,8 +47,40 @@
 
   <!-- Main Content -->
   <main class="main-content">
+    <!-- Home Page -->
+    <section id="homePage" class="page-section active">
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <h2>Trade CS2 Skins. Fast.</h2>
+          <p>High tier for mid tier, equal value swaps, instant listings.</p>
+          <div class="hero-cta-row">
+            <button class="btn-primary" onclick="showPage('marketplace')">Start Trading</button>
+            <button class="btn-secondary" onclick="showPage('inventory')">Open Inventory</button>
+            <button class="btn-secondary" onclick="showPage('trades')">View Offers</button>
+            <button class="btn-secondary" onclick="showPage('profile')">My CS2 Trading Profile</button>
+          </div>
+          <div class="quick-action-grid">
+            <button class="action-pill" onclick="showPage('marketplace')">Quick Buy</button>
+            <button class="action-pill" onclick="showPage('marketplace')">Quick Sell</button>
+            <button class="action-pill" onclick="showPage('trades')">Create Offer</button>
+            <button class="action-pill" onclick="showPage('inventory')">Check Value</button>
+            <button class="action-pill" onclick="showPage('marketplace')">Find Upgrades</button>
+            <button class="action-pill" onclick="showPage('marketplace')">Find Downgrades</button>
+          </div>
+        </div>
+        <div class="hero-visual" id="heroVisualGrid"></div>
+      </div>
+
+      <div class="trade-swap-block">
+        <div class="content-header compact">
+          <h2>Equal Value Trade Ideas</h2>
+        </div>
+        <div id="tradeSwapGrid" class="trade-swap-grid"></div>
+      </div>
+    </section>
+
     <!-- Marketplace Page -->
-    <section id="marketplacePage" class="page-section active">
+    <section id="marketplacePage" class="page-section">
       <div class="content-header">
         <h2>Marketplace</h2>
         <div class="stats">
@@ -185,7 +221,7 @@
     const STEAM_TOKEN_KEY = 'steam_auth_token';
     const STEAM_APP_ID = '730'; // CS2
     let currentUser = null;
-    let currentPage = 'marketplace';
+    let currentPage = 'home';
 
     function apiUrl(path) {
       return `${API_BASE_URL}${path}`;
@@ -284,6 +320,7 @@
       });
       document.querySelector(`.nav-link[data-page="${pageName}"]`)?.classList.add('active');
       
+      if (pageName === 'home') renderHomePage();
       if (pageName === 'marketplace') loadMarketplace();
       if (pageName === 'inventory') loadInventory();
       if (pageName === 'trades') loadTrades();
@@ -367,6 +404,69 @@
         'Extraordinary': '228, 174, 57'
       };
       return colors[rarity] || '255, 255, 255';
+    }
+
+    function renderHomePage() {
+      const heroVisualGrid = document.getElementById('heroVisualGrid');
+      const tradeSwapGrid = document.getElementById('tradeSwapGrid');
+      if (!heroVisualGrid || !tradeSwapGrid) return;
+
+      const heroCards = [
+        marketplaceItems[2],
+        marketplaceItems[6],
+        marketplaceItems[5],
+        marketplaceItems[3],
+        marketplaceItems[4],
+        marketplaceItems[1]
+      ];
+
+      heroVisualGrid.innerHTML = heroCards.map((item, idx) => `
+        <div class="hero-item-card float-${(idx % 3) + 1}">
+          <img src="${item.image}" alt="${item.name}">
+          <span>${item.name}</span>
+        </div>
+      `).join('');
+
+      const swapExamples = [
+        {
+          high: marketplaceItems[6],
+          mids: [marketplaceItems[3], marketplaceItems[4], marketplaceItems[1]]
+        },
+        {
+          high: marketplaceItems[5],
+          mids: [marketplaceItems[0], marketplaceItems[9], marketplaceItems[8]]
+        },
+        {
+          high: marketplaceItems[2],
+          mids: [marketplaceItems[7], marketplaceItems[4], marketplaceItems[0]]
+        }
+      ];
+
+      tradeSwapGrid.innerHTML = swapExamples.map((group, i) => {
+        const total = group.mids.reduce((sum, item) => sum + item.price, 0);
+        return `
+          <div class="swap-card swap-${i + 1}">
+            <div class="swap-side high">
+              <img src="${group.high.image}" alt="${group.high.name}">
+              <h4>${group.high.name}</h4>
+              <div class="value-tag">$${group.high.price.toFixed(2)}</div>
+            </div>
+            <div class="swap-arrow">⇄</div>
+            <div class="swap-side mids">
+              <div class="mid-row">
+                ${group.mids.map(item => `
+                  <div class="mid-item">
+                    <img src="${item.image}" alt="${item.name}">
+                    <span>${item.name}</span>
+                    <small>$${item.price.toFixed(2)}</small>
+                  </div>
+                `).join('')}
+              </div>
+              <div class="value-tag total">$${total.toFixed(2)}</div>
+            </div>
+          </div>
+        `;
+      }).join('');
     }
 
     function showItemDetail(itemId) {
@@ -523,7 +623,7 @@
     getCurrentUser().then(user => {
       currentUser = user;
       renderAuthState();
-      showPage('marketplace');
+      showPage('home');
     });
     trackRevisit();
   </script>
