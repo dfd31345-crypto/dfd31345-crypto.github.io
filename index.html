@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CS2 Trading — Premium Marketplace</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="app-config.js"></script>
+  <link rel="stylesheet" href="styles.css?v=20260307-3">
+  <script src="app-config.js?v=20260307-3"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -400,31 +400,31 @@
     };
 
     const cs2Cases = [
-      { name: 'Kilowatt Case', steamHashName: 'Kilowatt Case', weapons: ['AK-47 | Head Shot (Field-Tested)', 'AWP | Duality (Field-Tested)', 'USP-S | The Traitor (Field-Tested)', 'M4A4 | Temukau (Field-Tested)', 'MP9 | Starlight Protector (Field-Tested)'] },
-      { name: 'Revolution Case', steamHashName: 'Revolution Case', weapons: ['M4A4 | Temukau (Field-Tested)', 'AK-47 | Head Shot (Field-Tested)', 'AWP | Duality (Field-Tested)', 'USP-S | The Traitor (Field-Tested)', 'P90 | Asiimov (Minimal Wear)'] },
-      { name: 'Recoil Case', steamHashName: 'Recoil Case', weapons: ['AK-47 | Nightwish (Field-Tested)', 'USP-S | Printstream (Field-Tested)', 'AWP | Chromatic Aberration (Field-Tested)', 'P250 | Visions (Field-Tested)', 'R8 Revolver | Crazy 8 (Field-Tested)'] },
-      { name: 'Dreams & Nightmares Case', steamHashName: 'Dreams & Nightmares Case', weapons: ['AK-47 | Nightwish (Field-Tested)', 'M4A1-S | Printstream (Field-Tested)', 'USP-S | The Traitor (Field-Tested)', 'MP9 | Starlight Protector (Field-Tested)', 'FAMAS | Rapid Eye Movement (Field-Tested)'] },
-      { name: 'Snakebite Case', steamHashName: 'Snakebite Case', weapons: ['USP-S | The Traitor (Field-Tested)', 'M4A4 | In Living Color (Field-Tested)', 'AK-47 | Slate (Field-Tested)', 'Desert Eagle | Trigger Discipline (Field-Tested)', 'MP9 | Food Chain (Field-Tested)'] },
-      { name: 'Fracture Case', steamHashName: 'Fracture Case', weapons: ['Desert Eagle | Printstream (Field-Tested)', 'AK-47 | Legion of Anubis (Field-Tested)', 'M4A4 | Tooth Fairy (Field-Tested)', 'Glock-18 | Vogue (Field-Tested)', 'P250 | Cassette (Field-Tested)'] },
-      { name: 'Prisma 2 Case', steamHashName: 'Prisma 2 Case', weapons: ['M4A1-S | Player Two (Field-Tested)', 'AK-47 | Phantom Disruptor (Field-Tested)', 'AWP | Capillary (Field-Tested)', 'MAC-10 | Disco Tech (Field-Tested)', 'SCAR-20 | Enforcer (Field-Tested)'] },
-      { name: 'CS20 Case', steamHashName: 'CS20 Case', weapons: ['AWP | Wildfire (Field-Tested)', 'FAMAS | Commemoration (Field-Tested)', 'MP9 | Hydra (Field-Tested)', 'M249 | Aztec (Field-Tested)', 'Dual Berettas | Elite 1.6 (Field-Tested)'] },
-      { name: 'Prisma Case', steamHashName: 'Prisma Case', weapons: ['M4A4 | Emperor (Field-Tested)', 'Five-SeveN | Angry Mob (Field-Tested)', 'AUG | Momentum (Field-Tested)', 'AWP | Atheris (Field-Tested)', 'UMP-45 | Moonrise (Field-Tested)'] },
-      { name: 'Danger Zone Case', steamHashName: 'Danger Zone Case', weapons: ['AK-47 | Asiimov (Field-Tested)', 'AWP | Neo-Noir (Field-Tested)', 'Desert Eagle | Mecha Industries (Field-Tested)', 'MP9 | Modest Threat (Field-Tested)', 'P90 | Off World (Field-Tested)'] },
-      { name: 'Horizon Case', steamHashName: 'Horizon Case', weapons: ['AK-47 | Neon Rider (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'M4A1-S | Nightmare (Field-Tested)', 'AWP | PAW (Field-Tested)', 'UMP-45 | Momentum (Field-Tested)'] },
-      { name: 'Clutch Case', steamHashName: 'Clutch Case', weapons: ['M4A4 | Neo-Noir (Field-Tested)', 'MP7 | Bloodsport (Field-Tested)', 'USP-S | Cortex (Field-Tested)', 'AWP | Mortis (Field-Tested)', 'AUG | Stymphalian (Field-Tested)'] },
-      { name: 'Spectrum 2 Case', steamHashName: 'Spectrum 2 Case', weapons: ['AK-47 | The Empress (Field-Tested)', 'P250 | See Ya Later (Field-Tested)', 'MAC-10 | Neon Rider (Factory New)', 'CZ75-Auto | Tacticat (Field-Tested)', 'SG 553 | Phantom (Field-Tested)'] },
-      { name: 'Spectrum Case', steamHashName: 'Spectrum Case', weapons: ['AK-47 | Bloodsport (Field-Tested)', 'M4A1-S | Decimator (Field-Tested)', 'USP-S | Neo-Noir (Field-Tested)', 'CZ75-Auto | Xiangliu (Field-Tested)', 'MP7 | Akoben (Field-Tested)'] },
-      { name: 'Gamma 2 Case', steamHashName: 'Gamma 2 Case', weapons: ['AK-47 | Neon Revolution (Field-Tested)', 'FAMAS | Roll Cage (Field-Tested)', 'Tec-9 | Fuel Injector (Field-Tested)', 'SG 553 | Triarch (Field-Tested)', 'Glock-18 | Weasel (Field-Tested)'] },
-      { name: 'Gamma Case', steamHashName: 'Gamma Case', weapons: ['M4A1-S | Mecha Industries (Field-Tested)', 'Glock-18 | Wasteland Rebel (Field-Tested)', 'P2000 | Imperial Dragon (Field-Tested)', 'R8 Revolver | Reboot (Field-Tested)', 'AUG | Aristocrat (Field-Tested)'] },
-      { name: 'Chroma 3 Case', steamHashName: 'Chroma 3 Case', weapons: ['M4A1-S | Chantico\'s Fire (Field-Tested)', 'USP-S | Cyrex (Field-Tested)', 'AK-47 | Elite Build (Field-Tested)', 'P250 | Asiimov (Field-Tested)', 'Galil AR | Firefight (Field-Tested)'] },
-      { name: 'Chroma 2 Case', steamHashName: 'Chroma 2 Case', weapons: ['M4A1-S | Hyper Beast (Field-Tested)', 'MAC-10 | Neon Rider (Factory New)', 'AWP | Worm God (Field-Tested)', 'FAMAS | Djinn (Field-Tested)', 'Five-SeveN | Monkey Business (Field-Tested)'] },
-      { name: 'Chroma Case', steamHashName: 'Chroma Case', weapons: ['M4A4 | Dragon King (Field-Tested)', 'AK-47 | Cartel (Field-Tested)', 'AWP | Man-o\' -War (Field-Tested)', 'P250 | Muertos (Field-Tested)', 'Desert Eagle | Naga (Field-Tested)'] },
-      { name: 'Falchion Case', steamHashName: 'Falchion Case', weapons: ['AK-47 | Cartel (Field-Tested)', 'AWP | Hyper Beast (Field-Tested)', 'P2000 | Handgun (Field-Tested)', 'MP7 | Nemesis (Field-Tested)', 'USP-S | Torque (Field-Tested)'] },
-      { name: 'Operation Wildfire Case', steamHashName: 'Operation Wildfire Case', weapons: ['AWP | Elite Build (Field-Tested)', 'AK-47 | Fuel Injector (Field-Tested)', 'M4A4 | The Battlestar (Field-Tested)', 'Glock-18 | Royal Legion (Field-Tested)', 'Desert Eagle | Kumicho Dragon (Field-Tested)'] },
-      { name: 'Operation Breakout Weapon Case', steamHashName: 'Operation Breakout Weapon Case', weapons: ['M4A1-S | Cyrex (Field-Tested)', 'P90 | Asiimov (Minimal Wear)', 'Glock-18 | Water Elemental (Field-Tested)', 'Desert Eagle | Conspiracy (Field-Tested)', 'Five-SeveN | Fowl Play (Field-Tested)'] },
-      { name: 'Operation Vanguard Weapon Case', steamHashName: 'Operation Vanguard Weapon Case', weapons: ['AK-47 | Wasteland Rebel (Field-Tested)', 'P2000 | Fire Elemental (Field-Tested)', 'M4A1-S | Basilisk (Field-Tested)', 'P250 | Cartel (Field-Tested)', 'SCAR-20 | Cardiac (Field-Tested)'] },
-      { name: 'Operation Phoenix Weapon Case', steamHashName: 'Operation Phoenix Weapon Case', weapons: ['AWP | Asiimov (Battle-Scarred)', 'AK-47 | Redline (Field-Tested)', 'USP-S | Guardian (Factory New)', 'M4A4 | Asiimov (Battle-Scarred)', 'AUG | Chameleon (Field-Tested)'] },
-      { name: 'Huntsman Weapon Case', steamHashName: 'Huntsman Weapon Case', weapons: ['M4A4 | Desert-Strike (Field-Tested)', 'AK-47 | Vulcan (Field-Tested)', 'USP-S | Caiman (Factory New)', 'SCAR-20 | Cyrex (Field-Tested)', 'M4A1-S | Atomic Alloy (Field-Tested)'] }
+      { name: 'Kilowatt Case', steamHashName: 'Kilowatt Case', weapons: ['AK-47 | Head Shot (Field-Tested)', 'AWP | Duality (Field-Tested)', 'USP-S | The Traitor (Field-Tested)', 'M4A4 | Temukau (Field-Tested)', 'MP9 | Starlight Protector (Field-Tested)', 'M4A1-S | Printstream (Field-Tested)', 'Desert Eagle | Printstream (Field-Tested)', 'Glock-18 | Vogue (Field-Tested)', 'P90 | Asiimov (Minimal Wear)', 'MAC-10 | Neon Rider (Factory New)'] },
+      { name: 'Revolution Case', steamHashName: 'Revolution Case', weapons: ['M4A4 | Temukau (Field-Tested)', 'AK-47 | Head Shot (Field-Tested)', 'AWP | Duality (Field-Tested)', 'USP-S | The Traitor (Field-Tested)', 'P90 | Asiimov (Minimal Wear)', 'M4A1-S | Printstream (Field-Tested)', 'Desert Eagle | Printstream (Field-Tested)', 'FAMAS | Rapid Eye Movement (Field-Tested)', 'AK-47 | Nightwish (Field-Tested)', 'MP9 | Starlight Protector (Field-Tested)'] },
+      { name: 'Recoil Case', steamHashName: 'Recoil Case', weapons: ['AK-47 | Nightwish (Field-Tested)', 'M4A1-S | Printstream (Field-Tested)', 'AWP | Neo-Noir (Field-Tested)', 'P250 | See Ya Later (Field-Tested)', 'USP-S | Cortex (Field-Tested)', 'AK-47 | Bloodsport (Field-Tested)', 'M4A4 | In Living Color (Field-Tested)', 'Glock-18 | Neo-Noir (Field-Tested)', 'MAC-10 | Neon Rider (Factory New)', 'P90 | Asiimov (Minimal Wear)'] },
+      { name: 'Dreams & Nightmares Case', steamHashName: 'Dreams & Nightmares Case', weapons: ['AK-47 | Nightwish (Field-Tested)', 'M4A1-S | Printstream (Field-Tested)', 'USP-S | The Traitor (Field-Tested)', 'MP9 | Starlight Protector (Field-Tested)', 'FAMAS | Rapid Eye Movement (Field-Tested)', 'AWP | Neo-Noir (Field-Tested)', 'Desert Eagle | Printstream (Field-Tested)', 'AK-47 | Bloodsport (Field-Tested)', 'M4A4 | In Living Color (Field-Tested)', 'P250 | See Ya Later (Field-Tested)'] },
+      { name: 'Snakebite Case', steamHashName: 'Snakebite Case', weapons: ['USP-S | The Traitor (Field-Tested)', 'M4A4 | In Living Color (Field-Tested)', 'AK-47 | Bloodsport (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'MP9 | Starlight Protector (Field-Tested)', 'FAMAS | Rapid Eye Movement (Field-Tested)', 'AWP | Neo-Noir (Field-Tested)', 'P250 | See Ya Later (Field-Tested)', 'MAC-10 | Neon Rider (Factory New)', 'P90 | Asiimov (Minimal Wear)'] },
+      { name: 'Fracture Case', steamHashName: 'Fracture Case', weapons: ['Desert Eagle | Printstream (Field-Tested)', 'AK-47 | Bloodsport (Field-Tested)', 'M4A4 | In Living Color (Field-Tested)', 'Glock-18 | Vogue (Field-Tested)', 'P250 | See Ya Later (Field-Tested)', 'USP-S | Cortex (Field-Tested)', 'AWP | Neo-Noir (Field-Tested)', 'AK-47 | Nightwish (Field-Tested)', 'MAC-10 | Neon Rider (Factory New)', 'P90 | Asiimov (Minimal Wear)'] },
+      { name: 'Prisma 2 Case', steamHashName: 'Prisma 2 Case', weapons: ['M4A1-S | Player Two (Field-Tested)', 'AK-47 | Neon Rider (Field-Tested)', 'AWP | Neo-Noir (Field-Tested)', 'MAC-10 | Neon Rider (Factory New)', 'P250 | See Ya Later (Field-Tested)', 'USP-S | Cortex (Field-Tested)', 'AK-47 | Bloodsport (Field-Tested)', 'M4A1-S | Mecha Industries (Field-Tested)'] },
+      { name: 'CS20 Case', steamHashName: 'CS20 Case', weapons: ['AWP | Wildfire (Field-Tested)', 'AK-47 | Bloodsport (Field-Tested)', 'M4A4 | In Living Color (Field-Tested)', 'USP-S | The Traitor (Field-Tested)', 'FAMAS | Rapid Eye Movement (Field-Tested)', 'P90 | Asiimov (Minimal Wear)', 'MAC-10 | Neon Rider (Factory New)', 'Glock-18 | Neo-Noir (Field-Tested)'] },
+      { name: 'Prisma Case', steamHashName: 'Prisma Case', weapons: ['M4A4 | Neo-Noir (Field-Tested)', 'AK-47 | Neon Rider (Field-Tested)', 'AUG | Momentum (Field-Tested)', 'AWP | Neo-Noir (Field-Tested)', 'USP-S | Cortex (Field-Tested)', 'P250 | See Ya Later (Field-Tested)', 'Glock-18 | Vogue (Field-Tested)', 'MAC-10 | Neon Rider (Factory New)'] },
+      { name: 'Danger Zone Case', steamHashName: 'Danger Zone Case', weapons: ['AK-47 | Asiimov (Field-Tested)', 'AWP | Neo-Noir (Field-Tested)', 'Desert Eagle | Printstream (Field-Tested)', 'MP9 | Starlight Protector (Field-Tested)', 'P90 | Asiimov (Minimal Wear)', 'M4A1-S | Printstream (Field-Tested)', 'USP-S | Cortex (Field-Tested)', 'Glock-18 | Neo-Noir (Field-Tested)'] },
+      { name: 'Horizon Case', steamHashName: 'Horizon Case', weapons: ['AK-47 | Neon Rider (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'M4A1-S | Mecha Industries (Field-Tested)', 'AWP | Wildfire (Field-Tested)', 'USP-S | Cortex (Field-Tested)', 'P90 | Asiimov (Minimal Wear)', 'MAC-10 | Neon Rider (Factory New)', 'M4A4 | In Living Color (Field-Tested)'] },
+      { name: 'Clutch Case', steamHashName: 'Clutch Case', weapons: ['M4A4 | Neo-Noir (Field-Tested)', 'AK-47 | Bloodsport (Field-Tested)', 'USP-S | Cortex (Field-Tested)', 'AWP | Neo-Noir (Field-Tested)', 'Desert Eagle | Printstream (Field-Tested)', 'M4A1-S | Printstream (Field-Tested)', 'P250 | See Ya Later (Field-Tested)', 'Glock-18 | Vogue (Field-Tested)'] },
+      { name: 'Spectrum 2 Case', steamHashName: 'Spectrum 2 Case', weapons: ['AK-47 | Bloodsport (Field-Tested)', 'P250 | See Ya Later (Field-Tested)', 'MAC-10 | Neon Rider (Factory New)', 'AWP | Neo-Noir (Field-Tested)', 'USP-S | Cortex (Field-Tested)', 'M4A4 | In Living Color (Field-Tested)', 'Glock-18 | Neo-Noir (Field-Tested)', 'P90 | Asiimov (Minimal Wear)'] },
+      { name: 'Spectrum Case', steamHashName: 'Spectrum Case', weapons: ['AK-47 | Bloodsport (Field-Tested)', 'M4A1-S | Mecha Industries (Field-Tested)', 'USP-S | Neo-Noir (Field-Tested)', 'AWP | Wildfire (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'Glock-18 | Neo-Noir (Field-Tested)', 'M4A4 | Neo-Noir (Field-Tested)', 'P250 | See Ya Later (Field-Tested)'] },
+      { name: 'Gamma 2 Case', steamHashName: 'Gamma 2 Case', weapons: ['AK-47 | Neon Rider (Field-Tested)', 'FAMAS | Roll Cage (Field-Tested)', 'M4A1-S | Mecha Industries (Field-Tested)', 'AWP | Wildfire (Field-Tested)', 'USP-S | Kill Confirmed (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'Glock-18 | Neo-Noir (Field-Tested)', 'P90 | Asiimov (Minimal Wear)'] },
+      { name: 'Gamma Case', steamHashName: 'Gamma Case', weapons: ['M4A1-S | Mecha Industries (Field-Tested)', 'AK-47 | Jaguar (Field-Tested)', 'P2000 | Fire Elemental (Field-Tested)', 'AWP | Hyper Beast (Field-Tested)', 'USP-S | Kill Confirmed (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'M4A4 | Hellfire (Field-Tested)', 'AK-47 | Frontside Misty (Field-Tested)'] },
+      { name: 'Chroma 3 Case', steamHashName: 'Chroma 3 Case', weapons: ['M4A1-S | Mecha Industries (Field-Tested)', 'USP-S | Kill Confirmed (Field-Tested)', 'AK-47 | Frontside Misty (Field-Tested)', 'P250 | Asiimov (Field-Tested)', 'AWP | Hyper Beast (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'M4A4 | Hellfire (Field-Tested)', 'AK-47 | Jaguar (Field-Tested)'] },
+      { name: 'Chroma 2 Case', steamHashName: 'Chroma 2 Case', weapons: ['M4A1-S | Hyper Beast (Field-Tested)', 'MAC-10 | Neon Rider (Factory New)', 'AWP | Wildfire (Field-Tested)', 'FAMAS | Roll Cage (Field-Tested)', 'Five-SeveN | Monkey Business (Field-Tested)', 'USP-S | Kill Confirmed (Field-Tested)', 'AK-47 | Frontside Misty (Field-Tested)', 'M4A4 | Hellfire (Field-Tested)'] },
+      { name: 'Chroma Case', steamHashName: 'Chroma Case', weapons: ['M4A4 | Neo-Noir (Field-Tested)', 'AK-47 | Bloodsport (Field-Tested)', 'AWP | Hyper Beast (Field-Tested)', 'P250 | See Ya Later (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'USP-S | Kill Confirmed (Field-Tested)', 'M4A1-S | Mecha Industries (Field-Tested)', 'Glock-18 | Neo-Noir (Field-Tested)'] },
+      { name: 'Falchion Case', steamHashName: 'Falchion Case', weapons: ['AK-47 | Bloodsport (Field-Tested)', 'AWP | Hyper Beast (Field-Tested)', 'P2000 | Fire Elemental (Field-Tested)', 'M4A4 | Hellfire (Field-Tested)', 'USP-S | Kill Confirmed (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'M4A1-S | Mecha Industries (Field-Tested)', 'AK-47 | Frontside Misty (Field-Tested)'] },
+      { name: 'Operation Wildfire Case', steamHashName: 'Operation Wildfire Case', weapons: ['AWP | Wildfire (Field-Tested)', 'AK-47 | Frontside Misty (Field-Tested)', 'M4A4 | Hellfire (Field-Tested)', 'Glock-18 | Neo-Noir (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'USP-S | Kill Confirmed (Field-Tested)', 'M4A1-S | Mecha Industries (Field-Tested)', 'AK-47 | Jaguar (Field-Tested)'] },
+      { name: 'Operation Breakout Weapon Case', steamHashName: 'Operation Breakout Weapon Case', weapons: ['M4A1-S | Mecha Industries (Field-Tested)', 'P90 | Asiimov (Minimal Wear)', 'Glock-18 | Neo-Noir (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'Five-SeveN | Monkey Business (Field-Tested)', 'USP-S | Kill Confirmed (Field-Tested)', 'AK-47 | Frontside Misty (Field-Tested)', 'M4A4 | Hellfire (Field-Tested)'] },
+      { name: 'Operation Vanguard Weapon Case', steamHashName: 'Operation Vanguard Weapon Case', weapons: ['AK-47 | Bloodsport (Field-Tested)', 'P2000 | Fire Elemental (Field-Tested)', 'M4A1-S | Mecha Industries (Field-Tested)', 'P250 | See Ya Later (Field-Tested)', 'USP-S | Kill Confirmed (Field-Tested)', 'AWP | Hyper Beast (Field-Tested)', 'M4A4 | Hellfire (Field-Tested)', 'AK-47 | Frontside Misty (Field-Tested)'] },
+      { name: 'Operation Phoenix Weapon Case', steamHashName: 'Operation Phoenix Weapon Case', weapons: ['AWP | Asiimov (Battle-Scarred)', 'AK-47 | Redline (Field-Tested)', 'USP-S | Cortex (Field-Tested)', 'M4A4 | Neo-Noir (Field-Tested)', 'AUG | Momentum (Field-Tested)', 'P90 | Asiimov (Minimal Wear)', 'Desert Eagle | Printstream (Field-Tested)', 'M4A1-S | Printstream (Field-Tested)'] },
+      { name: 'Huntsman Weapon Case', steamHashName: 'Huntsman Weapon Case', weapons: ['M4A4 | Hellfire (Field-Tested)', 'AK-47 | Bloodsport (Field-Tested)', 'USP-S | Kill Confirmed (Field-Tested)', 'SCAR-20 | Cyrex (Field-Tested)', 'M4A1-S | Mecha Industries (Field-Tested)', 'AWP | Hyper Beast (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'P250 | See Ya Later (Field-Tested)'] }
     ];
 
     const wearRanges = {
@@ -581,6 +581,59 @@
     }
 
     const steamSnapshotCache = new Map();
+    const SNAPSHOT_STORAGE_KEY = 'steam_snapshot_cache_v1';
+
+    function loadStoredSnapshots() {
+      try {
+        const raw = localStorage.getItem(SNAPSHOT_STORAGE_KEY);
+        if (!raw) return;
+        const parsed = JSON.parse(raw);
+        if (!parsed || typeof parsed !== 'object') return;
+        const now = Date.now();
+        Object.entries(parsed).forEach(([k, v]) => {
+          if (v && v.expiresAt && v.expiresAt > now && v.snapshot) {
+            steamSnapshotCache.set(k, v.snapshot);
+          }
+        });
+      } catch {
+        // Ignore cache parse failures.
+      }
+    }
+
+    function persistSnapshots() {
+      try {
+        const now = Date.now();
+        const out = {};
+        steamSnapshotCache.forEach((snapshot, key) => {
+          out[key] = {
+            snapshot,
+            expiresAt: now + 10 * 60 * 1000
+          };
+        });
+        localStorage.setItem(SNAPSHOT_STORAGE_KEY, JSON.stringify(out));
+      } catch {
+        // Ignore storage failures.
+      }
+    }
+
+    loadStoredSnapshots();
+
+    async function wait(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+
+    async function fetchSnapshotWithRetry(marketHashName, retries = 3) {
+      for (let attempt = 1; attempt <= retries; attempt += 1) {
+        const snapshot = await getSteamSnapshot(marketHashName);
+        if (snapshot && (snapshot.iconUrl || snapshot.lowestPrice || snapshot.listingUrl)) {
+          return snapshot;
+        }
+        if (attempt < retries) {
+          await wait(350 * attempt);
+        }
+      }
+      return null;
+    }
 
     async function getSteamSnapshot(marketHashName) {
       if (!marketHashName) return null;
@@ -596,6 +649,7 @@
         const data = await res.json();
         if (!data || !data.ok || !data.snapshot) return null;
         steamSnapshotCache.set(marketHashName, data.snapshot);
+        persistSnapshots();
         return data.snapshot;
       } catch {
         return null;
@@ -626,7 +680,7 @@
       `).join('');
 
       cs2Cases.forEach(async (cs, idx) => {
-        const snapshot = await getSteamSnapshot(cs.steamHashName);
+        const snapshot = await fetchSnapshotWithRetry(cs.steamHashName, 4);
         if (!snapshot || !snapshot.iconUrl) return;
         const thumb = document.getElementById(`case-thumb-${idx}`);
         if (!thumb) return;
@@ -686,7 +740,7 @@
       loading.style.display = 'block';
 
       await Promise.all(weaponItems.map(async (item, idx) => {
-        const snapshot = await getSteamSnapshot(item.marketHashName);
+        const snapshot = await fetchSnapshotWithRetry(item.marketHashName, 4);
         const thumb = document.getElementById(`weapon-thumb-${idx}`);
         const btn = document.getElementById(`weapon-buy-${idx}`);
         if (!btn) return;
