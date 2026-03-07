@@ -341,6 +341,133 @@
       { id: 10, name: 'MAC-10 | Neon Rider', category: 'SMGs', rarity: 'Classified', price: 8.75, wear: 'Factory New', float: 0.04, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJgYGHnv74Y77VlXpfv5Ny2rzH8dGj0QWy_0RuZGuhIYfHIQ9tMF6DrwS9w-fm1565uZ_A1zI97TlFk1q0/330fx248f' }
     ];
 
+    const rarityOrder = {
+      'Consumer': 1,
+      'Industrial': 2,
+      'Mil-Spec': 3,
+      'Restricted': 4,
+      'Classified': 5,
+      'Covert': 6,
+      'Contraband': 7,
+      'Extraordinary': 7
+    };
+
+    const marketplaceMeta = {
+      'AK-47 | Redline': { pattern: 'Pattern-based', raritiesAvailable: ['Mil-Spec', 'Classified'], cases: ['Operation Phoenix Case'] },
+      'AWP | Asiimov': { pattern: 'Not pattern-based', raritiesAvailable: ['Classified', 'Covert'], cases: ['Operation Phoenix Case'] },
+      'M4A4 | Howl': { pattern: 'Not pattern-based', raritiesAvailable: ['Contraband'], cases: ['Huntsman Weapon Case (legacy)'] },
+      'Glock-18 | Fade': { pattern: 'Pattern-based', raritiesAvailable: ['Restricted', 'Classified'], cases: ['Limited Drop Pool'] },
+      'Desert Eagle | Blaze': { pattern: 'Pattern-based', raritiesAvailable: ['Restricted'], cases: ['Dust Collection'] },
+      'Karambit | Doppler': { pattern: 'Pattern-based', raritiesAvailable: ['Covert'], cases: ['Chroma Case', 'Chroma 2 Case', 'Chroma 3 Case'] },
+      'Butterfly Knife | Tiger Tooth': { pattern: 'Pattern-based', raritiesAvailable: ['Covert'], cases: ['Spectrum Case', 'Spectrum 2 Case'] },
+      'Sport Gloves | Pandora\'s Box': { pattern: 'Pattern-based', raritiesAvailable: ['Extraordinary'], cases: ['Glove Case', 'Operation Hydra Case'] },
+      'P90 | Asiimov': { pattern: 'Not pattern-based', raritiesAvailable: ['Covert'], cases: ['Danger Zone Case'] },
+      'MAC-10 | Neon Rider': { pattern: 'Not pattern-based', raritiesAvailable: ['Classified'], cases: ['Danger Zone Case'] }
+    };
+
+    const wearRanges = {
+      'Factory New': [0.00, 0.07],
+      'Minimal Wear': [0.07, 0.15],
+      'Field-Tested': [0.15, 0.38],
+      'Well-Worn': [0.38, 0.45],
+      'Battle-Scarred': [0.45, 1.00]
+    };
+
+    function normalizeImageUrl(url) {
+      if (!url) return '';
+      return String(url)
+        .replace('https://community.cloudflare.steamstatic.com/economy/image/', 'https://steamcommunity-a.akamaihd.net/economy/image/')
+        .replace('https://community.cloudflare.steamstatic.com', 'https://steamcommunity-a.akamaihd.net');
+    }
+
+    function rarityClass(rarity) {
+      return String(rarity || 'unknown').toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    }
+
+    function clampFloat(value) {
+      const n = Number(value);
+      if (!Number.isFinite(n)) return 0;
+      return Math.max(0, Math.min(1, n));
+    }
+
+    function inferWearFromName(name) {
+      const match = String(name || '').match(/\((Factory New|Minimal Wear|Field-Tested|Well-Worn|Battle-Scarred)\)$/i);
+      return match ? match[1] : 'Unknown';
+    }
+
+    function estimateFloatByWear(wear, seed) {
+      const range = wearRanges[wear] || [0.10, 0.80];
+      const hash = String(seed || '0').split('').reduce((sum, ch) => sum + ch.charCodeAt(0), 0);
+      const ratio = (hash % 997) / 997;
+      return +(range[0] + (range[1] - range[0]) * ratio).toFixed(4);
+    }
+
+    function detectPatternType(name) {
+      const text = String(name || '').toLowerCase();
+      const patternWords = ['fade', 'doppler', 'case hardened', 'crimson web', 'slaughter', 'tiger tooth', 'marble fade', 'emerald', 'ruby', 'sapphire'];
+      return patternWords.some(w => text.includes(w)) ? 'Pattern-based' : 'Not pattern-based';
+    }
+
+    function getFloatPct(value) {
+      return `${(clampFloat(value) * 100).toFixed(1)}%`;
+    }
+
+    function renderFloatBar(floatValue, wearText) {
+      return `
+        <div class="float-bar-wrap">
+          <div class="float-bar-scale">
+            <span class="float-marker" style="left:${getFloatPct(floatValue)}"></span>
+          </div>
+          <div class="float-meta">
+            <span>Float ${Number(floatValue).toFixed(4)}</span>
+            <span>${wearText}</span>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSkinCard(item, opts = {}) {
+      const rarity = item.rarity || 'Consumer';
+      const raritySlug = rarityClass(rarity);
+      const itemName = item.name || item.market_name || 'CS2 Item';
+      const wear = item.wear || inferWearFromName(itemName);
+      const pattern = item.pattern || detectPatternType(itemName);
+      const floatValue = clampFloat(item.float);
+      const cases = (item.cases && item.cases.length) ? item.cases.slice(0, 2).join(' • ') : 'Case info unavailable';
+      const rarities = (item.raritiesAvailable && item.raritiesAvailable.length) ? item.raritiesAvailable.join(', ') : rarity;
+      const priceHtml = opts.showPrice ? `<div class="skin-price">$${Number(item.price || 0).toFixed(2)}</div>` : '';
+      const clickAttr = opts.clickable && item.id ? `onclick="showItemDetail(${item.id})"` : '';
+
+      return `
+        <article class="skin-card rarity-frame-${raritySlug}" ${clickAttr}>
+          <div class="skin-thumb">
+            <img src="${normalizeImageUrl(item.image)}" alt="${itemName}" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');">
+            <span class="skin-rarity-chip">${rarity}</span>
+          </div>
+          <div class="skin-body">
+            <h4 class="skin-title">${itemName}</h4>
+            ${renderFloatBar(floatValue, wear)}
+            <div class="skin-tags">
+              <span class="chip chip-pattern">${pattern}</span>
+              <span class="chip chip-wear">${wear}</span>
+            </div>
+            <p class="skin-sub">Rarities: ${rarities}</p>
+            <p class="skin-sub">Cases: ${cases}</p>
+            ${priceHtml}
+          </div>
+        </article>
+      `;
+    }
+
+    marketplaceItems.forEach(item => {
+      const meta = marketplaceMeta[item.name] || {};
+      item.image = normalizeImageUrl(item.image);
+      item.pattern = meta.pattern || detectPatternType(item.name);
+      item.cases = meta.cases || ['Case info unavailable'];
+      item.raritiesAvailable = meta.raritiesAvailable || [item.rarity];
+      item.float = clampFloat(item.float);
+    });
+
     function loadMarketplace() {
       const searchInput = document.getElementById('searchInput');
       const categoryFilter = document.getElementById('categoryFilter');
@@ -367,22 +494,7 @@
 
         document.getElementById('totalListings').textContent = filtered.length;
 
-        grid.innerHTML = filtered.map(item => `
-          <div class="item-card" onclick="showItemDetail(${item.id})">
-            <div class="item-image" style="background: linear-gradient(135deg, rgba(${getRarityRGB(item.rarity)},0.1) 0%, rgba(${getRarityRGB(item.rarity)},0.05) 100%);">
-              <img src="${item.image}" alt="${item.name}">
-              <div class="item-rarity" style="background: rgba(${getRarityRGB(item.rarity)},0.2); color: rgb(${getRarityRGB(item.rarity)});">${item.rarity}</div>
-            </div>
-            <div class="item-info">
-              <div class="item-wear">${item.wear}</div>
-              <h4 class="item-name">${item.name}</h4>
-              <div class="item-footer">
-                <div class="item-float">Float: ${item.float}</div>
-                <div class="item-price">$${item.price.toFixed(2)}</div>
-              </div>
-            </div>
-          </div>
-        `).join('');
+        grid.innerHTML = filtered.map(item => renderSkinCard(item, { showPrice: true, clickable: true })).join('');
       }
 
       searchInput.addEventListener('input', filterAndRender);
@@ -422,8 +534,7 @@
 
       heroVisualGrid.innerHTML = heroCards.map((item, idx) => `
         <div class="hero-item-card float-${(idx % 3) + 1}">
-          <img src="${item.image}" alt="${item.name}">
-          <span>${item.name}</span>
+          ${renderSkinCard(item, { showPrice: true, clickable: true })}
         </div>
       `).join('');
 
@@ -446,20 +557,12 @@
         const total = group.mids.reduce((sum, item) => sum + item.price, 0);
         return `
           <div class="swap-card swap-${i + 1}">
-            <div class="swap-side high">
-              <img src="${group.high.image}" alt="${group.high.name}">
-              <h4>${group.high.name}</h4>
-              <div class="value-tag">$${group.high.price.toFixed(2)}</div>
-            </div>
+            <div class="swap-side high">${renderSkinCard(group.high, { showPrice: true, clickable: true })}</div>
             <div class="swap-arrow">⇄</div>
             <div class="swap-side mids">
               <div class="mid-row">
                 ${group.mids.map(item => `
-                  <div class="mid-item">
-                    <img src="${item.image}" alt="${item.name}">
-                    <span>${item.name}</span>
-                    <small>$${item.price.toFixed(2)}</small>
-                  </div>
+                  <div class="mid-item">${renderSkinCard(item, { showPrice: true, clickable: true })}</div>
                 `).join('')}
               </div>
               <div class="value-tag total">$${total.toFixed(2)}</div>
@@ -477,7 +580,7 @@
       document.getElementById('itemDetailImage').src = item.image;
       document.getElementById('itemDetailCategory').textContent = item.category;
       document.getElementById('itemDetailWear').textContent = item.wear;
-      document.getElementById('itemDetailFloat').textContent = item.float;
+      document.getElementById('itemDetailFloat').textContent = Number(item.float || 0).toFixed(4);
       const rarityBadge = document.getElementById('itemDetailRarity');
       rarityBadge.textContent = item.rarity;
       rarityBadge.style.background = `rgba(${getRarityRGB(item.rarity)},0.2)`;
@@ -541,24 +644,30 @@
           const description = data.descriptions.find(d => 
             d.classid === asset.classid && d.instanceid === asset.instanceid
           );
+          const tags = (description && Array.isArray(description.tags)) ? description.tags : [];
+          const rarity = (tags.find(t => t.category === 'Rarity') || {}).localized_tag_name || 'Mil-Spec';
+          const marketName = (description && (description.market_name || description.market_hash_name || description.name)) || 'CS2 Item';
+          const wear = inferWearFromName(marketName);
+          const floatValue = estimateFloatByWear(wear, asset.assetid);
+          const pattern = detectPatternType(marketName);
+
+          const iconPath = description ? (description.icon_url_large || description.icon_url || '') : '';
+
           return {
             ...asset,
             ...description,
-            image: description ? `https://community.cloudflare.steamstatic.com/economy/image/${description.icon_url}` : ''
+            name: marketName,
+            rarity,
+            wear,
+            float: floatValue,
+            pattern,
+            raritiesAvailable: [rarity],
+            cases: ['Inventory item'],
+            image: iconPath ? normalizeImageUrl(`https://steamcommunity-a.akamaihd.net/economy/image/${iconPath}/360fx360f`) : ''
           };
         });
 
-        grid.innerHTML = items.slice(0, 50).map((item, idx) => `
-          <div class="item-card">
-            <div class="item-image">
-              <img src="${item.image}" alt="${item.name || item.market_name}">
-            </div>
-            <div class="item-info">
-              <div class="item-wear">${item.type || 'CS2 Item'}</div>
-              <h4 class="item-name">${item.name || item.market_name}</h4>
-            </div>
-          </div>
-        `).join('');
+        grid.innerHTML = items.slice(0, 50).map(item => renderSkinCard(item, { showPrice: false, clickable: false })).join('');
 
       } catch (error) {
         console.error('Error loading inventory:', error);
