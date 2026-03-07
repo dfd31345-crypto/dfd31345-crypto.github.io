@@ -672,6 +672,26 @@
       element.parentElement.innerHTML = '<div class="weapon-placeholder">Weapon Image</div>';
     }
 
+    function wireWeaponThumbZoom() {
+      document.querySelectorAll('.weapon-thumb').forEach((thumb) => {
+        if (thumb.dataset.zoomReady === '1') return;
+        thumb.dataset.zoomReady = '1';
+
+        thumb.addEventListener('mousemove', (event) => {
+          const rect = thumb.getBoundingClientRect();
+          const x = ((event.clientX - rect.left) / rect.width) * 100;
+          const y = ((event.clientY - rect.top) / rect.height) * 100;
+          thumb.style.setProperty('--mx', `${Math.max(0, Math.min(100, x))}%`);
+          thumb.style.setProperty('--my', `${Math.max(0, Math.min(100, y))}%`);
+        });
+
+        thumb.addEventListener('mouseleave', () => {
+          thumb.style.setProperty('--mx', '50%');
+          thumb.style.setProperty('--my', '50%');
+        });
+      });
+    }
+
     function renderHomeCases() {
       const caseGrid = document.getElementById('caseGrid');
       if (!caseGrid) return;
@@ -748,6 +768,8 @@
           </div>
         </article>
       `).join('');
+
+      wireWeaponThumbZoom();
 
       loading.style.display = 'block';
 

@@ -397,12 +397,21 @@ body::after {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  --mx: 50%;
+  --my: 50%;
 }
 
 .weapon-thumb img {
   width: 94%;
   height: 98px;
   object-fit: contain;
+  transition: transform 0.18s ease;
+  transform-origin: var(--mx) var(--my);
+}
+
+.weapon-thumb:hover img {
+  transform: scale(1.85);
 }
 
 .weapon-placeholder {
