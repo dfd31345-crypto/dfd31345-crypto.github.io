@@ -6,6 +6,7 @@
   <title>CS2 Trading — Premium Marketplace</title>
   <link rel="stylesheet" href="styles.css?v=20260307-4">
   <script src="app-config.js?v=20260307-4"></script>
+  <script src="case-drops-cache.js?v=20260307-1"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -587,11 +588,37 @@
     }
 
     async function resolveCasePreviewDrops(selectedCase) {
+      const staticCache = (window.CASE_DROPS_CACHE && window.CASE_DROPS_CACHE[selectedCase.name]) || null;
+      if (staticCache && Array.isArray(staticCache.weapons) && staticCache.weapons.length) {
+        const cachedWeapons = staticCache.weapons.map((item) => ({
+          name: item.name || item.marketHashName || 'CS2 Item',
+          marketHashName: item.marketHashName || item.name || '',
+          image: item.image || '',
+          rarity: item.rarity || 'Mil-Spec',
+          floatMin: Number.isFinite(item.floatMin) ? item.floatMin : 0.00,
+          floatMax: Number.isFinite(item.floatMax) ? item.floatMax : 1.00,
+          pattern: detectPatternType(item.name || item.marketHashName || '')
+        }));
+        const cachedSpecials = Array.isArray(staticCache.specials)
+          ? staticCache.specials.map((item) => ({
+              name: item.name || item.marketHashName || 'Rare Special Item',
+              marketHashName: item.marketHashName || item.name || '',
+              image: item.image || '',
+              rarity: 'Extraordinary',
+              pattern: detectPatternType(item.name || item.marketHashName || ''),
+              floatMin: Number.isFinite(item.floatMin) ? item.floatMin : 0.00,
+              floatMax: Number.isFinite(item.floatMax) ? item.floatMax : 1.00
+            }))
+          : [];
+        return { weapons: cachedWeapons, specials: cachedSpecials, source: 'static-cache' };
+      }
+
       const remote = await getCaseDropsFromApi(selectedCase.name);
       if (remote && Array.isArray(remote.weapons) && remote.weapons.length) {
         const remoteWeapons = remote.weapons.map((item) => ({
           name: item.name || item.marketHashName || 'CS2 Item',
           marketHashName: item.marketHashName || item.name || '',
+          image: item.image || '',
           rarity: item.rarity || 'Mil-Spec',
           floatMin: Number.isFinite(item.floatMin) ? item.floatMin : 0.00,
           floatMax: Number.isFinite(item.floatMax) ? item.floatMax : 1.00,
@@ -601,6 +628,7 @@
           ? remote.specials.map((item) => ({
               name: item.name || item.marketHashName || 'Rare Special Item',
               marketHashName: item.marketHashName || item.name || '',
+              image: item.image || '',
               rarity: 'Extraordinary',
               pattern: detectPatternType(item.name || item.marketHashName || ''),
               floatMin: Number.isFinite(item.floatMin) ? item.floatMin : 0.00,
@@ -614,6 +642,7 @@
       const localSpecials = getSpecialDropsForCase(selectedCase.name).map((name) => ({
         name,
         marketHashName: name,
+        image: '',
         rarity: 'Extraordinary',
         pattern: detectPatternType(name),
         floatMin: 0.00,
@@ -935,7 +964,9 @@
       const specialDrops = resolvedDrops.specials;
       specialBtn.style.display = specialDrops.length ? 'inline-flex' : 'none';
 
-      if (resolvedDrops.source === 'csgoskins') {
+      if (resolvedDrops.source === 'static-cache') {
+        meta.textContent = `Showing official cached drops for ${selectedCase.name} (local cache, no live server fetch needed).`;
+      } else if (resolvedDrops.source === 'csgoskins') {
         meta.textContent = `Showing only official drops listed for ${selectedCase.name} (source: csgoskins.gg).`;
       }
 
@@ -971,7 +1002,7 @@
         return `
         <article class="weapon-card rarity-frame-${rarityClass(item.rarity)}" id="weapon-card-${idx}">
           <div class="weapon-thumb" id="weapon-thumb-${idx}">
-            <div class="weapon-placeholder">Weapon Image</div>
+            ${item.image ? `<img src="${normalizeImageUrl(item.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">` : '<div class="weapon-placeholder">Weapon Image</div>'}
           </div>
           <div class="weapon-body">
             <h4>${item.name}</h4>
@@ -1039,6 +1070,7 @@
       const specialItems = specialDrops.map((item) => ({
         name: item.name,
         marketHashName: item.marketHashName,
+        image: item.image || '',
         rarity: 'Extraordinary',
         pattern: item.pattern || detectPatternType(item.name),
         floatMin: Number.isFinite(item.floatMin) ? item.floatMin : 0.00,
@@ -1048,7 +1080,7 @@
       grid.innerHTML = specialItems.map((item, idx) => `
         <article class="weapon-card rarity-frame-extraordinary" id="special-card-${idx}">
           <div class="weapon-thumb" id="special-thumb-${idx}">
-            <div class="weapon-placeholder">Special Item Image</div>
+            ${item.image ? `<img src="${normalizeImageUrl(item.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">` : '<div class="weapon-placeholder">Special Item Image</div>'}
           </div>
           <div class="weapon-body">
             <h4>${item.name}</h4>
