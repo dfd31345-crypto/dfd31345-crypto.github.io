@@ -1,10 +1,10 @@
-<!-- FORCE UPDATE 2026-03-06: Case preview image path fix -->
+<!-- FORCE UPDATE 2026-03-07: CS2 Trading Marketplace -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CS2 Case Spin — shipzibi.com</title>
+  <title>CS2 Trading — shipzibi.com</title>
   <link rel="stylesheet" href="styles.css">
   <script src="app-config.js"></script>
 </head>
@@ -13,8 +13,14 @@
   <nav class="navbar">
     <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
       <div>
-        <h1 class="logo">CS2 Case Spin</h1>
-        <p class="tagline">Spin rare Counter-Strike 2 cases</p>
+        <h1 class="logo">CS2 Trading</h1>
+        <p class="tagline">Buy, Sell & Trade CS2 Skins</p>
+      </div>
+      <div class="nav-links" style="display: flex; gap: 1.5rem; align-items: center;">
+        <a href="#" onclick="showPage('marketplace'); return false;" class="nav-link">Marketplace</a>
+        <a href="#" onclick="showPage('inventory'); return false;" class="nav-link">My Inventory</a>
+        <a href="#" onclick="showPage('trades'); return false;" class="nav-link">Trade Offers</a>
+        <a href="#" onclick="showPage('sell'); return false;" class="nav-link">Sell Items</a>
       </div>
       <div class="nav-auth-btns">
         <button id="navSteamLoginBtn" class="btn-primary" style="padding: 0.6rem 1.5rem; font-size: 1rem;">Sign In With Steam</button>
@@ -25,71 +31,120 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <h2>Spin the Best CS2 Cases</h2>
-      <p>Sign in with Steam to start spinning rare Counter-Strike 2 cases.</p>
+      <h2>Trade CS2 Skins Safely</h2>
+      <p>Instant trades, secure marketplace, best prices.</p>
       <span id="heroLoginState"></span>
     </div>
   </section>
 
-  <!-- Search & Filter -->
-  <section class="search-section">
+  <!-- Marketplace Page -->
+  <section id="marketplacePage" class="page-section">
     <div class="container">
-      <input type="text" id="searchBox" class="search-box" placeholder="Search cases...">
-    </div>
-  </section>
+      <!-- Search & Filters -->
+      <div class="search-filter-bar" style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+        <input type="text" id="searchBox" class="search-box" placeholder="Search items..." style="flex: 1; min-width: 250px;">
+        <select id="categoryFilter" class="filter-select">
+          <option value="">All Categories</option>
+          <option value="rifle">Rifles</option>
+          <option value="pistol">Pistols</option>
+          <option value="smg">SMGs</option>
+          <option value="knife">Knives</option>
+          <option value="gloves">Gloves</option>
+        </select>
+        <select id="rarityFilter" class="filter-select">
+          <option value="">All Rarities</option>
+          <option value="consumer">Consumer Grade</option>
+          <option value="industrial">Industrial Grade</option>
+          <option value="milspec">Mil-Spec</option>
+          <option value="restricted">Restricted</option>
+          <option value="classified">Classified</option>
+          <option value="covert">Covert</option>
+          <option value="contraband">Contraband</option>
+        </select>
+        <select id="sortFilter" class="filter-select">
+          <option value="price_asc">Price: Low to High</option>
+          <option value="price_desc">Price: High to Low</option>
+          <option value="newest">Newest First</option>
+        </select>
+      </div>
 
-  <!-- Case Gallery -->
-  <section class="cases-section">
-    <div class="container">
-      <h3>Available Cases</h3>
-      <div class="cases-grid" id="casesGrid">
-        <!-- Cases are inserted here by JavaScript -->
+      <h3>Marketplace Listings</h3>
+      <div class="items-grid" id="marketplaceGrid">
+        <!-- Items inserted here -->
       </div>
     </div>
   </section>
 
-  <!-- Modal for Case Details -->
-  <div id="caseModal" class="modal">
+  <!-- Inventory Page -->
+  <section id="inventoryPage" class="page-section" style="display: none;">
+    <div class="container">
+      <h3>My CS2 Inventory</h3>
+      <div id="inventoryContent">
+        <p style="text-align: center; color: #888;">Sign in to view your Steam inventory</p>
+      </div>
+      <div class="items-grid" id="inventoryGrid">
+        <!-- Inventory items inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Trade Offers Page -->
+  <section id="tradesPage" class="page-section" style="display: none;">
+    <div class="container">
+      <h3>Trade Offers</h3>
+      <div class="trades-container">
+        <div class="trades-incoming">
+          <h4>Incoming Offers (<span id="incomingCount">0</span>)</h4>
+          <div id="incomingTrades">
+            <p style="text-align: center; color: #888;">No incoming trade offers</p>
+          </div>
+        </div>
+        <div class="trades-outgoing">
+          <h4>Sent Offers (<span id="outgoingCount">0</span>)</h4>
+          <div id="outgoingTrades">
+            <p style="text-align: center; color: #888;">No sent trade offers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sell Items Page -->
+  <section id="sellPage" class="page-section" style="display: none;">
+    <div class="container">
+      <h3>Sell Your Items</h3>
+      <div id="sellContent">
+        <p style="text-align: center; color: #888;">Select items from your inventory to list on the marketplace</p>
+      </div>
+      <div class="items-grid" id="sellGrid">
+        <!-- Sellable items inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Item Detail Modal -->
+  <div id="itemModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2 id="modalCaseTitle"></h2>
-      <div id="modalRarities" class="rarities-container">
-        <!-- Rarities and weapons inserted here -->
+      <div id="modalItemContent">
+        <!-- Item details inserted here -->
       </div>
     </div>
   </div>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2026 CS2 Case Spin. All rights reserved.</p>
+    <p>&copy; 2026 CS2 Trading. All rights reserved. Not affiliated with Valve Corporation.</p>
   </footer>
 
   <script>
-    const casesGrid = document.getElementById("casesGrid");
     const heroLoginState = document.getElementById("heroLoginState");
     const navAuthBtns = document.querySelector(".nav-auth-btns");
     const rawApiBase = (window.APP_CONFIG && window.APP_CONFIG.API_BASE_URL) ? String(window.APP_CONFIG.API_BASE_URL) : '';
     const API_BASE_URL = rawApiBase.replace(/\/$/, '');
     const STEAM_TOKEN_KEY = 'steam_auth_token';
-    const CURRENCY_PREF_KEY = 'currency_preference';
-
-    function getCurrencyPreference() {
-      return localStorage.getItem(CURRENCY_PREF_KEY) || 'usd';
-    }
-
-    function setCurrencyPreference(currency) {
-      localStorage.setItem(CURRENCY_PREF_KEY, currency);
-      renderAuthState(); // Re-render to update display
-    }
-
-    function formatBalance(user) {
-      const pref = getCurrencyPreference();
-      if (pref === 'dabloons') {
-        return `<img src="dabloon.svg" alt="Dabloon" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">${user.balanceDabloons || 0}`;
-      } else {
-        return `$${(user.balanceUsd || 0).toFixed(2)}`;
-      }
-    }
+    let currentUser = null;
+    let currentPage = 'marketplace';
 
     function apiUrl(path) {
       return `${API_BASE_URL}${path}`;
@@ -129,16 +184,16 @@
         credentials: 'include',
         headers: getAuthHeaders()
       });
+      currentUser = null;
       await renderAuthState();
+      showPage('marketplace');
     }
 
-    // Capture token from URL after Steam login redirect
     function captureTokenFromUrl() {
       const params = new URLSearchParams(window.location.search);
       const token = params.get('steam_token');
       if (token) {
         localStorage.setItem(STEAM_TOKEN_KEY, token);
-        // Clean URL without reloading
         const cleanUrl = window.location.pathname;
         window.history.replaceState({}, document.title, cleanUrl);
       }
@@ -159,44 +214,31 @@
         ? `<img src="${user.avatar}" alt="${user.displayName}" style="width:32px;height:32px;border-radius:50%;object-fit:cover;margin-right:0.6rem;border:1px solid rgba(255,255,255,0.35);vertical-align:middle;">`
         : '';
       
-      const balanceHtml = formatBalance(user);
-      const currencyPref = getCurrencyPreference();
-      const currencyToggleText = currencyPref === 'usd' ? 'D' : '$';
+      const balanceUsd = (user.balanceUsd || 0).toFixed(2);
       
       navAuthBtns.innerHTML = `
-        <button id="currencyToggleBtn" class="btn-primary" style="padding:0.4rem 0.7rem;font-size:0.9rem;margin-right:0.5rem;min-width:30px;" title="Switch currency">
-          ${currencyToggleText}
-        </button>
-        <span style="margin-right:1rem;display:inline-flex;align-items:center;font-weight:600;">
-          ${balanceHtml}
+        <span style="margin-right:1.5rem;display:inline-flex;align-items:center;font-weight:600;color:#4ade80;">
+          $${balanceUsd}
         </span>
         <span style="margin-right:1rem;display:inline-flex;align-items:center;">
-          ${avatarHtml}Logged in as <b style="margin-left:0.25rem;">${user.displayName}</b>
+          ${avatarHtml}<b>${user.displayName}</b>
         </span>
         <button id="navSignOutBtn" class="btn-primary" style="background:#ff6b35;color:#fff;">Sign Out</button>
       `;
       
-      const currencyToggleBtn = document.getElementById('currencyToggleBtn');
-      if (currencyToggleBtn) {
-        currencyToggleBtn.onclick = () => {
-          const newCurrency = getCurrencyPreference() === 'usd' ? 'dabloons' : 'usd';
-          setCurrencyPreference(newCurrency);
-        };
-      }
-      
       const navSignOutBtn = document.getElementById('navSignOutBtn');
       if (navSignOutBtn) navSignOutBtn.onclick = signOut;
 
-      heroLoginState.innerHTML = `Welcome <b>${user.displayName}</b>! <a href="${user.profileUrl}" target="_blank" rel="noopener" class="btn-primary" style="margin-left:1rem;text-decoration:none;display:inline-block;">View Steam Profile</a>`;
+      heroLoginState.innerHTML = `Balance: <b style="color:#4ade80;">$${balanceUsd}</b> | <a href="${user.profileUrl}" target="_blank" rel="noopener" class="btn-primary" style="margin-left:1rem;text-decoration:none;display:inline-block;">Steam Profile</a>`;
     }
 
     async function renderAuthState() {
-      const user = await getCurrentUser();
-      if (!user) {
+      currentUser = await getCurrentUser();
+      if (!currentUser) {
         renderLoggedOutState();
         return;
       }
-      renderLoggedInState(user);
+      renderLoggedInState(currentUser);
     }
 
     async function trackRevisit() {
@@ -221,132 +263,172 @@
       }
     }
 
-    captureTokenFromUrl();
-    renderAuthState();
-    trackRevisit();
-
-    // --- CASE GALLERY RENDERING ---
-    async function loadCases() {
-      try {
-        const res = await fetch('cases-config.json');
-        if (!res.ok) throw new Error('cases-config.json not found');
-        const data = await res.json();
-        const cases = data.cases || [];
-        renderCases(cases);
-        // Search functionality
-        const searchBox = document.getElementById('searchBox');
-        searchBox.oninput = function() {
-          const q = searchBox.value.toLowerCase();
-          renderCases(cases.filter(c => c.name.toLowerCase().includes(q) || c.id.toLowerCase().includes(q)));
-        };
-      } catch (e) {
-        casesGrid.innerHTML = `<div style='color:#ff6b35;text-align:center;width:100%;font-size:1.2rem;'>Error: ${e.message}</div>`;
+    function showPage(pageName) {
+      currentPage = pageName;
+      document.querySelectorAll('.page-section').forEach(section => {
+        section.style.display = 'none';
+      });
+      
+      const targetPage = document.getElementById(pageName + 'Page');
+      if (targetPage) {
+        targetPage.style.display = 'block';
       }
+      
+      // Update nav link active state
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.style.opacity = '0.7';
+        link.style.fontWeight = 'normal';
+      });
+      const links = document.querySelectorAll('.nav-link');
+      if (pageName === 'marketplace' && links[0]) {
+        links[0].style.opacity = '1';
+        links[0].style.fontWeight = 'bold';
+      }
+      if (pageName === 'inventory' && links[1]) {
+        links[1].style.opacity = '1';
+        links[1].style.fontWeight = 'bold';
+      }
+      if (pageName === 'trades' && links[2]) {
+        links[2].style.opacity = '1';
+        links[2].style.fontWeight = 'bold';
+      }
+      if (pageName === 'sell' && links[3]) {
+        links[3].style.opacity = '1';
+        links[3].style.fontWeight = 'bold';
+      }
+      
+      if (pageName === 'marketplace') loadMarketplace();
+      if (pageName === 'inventory') loadInventory();
+      if (pageName === 'trades') loadTrades();
+      if (pageName === 'sell') loadSellPage();
     }
 
-    function renderCases(cases) {
-      if (!cases.length) {
-        casesGrid.innerHTML = `<div style='color:#ff6b35;text-align:center;width:100%;font-size:1.2rem;'>No cases found.</div>`;
-        return;
-      }
-        casesGrid.innerHTML = cases.map(cs => `
-          <div class="case-card" data-case-id="${cs.id.replace(/"/g, '&quot;')}">
-            <div class="case-placeholder">
-              ${cs.preview ? `<img src="${cs.preview}" alt="${cs.name} Preview" style="width:100%;height:100%;object-fit:cover;">` : `<span>?</span>`}
-            </div>
-            <div class="case-info">
-              <h4>${cs.name}</h4>
-              <div class="weapon-count">${cs.rarities && cs.rarities.length ? cs.rarities.reduce((a, r) => a + (r.weapons ? r.weapons.length : 0), 0) : 0} Weapons</div>
-              <button class="btn-spin" data-case-id="${cs.id.replace(/"/g, '&quot;')}">View Case</button>
+    // Sample marketplace data
+    const marketplaceItems = [
+      { id: 1, name: 'AK-47 | Redline', category: 'Rifles', rarity: 'Classified', price: 45.50, wear: 'Field-Tested', float: 0.25, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV09-5lpKKqPrxN7LEmyUJ68J0judBgL7ww5br8kFqMG2gd9LDdQ44MluE8k_-n7mPgcCij5Ss3w/330fx248f' },
+      { id: 2, name: 'AWP | Asiimov', category: 'Rifles', rarity: 'Covert', price: 89.99, wear: 'Battle-Scarred', float: 0.52, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17PLfYQJD_9W7m5a0mvLwOq7c2G5U5cR_teTE8YXghRrk_ERpMT3xJ9XEI1A4NQnU-ADrk7q9m9bi6-02pCo/330fx248f' },
+      { id: 3, name: 'M4A4 | Howl', category: 'Rifles', rarity: 'Contraband', price: 5250.00, wear: 'Factory New', float: 0.03, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09izh4-HluXLP7LWnn8fvZJy2-qT9N6k0FHjrkJoYDr7LYbGIwFvMlHT_Vm2kOu5hZK06M_Pvno/330fx248f' },
+      { id: 4, name: 'Glock-18 | Fade', category: 'Pistols', rarity: 'Restricted', price: 325.00, wear: 'Minimal Wear', float: 0.07, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbaqKAxf0Ob3djFN79fnzL-KgPrxDLbUhH5V5cRiiOTE87P4jVWx5UU-YT3wLI-RcwZqYF-E-FS8wrzoh5G7u4OJlyXGrfTyVA/330fx248f' },
+      { id: 5, name: 'Desert Eagle | Blaze', category: 'Pistols', rarity: 'Restricted', price: 415.75, wear: 'Factory New', float: 0.01, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposr-kLAtl7PLZTjlH_9mkgIWKkPvLPr7Vn35cpsVw3bqVrd-kjQG38kc9Zj-nJoCVcVRqY1vVqAe7yLrxxcjrXnRj_w/330fx248f' },
+      { id: 6, name: 'Karambit | Doppler', category: 'Knives', rarity: 'Covert', price: 1850.00, wear: 'Factory New', float: 0.008, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJf2PLacDBA5ciJlY20k_jkI7fUhFRB4MZij-fF_Jn4xlHj_hU4YT-nJtfHIQ9qMAnW_1DtxOe8g5fo6pXOnHJh7nQl5yzfyRGy0h5SLrs4PsKw-lI/330fx248f' },
+      { id: 7, name: 'Butterfly Knife | Tiger Tooth', category: 'Knives', rarity: 'Covert', price: 2100.50, wear: 'Factory New', float: 0.02, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJf0ebcZThQ6tCvq4GGqPP7J6nUl35c-NZlmObEpMCt2gK3qEJka2-mJ4-RdlRqNQrW_lHvlebuhZ7uuJ6fzXthunRz7XfD30vgCHrUVSU/330fx248f' },
+      { id: 8, name: 'Sport Gloves | Pandora\'s Box', category: 'Gloves', rarity: 'Extraordinary', price: 8500.00, wear: 'Field-Tested', float: 0.35, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DAQ1h3LAVbv6mxFABs3OXNYgJR_Nm1nYGHnuTgDKjFl2xU18l4juDU9LP5gVO8v11lYG3xIYTHcA44Zw6G_VO6x-vxxcjr2KhDl9U/330fx248f' },
+      { id: 9, name: 'P90 | Asiimov', category: 'SMGs', rarity: 'Covert', price: 12.50, wear: 'Minimal Wear', float: 0.09, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopujwezhjxszYI2gS09-5hoyKnPL6DLjQhH5U18t0i-3P-InKhVG9vh5yJyk9ZtDBJ1doN1HT-VO2wry6m9bi6-0VnePD/330fx248f' },
+      { id: 10, name: 'MAC-10 | Neon Rider', category: 'SMGs', rarity: 'Classified', price: 8.75, wear: 'Factory New', float: 0.04, image: 'https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJgYGHnv74Y77VlXpfv5Ny2rzH8dGj0QWy_0RuZGuhIYfHIQ9tMF6DrwS9w-fm1565uZ_A1zI97TlFk1q0/330fx248f' }
+    ];
+
+    function loadMarketplace() {
+      const searchInput = document.getElementById('searchInput');
+      const categoryFilter = document.getElementById('categoryFilter');
+      const rarityFilter = document.getElementById('rarityFilter');
+      const sortFilter = document.getElementById('sortFilter');
+      const itemsGrid = document.querySelector('.items-grid');
+
+      function filterAndRender() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const category = categoryFilter.value;
+        const rarity = rarityFilter.value;
+        const sort = sortFilter.value;
+
+        let filtered = marketplaceItems.filter(item => {
+          const matchesSearch = item.name.toLowerCase().includes(searchTerm);
+          const matchesCategory = category === 'all' || item.category === category;
+          const matchesRarity = rarity === 'all' || item.rarity === rarity;
+          return matchesSearch && matchesCategory && matchesRarity;
+        });
+
+        if (sort === 'price-low') filtered.sort((a, b) => a.price - b.price);
+        if (sort === 'price-high') filtered.sort((a, b) => b.price - a.price);
+        if (sort === 'newest') filtered.sort((a, b) => b.id - a.id);
+
+        itemsGrid.innerHTML = filtered.map(item => `
+          <div class="item-card" onclick="showItemDetail(${item.id})">
+            <img src="${item.image}" alt="${item.name}">
+            <div style="padding:0.8rem;">
+              <div style="font-size:0.85rem;color:#888;margin-bottom:0.3rem;">${item.category} | ${item.wear}</div>
+              <h3 style="font-size:1rem;margin:0 0 0.5rem 0;">${item.name}</h3>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="color:${getRarityColor(item.rarity)};font-size:0.9rem;">${item.rarity}</span>
+                <span style="color:#4ade80;font-weight:bold;font-size:1.1rem;">$${item.price.toFixed(2)}</span>
+              </div>
             </div>
           </div>
         `).join('');
-      // Attach click listeners for modal
-      document.querySelectorAll('.btn-spin').forEach(btn => {
-        btn.onclick = function(e) {
-          const caseId = btn.getAttribute('data-case-id');
-          const cs = cases.find(c => c.id === caseId);
-          if (cs) showCaseModal(cs);
-        };
-      });
-    }
-
-    // Modal logic for case details
-    const caseModal = document.getElementById('caseModal');
-    const modalCaseTitle = document.getElementById('modalCaseTitle');
-    const modalRarities = document.getElementById('modalRarities');
-    document.querySelector('#caseModal .close').onclick = function() {
-      caseModal.style.display = 'none';
-    };
-    function showCaseModal(cs) {
-      modalCaseTitle.textContent = cs.name;
-        if (!cs.rarities || !cs.rarities.length) {
-          modalRarities.innerHTML = '<div style="color:#ff6b35;text-align:center;">No weapon data for this case.</div>';
-        } else {
-          // Helper to get rarity color class and color value
-          function getRarityClass(rarityName) {
-            const name = rarityName.toLowerCase();
-            if (name.includes('light blue')) return 'rarity-light-blue';
-            if (name.includes('dark blue')) return 'rarity-dark-blue';
-            if (name.includes('purple')) return 'rarity-purple';
-            if (name.includes('pink')) return 'rarity-pink';
-            if (name.includes('red')) return 'rarity-red';
-            if (name.includes('gold')) return 'rarity-gold';
-            if (name.includes('gray')) return 'rarity-gray';
-            return '';
-          }
-          function getRarityColor(rarityName) {
-            const name = rarityName.toLowerCase();
-            if (name.includes('light blue')) return '#5edfff';
-            if (name.includes('dark blue')) return '#3b5fff';
-            if (name.includes('purple')) return '#b366ff';
-            if (name.includes('pink')) return '#ff69b4';
-            if (name.includes('red')) return '#ff3b3b';
-            if (name.includes('gold')) return '#ffd700';
-            if (name.includes('gray')) return '#b0b0b0';
-            return '#fff';
-          }
-          modalRarities.innerHTML = cs.rarities.map(r => `
-            <div class="rarity-section">
-              <h3>${r.name}</h3>
-              <div class="weapons-grid">
-                ${r.weapons.map((w, idx) => `
-                  <div class="weapon-card">
-                    <div class="weapon-image" data-rarity="${r.name}">
-                      ${w.image ? `<img src="cases/${cs.id}/${r.name}/${w.image}" alt="${w.image}" data-rarity="${r.name}" style="max-width:100%;max-height:100%;object-fit:contain;">` : '?'}
-                      <div class="rarity-overlay-line ${getRarityClass(r.name)}"></div>
-                    </div>
-                    <div>${w.image.replace(/\.png$/i, '').replace(/-/g, ' ')}</div>
-                    <div class="chance">${w.chance ? w.chance + '%' : ''}</div>
-                  </div>
-                `).join('')}
-              </div>
-            </div>
-          `).join('');
-          // After rendering, ensure all weapon images fit and have colored box-shadow
-          setTimeout(() => {
-            document.querySelectorAll('#modalRarities .weapon-image img').forEach(img => {
-              img.onload = function() {
-                // Always fit image in frame
-                img.style.width = 'auto';
-                img.style.height = '100%';
-                img.style.maxWidth = '100%';
-                img.style.maxHeight = '100%';
-                img.style.objectFit = 'contain';
-                // Add colored box-shadow for rarity
-                const rarity = img.getAttribute('data-rarity');
-                img.parentElement.style.boxShadow = `0 0 0 3px ${getRarityColor(rarity)}`;
-              };
-              // If already loaded (cache), trigger manually
-              if (img.complete) img.onload();
-            });
-          }, 0);
       }
-      caseModal.style.display = 'block';
+
+      searchInput.addEventListener('input', filterAndRender);
+      categoryFilter.addEventListener('change', filterAndRender);
+      rarityFilter.addEventListener('change', filterAndRender);
+      sortFilter.addEventListener('change', filterAndRender);
+
+      filterAndRender();
     }
 
-    // Load cases on page load
-    loadCases();
+    function getRarityColor(rarity) {
+      const colors = {
+        'Consumer': '#b0c3d9',
+        'Industrial': '#5e98d9',
+        'Mil-Spec': '#4b69ff',
+        'Restricted': '#8847ff',
+        'Classified': '#d32ce6',
+        'Covert': '#eb4b4b',
+        'Contraband': '#e4ae39',
+        'Extraordinary': '#e4ae39'
+      };
+      return colors[rarity] || '#fff';
+    }
+
+    function showItemDetail(itemId) {
+      const item = marketplaceItems.find(i => i.id === itemId);
+      if (!item) return;
+
+      const modal = document.getElementById('itemDetailModal');
+      document.getElementById('itemDetailName').textContent = item.name;
+      document.getElementById('itemDetailImage').src = item.image;
+      document.getElementById('itemDetailCategory').textContent = `Category: ${item.category}`;
+      document.getElementById('itemDetailWear').textContent = `Wear: ${item.wear}`;
+      document.getElementById('itemDetailFloat').textContent = `Float: ${item.float}`;
+      document.getElementById('itemDetailRarity').textContent = `Rarity: ${item.rarity}`;
+      document.getElementById('itemDetailRarity').style.color = getRarityColor(item.rarity);
+      document.getElementById('itemDetailPrice').textContent = `$${item.price.toFixed(2)}`;
+
+      modal.style.display = 'flex';
+    }
+
+    function closeItemDetail() {
+      document.getElementById('itemDetailModal').style.display = 'none';
+    }
+
+    function buyItem() {
+      if (!currentUser) {
+        alert('Please sign in to purchase items');
+        return;
+      }
+      alert('Purchase functionality coming soon!');
+      closeItemDetail();
+    }
+
+    function loadInventory() {
+      const inventoryGrid = document.querySelector('.inventory-grid');
+      inventoryGrid.innerHTML = '<p style="text-align:center;color:#888;padding:2rem;">Connect your Steam account to view your inventory</p>';
+    }
+
+    function loadTrades() {
+      const incomingOffers = document.getElementById('incomingOffers');
+      const outgoingOffers = document.getElementById('outgoingOffers');
+      incomingOffers.innerHTML = '<p style="color:#888;padding:1rem;">No incoming trade offers</p>';
+      outgoingOffers.innerHTML = '<p style="color:#888;padding:1rem;">No outgoing trade offers</p>';
+    }
+
+    function loadSellPage() {
+      const sellGrid = document.querySelector('.sell-grid');
+      sellGrid.innerHTML = '<p style="text-align:center;color:#888;padding:2rem;">Select items from your inventory to list for sale</p>';
+    }
+
+    captureTokenFromUrl();
+    renderAuthState();
+    trackRevisit();
+    showPage('marketplace');
   </script>
 </body>
 </html>
