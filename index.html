@@ -76,7 +76,8 @@
     }
 
     function startSteamLogin() {
-      window.location.href = apiUrl('/api/auth/steam');
+      const redirect = encodeURIComponent(window.location.origin);
+      window.location.href = apiUrl(`/api/auth/steam?redirect=${redirect}`);
     }
 
     async function getCurrentUser() {
@@ -106,7 +107,10 @@
     }
 
     function renderLoggedInState(user) {
-      navAuthBtns.innerHTML = `<span style="margin-right:1rem;">Logged in as <b>${user.displayName}</b></span><button id="navSignOutBtn" class="btn-primary" style="background:#ff6b35;color:#fff;">Sign Out</button>`;
+      const avatarHtml = user.avatar
+        ? `<img src="${user.avatar}" alt="${user.displayName}" style="width:32px;height:32px;border-radius:50%;object-fit:cover;margin-right:0.6rem;border:1px solid rgba(255,255,255,0.35);vertical-align:middle;">`
+        : '';
+      navAuthBtns.innerHTML = `<span style="margin-right:1rem;display:inline-flex;align-items:center;">${avatarHtml}Logged in as <b style="margin-left:0.25rem;">${user.displayName}</b></span><button id="navSignOutBtn" class="btn-primary" style="background:#ff6b35;color:#fff;">Sign Out</button>`;
       const navSignOutBtn = document.getElementById('navSignOutBtn');
       if (navSignOutBtn) navSignOutBtn.onclick = signOut;
 
