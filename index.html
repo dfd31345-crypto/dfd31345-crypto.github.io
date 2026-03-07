@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CS2 Case Spin — shipzibi.com</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="app-config.js"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -67,14 +68,20 @@
     const casesGrid = document.getElementById("casesGrid");
     const heroLoginState = document.getElementById("heroLoginState");
     const navAuthBtns = document.querySelector(".nav-auth-btns");
+    const rawApiBase = (window.APP_CONFIG && window.APP_CONFIG.API_BASE_URL) ? String(window.APP_CONFIG.API_BASE_URL) : '';
+    const API_BASE_URL = rawApiBase.replace(/\/$/, '');
+
+    function apiUrl(path) {
+      return `${API_BASE_URL}${path}`;
+    }
 
     function startSteamLogin() {
-      window.location.href = '/api/auth/steam';
+      window.location.href = apiUrl('/api/auth/steam');
     }
 
     async function getCurrentUser() {
       try {
-        const res = await fetch('/api/auth/me', { credentials: 'include' });
+        const res = await fetch(apiUrl('/api/auth/me'), { credentials: 'include' });
         if (!res.ok) return null;
         const data = await res.json();
         return data && data.authenticated ? data.user : null;
@@ -84,7 +91,7 @@
     }
 
     async function signOut() {
-      await fetch('/api/auth/logout', { method: 'POST', credentials: 'include' });
+      await fetch(apiUrl('/api/auth/logout'), { method: 'POST', credentials: 'include' });
       await renderAuthState();
     }
 
@@ -119,17 +126,15 @@
       try {
         const params = new URLSearchParams(window.location.search);
         const ref = document.referrer.toLowerCase();
-        const ua = navigator.userAgent.toLowerCase();
         const telegramSource =
           params.has('tgWebAppData') ||
           params.has('startapp') ||
           params.has('startattach') ||
           ref.includes('t.me') ||
-          ref.includes('telegram') ||
-          ua.includes('telegram');
+          ref.includes('telegram');
 
         const source = telegramSource ? 'telegram' : 'web';
-        await fetch(`/api/telemetry/revisit?source=${source}`, {
+        await fetch(apiUrl(`/api/telemetry/revisit?source=${source}`), {
           method: 'POST',
           credentials: 'include'
         });
