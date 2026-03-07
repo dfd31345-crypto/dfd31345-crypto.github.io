@@ -70,9 +70,18 @@
     const navAuthBtns = document.querySelector(".nav-auth-btns");
     const rawApiBase = (window.APP_CONFIG && window.APP_CONFIG.API_BASE_URL) ? String(window.APP_CONFIG.API_BASE_URL) : '';
     const API_BASE_URL = rawApiBase.replace(/\/$/, '');
+    const STEAM_TOKEN_KEY = 'steam_auth_token';
 
     function apiUrl(path) {
       return `${API_BASE_URL}${path}`;
+    }
+
+    function getAuthHeaders() {
+      const token = localStorage.getItem(STEAM_TOKEN_KEY);
+      if (token) {
+        return { 'Authorization': `Bearer ${token}` };
+      }
+      return {};
     }
 
     function startSteamLogin() {
@@ -82,7 +91,10 @@
 
     async function getCurrentUser() {
       try {
-        const res = await fetch(apiUrl('/api/auth/me'), { credentials: 'include' });
+        const res = await fetch(apiUrl('/api/auth/me'), { 
+          credentials: 'include',
+          headers: getAuthHeaders()
+        });
         if (!res.ok) return null;
         const data = await res.json();
         return data && data.authenticated ? data.user : null;
@@ -92,8 +104,25 @@
     }
 
     async function signOut() {
-      await fetch(apiUrl('/api/auth/logout'), { method: 'POST', credentials: 'include' });
+      localStorage.removeItem(STEAM_TOKEN_KEY);
+      await fetch(apiUrl('/api/auth/logout'), { 
+        method: 'POST', 
+        credentials: 'include',
+        headers: getAuthHeaders()
+      });
       await renderAuthState();
+    }
+
+    // Capture token from URL after Steam login redirect
+    function captureTokenFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      const token = params.get('steam_token');
+      if (token) {
+        localStorage.setItem(STEAM_TOKEN_KEY, token);
+        // Clean URL without reloading
+        const cleanUrl = window.location.pathname;
+        window.history.replaceState({}, document.title, cleanUrl);
+      }
     }
 
     function renderLoggedOutState() {
@@ -140,13 +169,15 @@
         const source = telegramSource ? 'telegram' : 'web';
         await fetch(apiUrl(`/api/telemetry/revisit?source=${source}`), {
           method: 'POST',
-          credentials: 'include'
+          credentials: 'include',
+          headers: getAuthHeaders()
         });
       } catch {
         // Do not block page load on telemetry failures.
       }
     }
 
+    captureTokenFromUrl();
     renderAuthState();
     trackRevisit();
 
