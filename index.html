@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CS2 Trading — Premium Marketplace</title>
-  <link rel="stylesheet" href="styles.css?v=20260307-3">
-  <script src="app-config.js?v=20260307-3"></script>
+  <link rel="stylesheet" href="styles.css?v=20260307-4">
+  <script src="app-config.js?v=20260307-4"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -74,8 +74,20 @@
       <div id="caseWeaponsGrid" class="weapons-grid"></div>
       <div id="casePreviewLoading" class="status-message" style="display:none;">Loading weapon prices...</div>
       <div class="case-preview-actions">
+        <button id="caseSpecialDropsBtn" class="btn-secondary" style="display:none;" onclick="openSpecialDropsPreview(selectedCaseIndex)">View Rare Special Items</button>
         <a id="caseBuyNowLink" class="btn-primary" href="#" target="_blank" rel="noopener">Buy Case on Steam</a>
       </div>
+    </section>
+
+    <!-- Rare Special Items Page -->
+    <section id="caseSpecialPage" class="page-section">
+      <div class="content-header">
+        <h2 id="caseSpecialTitle">Rare Special Items</h2>
+        <button class="btn-secondary" onclick="showPage('casePreview')">Back to Case Preview</button>
+      </div>
+      <div id="caseSpecialMeta" class="case-preview-meta"></div>
+      <div id="caseSpecialGrid" class="weapons-grid"></div>
+      <div id="caseSpecialLoading" class="status-message" style="display:none;">Loading special item prices...</div>
     </section>
 
     <!-- Marketplace Page -->
@@ -221,6 +233,7 @@
     const STEAM_APP_ID = '730'; // CS2
     let currentUser = null;
     let currentPage = 'home';
+    let selectedCaseIndex = null;
 
     function apiUrl(path) {
       return `${API_BASE_URL}${path}`;
@@ -317,7 +330,7 @@
       document.querySelectorAll('.nav-link').forEach(link => {
         link.classList.remove('active');
       });
-      const activeNav = pageName === 'casePreview' ? 'home' : pageName;
+      const activeNav = (pageName === 'casePreview' || pageName === 'caseSpecial') ? 'home' : pageName;
       document.querySelector(`.nav-link[data-page="${activeNav}"]`)?.classList.add('active');
       
       if (pageName === 'home') renderHomeCases();
@@ -435,6 +448,36 @@
       'Battle-Scarred': [0.45, 1.00]
     };
 
+    const wearOrder = ['Factory New', 'Minimal Wear', 'Field-Tested', 'Well-Worn', 'Battle-Scarred'];
+
+    const specialDropsByCase = {
+      'Kilowatt Case': ['Kukri Knife | Fade (Factory New)', 'Kukri Knife | Slaughter (Minimal Wear)', 'Kukri Knife | Case Hardened (Field-Tested)', 'Kukri Knife | Blue Steel (Field-Tested)', 'Kukri Knife | Crimson Web (Well-Worn)', 'Kukri Knife | Scorched (Battle-Scarred)'],
+      'Revolution Case': ['Sport Gloves | Hedge Maze (Field-Tested)', 'Sport Gloves | Pandora\'s Box (Field-Tested)', 'Driver Gloves | Crimson Weave (Minimal Wear)', 'Specialist Gloves | Crimson Kimono (Field-Tested)', 'Moto Gloves | Spearmint (Field-Tested)', 'Hand Wraps | Cobalt Skulls (Field-Tested)'],
+      'Recoil Case': ['Sport Gloves | Hedge Maze (Field-Tested)', 'Driver Gloves | Imperial Plaid (Field-Tested)', 'Specialist Gloves | Emerald Web (Field-Tested)', 'Moto Gloves | Eclipse (Field-Tested)', 'Broken Fang Gloves | Jade (Field-Tested)', 'Hand Wraps | CAUTION! (Field-Tested)'],
+      'Dreams & Nightmares Case': ['Sport Gloves | Amphibious (Field-Tested)', 'Sport Gloves | Vice (Field-Tested)', 'Driver Gloves | Snow Leopard (Field-Tested)', 'Specialist Gloves | Lt. Commander (Field-Tested)', 'Moto Gloves | Polygon (Field-Tested)', 'Hand Wraps | Overprint (Field-Tested)'],
+      'Snakebite Case': ['Sport Gloves | Omega (Field-Tested)', 'Sport Gloves | Scarlet Shamagh (Field-Tested)', 'Driver Gloves | Rezan the Red (Field-Tested)', 'Specialist Gloves | Foundation (Field-Tested)', 'Moto Gloves | Boom! (Field-Tested)', 'Hand Wraps | Slaughter (Field-Tested)'],
+      'Fracture Case': ['Skeleton Knife | Fade (Factory New)', 'Paracord Knife | Slaughter (Minimal Wear)', 'Survival Knife | Crimson Web (Field-Tested)', 'Nomad Knife | Blue Steel (Field-Tested)', 'Skeleton Knife | Case Hardened (Field-Tested)', 'Paracord Knife | Boreal Forest (Well-Worn)'],
+      'Prisma 2 Case': ['Talon Knife | Marble Fade (Factory New)', 'Navaja Knife | Doppler (Factory New)', 'Stiletto Knife | Slaughter (Minimal Wear)', 'Ursus Knife | Tiger Tooth (Factory New)', 'Talon Knife | Blue Steel (Field-Tested)', 'Ursus Knife | Damascus Steel (Field-Tested)'],
+      'CS20 Case': ['Classic Knife | Fade (Factory New)', 'Classic Knife | Crimson Web (Field-Tested)', 'Classic Knife | Slaughter (Minimal Wear)', 'Classic Knife | Case Hardened (Field-Tested)', 'Classic Knife | Blue Steel (Field-Tested)', 'Classic Knife | Scorched (Well-Worn)'],
+      'Prisma Case': ['Talon Knife | Doppler (Factory New)', 'Navaja Knife | Marble Fade (Factory New)', 'Stiletto Knife | Tiger Tooth (Factory New)', 'Ursus Knife | Slaughter (Minimal Wear)', 'Talon Knife | Case Hardened (Field-Tested)', 'Ursus Knife | Blue Steel (Field-Tested)'],
+      'Danger Zone Case': ['Talon Knife | Doppler (Factory New)', 'Navaja Knife | Marble Fade (Factory New)', 'Stiletto Knife | Tiger Tooth (Factory New)', 'Ursus Knife | Slaughter (Minimal Wear)', 'Talon Knife | Case Hardened (Field-Tested)', 'Ursus Knife | Blue Steel (Field-Tested)'],
+      'Horizon Case': ['Talon Knife | Fade (Factory New)', 'Navaja Knife | Slaughter (Minimal Wear)', 'Stiletto Knife | Crimson Web (Field-Tested)', 'Ursus Knife | Case Hardened (Field-Tested)', 'Talon Knife | Blue Steel (Field-Tested)', 'Ursus Knife | Rust Coat (Battle-Scarred)'],
+      'Clutch Case': ['Sport Gloves | Vice (Field-Tested)', 'Sport Gloves | Amphibious (Field-Tested)', 'Driver Gloves | Crimson Weave (Minimal Wear)', 'Specialist Gloves | Fade (Field-Tested)', 'Moto Gloves | POW! (Field-Tested)', 'Hand Wraps | Leather (Field-Tested)'],
+      'Spectrum 2 Case': ['Butterfly Knife | Marble Fade (Factory New)', 'Butterfly Knife | Doppler (Factory New)', 'Butterfly Knife | Tiger Tooth (Factory New)', 'Butterfly Knife | Slaughter (Minimal Wear)', 'Butterfly Knife | Case Hardened (Field-Tested)', 'Butterfly Knife | Blue Steel (Field-Tested)'],
+      'Spectrum Case': ['Butterfly Knife | Fade (Factory New)', 'Butterfly Knife | Doppler (Factory New)', 'Butterfly Knife | Tiger Tooth (Factory New)', 'Butterfly Knife | Slaughter (Minimal Wear)', 'Butterfly Knife | Crimson Web (Field-Tested)', 'Butterfly Knife | Rust Coat (Battle-Scarred)'],
+      'Gamma 2 Case': ['Karambit | Gamma Doppler (Factory New)', 'M9 Bayonet | Gamma Doppler (Factory New)', 'Bayonet | Lore (Factory New)', 'Flip Knife | Autotronic (Field-Tested)', 'Gut Knife | Freehand (Field-Tested)', 'Huntsman Knife | Black Laminate (Field-Tested)'],
+      'Gamma Case': ['Karambit | Gamma Doppler (Factory New)', 'M9 Bayonet | Gamma Doppler (Factory New)', 'Bayonet | Lore (Factory New)', 'Flip Knife | Autotronic (Field-Tested)', 'Gut Knife | Freehand (Field-Tested)', 'Huntsman Knife | Black Laminate (Field-Tested)'],
+      'Chroma 3 Case': ['Karambit | Doppler (Factory New)', 'M9 Bayonet | Marble Fade (Factory New)', 'Bayonet | Tiger Tooth (Factory New)', 'Flip Knife | Slaughter (Minimal Wear)', 'Gut Knife | Case Hardened (Field-Tested)', 'Huntsman Knife | Blue Steel (Field-Tested)'],
+      'Chroma 2 Case': ['Karambit | Doppler (Factory New)', 'M9 Bayonet | Marble Fade (Factory New)', 'Bayonet | Tiger Tooth (Factory New)', 'Flip Knife | Slaughter (Minimal Wear)', 'Gut Knife | Case Hardened (Field-Tested)', 'Huntsman Knife | Blue Steel (Field-Tested)'],
+      'Chroma Case': ['Karambit | Doppler (Factory New)', 'M9 Bayonet | Marble Fade (Factory New)', 'Bayonet | Tiger Tooth (Factory New)', 'Flip Knife | Slaughter (Minimal Wear)', 'Gut Knife | Case Hardened (Field-Tested)', 'Huntsman Knife | Blue Steel (Field-Tested)'],
+      'Falchion Case': ['Falchion Knife | Fade (Factory New)', 'Falchion Knife | Slaughter (Minimal Wear)', 'Falchion Knife | Case Hardened (Field-Tested)', 'Falchion Knife | Crimson Web (Field-Tested)', 'Falchion Knife | Blue Steel (Field-Tested)', 'Falchion Knife | Rust Coat (Battle-Scarred)'],
+      'Operation Wildfire Case': ['Bowie Knife | Marble Fade (Factory New)', 'Bowie Knife | Doppler (Factory New)', 'Bowie Knife | Slaughter (Minimal Wear)', 'Bowie Knife | Case Hardened (Field-Tested)', 'Bowie Knife | Blue Steel (Field-Tested)', 'Bowie Knife | Rust Coat (Battle-Scarred)'],
+      'Operation Breakout Weapon Case': ['Butterfly Knife | Fade (Factory New)', 'Butterfly Knife | Slaughter (Minimal Wear)', 'Butterfly Knife | Crimson Web (Field-Tested)', 'Butterfly Knife | Case Hardened (Field-Tested)', 'Butterfly Knife | Blue Steel (Field-Tested)', 'Butterfly Knife | Boreal Forest (Field-Tested)'],
+      'Operation Vanguard Weapon Case': ['Karambit | Fade (Factory New)', 'M9 Bayonet | Slaughter (Minimal Wear)', 'Bayonet | Crimson Web (Field-Tested)', 'Flip Knife | Case Hardened (Field-Tested)', 'Gut Knife | Blue Steel (Field-Tested)', 'Huntsman Knife | Forest DDPAT (Field-Tested)'],
+      'Operation Phoenix Weapon Case': ['Karambit | Fade (Factory New)', 'M9 Bayonet | Slaughter (Minimal Wear)', 'Bayonet | Crimson Web (Field-Tested)', 'Flip Knife | Case Hardened (Field-Tested)', 'Gut Knife | Blue Steel (Field-Tested)', 'Huntsman Knife | Forest DDPAT (Field-Tested)'],
+      'Huntsman Weapon Case': ['Huntsman Knife | Fade (Factory New)', 'Huntsman Knife | Slaughter (Minimal Wear)', 'Huntsman Knife | Crimson Web (Field-Tested)', 'Huntsman Knife | Case Hardened (Field-Tested)', 'Huntsman Knife | Blue Steel (Field-Tested)', 'Huntsman Knife | Forest DDPAT (Field-Tested)']
+    };
+
     function normalizeImageUrl(url) {
       if (!url) return '';
       return String(url)
@@ -462,6 +505,156 @@
       const hash = String(seed || '0').split('').reduce((sum, ch) => sum + ch.charCodeAt(0), 0);
       const ratio = (hash % 997) / 997;
       return +(range[0] + (range[1] - range[0]) * ratio).toFixed(4);
+    }
+
+    function stripWearSuffix(name) {
+      return String(name || '').replace(/\s*\((Factory New|Minimal Wear|Field-Tested|Well-Worn|Battle-Scarred)\)$/i, '').trim();
+    }
+
+    function isWeaponLikeName(name) {
+      const lower = String(name || '').toLowerCase();
+      return lower.includes('|') || lower.includes('knife') || lower.includes('gloves') || lower.includes('hand wraps');
+    }
+
+    function isCaseLikeName(name) {
+      return /(case|capsule|package|container)/i.test(String(name || ''));
+    }
+
+    function getWearCoverageText(floatMin, floatMax) {
+      const min = clampFloat(floatMin);
+      const max = clampFloat(floatMax);
+      const supported = wearOrder.filter((wear) => {
+        const range = wearRanges[wear];
+        if (!range) return false;
+        return Math.max(min, range[0]) <= Math.min(max, range[1]);
+      });
+      return supported.length ? supported.join(' • ') : 'Factory New • Battle-Scarred';
+    }
+
+    function getBalancedCaseRarity(index, total) {
+      const ratio = total <= 1 ? 1 : index / (total - 1);
+      if (ratio < 0.45) return 'Mil-Spec';
+      if (ratio < 0.75) return 'Restricted';
+      if (ratio < 0.92) return 'Classified';
+      return 'Covert';
+    }
+
+    function buildCaseWeaponItems(selectedCase) {
+      const rawItems = (selectedCase.weapons || []).map((weaponName, idx, arr) => {
+        const details = caseWeaponPool[weaponName] || {};
+        const fallbackRarity = getBalancedCaseRarity(idx, arr.length || 1);
+        return {
+          name: weaponName,
+          marketHashName: weaponName,
+          rarity: details.rarity || fallbackRarity,
+          floatMin: Number.isFinite(details.floatMin) ? details.floatMin : 0.00,
+          floatMax: Number.isFinite(details.floatMax) ? details.floatMax : 1.00,
+          pattern: details.pattern || detectPatternType(weaponName)
+        };
+      });
+
+      const hasLowTiers = rawItems.some((item) => item.rarity === 'Mil-Spec' || item.rarity === 'Restricted');
+      if (!hasLowTiers) {
+        rawItems.forEach((item, idx, arr) => {
+          item.rarity = getBalancedCaseRarity(idx, arr.length || 1);
+        });
+      }
+      return rawItems;
+    }
+
+    function getSpecialDropsForCase(caseName) {
+      return specialDropsByCase[caseName] || [];
+    }
+
+    const caseDropsCache = new Map();
+
+    async function getCaseDropsFromApi(caseName) {
+      if (!caseName) return null;
+      if (caseDropsCache.has(caseName)) return caseDropsCache.get(caseName);
+      try {
+        const res = await fetch(apiUrl(`/api/cases/drops?caseName=${encodeURIComponent(caseName)}`), {
+          credentials: 'include',
+          headers: getAuthHeaders()
+        });
+        if (!res.ok) return null;
+        const data = await res.json();
+        if (!data || !data.ok || !data.drops) return null;
+        caseDropsCache.set(caseName, data.drops);
+        return data.drops;
+      } catch {
+        return null;
+      }
+    }
+
+    async function resolveCasePreviewDrops(selectedCase) {
+      const remote = await getCaseDropsFromApi(selectedCase.name);
+      if (remote && Array.isArray(remote.weapons) && remote.weapons.length) {
+        const remoteWeapons = remote.weapons.map((item) => ({
+          name: item.name || item.marketHashName || 'CS2 Item',
+          marketHashName: item.marketHashName || item.name || '',
+          rarity: item.rarity || 'Mil-Spec',
+          floatMin: Number.isFinite(item.floatMin) ? item.floatMin : 0.00,
+          floatMax: Number.isFinite(item.floatMax) ? item.floatMax : 1.00,
+          pattern: detectPatternType(item.name || item.marketHashName || '')
+        }));
+        const remoteSpecials = Array.isArray(remote.specials)
+          ? remote.specials.map((item) => ({
+              name: item.name || item.marketHashName || 'Rare Special Item',
+              marketHashName: item.marketHashName || item.name || '',
+              rarity: 'Extraordinary',
+              pattern: detectPatternType(item.name || item.marketHashName || ''),
+              floatMin: Number.isFinite(item.floatMin) ? item.floatMin : 0.00,
+              floatMax: Number.isFinite(item.floatMax) ? item.floatMax : 1.00
+            }))
+          : [];
+        return { weapons: remoteWeapons, specials: remoteSpecials, source: 'csgoskins' };
+      }
+
+      const localWeapons = buildCaseWeaponItems(selectedCase);
+      const localSpecials = getSpecialDropsForCase(selectedCase.name).map((name) => ({
+        name,
+        marketHashName: name,
+        rarity: 'Extraordinary',
+        pattern: detectPatternType(name),
+        floatMin: 0.00,
+        floatMax: 1.00
+      }));
+      return { weapons: localWeapons, specials: localSpecials, source: 'local' };
+    }
+
+    function buildWeaponImageCandidates(marketHashName) {
+      const out = new Set();
+      const original = String(marketHashName || '').trim();
+      const base = stripWearSuffix(original);
+      if (original) out.add(original);
+      if (base && base !== original) out.add(base);
+      const stattrakStripped = original.replace(/^StatTrak\(TM\)\s+/i, '').trim();
+      if (stattrakStripped && stattrakStripped !== original) out.add(stattrakStripped);
+      const souvenirStripped = original.replace(/^Souvenir\s+/i, '').trim();
+      if (souvenirStripped && souvenirStripped !== original) out.add(souvenirStripped);
+      if (base && !/\(Field-Tested\)$/i.test(base)) out.add(`${base} (Field-Tested)`);
+      return Array.from(out);
+    }
+
+    function snapshotMatchesWeapon(requestedName, snapshot) {
+      if (!snapshot || !snapshot.iconUrl) return false;
+      const requestedWeaponLike = isWeaponLikeName(requestedName);
+      const returnedName = snapshot.marketHashName || '';
+      if (!requestedWeaponLike) return true;
+      if (!isWeaponLikeName(returnedName)) return false;
+      if (isCaseLikeName(returnedName)) return false;
+      return true;
+    }
+
+    async function getWeaponSnapshotWithFallback(marketHashName) {
+      const candidates = buildWeaponImageCandidates(marketHashName);
+      for (const candidate of candidates) {
+        const snapshot = await fetchSnapshotWithRetry(candidate, 4);
+        if (snapshotMatchesWeapon(marketHashName, snapshot)) {
+          return snapshot;
+        }
+      }
+      return null;
     }
 
     function detectPatternType(name) {
@@ -723,6 +916,7 @@
     async function openCasePreview(caseIndex) {
       const selectedCase = cs2Cases[caseIndex];
       if (!selectedCase) return;
+      selectedCaseIndex = caseIndex;
 
       showPage('casePreview');
       const title = document.getElementById('casePreviewTitle');
@@ -730,29 +924,51 @@
       const grid = document.getElementById('caseWeaponsGrid');
       const loading = document.getElementById('casePreviewLoading');
       const buyCaseLink = document.getElementById('caseBuyNowLink');
+      const specialBtn = document.getElementById('caseSpecialDropsBtn');
 
       title.textContent = `${selectedCase.name} Weapons`;
-      meta.textContent = `Showing possible drops for ${selectedCase.name}`;
+      meta.textContent = `Showing possible drops for ${selectedCase.name}, including blue/purple/red tiers and rare gold special items.`;
       buyCaseLink.href = `https://steamcommunity.com/market/listings/730/${encodeURIComponent(selectedCase.steamHashName)}`;
 
-      const weaponItems = selectedCase.weapons.map((weaponName) => {
-        const details = caseWeaponPool[weaponName] || {
-          rarity: 'Mil-Spec',
-          floatMin: 0.00,
-          floatMax: 1.00,
-          pattern: detectPatternType(weaponName)
-        };
-        return {
-          name: weaponName,
-          marketHashName: weaponName,
-          rarity: details.rarity,
-          floatMin: details.floatMin,
-          floatMax: details.floatMax,
-          pattern: details.pattern
-        };
-      });
+      const resolvedDrops = await resolveCasePreviewDrops(selectedCase);
+      const weaponItems = resolvedDrops.weapons;
+      const specialDrops = resolvedDrops.specials;
+      specialBtn.style.display = specialDrops.length ? 'inline-flex' : 'none';
 
-      grid.innerHTML = weaponItems.map((item, idx) => `
+      if (resolvedDrops.source === 'csgoskins') {
+        meta.textContent = `Showing only official drops listed for ${selectedCase.name} (source: csgoskins.gg).`;
+      }
+
+      const cards = weaponItems.map((item) => ({ kind: 'weapon', item }));
+      if (specialDrops.length) {
+        const specialTypeLabel = specialDrops.some((entry) => /glove|wrap/i.test(entry.name || '')) ? 'Gloves' : 'Knives';
+        cards.push({ kind: 'mystery', specialTypeLabel, count: specialDrops.length });
+      }
+
+      grid.innerHTML = cards.map((card, idx) => {
+        if (card.kind === 'mystery') {
+          return `
+            <article class="weapon-card rarity-frame-contraband special-mystery-card" onclick="openSpecialDropsPreview(${caseIndex})">
+              <div class="weapon-thumb special-thumb">
+                <div class="mystery-star">&#9733;</div>
+                <div class="weapon-placeholder">Rare Special Item</div>
+              </div>
+              <div class="weapon-body">
+                <h4>${card.specialTypeLabel} Mystery Drop</h4>
+                <div class="weapon-row">
+                  <span class="chip chip-wear">Extraordinary</span>
+                  <span class="chip chip-pattern">Gold Tier</span>
+                </div>
+                <div class="float-range-line">Contains ${card.count} possible ${card.specialTypeLabel.toLowerCase()} for this case</div>
+                <div class="float-range-line">Click to preview every possible special drop</div>
+                <button class="rarity-buy-btn rarity-btn-contraband">View ${card.specialTypeLabel}</button>
+              </div>
+            </article>
+          `;
+        }
+
+        const item = card.item;
+        return `
         <article class="weapon-card rarity-frame-${rarityClass(item.rarity)}" id="weapon-card-${idx}">
           <div class="weapon-thumb" id="weapon-thumb-${idx}">
             <div class="weapon-placeholder">Weapon Image</div>
@@ -763,22 +979,20 @@
               <span class="chip chip-wear">${item.rarity}</span>
               <span class="chip chip-pattern">${item.pattern}</span>
             </div>
+            <div class="float-range-line">Wear Tiers: ${getWearCoverageText(item.floatMin, item.floatMax)}</div>
             <div class="float-range-line">Float Range: ${Number(item.floatMin).toFixed(2)} - ${Number(item.floatMax).toFixed(2)}</div>
             <button class="rarity-buy-btn ${rarityBtnClass(item.rarity)}" id="weapon-buy-${idx}" data-market-hash="${item.marketHashName}">Buy Now on Steam</button>
           </div>
         </article>
-      `).join('');
+      `;
+      }).join('');
 
       wireWeaponThumbZoom();
 
       loading.style.display = 'block';
 
       await Promise.all(weaponItems.map(async (item, idx) => {
-        let snapshot = await fetchSnapshotWithRetry(item.marketHashName, 6);
-        if ((!snapshot || !snapshot.iconUrl) && /\((Factory New|Minimal Wear|Field-Tested|Well-Worn|Battle-Scarred)\)$/i.test(item.marketHashName)) {
-          const wearlessName = item.marketHashName.replace(/\s*\((Factory New|Minimal Wear|Field-Tested|Well-Worn|Battle-Scarred)\)$/i, '').trim();
-          snapshot = await fetchSnapshotWithRetry(wearlessName, 3);
-        }
+        const snapshot = await getWeaponSnapshotWithFallback(item.marketHashName);
 
         const thumb = document.getElementById(`weapon-thumb-${idx}`);
         const btn = document.getElementById(`weapon-buy-${idx}`);
@@ -791,11 +1005,82 @@
 
         if (snapshot && snapshot.iconUrl && thumb) {
           thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
+        } else if (thumb) {
+          const base = stripWearSuffix(item.marketHashName).toLowerCase();
+          const localMatch = marketplaceItems.find((m) => stripWearSuffix(m.name).toLowerCase() === base && m.image);
+          if (localMatch && localMatch.image) {
+            thumb.innerHTML = `<img src="${normalizeImageUrl(localMatch.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
+          }
         }
         if (snapshot && snapshot.lowestPrice) {
           btn.textContent = `Buy Now ${snapshot.lowestPrice}`;
         } else {
           btn.textContent = 'Buy Now on Steam';
+        }
+      }));
+
+      loading.style.display = 'none';
+    }
+
+    async function openSpecialDropsPreview(caseIndex) {
+      const selectedCase = cs2Cases[caseIndex];
+      if (!selectedCase) return;
+
+      const resolvedDrops = await resolveCasePreviewDrops(selectedCase);
+      const specialDrops = resolvedDrops.specials;
+      if (!specialDrops.length) return;
+
+      showPage('caseSpecial');
+      document.getElementById('caseSpecialTitle').textContent = `${selectedCase.name} Rare Special Items`;
+      document.getElementById('caseSpecialMeta').textContent = `Gold-tier special drops for ${selectedCase.name}.`;
+
+      const grid = document.getElementById('caseSpecialGrid');
+      const loading = document.getElementById('caseSpecialLoading');
+      const specialItems = specialDrops.map((item) => ({
+        name: item.name,
+        marketHashName: item.marketHashName,
+        rarity: 'Extraordinary',
+        pattern: item.pattern || detectPatternType(item.name),
+        floatMin: Number.isFinite(item.floatMin) ? item.floatMin : 0.00,
+        floatMax: Number.isFinite(item.floatMax) ? item.floatMax : 1.00
+      }));
+
+      grid.innerHTML = specialItems.map((item, idx) => `
+        <article class="weapon-card rarity-frame-extraordinary" id="special-card-${idx}">
+          <div class="weapon-thumb" id="special-thumb-${idx}">
+            <div class="weapon-placeholder">Special Item Image</div>
+          </div>
+          <div class="weapon-body">
+            <h4>${item.name}</h4>
+            <div class="weapon-row">
+              <span class="chip chip-wear">Extraordinary</span>
+              <span class="chip chip-pattern">${item.pattern}</span>
+            </div>
+            <div class="float-range-line">Wear Tiers: Factory New • Battle-Scarred</div>
+            <button class="rarity-buy-btn rarity-btn-extraordinary" id="special-buy-${idx}" data-market-hash="${item.marketHashName}">Buy Now on Steam</button>
+          </div>
+        </article>
+      `).join('');
+
+      wireWeaponThumbZoom();
+      loading.style.display = 'block';
+
+      await Promise.all(specialItems.map(async (item, idx) => {
+        const snapshot = await getWeaponSnapshotWithFallback(item.marketHashName);
+        const thumb = document.getElementById(`special-thumb-${idx}`);
+        const btn = document.getElementById(`special-buy-${idx}`);
+        if (!btn) return;
+
+        const steamUrl = snapshot && snapshot.listingUrl
+          ? snapshot.listingUrl
+          : `https://steamcommunity.com/market/listings/730/${encodeURIComponent(item.marketHashName)}`;
+        btn.onclick = () => window.open(steamUrl, '_blank', 'noopener');
+
+        if (snapshot && snapshot.iconUrl && thumb) {
+          thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
+        }
+        if (snapshot && snapshot.lowestPrice) {
+          btn.textContent = `Buy Now ${snapshot.lowestPrice}`;
         }
       }));
 
