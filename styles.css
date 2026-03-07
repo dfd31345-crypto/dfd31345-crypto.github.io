@@ -261,8 +261,10 @@ body::after {
 }
 
 .case-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
   gap: 1rem;
 }
 
@@ -272,6 +274,16 @@ body::after {
   border-radius: 14px;
   overflow: hidden;
   box-shadow: var(--shadow-md);
+  width: 235px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.case-card-home:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: #425186;
 }
 
 .case-thumb {
@@ -298,26 +310,55 @@ body::after {
 }
 
 .case-body {
-  padding: 0.7rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
 }
 
 .case-body h3 {
-  font-size: 0.9rem;
-  min-height: 2.2em;
+  font-size: 0.92rem;
+  min-height: 2.3em;
+  line-height: 1.2;
 }
 
 .case-actions {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 0.45rem;
-  margin-top: 0.6rem;
 }
 
 .case-actions .btn-primary,
 .case-actions .btn-secondary {
   text-align: center;
-  padding: 0.5rem 0.45rem;
-  font-size: 0.72rem;
+  padding: 0.6rem 0.55rem;
+  font-size: 0.74rem;
+  border-radius: 10px;
+}
+
+.case-btn {
+  width: 100%;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.case-btn-preview {
+  background: linear-gradient(135deg, rgba(71, 95, 194, 0.18), rgba(43, 62, 130, 0.18));
+  border-color: rgba(100, 124, 234, 0.48);
+}
+
+.case-btn-preview:hover {
+  background: linear-gradient(135deg, rgba(91, 118, 232, 0.28), rgba(61, 84, 170, 0.28));
+  border-color: rgba(130, 151, 246, 0.7);
+}
+
+.case-btn-buy {
+  background: linear-gradient(135deg, #5872f2 0%, #4a60c8 100%);
+  border: 1px solid rgba(131, 156, 255, 0.5);
+}
+
+.case-btn-buy:hover {
+  background: linear-gradient(135deg, #6882ff 0%, #556dd9 100%);
 }
 
 .case-preview-meta {
@@ -1308,7 +1349,7 @@ body::after {
   }
 
   .case-grid {
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    justify-content: center;
   }
 
   .weapons-grid {
@@ -1354,8 +1395,12 @@ body::after {
   }
 
   .case-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
     gap: 0.65rem;
+  }
+
+  .case-card-home {
+    width: min(100%, 340px);
   }
 
   .weapons-grid {
