@@ -503,7 +503,7 @@
       return `
         <article class="skin-card rarity-frame-${raritySlug}" ${clickAttr}>
           <div class="skin-thumb">
-            <img src="${normalizeImageUrl(item.image)}" alt="${itemName}" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');">
+            <img src="${normalizeImageUrl(item.image)}" alt="${itemName}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback');">
             <span class="skin-rarity-chip">${rarity}</span>
           </div>
           <div class="skin-body">
@@ -684,7 +684,7 @@
         if (!snapshot || !snapshot.iconUrl) return;
         const thumb = document.getElementById(`case-thumb-${idx}`);
         if (!thumb) return;
-        thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="${cs.name}" onerror="this.remove(); this.parentElement.innerHTML='<div class=\"case-placeholder\">${cs.name}</div>';">`;
+        thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="${cs.name}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove(); this.parentElement.innerHTML='<div class=\"case-placeholder\">${cs.name}</div>';">`;
       });
     }
 
@@ -751,7 +751,7 @@
         btn.onclick = () => window.open(steamUrl, '_blank', 'noopener');
 
         if (snapshot && snapshot.iconUrl && thumb) {
-          thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="${item.name}" onerror="this.remove(); this.parentElement.innerHTML='<div class=\"weapon-placeholder\">${item.name}</div>';">`;
+          thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="${item.name}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove(); this.parentElement.innerHTML='<div class=\"weapon-placeholder\">${item.name}</div>';">`;
         }
         if (snapshot && snapshot.lowestPrice) {
           btn.textContent = `Buy Now ${snapshot.lowestPrice}`;
