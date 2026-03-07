@@ -236,6 +236,180 @@ body::after {
   z-index: 1;
 }
 
+.home-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.home-head-copy h2 {
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.home-head-copy p {
+  color: var(--text-secondary);
+  margin-top: 0.45rem;
+}
+
+.home-head-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.case-card-home {
+  background: linear-gradient(155deg, rgba(31, 39, 65, 0.95), rgba(17, 24, 42, 0.96));
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.case-thumb {
+  height: 160px;
+  background: radial-gradient(circle at 45% 30%, rgba(88, 101, 242, 0.18), rgba(18, 24, 42, 0.96));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.case-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.case-placeholder {
+  color: #9db0e1;
+  font-size: 0.72rem;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.case-body {
+  padding: 0.7rem;
+}
+
+.case-body h3 {
+  font-size: 0.9rem;
+  min-height: 2.2em;
+}
+
+.case-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem;
+  margin-top: 0.6rem;
+}
+
+.case-actions .btn-primary,
+.case-actions .btn-secondary {
+  text-align: center;
+  padding: 0.5rem 0.45rem;
+  font-size: 0.72rem;
+}
+
+.case-preview-meta {
+  color: var(--text-secondary);
+  margin-bottom: 0.8rem;
+}
+
+.weapons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.9rem;
+}
+
+.weapon-card {
+  background: linear-gradient(165deg, rgba(34, 42, 69, 0.96), rgba(19, 24, 41, 0.98));
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.weapon-thumb {
+  height: 128px;
+  background: radial-gradient(circle at 35% 25%, rgba(79, 110, 212, 0.2), rgba(22, 29, 50, 0.95));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weapon-thumb img {
+  width: 94%;
+  height: 98px;
+  object-fit: contain;
+}
+
+.weapon-placeholder {
+  color: #9fb0d8;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 0.4rem;
+}
+
+.weapon-body {
+  padding: 0.62rem;
+}
+
+.weapon-body h4 {
+  font-size: 0.82rem;
+  line-height: 1.2;
+  margin-bottom: 0.45rem;
+}
+
+.weapon-row {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.35rem;
+}
+
+.float-range-line {
+  font-size: 0.7rem;
+  color: #9eb2df;
+  margin-bottom: 0.45rem;
+}
+
+.rarity-buy-btn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 0.52rem 0.5rem;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rarity-btn-consumer { background: #6a778f; }
+.rarity-btn-industrial { background: #3f7cc7; }
+.rarity-btn-mil-spec { background: #3e5fdb; }
+.rarity-btn-restricted { background: #7442df; }
+.rarity-btn-classified { background: #b132cd; }
+.rarity-btn-covert { background: #d43f3f; }
+.rarity-btn-contraband,
+.rarity-btn-extraordinary { background: #c9962d; }
+
+.case-preview-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* Home */
 .hero-shell {
   display: grid;
@@ -1128,6 +1302,19 @@ body::after {
 
 /* Responsive */
 @media (max-width: 1200px) {
+  .home-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .case-grid {
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  }
+
+  .weapons-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
   .hero-shell {
     grid-template-columns: 1fr;
   }
@@ -1164,6 +1351,19 @@ body::after {
   
   .main-content {
     padding: 1rem;
+  }
+
+  .case-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .weapons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-head-copy h2 {
+    font-size: 1.5rem;
   }
 
   .hero-copy {

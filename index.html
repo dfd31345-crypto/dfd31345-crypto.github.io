@@ -49,33 +49,32 @@
   <main class="main-content">
     <!-- Home Page -->
     <section id="homePage" class="page-section active">
-      <div class="hero-shell">
-        <div class="hero-copy">
-          <h2>Trade CS2 Skins. Fast.</h2>
-          <p>High tier for mid tier, equal value swaps, instant listings.</p>
-          <div class="hero-cta-row">
-            <button class="btn-primary" onclick="showPage('marketplace')">Start Trading</button>
-            <button class="btn-secondary" onclick="showPage('inventory')">Open Inventory</button>
-            <button class="btn-secondary" onclick="showPage('trades')">View Offers</button>
-            <button class="btn-secondary" onclick="showPage('profile')">My CS2 Trading Profile</button>
-          </div>
-          <div class="quick-action-grid">
-            <button class="action-pill" onclick="showPage('marketplace')">Quick Buy</button>
-            <button class="action-pill" onclick="showPage('marketplace')">Quick Sell</button>
-            <button class="action-pill" onclick="showPage('trades')">Create Offer</button>
-            <button class="action-pill" onclick="showPage('inventory')">Check Value</button>
-            <button class="action-pill" onclick="showPage('marketplace')">Find Upgrades</button>
-            <button class="action-pill" onclick="showPage('marketplace')">Find Downgrades</button>
-          </div>
+      <div class="home-head">
+        <div class="home-head-copy">
+          <h2>CS2 Cases</h2>
+          <p>Pick a case. Preview all drops. Buy on Steam.</p>
         </div>
-        <div class="hero-visual" id="heroVisualGrid"></div>
+        <div class="home-head-actions">
+          <button class="btn-primary" onclick="showPage('inventory')">My Inventory</button>
+          <button class="btn-secondary" onclick="showPage('marketplace')">Marketplace</button>
+          <button class="btn-secondary" onclick="showPage('profile')">My CS2 Trading Profile</button>
+        </div>
       </div>
 
-      <div class="trade-swap-block">
-        <div class="content-header compact">
-          <h2>Equal Value Trade Ideas</h2>
-        </div>
-        <div id="tradeSwapGrid" class="trade-swap-grid"></div>
+      <div id="caseGrid" class="case-grid"></div>
+    </section>
+
+    <!-- Case Weapons Preview Page -->
+    <section id="casePreviewPage" class="page-section">
+      <div class="content-header">
+        <h2 id="casePreviewTitle">Case Preview</h2>
+        <button class="btn-secondary" onclick="showPage('home')">Back to Cases</button>
+      </div>
+      <div id="casePreviewMeta" class="case-preview-meta"></div>
+      <div id="caseWeaponsGrid" class="weapons-grid"></div>
+      <div id="casePreviewLoading" class="status-message" style="display:none;">Loading weapon prices...</div>
+      <div class="case-preview-actions">
+        <a id="caseBuyNowLink" class="btn-primary" href="#" target="_blank" rel="noopener">Buy Case on Steam</a>
       </div>
     </section>
 
@@ -318,9 +317,10 @@
       document.querySelectorAll('.nav-link').forEach(link => {
         link.classList.remove('active');
       });
-      document.querySelector(`.nav-link[data-page="${pageName}"]`)?.classList.add('active');
+      const activeNav = pageName === 'casePreview' ? 'home' : pageName;
+      document.querySelector(`.nav-link[data-page="${activeNav}"]`)?.classList.add('active');
       
-      if (pageName === 'home') renderHomePage();
+      if (pageName === 'home') renderHomeCases();
       if (pageName === 'marketplace') loadMarketplace();
       if (pageName === 'inventory') loadInventory();
       if (pageName === 'trades') loadTrades();
@@ -364,6 +364,68 @@
       'P90 | Asiimov': { pattern: 'Not pattern-based', raritiesAvailable: ['Covert'], cases: ['Danger Zone Case'] },
       'MAC-10 | Neon Rider': { pattern: 'Not pattern-based', raritiesAvailable: ['Classified'], cases: ['Danger Zone Case'] }
     };
+
+    const caseWeaponPool = {
+      'AK-47 | Head Shot (Field-Tested)': { rarity: 'Classified', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'M4A1-S | Printstream (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 0.80, pattern: 'Not pattern-based' },
+      'AWP | Duality (Field-Tested)': { rarity: 'Classified', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'USP-S | The Traitor (Field-Tested)': { rarity: 'Classified', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'FAMAS | Rapid Eye Movement (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'Desert Eagle | Printstream (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 0.80, pattern: 'Not pattern-based' },
+      'M4A4 | Temukau (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 0.80, pattern: 'Not pattern-based' },
+      'AK-47 | Nightwish (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'MP9 | Starlight Protector (Field-Tested)': { rarity: 'Classified', floatMin: 0.00, floatMax: 0.80, pattern: 'Not pattern-based' },
+      'USP-S | Cortex (Field-Tested)': { rarity: 'Classified', floatMin: 0.06, floatMax: 0.80, pattern: 'Not pattern-based' },
+      'AWP | Neo-Noir (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'Glock-18 | Neo-Noir (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'M4A4 | Neo-Noir (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'AK-47 | Asiimov (Field-Tested)': { rarity: 'Covert', floatMin: 0.05, floatMax: 0.70, pattern: 'Not pattern-based' },
+      'MAC-10 | Neon Rider (Factory New)': { rarity: 'Classified', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'P90 | Asiimov (Minimal Wear)': { rarity: 'Covert', floatMin: 0.05, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'Glock-18 | Vogue (Field-Tested)': { rarity: 'Classified', floatMin: 0.00, floatMax: 0.70, pattern: 'Not pattern-based' },
+      'AK-47 | Neon Rider (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'M4A4 | In Living Color (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'P250 | See Ya Later (Field-Tested)': { rarity: 'Classified', floatMin: 0.00, floatMax: 0.75, pattern: 'Not pattern-based' },
+      'AK-47 | Bloodsport (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 0.45, pattern: 'Not pattern-based' },
+      'M4A1-S | Mecha Industries (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'USP-S | Neo-Noir (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'FAMAS | Roll Cage (Field-Tested)': { rarity: 'Classified', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'Desert Eagle | Code Red (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'AWP | Wildfire (Field-Tested)': { rarity: 'Covert', floatMin: 0.01, floatMax: 0.70, pattern: 'Not pattern-based' },
+      'AK-47 | Frontside Misty (Field-Tested)': { rarity: 'Classified', floatMin: 0.00, floatMax: 0.87, pattern: 'Not pattern-based' },
+      'M4A4 | Hellfire (Field-Tested)': { rarity: 'Classified', floatMin: 0.00, floatMax: 0.90, pattern: 'Not pattern-based' },
+      'USP-S | Kill Confirmed (Field-Tested)': { rarity: 'Covert', floatMin: 0.06, floatMax: 0.80, pattern: 'Not pattern-based' },
+      'AWP | Hyper Beast (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' },
+      'AK-47 | Jaguar (Field-Tested)': { rarity: 'Covert', floatMin: 0.00, floatMax: 1.00, pattern: 'Not pattern-based' }
+    };
+
+    const cs2Cases = [
+      { name: 'Kilowatt Case', steamHashName: 'Kilowatt Case', weapons: ['AK-47 | Head Shot (Field-Tested)', 'AWP | Duality (Field-Tested)', 'USP-S | The Traitor (Field-Tested)', 'M4A4 | Temukau (Field-Tested)', 'MP9 | Starlight Protector (Field-Tested)'] },
+      { name: 'Revolution Case', steamHashName: 'Revolution Case', weapons: ['M4A4 | Temukau (Field-Tested)', 'AK-47 | Head Shot (Field-Tested)', 'AWP | Duality (Field-Tested)', 'USP-S | The Traitor (Field-Tested)', 'P90 | Asiimov (Minimal Wear)'] },
+      { name: 'Recoil Case', steamHashName: 'Recoil Case', weapons: ['AK-47 | Nightwish (Field-Tested)', 'USP-S | Printstream (Field-Tested)', 'AWP | Chromatic Aberration (Field-Tested)', 'P250 | Visions (Field-Tested)', 'R8 Revolver | Crazy 8 (Field-Tested)'] },
+      { name: 'Dreams & Nightmares Case', steamHashName: 'Dreams & Nightmares Case', weapons: ['AK-47 | Nightwish (Field-Tested)', 'M4A1-S | Printstream (Field-Tested)', 'USP-S | The Traitor (Field-Tested)', 'MP9 | Starlight Protector (Field-Tested)', 'FAMAS | Rapid Eye Movement (Field-Tested)'] },
+      { name: 'Snakebite Case', steamHashName: 'Snakebite Case', weapons: ['USP-S | The Traitor (Field-Tested)', 'M4A4 | In Living Color (Field-Tested)', 'AK-47 | Slate (Field-Tested)', 'Desert Eagle | Trigger Discipline (Field-Tested)', 'MP9 | Food Chain (Field-Tested)'] },
+      { name: 'Fracture Case', steamHashName: 'Fracture Case', weapons: ['Desert Eagle | Printstream (Field-Tested)', 'AK-47 | Legion of Anubis (Field-Tested)', 'M4A4 | Tooth Fairy (Field-Tested)', 'Glock-18 | Vogue (Field-Tested)', 'P250 | Cassette (Field-Tested)'] },
+      { name: 'Prisma 2 Case', steamHashName: 'Prisma 2 Case', weapons: ['M4A1-S | Player Two (Field-Tested)', 'AK-47 | Phantom Disruptor (Field-Tested)', 'AWP | Capillary (Field-Tested)', 'MAC-10 | Disco Tech (Field-Tested)', 'SCAR-20 | Enforcer (Field-Tested)'] },
+      { name: 'CS20 Case', steamHashName: 'CS20 Case', weapons: ['AWP | Wildfire (Field-Tested)', 'FAMAS | Commemoration (Field-Tested)', 'MP9 | Hydra (Field-Tested)', 'M249 | Aztec (Field-Tested)', 'Dual Berettas | Elite 1.6 (Field-Tested)'] },
+      { name: 'Prisma Case', steamHashName: 'Prisma Case', weapons: ['M4A4 | Emperor (Field-Tested)', 'Five-SeveN | Angry Mob (Field-Tested)', 'AUG | Momentum (Field-Tested)', 'AWP | Atheris (Field-Tested)', 'UMP-45 | Moonrise (Field-Tested)'] },
+      { name: 'Danger Zone Case', steamHashName: 'Danger Zone Case', weapons: ['AK-47 | Asiimov (Field-Tested)', 'AWP | Neo-Noir (Field-Tested)', 'Desert Eagle | Mecha Industries (Field-Tested)', 'MP9 | Modest Threat (Field-Tested)', 'P90 | Off World (Field-Tested)'] },
+      { name: 'Horizon Case', steamHashName: 'Horizon Case', weapons: ['AK-47 | Neon Rider (Field-Tested)', 'Desert Eagle | Code Red (Field-Tested)', 'M4A1-S | Nightmare (Field-Tested)', 'AWP | PAW (Field-Tested)', 'UMP-45 | Momentum (Field-Tested)'] },
+      { name: 'Clutch Case', steamHashName: 'Clutch Case', weapons: ['M4A4 | Neo-Noir (Field-Tested)', 'MP7 | Bloodsport (Field-Tested)', 'USP-S | Cortex (Field-Tested)', 'AWP | Mortis (Field-Tested)', 'AUG | Stymphalian (Field-Tested)'] },
+      { name: 'Spectrum 2 Case', steamHashName: 'Spectrum 2 Case', weapons: ['AK-47 | The Empress (Field-Tested)', 'P250 | See Ya Later (Field-Tested)', 'MAC-10 | Neon Rider (Factory New)', 'CZ75-Auto | Tacticat (Field-Tested)', 'SG 553 | Phantom (Field-Tested)'] },
+      { name: 'Spectrum Case', steamHashName: 'Spectrum Case', weapons: ['AK-47 | Bloodsport (Field-Tested)', 'M4A1-S | Decimator (Field-Tested)', 'USP-S | Neo-Noir (Field-Tested)', 'CZ75-Auto | Xiangliu (Field-Tested)', 'MP7 | Akoben (Field-Tested)'] },
+      { name: 'Gamma 2 Case', steamHashName: 'Gamma 2 Case', weapons: ['AK-47 | Neon Revolution (Field-Tested)', 'FAMAS | Roll Cage (Field-Tested)', 'Tec-9 | Fuel Injector (Field-Tested)', 'SG 553 | Triarch (Field-Tested)', 'Glock-18 | Weasel (Field-Tested)'] },
+      { name: 'Gamma Case', steamHashName: 'Gamma Case', weapons: ['M4A1-S | Mecha Industries (Field-Tested)', 'Glock-18 | Wasteland Rebel (Field-Tested)', 'P2000 | Imperial Dragon (Field-Tested)', 'R8 Revolver | Reboot (Field-Tested)', 'AUG | Aristocrat (Field-Tested)'] },
+      { name: 'Chroma 3 Case', steamHashName: 'Chroma 3 Case', weapons: ['M4A1-S | Chantico\'s Fire (Field-Tested)', 'USP-S | Cyrex (Field-Tested)', 'AK-47 | Elite Build (Field-Tested)', 'P250 | Asiimov (Field-Tested)', 'Galil AR | Firefight (Field-Tested)'] },
+      { name: 'Chroma 2 Case', steamHashName: 'Chroma 2 Case', weapons: ['M4A1-S | Hyper Beast (Field-Tested)', 'MAC-10 | Neon Rider (Factory New)', 'AWP | Worm God (Field-Tested)', 'FAMAS | Djinn (Field-Tested)', 'Five-SeveN | Monkey Business (Field-Tested)'] },
+      { name: 'Chroma Case', steamHashName: 'Chroma Case', weapons: ['M4A4 | Dragon King (Field-Tested)', 'AK-47 | Cartel (Field-Tested)', 'AWP | Man-o\' -War (Field-Tested)', 'P250 | Muertos (Field-Tested)', 'Desert Eagle | Naga (Field-Tested)'] },
+      { name: 'Falchion Case', steamHashName: 'Falchion Case', weapons: ['AK-47 | Cartel (Field-Tested)', 'AWP | Hyper Beast (Field-Tested)', 'P2000 | Handgun (Field-Tested)', 'MP7 | Nemesis (Field-Tested)', 'USP-S | Torque (Field-Tested)'] },
+      { name: 'Operation Wildfire Case', steamHashName: 'Operation Wildfire Case', weapons: ['AWP | Elite Build (Field-Tested)', 'AK-47 | Fuel Injector (Field-Tested)', 'M4A4 | The Battlestar (Field-Tested)', 'Glock-18 | Royal Legion (Field-Tested)', 'Desert Eagle | Kumicho Dragon (Field-Tested)'] },
+      { name: 'Operation Breakout Weapon Case', steamHashName: 'Operation Breakout Weapon Case', weapons: ['M4A1-S | Cyrex (Field-Tested)', 'P90 | Asiimov (Minimal Wear)', 'Glock-18 | Water Elemental (Field-Tested)', 'Desert Eagle | Conspiracy (Field-Tested)', 'Five-SeveN | Fowl Play (Field-Tested)'] },
+      { name: 'Operation Vanguard Weapon Case', steamHashName: 'Operation Vanguard Weapon Case', weapons: ['AK-47 | Wasteland Rebel (Field-Tested)', 'P2000 | Fire Elemental (Field-Tested)', 'M4A1-S | Basilisk (Field-Tested)', 'P250 | Cartel (Field-Tested)', 'SCAR-20 | Cardiac (Field-Tested)'] },
+      { name: 'Operation Phoenix Weapon Case', steamHashName: 'Operation Phoenix Weapon Case', weapons: ['AWP | Asiimov (Battle-Scarred)', 'AK-47 | Redline (Field-Tested)', 'USP-S | Guardian (Factory New)', 'M4A4 | Asiimov (Battle-Scarred)', 'AUG | Chameleon (Field-Tested)'] },
+      { name: 'Huntsman Weapon Case', steamHashName: 'Huntsman Weapon Case', weapons: ['M4A4 | Desert-Strike (Field-Tested)', 'AK-47 | Vulcan (Field-Tested)', 'USP-S | Caiman (Factory New)', 'SCAR-20 | Cyrex (Field-Tested)', 'M4A1-S | Atomic Alloy (Field-Tested)'] }
+    ];
 
     const wearRanges = {
       'Factory New': [0.00, 0.07],
@@ -518,58 +580,133 @@
       return colors[rarity] || '255, 255, 255';
     }
 
-    function renderHomePage() {
-      const heroVisualGrid = document.getElementById('heroVisualGrid');
-      const tradeSwapGrid = document.getElementById('tradeSwapGrid');
-      if (!heroVisualGrid || !tradeSwapGrid) return;
+    const steamSnapshotCache = new Map();
 
-      const heroCards = [
-        marketplaceItems[2],
-        marketplaceItems[6],
-        marketplaceItems[5],
-        marketplaceItems[3],
-        marketplaceItems[4],
-        marketplaceItems[1]
-      ];
+    async function getSteamSnapshot(marketHashName) {
+      if (!marketHashName) return null;
+      if (steamSnapshotCache.has(marketHashName)) {
+        return steamSnapshotCache.get(marketHashName);
+      }
+      try {
+        const res = await fetch(apiUrl(`/api/steam/market/snapshot?marketHashName=${encodeURIComponent(marketHashName)}`), {
+          credentials: 'include',
+          headers: getAuthHeaders()
+        });
+        if (!res.ok) return null;
+        const data = await res.json();
+        if (!data || !data.ok || !data.snapshot) return null;
+        steamSnapshotCache.set(marketHashName, data.snapshot);
+        return data.snapshot;
+      } catch {
+        return null;
+      }
+    }
 
-      heroVisualGrid.innerHTML = heroCards.map((item, idx) => `
-        <div class="hero-item-card float-${(idx % 3) + 1}">
-          ${renderSkinCard(item, { showPrice: true, clickable: true })}
-        </div>
-      `).join('');
+    function rarityBtnClass(rarity) {
+      return `rarity-btn-${rarityClass(rarity)}`;
+    }
 
-      const swapExamples = [
-        {
-          high: marketplaceItems[6],
-          mids: [marketplaceItems[3], marketplaceItems[4], marketplaceItems[1]]
-        },
-        {
-          high: marketplaceItems[5],
-          mids: [marketplaceItems[0], marketplaceItems[9], marketplaceItems[8]]
-        },
-        {
-          high: marketplaceItems[2],
-          mids: [marketplaceItems[7], marketplaceItems[4], marketplaceItems[0]]
-        }
-      ];
+    function renderHomeCases() {
+      const caseGrid = document.getElementById('caseGrid');
+      if (!caseGrid) return;
 
-      tradeSwapGrid.innerHTML = swapExamples.map((group, i) => {
-        const total = group.mids.reduce((sum, item) => sum + item.price, 0);
-        return `
-          <div class="swap-card swap-${i + 1}">
-            <div class="swap-side high">${renderSkinCard(group.high, { showPrice: true, clickable: true })}</div>
-            <div class="swap-arrow">⇄</div>
-            <div class="swap-side mids">
-              <div class="mid-row">
-                ${group.mids.map(item => `
-                  <div class="mid-item">${renderSkinCard(item, { showPrice: true, clickable: true })}</div>
-                `).join('')}
-              </div>
-              <div class="value-tag total">$${total.toFixed(2)}</div>
+      caseGrid.innerHTML = cs2Cases.map((cs, idx) => `
+        <article class="case-card-home" id="case-card-${idx}">
+          <div class="case-thumb" id="case-thumb-${idx}">
+            <div class="case-placeholder">${cs.name}</div>
+          </div>
+          <div class="case-body">
+            <h3>${cs.name}</h3>
+            <div class="case-actions">
+              <button class="btn-secondary" onclick="openCasePreview(${idx})">Preview Weapons</button>
+              <a class="btn-primary" href="https://steamcommunity.com/market/listings/730/${encodeURIComponent(cs.steamHashName)}" target="_blank" rel="noopener">Buy Case</a>
             </div>
           </div>
-        `;
-      }).join('');
+        </article>
+      `).join('');
+
+      cs2Cases.forEach(async (cs, idx) => {
+        const snapshot = await getSteamSnapshot(cs.steamHashName);
+        if (!snapshot || !snapshot.iconUrl) return;
+        const thumb = document.getElementById(`case-thumb-${idx}`);
+        if (!thumb) return;
+        thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="${cs.name}">`;
+      });
+    }
+
+    async function openCasePreview(caseIndex) {
+      const selectedCase = cs2Cases[caseIndex];
+      if (!selectedCase) return;
+
+      showPage('casePreview');
+      const title = document.getElementById('casePreviewTitle');
+      const meta = document.getElementById('casePreviewMeta');
+      const grid = document.getElementById('caseWeaponsGrid');
+      const loading = document.getElementById('casePreviewLoading');
+      const buyCaseLink = document.getElementById('caseBuyNowLink');
+
+      title.textContent = `${selectedCase.name} Weapons`;
+      meta.textContent = `Showing possible drops for ${selectedCase.name}`;
+      buyCaseLink.href = `https://steamcommunity.com/market/listings/730/${encodeURIComponent(selectedCase.steamHashName)}`;
+
+      const weaponItems = selectedCase.weapons.map((weaponName) => {
+        const details = caseWeaponPool[weaponName] || {
+          rarity: 'Mil-Spec',
+          floatMin: 0.00,
+          floatMax: 1.00,
+          pattern: detectPatternType(weaponName)
+        };
+        return {
+          name: weaponName,
+          marketHashName: weaponName,
+          rarity: details.rarity,
+          floatMin: details.floatMin,
+          floatMax: details.floatMax,
+          pattern: details.pattern
+        };
+      });
+
+      grid.innerHTML = weaponItems.map((item, idx) => `
+        <article class="weapon-card rarity-frame-${rarityClass(item.rarity)}" id="weapon-card-${idx}">
+          <div class="weapon-thumb" id="weapon-thumb-${idx}">
+            <div class="weapon-placeholder">${item.name}</div>
+          </div>
+          <div class="weapon-body">
+            <h4>${item.name}</h4>
+            <div class="weapon-row">
+              <span class="chip chip-wear">${item.rarity}</span>
+              <span class="chip chip-pattern">${item.pattern}</span>
+            </div>
+            <div class="float-range-line">Float Range: ${Number(item.floatMin).toFixed(2)} - ${Number(item.floatMax).toFixed(2)}</div>
+            <button class="rarity-buy-btn ${rarityBtnClass(item.rarity)}" id="weapon-buy-${idx}" data-market-hash="${item.marketHashName}">Buy Now on Steam</button>
+          </div>
+        </article>
+      `).join('');
+
+      loading.style.display = 'block';
+
+      await Promise.all(weaponItems.map(async (item, idx) => {
+        const snapshot = await getSteamSnapshot(item.marketHashName);
+        const thumb = document.getElementById(`weapon-thumb-${idx}`);
+        const btn = document.getElementById(`weapon-buy-${idx}`);
+        if (!btn) return;
+
+        const steamUrl = snapshot && snapshot.listingUrl
+          ? snapshot.listingUrl
+          : `https://steamcommunity.com/market/listings/730/${encodeURIComponent(item.marketHashName)}`;
+        btn.onclick = () => window.open(steamUrl, '_blank', 'noopener');
+
+        if (snapshot && snapshot.iconUrl && thumb) {
+          thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="${item.name}">`;
+        }
+        if (snapshot && snapshot.lowestPrice) {
+          btn.textContent = `Buy Now ${snapshot.lowestPrice}`;
+        } else {
+          btn.textContent = 'Buy Now on Steam';
+        }
+      }));
+
+      loading.style.display = 'none';
     }
 
     function showItemDetail(itemId) {
