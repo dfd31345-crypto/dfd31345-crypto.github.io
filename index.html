@@ -71,6 +71,25 @@
     const rawApiBase = (window.APP_CONFIG && window.APP_CONFIG.API_BASE_URL) ? String(window.APP_CONFIG.API_BASE_URL) : '';
     const API_BASE_URL = rawApiBase.replace(/\/$/, '');
     const STEAM_TOKEN_KEY = 'steam_auth_token';
+    const CURRENCY_PREF_KEY = 'currency_preference';
+
+    function getCurrencyPreference() {
+      return localStorage.getItem(CURRENCY_PREF_KEY) || 'usd';
+    }
+
+    function setCurrencyPreference(currency) {
+      localStorage.setItem(CURRENCY_PREF_KEY, currency);
+      renderAuthState(); // Re-render to update display
+    }
+
+    function formatBalance(user) {
+      const pref = getCurrencyPreference();
+      if (pref === 'dabloons') {
+        return `<img src="dabloon.svg" alt="Dabloon" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">${user.balanceDabloons || 0}`;
+      } else {
+        return `$${(user.balanceUsd || 0).toFixed(2)}`;
+      }
+    }
 
     function apiUrl(path) {
       return `${API_BASE_URL}${path}`;
@@ -139,7 +158,32 @@
       const avatarHtml = user.avatar
         ? `<img src="${user.avatar}" alt="${user.displayName}" style="width:32px;height:32px;border-radius:50%;object-fit:cover;margin-right:0.6rem;border:1px solid rgba(255,255,255,0.35);vertical-align:middle;">`
         : '';
-      navAuthBtns.innerHTML = `<span style="margin-right:1rem;display:inline-flex;align-items:center;">${avatarHtml}Logged in as <b style="margin-left:0.25rem;">${user.displayName}</b></span><button id="navSignOutBtn" class="btn-primary" style="background:#ff6b35;color:#fff;">Sign Out</button>`;
+      
+      const balanceHtml = formatBalance(user);
+      const currencyPref = getCurrencyPreference();
+      const currencyToggleText = currencyPref === 'usd' ? 'D' : '$';
+      
+      navAuthBtns.innerHTML = `
+        <button id="currencyToggleBtn" class="btn-primary" style="padding:0.4rem 0.7rem;font-size:0.9rem;margin-right:0.5rem;min-width:30px;" title="Switch currency">
+          ${currencyToggleText}
+        </button>
+        <span style="margin-right:1rem;display:inline-flex;align-items:center;font-weight:600;">
+          ${balanceHtml}
+        </span>
+        <span style="margin-right:1rem;display:inline-flex;align-items:center;">
+          ${avatarHtml}Logged in as <b style="margin-left:0.25rem;">${user.displayName}</b>
+        </span>
+        <button id="navSignOutBtn" class="btn-primary" style="background:#ff6b35;color:#fff;">Sign Out</button>
+      `;
+      
+      const currencyToggleBtn = document.getElementById('currencyToggleBtn');
+      if (currencyToggleBtn) {
+        currencyToggleBtn.onclick = () => {
+          const newCurrency = getCurrencyPreference() === 'usd' ? 'dabloons' : 'usd';
+          setCurrencyPreference(newCurrency);
+        };
+      }
+      
       const navSignOutBtn = document.getElementById('navSignOutBtn');
       if (navSignOutBtn) navSignOutBtn.onclick = signOut;
 
