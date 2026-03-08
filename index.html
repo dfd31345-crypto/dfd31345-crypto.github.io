@@ -1286,6 +1286,8 @@
 
     const steamSnapshotCache = new Map();
     const SNAPSHOT_STORAGE_KEY = 'steam_snapshot_cache_v1';
+    let marketApiCooldownUntil = 0;
+    let snapshotQueue = Promise.resolve();
 
     function loadStoredSnapshots() {
       try {
@@ -1326,6 +1328,47 @@
       return new Promise((resolve) => setTimeout(resolve, ms));
     }
 
+    function enqueueSnapshotTask(task) {
+      const run = snapshotQueue.then(task, task);
+      snapshotQueue = run.catch(() => null).then(() => wait(170));
+      return run;
+    }
+
+    function extractJsonObjectFromText(text) {
+      const source = String(text || '');
+      const first = source.indexOf('{');
+      const last = source.lastIndexOf('}');
+      if (first < 0 || last <= first) return '';
+      return source.slice(first, last + 1);
+    }
+
+    async function fetchSteamPriceOverviewViaRelay(marketHashName) {
+      if (!marketHashName) return null;
+      const steamUrl = `http://steamcommunity.com/market/priceoverview/?currency=1&appid=${STEAM_APP_ID}&market_hash_name=${encodeURIComponent(marketHashName)}`;
+      const relayUrl = `https://r.jina.ai/${steamUrl}`;
+      try {
+        const res = await fetch(relayUrl);
+        if (!res.ok) return null;
+        const text = await res.text();
+        const jsonText = extractJsonObjectFromText(text);
+        if (!jsonText) return null;
+        const parsed = JSON.parse(jsonText);
+        if (!parsed || parsed.success !== true) return null;
+        const lowest = typeof parsed.lowest_price === 'string' ? parsed.lowest_price.trim() : '';
+        const median = typeof parsed.median_price === 'string' ? parsed.median_price.trim() : '';
+        if (!lowest && !median) return null;
+        return {
+          marketHashName,
+          lowestPrice: lowest,
+          medianPrice: median,
+          sellPriceText: lowest || median,
+          listingUrl: `https://steamcommunity.com/market/listings/730/${encodeURIComponent(marketHashName)}`
+        };
+      } catch {
+        return null;
+      }
+    }
+
     async function fetchSnapshotWithRetry(marketHashName, retries = 3) {
       for (let attempt = 1; attempt <= retries; attempt += 1) {
         const snapshot = await getSteamSnapshot(marketHashName);
@@ -1344,20 +1387,46 @@
       if (steamSnapshotCache.has(marketHashName)) {
         return steamSnapshotCache.get(marketHashName);
       }
-      try {
-        const res = await fetch(apiUrl(`/api/steam/market/snapshot?marketHashName=${encodeURIComponent(marketHashName)}`), {
-          credentials: 'include',
-          headers: getAuthHeaders()
-        });
-        if (!res.ok) return null;
-        const data = await res.json();
-        if (!data || !data.ok || !data.snapshot) return null;
-        steamSnapshotCache.set(marketHashName, data.snapshot);
-        persistSnapshots();
-        return data.snapshot;
-      } catch {
+      return enqueueSnapshotTask(async () => {
+        if (steamSnapshotCache.has(marketHashName)) {
+          return steamSnapshotCache.get(marketHashName);
+        }
+
+        const now = Date.now();
+        const canCallBackend = now >= marketApiCooldownUntil;
+
+        if (canCallBackend) {
+          try {
+            const res = await fetch(apiUrl(`/api/steam/market/snapshot?marketHashName=${encodeURIComponent(marketHashName)}`), {
+              credentials: 'include',
+              headers: getAuthHeaders()
+            });
+
+            if (res.status === 429) {
+              const retryAfterSec = Number(res.headers.get('retry-after') || '60');
+              marketApiCooldownUntil = Date.now() + (Number.isFinite(retryAfterSec) ? retryAfterSec * 1000 : 60000);
+            } else if (res.ok) {
+              const data = await res.json();
+              if (data && data.ok && data.snapshot) {
+                steamSnapshotCache.set(marketHashName, data.snapshot);
+                persistSnapshots();
+                return data.snapshot;
+              }
+            }
+          } catch {
+            // Fall through to relay-based fallback.
+          }
+        }
+
+        const relaySnapshot = await fetchSteamPriceOverviewViaRelay(marketHashName);
+        if (relaySnapshot) {
+          steamSnapshotCache.set(marketHashName, relaySnapshot);
+          persistSnapshots();
+          return relaySnapshot;
+        }
+
         return null;
-      }
+      });
     }
 
     function rarityBtnClass(rarity) {
