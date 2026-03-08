@@ -5,6 +5,8 @@ const https = require('https');
 const SITE_DIR = path.resolve(__dirname, '..');
 const CASES_DIR = path.join(SITE_DIR, 'assets', 'cases');
 const CRATES_URL = 'https://raw.githubusercontent.com/ByMykel/CSGO-API/main/public/api/en/crates.json';
+const FIXED_WEAPONS_DIRNAME = 'weapons-fixed';
+const CASE_THUMB_NAME = 'case-thumb.png';
 
 const TARGET_CASES = [
   'Kilowatt Case',
@@ -142,6 +144,13 @@ function toWebPath(parts) {
   return safeParts.join('/');
 }
 
+function ensureFixedImageCopy(sourcePath, targetPath) {
+  if (!sourcePath || !fs.existsSync(sourcePath)) return false;
+  fs.mkdirSync(path.dirname(targetPath), { recursive: true });
+  fs.copyFileSync(sourcePath, targetPath);
+  return true;
+}
+
 async function main() {
   const crates = JSON.parse(await fetchText(CRATES_URL));
   const cratesByName = new Map(crates.map((c) => [c.name, c]));
@@ -166,6 +175,16 @@ async function main() {
 
     const folder = pickFolder(caseName, folders);
     const weaponsDir = path.join(CASES_DIR, folder, 'weapons');
+    const fixedDir = path.join(CASES_DIR, folder, FIXED_WEAPONS_DIRNAME);
+    fs.mkdirSync(fixedDir, { recursive: true });
+
+    // Rebuild fixed folder so paths are deterministic and never depend on special filename chars.
+    for (const file of fs.readdirSync(fixedDir)) {
+      if (/\.png$/i.test(file)) {
+        fs.unlinkSync(path.join(fixedDir, file));
+      }
+    }
+
     const contains = Array.isArray(crate.contains) ? crate.contains : [];
     const rare = Array.isArray(crate.contains_rare) ? crate.contains_rare : [];
     const all = [...contains, ...rare];
@@ -177,7 +196,12 @@ async function main() {
       const item = all[i] || {};
       const itemName = String(item.name || item.market_hash_name || `Item ${i + 1}`).trim();
       const fileName = fs.existsSync(weaponsDir) ? fileByIndex(weaponsDir, i + 1) : '';
-      const relPath = fileName ? toWebPath(['assets', 'cases', folder, 'weapons', fileName]) : '';
+
+      const fixedName = `${String(i + 1).padStart(3, '0')}.png`;
+      const sourcePath = fileName ? path.join(weaponsDir, fileName) : '';
+      const fixedPath = path.join(fixedDir, fixedName);
+      const hasFixed = ensureFixedImageCopy(sourcePath, fixedPath);
+      const relPath = hasFixed ? `assets/cases/${folder}/${FIXED_WEAPONS_DIRNAME}/${fixedName}` : '';
 
       const baseEntry = {
         name: itemName,
@@ -205,17 +229,23 @@ async function main() {
 
     const casePreviewImage = weapons.find((w) => w.image) || specials.find((s) => s.image) || null;
 
+    const caseThumbPath = path.join(CASES_DIR, folder, CASE_THUMB_NAME);
+    const caseThumbSource = casePreviewImage ? path.join(SITE_DIR, casePreviewImage.image) : '';
+    const hasCaseThumb = ensureFixedImageCopy(caseThumbSource, caseThumbPath);
+
     localImages.cases[caseName] = {
-      image: casePreviewImage ? casePreviewImage.image : '',
-      folder: toWebPath(['assets', 'cases', folder]),
+      image: hasCaseThumb ? `assets/cases/${folder}/${CASE_THUMB_NAME}` : '',
+      folder: `assets/cases/${folder}`,
       csgContainerUrl: ''
     };
   }
 
   const localManifestPath = path.join(SITE_DIR, 'case-local-images.js');
   const localManifestAliasPath = path.join(SITE_DIR, 'case-local-images.local.js');
+  const localManifestHardcodedPath = path.join(SITE_DIR, 'case-local-images.hardcoded.js');
   const dropsCachePath = path.join(SITE_DIR, 'case-drops-cache.js');
   const dropsCacheAliasPath = path.join(SITE_DIR, 'case-drops-cache.local.js');
+  const dropsCacheHardcodedPath = path.join(SITE_DIR, 'case-drops-cache.hardcoded.js');
   const missingPath = path.join(SITE_DIR, 'assets', 'cases-manifest-missing.json');
 
   const localManifestPayload = `window.CASE_LOCAL_IMAGES = ${JSON.stringify(localImages, null, 2)};\n`;
@@ -223,8 +253,10 @@ async function main() {
 
   fs.writeFileSync(localManifestPath, localManifestPayload);
   fs.writeFileSync(localManifestAliasPath, localManifestPayload);
+  fs.writeFileSync(localManifestHardcodedPath, localManifestPayload);
   fs.writeFileSync(dropsCachePath, dropsCachePayload);
   fs.writeFileSync(dropsCacheAliasPath, dropsCachePayload);
+  fs.writeFileSync(dropsCacheHardcodedPath, dropsCachePayload);
   fs.writeFileSync(missingPath, `${JSON.stringify({ generatedAt: new Date().toISOString(), missing }, null, 2)}\n`);
 
   console.log(`Wrote ${localManifestPath}`);
