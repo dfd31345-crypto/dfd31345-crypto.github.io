@@ -492,16 +492,31 @@
       return `${lowPrice}-${highPrice}`;
     }
 
-    async function updateWeaponPriceRanges(cardIndex, item) {
+    async function updateWeaponPriceRanges(cardIndex, item, options = {}) {
       const normalLine = document.getElementById(`weapon-price-normal-${cardIndex}`);
       const stattrakLine = document.getElementById(`weapon-price-stattrak-${cardIndex}`);
       if (!normalLine || !stattrakLine || !item) return;
+
+      const cacheOnly = Boolean(options.cacheOnly);
 
       const baseMarketName = stripWearSuffix(item.marketHashName || item.name || '');
       const wearOptions = getSupportedWearOptions(item.floatMin, item.floatMax);
       if (!baseMarketName || wearOptions.length === 0) {
         normalLine.textContent = 'N/A';
         stattrakLine.textContent = 'N/A';
+        return;
+      }
+
+      if (cacheOnly) {
+        const bestWear = wearOptions[0];
+        const worstWear = wearOptions[wearOptions.length - 1];
+        const normalLowSnapshot = steamSnapshotCache.get(`${baseMarketName} (${worstWear})`) || null;
+        const normalHighSnapshot = steamSnapshotCache.get(`${baseMarketName} (${bestWear})`) || null;
+        const statLowSnapshot = steamSnapshotCache.get(`StatTrak(TM) ${baseMarketName} (${worstWear})`) || null;
+        const statHighSnapshot = steamSnapshotCache.get(`StatTrak(TM) ${baseMarketName} (${bestWear})`) || null;
+
+        normalLine.textContent = renderPriceRange(getSnapshotPrice(normalLowSnapshot), getSnapshotPrice(normalHighSnapshot));
+        stattrakLine.textContent = renderPriceRange(getSnapshotPrice(statLowSnapshot), getSnapshotPrice(statHighSnapshot));
         return;
       }
 
@@ -1797,9 +1812,7 @@
       meta.textContent = `Showing possible drops for ${selectedCase.name}, including blue/purple/red tiers and rare gold special items.`;
       buyCaseLink.href = `https://steamcommunity.com/market/listings/730/${encodeURIComponent(selectedCase.steamHashName)}`;
 
-      loading.style.display = 'block';
-      loading.textContent = 'Loading stored price ranges...';
-      await refreshStoredPricesIfDue();
+      loading.style.display = 'none';
 
       const resolvedDrops = await resolveCasePreviewDrops(selectedCase);
       const weaponItems = resolvedDrops.weapons;
@@ -1880,8 +1893,13 @@
         }
         btn.textContent = 'Inspect Item';
 
-        updateWeaponPriceRanges(idx, item);
+        updateWeaponPriceRanges(idx, item, { cacheOnly: true });
       });
+
+      // Keep navigation responsive: refresh price store in background, then repaint card prices.
+      refreshStoredPricesIfDue()
+        .then(() => Promise.all(weaponItems.map((item, idx) => updateWeaponPriceRanges(idx, item))))
+        .catch(() => null);
     }
 
     async function openSpecialDropsPreview(caseIndex) {
