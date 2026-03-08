@@ -137,6 +137,11 @@ function fileByIndex(weaponsDir, index1Based) {
   return files.find((f) => f.startsWith(prefix)) || '';
 }
 
+function toWebPath(parts) {
+  const safeParts = parts.map((part) => encodeURIComponent(String(part || '')));
+  return safeParts.join('/');
+}
+
 async function main() {
   const crates = JSON.parse(await fetchText(CRATES_URL));
   const cratesByName = new Map(crates.map((c) => [c.name, c]));
@@ -172,7 +177,7 @@ async function main() {
       const item = all[i] || {};
       const itemName = String(item.name || item.market_hash_name || `Item ${i + 1}`).trim();
       const fileName = fs.existsSync(weaponsDir) ? fileByIndex(weaponsDir, i + 1) : '';
-      const relPath = fileName ? `assets/cases/${folder}/weapons/${fileName}` : '';
+      const relPath = fileName ? toWebPath(['assets', 'cases', folder, 'weapons', fileName]) : '';
 
       const baseEntry = {
         name: itemName,
@@ -202,7 +207,7 @@ async function main() {
 
     localImages.cases[caseName] = {
       image: casePreviewImage ? casePreviewImage.image : '',
-      folder: `assets/cases/${folder}`,
+      folder: toWebPath(['assets', 'cases', folder]),
       csgContainerUrl: ''
     };
   }

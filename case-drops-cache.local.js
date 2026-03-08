@@ -143,7 +143,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Kukri Knife",
-        "image": "assets/cases/kilowatt-case/weapons/018_★_Kukri_Knife.png",
+        "image": "assets/cases/kilowatt-case/weapons/018_%E2%98%85_Kukri_Knife.png",
         "marketHashName": "★ Kukri Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -151,7 +151,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Kukri Knife | Fade",
-        "image": "assets/cases/kilowatt-case/weapons/019_★_Kukri_Knife_Fade.png",
+        "image": "assets/cases/kilowatt-case/weapons/019_%E2%98%85_Kukri_Knife_Fade.png",
         "marketHashName": "★ Kukri Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -159,7 +159,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Kukri Knife | Slaughter",
-        "image": "assets/cases/kilowatt-case/weapons/020_★_Kukri_Knife_Slaughter.png",
+        "image": "assets/cases/kilowatt-case/weapons/020_%E2%98%85_Kukri_Knife_Slaughter.png",
         "marketHashName": "★ Kukri Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -167,7 +167,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Kukri Knife | Blue Steel",
-        "image": "assets/cases/kilowatt-case/weapons/021_★_Kukri_Knife_Blue_Steel.png",
+        "image": "assets/cases/kilowatt-case/weapons/021_%E2%98%85_Kukri_Knife_Blue_Steel.png",
         "marketHashName": "★ Kukri Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -175,7 +175,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Kukri Knife | Stained",
-        "image": "assets/cases/kilowatt-case/weapons/022_★_Kukri_Knife_Stained.png",
+        "image": "assets/cases/kilowatt-case/weapons/022_%E2%98%85_Kukri_Knife_Stained.png",
         "marketHashName": "★ Kukri Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -183,7 +183,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Kukri Knife | Case Hardened",
-        "image": "assets/cases/kilowatt-case/weapons/023_★_Kukri_Knife_Case_Hardened.png",
+        "image": "assets/cases/kilowatt-case/weapons/023_%E2%98%85_Kukri_Knife_Case_Hardened.png",
         "marketHashName": "★ Kukri Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -191,7 +191,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Kukri Knife | Forest DDPAT",
-        "image": "assets/cases/kilowatt-case/weapons/024_★_Kukri_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/kilowatt-case/weapons/024_%E2%98%85_Kukri_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Kukri Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -199,7 +199,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Kukri Knife | Boreal Forest",
-        "image": "assets/cases/kilowatt-case/weapons/025_★_Kukri_Knife_Boreal_Forest.png",
+        "image": "assets/cases/kilowatt-case/weapons/025_%E2%98%85_Kukri_Knife_Boreal_Forest.png",
         "marketHashName": "★ Kukri Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -207,7 +207,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Kukri Knife | Crimson Web",
-        "image": "assets/cases/kilowatt-case/weapons/026_★_Kukri_Knife_Crimson_Web.png",
+        "image": "assets/cases/kilowatt-case/weapons/026_%E2%98%85_Kukri_Knife_Crimson_Web.png",
         "marketHashName": "★ Kukri Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -215,7 +215,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Kukri Knife | Scorched",
-        "image": "assets/cases/kilowatt-case/weapons/027_★_Kukri_Knife_Scorched.png",
+        "image": "assets/cases/kilowatt-case/weapons/027_%E2%98%85_Kukri_Knife_Scorched.png",
         "marketHashName": "★ Kukri Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -223,7 +223,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Kukri Knife | Safari Mesh",
-        "image": "assets/cases/kilowatt-case/weapons/028_★_Kukri_Knife_Safari_Mesh.png",
+        "image": "assets/cases/kilowatt-case/weapons/028_%E2%98%85_Kukri_Knife_Safari_Mesh.png",
         "marketHashName": "★ Kukri Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -231,7 +231,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Kukri Knife | Night Stripe",
-        "image": "assets/cases/kilowatt-case/weapons/029_★_Kukri_Knife_Night_Stripe.png",
+        "image": "assets/cases/kilowatt-case/weapons/029_%E2%98%85_Kukri_Knife_Night_Stripe.png",
         "marketHashName": "★ Kukri Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -239,7 +239,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Kukri Knife | Urban Masked",
-        "image": "assets/cases/kilowatt-case/weapons/030_★_Kukri_Knife_Urban_Masked.png",
+        "image": "assets/cases/kilowatt-case/weapons/030_%E2%98%85_Kukri_Knife_Urban_Masked.png",
         "marketHashName": "★ Kukri Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -391,7 +391,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Driver Gloves | Imperial Plaid",
-        "image": "assets/cases/revolution-case/weapons/018_★_Driver_Gloves_Imperial_Plaid.png",
+        "image": "assets/cases/revolution-case/weapons/018_%E2%98%85_Driver_Gloves_Imperial_Plaid.png",
         "marketHashName": "★ Driver Gloves | Imperial Plaid",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -399,7 +399,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | King Snake",
-        "image": "assets/cases/revolution-case/weapons/019_★_Driver_Gloves_King_Snake.png",
+        "image": "assets/cases/revolution-case/weapons/019_%E2%98%85_Driver_Gloves_King_Snake.png",
         "marketHashName": "★ Driver Gloves | King Snake",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -407,7 +407,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | Racing Green",
-        "image": "assets/cases/revolution-case/weapons/020_★_Driver_Gloves_Racing_Green.png",
+        "image": "assets/cases/revolution-case/weapons/020_%E2%98%85_Driver_Gloves_Racing_Green.png",
         "marketHashName": "★ Driver Gloves | Racing Green",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -415,7 +415,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | Overtake",
-        "image": "assets/cases/revolution-case/weapons/021_★_Driver_Gloves_Overtake.png",
+        "image": "assets/cases/revolution-case/weapons/021_%E2%98%85_Driver_Gloves_Overtake.png",
         "marketHashName": "★ Driver Gloves | Overtake",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -423,7 +423,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Cobalt Skulls",
-        "image": "assets/cases/revolution-case/weapons/022_★_Hand_Wraps_Cobalt_Skulls.png",
+        "image": "assets/cases/revolution-case/weapons/022_%E2%98%85_Hand_Wraps_Cobalt_Skulls.png",
         "marketHashName": "★ Hand Wraps | Cobalt Skulls",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -431,7 +431,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Overprint",
-        "image": "assets/cases/revolution-case/weapons/023_★_Hand_Wraps_Overprint.png",
+        "image": "assets/cases/revolution-case/weapons/023_%E2%98%85_Hand_Wraps_Overprint.png",
         "marketHashName": "★ Hand Wraps | Overprint",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -439,7 +439,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Arboreal",
-        "image": "assets/cases/revolution-case/weapons/024_★_Hand_Wraps_Arboreal.png",
+        "image": "assets/cases/revolution-case/weapons/024_%E2%98%85_Hand_Wraps_Arboreal.png",
         "marketHashName": "★ Hand Wraps | Arboreal",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -447,7 +447,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Duct Tape",
-        "image": "assets/cases/revolution-case/weapons/025_★_Hand_Wraps_Duct_Tape.png",
+        "image": "assets/cases/revolution-case/weapons/025_%E2%98%85_Hand_Wraps_Duct_Tape.png",
         "marketHashName": "★ Hand Wraps | Duct Tape",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -455,7 +455,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hydra Gloves | Case Hardened",
-        "image": "assets/cases/revolution-case/weapons/026_★_Hydra_Gloves_Case_Hardened.png",
+        "image": "assets/cases/revolution-case/weapons/026_%E2%98%85_Hydra_Gloves_Case_Hardened.png",
         "marketHashName": "★ Hydra Gloves | Case Hardened",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -463,7 +463,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hydra Gloves | Emerald",
-        "image": "assets/cases/revolution-case/weapons/027_★_Hydra_Gloves_Emerald.png",
+        "image": "assets/cases/revolution-case/weapons/027_%E2%98%85_Hydra_Gloves_Emerald.png",
         "marketHashName": "★ Hydra Gloves | Emerald",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -471,7 +471,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hydra Gloves | Rattler",
-        "image": "assets/cases/revolution-case/weapons/028_★_Hydra_Gloves_Rattler.png",
+        "image": "assets/cases/revolution-case/weapons/028_%E2%98%85_Hydra_Gloves_Rattler.png",
         "marketHashName": "★ Hydra Gloves | Rattler",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -479,7 +479,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hydra Gloves | Mangrove",
-        "image": "assets/cases/revolution-case/weapons/029_★_Hydra_Gloves_Mangrove.png",
+        "image": "assets/cases/revolution-case/weapons/029_%E2%98%85_Hydra_Gloves_Mangrove.png",
         "marketHashName": "★ Hydra Gloves | Mangrove",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -487,7 +487,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | POW!",
-        "image": "assets/cases/revolution-case/weapons/030_★_Moto_Gloves_POW!.png",
+        "image": "assets/cases/revolution-case/weapons/030_%E2%98%85_Moto_Gloves_POW!.png",
         "marketHashName": "★ Moto Gloves | POW!",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -495,7 +495,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | Polygon",
-        "image": "assets/cases/revolution-case/weapons/031_★_Moto_Gloves_Polygon.png",
+        "image": "assets/cases/revolution-case/weapons/031_%E2%98%85_Moto_Gloves_Polygon.png",
         "marketHashName": "★ Moto Gloves | Polygon",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -503,7 +503,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | Turtle",
-        "image": "assets/cases/revolution-case/weapons/032_★_Moto_Gloves_Turtle.png",
+        "image": "assets/cases/revolution-case/weapons/032_%E2%98%85_Moto_Gloves_Turtle.png",
         "marketHashName": "★ Moto Gloves | Turtle",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -511,7 +511,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | Transport",
-        "image": "assets/cases/revolution-case/weapons/033_★_Moto_Gloves_Transport.png",
+        "image": "assets/cases/revolution-case/weapons/033_%E2%98%85_Moto_Gloves_Transport.png",
         "marketHashName": "★ Moto Gloves | Transport",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -519,7 +519,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Crimson Web",
-        "image": "assets/cases/revolution-case/weapons/034_★_Specialist_Gloves_Crimson_Web.png",
+        "image": "assets/cases/revolution-case/weapons/034_%E2%98%85_Specialist_Gloves_Crimson_Web.png",
         "marketHashName": "★ Specialist Gloves | Crimson Web",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -527,7 +527,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Mogul",
-        "image": "assets/cases/revolution-case/weapons/035_★_Specialist_Gloves_Mogul.png",
+        "image": "assets/cases/revolution-case/weapons/035_%E2%98%85_Specialist_Gloves_Mogul.png",
         "marketHashName": "★ Specialist Gloves | Mogul",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -535,7 +535,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Fade",
-        "image": "assets/cases/revolution-case/weapons/036_★_Specialist_Gloves_Fade.png",
+        "image": "assets/cases/revolution-case/weapons/036_%E2%98%85_Specialist_Gloves_Fade.png",
         "marketHashName": "★ Specialist Gloves | Fade",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -543,7 +543,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Buckshot",
-        "image": "assets/cases/revolution-case/weapons/037_★_Specialist_Gloves_Buckshot.png",
+        "image": "assets/cases/revolution-case/weapons/037_%E2%98%85_Specialist_Gloves_Buckshot.png",
         "marketHashName": "★ Specialist Gloves | Buckshot",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -551,7 +551,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Vice",
-        "image": "assets/cases/revolution-case/weapons/038_★_Sport_Gloves_Vice.png",
+        "image": "assets/cases/revolution-case/weapons/038_%E2%98%85_Sport_Gloves_Vice.png",
         "marketHashName": "★ Sport Gloves | Vice",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -559,7 +559,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Amphibious",
-        "image": "assets/cases/revolution-case/weapons/039_★_Sport_Gloves_Amphibious.png",
+        "image": "assets/cases/revolution-case/weapons/039_%E2%98%85_Sport_Gloves_Amphibious.png",
         "marketHashName": "★ Sport Gloves | Amphibious",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -567,7 +567,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Omega",
-        "image": "assets/cases/revolution-case/weapons/040_★_Sport_Gloves_Omega.png",
+        "image": "assets/cases/revolution-case/weapons/040_%E2%98%85_Sport_Gloves_Omega.png",
         "marketHashName": "★ Sport Gloves | Omega",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -575,7 +575,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Bronze Morph",
-        "image": "assets/cases/revolution-case/weapons/041_★_Sport_Gloves_Bronze_Morph.png",
+        "image": "assets/cases/revolution-case/weapons/041_%E2%98%85_Sport_Gloves_Bronze_Morph.png",
         "marketHashName": "★ Sport Gloves | Bronze Morph",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -701,7 +701,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "Sawed-Off | Kiss♥Love",
-        "image": "assets/cases/recoil-case/weapons/015_Sawed-Off_Kiss♥Love.png",
+        "image": "assets/cases/recoil-case/weapons/015_Sawed-Off_Kiss%E2%99%A5Love.png",
         "marketHashName": "Sawed-Off | Kiss♥Love",
         "rarity": "Classified",
         "floatMin": 0,
@@ -727,7 +727,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Broken Fang Gloves | Yellow-banded",
-        "image": "assets/cases/recoil-case/weapons/018_★_Broken_Fang_Gloves_Yellow-banded.png",
+        "image": "assets/cases/recoil-case/weapons/018_%E2%98%85_Broken_Fang_Gloves_Yellow-banded.png",
         "marketHashName": "★ Broken Fang Gloves | Yellow-banded",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -735,7 +735,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Broken Fang Gloves | Unhinged",
-        "image": "assets/cases/recoil-case/weapons/019_★_Broken_Fang_Gloves_Unhinged.png",
+        "image": "assets/cases/recoil-case/weapons/019_%E2%98%85_Broken_Fang_Gloves_Unhinged.png",
         "marketHashName": "★ Broken Fang Gloves | Unhinged",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -743,7 +743,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Broken Fang Gloves | Needle Point",
-        "image": "assets/cases/recoil-case/weapons/020_★_Broken_Fang_Gloves_Needle_Point.png",
+        "image": "assets/cases/recoil-case/weapons/020_%E2%98%85_Broken_Fang_Gloves_Needle_Point.png",
         "marketHashName": "★ Broken Fang Gloves | Needle Point",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -751,7 +751,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Broken Fang Gloves | Jade",
-        "image": "assets/cases/recoil-case/weapons/021_★_Broken_Fang_Gloves_Jade.png",
+        "image": "assets/cases/recoil-case/weapons/021_%E2%98%85_Broken_Fang_Gloves_Jade.png",
         "marketHashName": "★ Broken Fang Gloves | Jade",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -759,7 +759,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | Snow Leopard",
-        "image": "assets/cases/recoil-case/weapons/022_★_Driver_Gloves_Snow_Leopard.png",
+        "image": "assets/cases/recoil-case/weapons/022_%E2%98%85_Driver_Gloves_Snow_Leopard.png",
         "marketHashName": "★ Driver Gloves | Snow Leopard",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -767,7 +767,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | Black Tie",
-        "image": "assets/cases/recoil-case/weapons/023_★_Driver_Gloves_Black_Tie.png",
+        "image": "assets/cases/recoil-case/weapons/023_%E2%98%85_Driver_Gloves_Black_Tie.png",
         "marketHashName": "★ Driver Gloves | Black Tie",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -775,7 +775,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | Rezan the Red",
-        "image": "assets/cases/recoil-case/weapons/024_★_Driver_Gloves_Rezan_the_Red.png",
+        "image": "assets/cases/recoil-case/weapons/024_%E2%98%85_Driver_Gloves_Rezan_the_Red.png",
         "marketHashName": "★ Driver Gloves | Rezan the Red",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -783,7 +783,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | Queen Jaguar",
-        "image": "assets/cases/recoil-case/weapons/025_★_Driver_Gloves_Queen_Jaguar.png",
+        "image": "assets/cases/recoil-case/weapons/025_%E2%98%85_Driver_Gloves_Queen_Jaguar.png",
         "marketHashName": "★ Driver Gloves | Queen Jaguar",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -791,7 +791,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | CAUTION!",
-        "image": "assets/cases/recoil-case/weapons/026_★_Hand_Wraps_CAUTION!.png",
+        "image": "assets/cases/recoil-case/weapons/026_%E2%98%85_Hand_Wraps_CAUTION!.png",
         "marketHashName": "★ Hand Wraps | CAUTION!",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -799,7 +799,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Giraffe",
-        "image": "assets/cases/recoil-case/weapons/027_★_Hand_Wraps_Giraffe.png",
+        "image": "assets/cases/recoil-case/weapons/027_%E2%98%85_Hand_Wraps_Giraffe.png",
         "marketHashName": "★ Hand Wraps | Giraffe",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -807,7 +807,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Constrictor",
-        "image": "assets/cases/recoil-case/weapons/028_★_Hand_Wraps_Constrictor.png",
+        "image": "assets/cases/recoil-case/weapons/028_%E2%98%85_Hand_Wraps_Constrictor.png",
         "marketHashName": "★ Hand Wraps | Constrictor",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -815,7 +815,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Desert Shamagh",
-        "image": "assets/cases/recoil-case/weapons/029_★_Hand_Wraps_Desert_Shamagh.png",
+        "image": "assets/cases/recoil-case/weapons/029_%E2%98%85_Hand_Wraps_Desert_Shamagh.png",
         "marketHashName": "★ Hand Wraps | Desert Shamagh",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -823,7 +823,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | Blood Pressure",
-        "image": "assets/cases/recoil-case/weapons/030_★_Moto_Gloves_Blood_Pressure.png",
+        "image": "assets/cases/recoil-case/weapons/030_%E2%98%85_Moto_Gloves_Blood_Pressure.png",
         "marketHashName": "★ Moto Gloves | Blood Pressure",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -831,7 +831,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | Smoke Out",
-        "image": "assets/cases/recoil-case/weapons/031_★_Moto_Gloves_Smoke_Out.png",
+        "image": "assets/cases/recoil-case/weapons/031_%E2%98%85_Moto_Gloves_Smoke_Out.png",
         "marketHashName": "★ Moto Gloves | Smoke Out",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -839,7 +839,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | Finish Line",
-        "image": "assets/cases/recoil-case/weapons/032_★_Moto_Gloves_Finish_Line.png",
+        "image": "assets/cases/recoil-case/weapons/032_%E2%98%85_Moto_Gloves_Finish_Line.png",
         "marketHashName": "★ Moto Gloves | Finish Line",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -847,7 +847,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | 3rd Commando Company",
-        "image": "assets/cases/recoil-case/weapons/033_★_Moto_Gloves_3rd_Commando_Company.png",
+        "image": "assets/cases/recoil-case/weapons/033_%E2%98%85_Moto_Gloves_3rd_Commando_Company.png",
         "marketHashName": "★ Moto Gloves | 3rd Commando Company",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -855,7 +855,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Field Agent",
-        "image": "assets/cases/recoil-case/weapons/034_★_Specialist_Gloves_Field_Agent.png",
+        "image": "assets/cases/recoil-case/weapons/034_%E2%98%85_Specialist_Gloves_Field_Agent.png",
         "marketHashName": "★ Specialist Gloves | Field Agent",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -863,7 +863,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Tiger Strike",
-        "image": "assets/cases/recoil-case/weapons/035_★_Specialist_Gloves_Tiger_Strike.png",
+        "image": "assets/cases/recoil-case/weapons/035_%E2%98%85_Specialist_Gloves_Tiger_Strike.png",
         "marketHashName": "★ Specialist Gloves | Tiger Strike",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -871,7 +871,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Lt. Commander",
-        "image": "assets/cases/recoil-case/weapons/036_★_Specialist_Gloves_Lt._Commander.png",
+        "image": "assets/cases/recoil-case/weapons/036_%E2%98%85_Specialist_Gloves_Lt._Commander.png",
         "marketHashName": "★ Specialist Gloves | Lt. Commander",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -879,7 +879,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Marble Fade",
-        "image": "assets/cases/recoil-case/weapons/037_★_Specialist_Gloves_Marble_Fade.png",
+        "image": "assets/cases/recoil-case/weapons/037_%E2%98%85_Specialist_Gloves_Marble_Fade.png",
         "marketHashName": "★ Specialist Gloves | Marble Fade",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -887,7 +887,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Slingshot",
-        "image": "assets/cases/recoil-case/weapons/038_★_Sport_Gloves_Slingshot.png",
+        "image": "assets/cases/recoil-case/weapons/038_%E2%98%85_Sport_Gloves_Slingshot.png",
         "marketHashName": "★ Sport Gloves | Slingshot",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -895,7 +895,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Scarlet Shamagh",
-        "image": "assets/cases/recoil-case/weapons/039_★_Sport_Gloves_Scarlet_Shamagh.png",
+        "image": "assets/cases/recoil-case/weapons/039_%E2%98%85_Sport_Gloves_Scarlet_Shamagh.png",
         "marketHashName": "★ Sport Gloves | Scarlet Shamagh",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -903,7 +903,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Nocts",
-        "image": "assets/cases/recoil-case/weapons/040_★_Sport_Gloves_Nocts.png",
+        "image": "assets/cases/recoil-case/weapons/040_%E2%98%85_Sport_Gloves_Nocts.png",
         "marketHashName": "★ Sport Gloves | Nocts",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -911,7 +911,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Big Game",
-        "image": "assets/cases/recoil-case/weapons/041_★_Sport_Gloves_Big_Game.png",
+        "image": "assets/cases/recoil-case/weapons/041_%E2%98%85_Sport_Gloves_Big_Game.png",
         "marketHashName": "★ Sport Gloves | Big Game",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1063,7 +1063,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Bowie Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/018_★_Bowie_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/018_%E2%98%85_Bowie_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Bowie Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1071,7 +1071,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/019_★_Bowie_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/019_%E2%98%85_Bowie_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Bowie Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1079,7 +1079,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/020_★_Bowie_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/020_%E2%98%85_Bowie_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Bowie Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1087,7 +1087,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/021_★_Bowie_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/021_%E2%98%85_Bowie_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Bowie Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1095,7 +1095,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/022_★_Bowie_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/022_%E2%98%85_Bowie_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Bowie Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1103,7 +1103,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Lore",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/023_★_Bowie_Knife_Lore.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/023_%E2%98%85_Bowie_Knife_Lore.png",
         "marketHashName": "★ Bowie Knife | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1111,7 +1111,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Autotronic",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/024_★_Bowie_Knife_Autotronic.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/024_%E2%98%85_Bowie_Knife_Autotronic.png",
         "marketHashName": "★ Bowie Knife | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1119,7 +1119,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Black Laminate",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/025_★_Bowie_Knife_Black_Laminate.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/025_%E2%98%85_Bowie_Knife_Black_Laminate.png",
         "marketHashName": "★ Bowie Knife | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1127,7 +1127,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Freehand",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/026_★_Bowie_Knife_Freehand.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/026_%E2%98%85_Bowie_Knife_Freehand.png",
         "marketHashName": "★ Bowie Knife | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1135,7 +1135,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Bright Water",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/027_★_Bowie_Knife_Bright_Water.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/027_%E2%98%85_Bowie_Knife_Bright_Water.png",
         "marketHashName": "★ Bowie Knife | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1143,7 +1143,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/028_★_Butterfly_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/028_%E2%98%85_Butterfly_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1151,7 +1151,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/029_★_Butterfly_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/029_%E2%98%85_Butterfly_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1159,7 +1159,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/030_★_Butterfly_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/030_%E2%98%85_Butterfly_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1167,7 +1167,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/031_★_Butterfly_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/031_%E2%98%85_Butterfly_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1175,7 +1175,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/032_★_Butterfly_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/032_%E2%98%85_Butterfly_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1183,7 +1183,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Lore",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/033_★_Butterfly_Knife_Lore.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/033_%E2%98%85_Butterfly_Knife_Lore.png",
         "marketHashName": "★ Butterfly Knife | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1191,7 +1191,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Autotronic",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/034_★_Butterfly_Knife_Autotronic.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/034_%E2%98%85_Butterfly_Knife_Autotronic.png",
         "marketHashName": "★ Butterfly Knife | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1199,7 +1199,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Black Laminate",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/035_★_Butterfly_Knife_Black_Laminate.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/035_%E2%98%85_Butterfly_Knife_Black_Laminate.png",
         "marketHashName": "★ Butterfly Knife | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1207,7 +1207,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Freehand",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/036_★_Butterfly_Knife_Freehand.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/036_%E2%98%85_Butterfly_Knife_Freehand.png",
         "marketHashName": "★ Butterfly Knife | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1215,7 +1215,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Bright Water",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/037_★_Butterfly_Knife_Bright_Water.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/037_%E2%98%85_Butterfly_Knife_Bright_Water.png",
         "marketHashName": "★ Butterfly Knife | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1223,7 +1223,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/038_★_Falchion_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/038_%E2%98%85_Falchion_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Falchion Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1231,7 +1231,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/039_★_Falchion_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/039_%E2%98%85_Falchion_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Falchion Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1239,7 +1239,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/040_★_Falchion_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/040_%E2%98%85_Falchion_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Falchion Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1247,7 +1247,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/041_★_Falchion_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/041_%E2%98%85_Falchion_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Falchion Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1255,7 +1255,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/042_★_Falchion_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/042_%E2%98%85_Falchion_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Falchion Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1263,7 +1263,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Lore",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/043_★_Falchion_Knife_Lore.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/043_%E2%98%85_Falchion_Knife_Lore.png",
         "marketHashName": "★ Falchion Knife | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1271,7 +1271,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Autotronic",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/044_★_Falchion_Knife_Autotronic.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/044_%E2%98%85_Falchion_Knife_Autotronic.png",
         "marketHashName": "★ Falchion Knife | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1279,7 +1279,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Black Laminate",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/045_★_Falchion_Knife_Black_Laminate.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/045_%E2%98%85_Falchion_Knife_Black_Laminate.png",
         "marketHashName": "★ Falchion Knife | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1287,7 +1287,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Freehand",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/046_★_Falchion_Knife_Freehand.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/046_%E2%98%85_Falchion_Knife_Freehand.png",
         "marketHashName": "★ Falchion Knife | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1295,7 +1295,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Bright Water",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/047_★_Falchion_Knife_Bright_Water.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/047_%E2%98%85_Falchion_Knife_Bright_Water.png",
         "marketHashName": "★ Falchion Knife | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1303,7 +1303,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/048_★_Huntsman_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/048_%E2%98%85_Huntsman_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1311,7 +1311,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/049_★_Huntsman_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/049_%E2%98%85_Huntsman_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1319,7 +1319,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/050_★_Huntsman_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/050_%E2%98%85_Huntsman_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1327,7 +1327,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/051_★_Huntsman_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/051_%E2%98%85_Huntsman_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1335,7 +1335,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/052_★_Huntsman_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/052_%E2%98%85_Huntsman_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1343,7 +1343,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Lore",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/053_★_Huntsman_Knife_Lore.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/053_%E2%98%85_Huntsman_Knife_Lore.png",
         "marketHashName": "★ Huntsman Knife | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1351,7 +1351,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Autotronic",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/054_★_Huntsman_Knife_Autotronic.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/054_%E2%98%85_Huntsman_Knife_Autotronic.png",
         "marketHashName": "★ Huntsman Knife | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1359,7 +1359,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Black Laminate",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/055_★_Huntsman_Knife_Black_Laminate.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/055_%E2%98%85_Huntsman_Knife_Black_Laminate.png",
         "marketHashName": "★ Huntsman Knife | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1367,7 +1367,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Freehand",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/056_★_Huntsman_Knife_Freehand.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/056_%E2%98%85_Huntsman_Knife_Freehand.png",
         "marketHashName": "★ Huntsman Knife | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1375,7 +1375,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Bright Water",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/057_★_Huntsman_Knife_Bright_Water.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/057_%E2%98%85_Huntsman_Knife_Bright_Water.png",
         "marketHashName": "★ Huntsman Knife | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1383,7 +1383,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/058_★_Shadow_Daggers_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/058_%E2%98%85_Shadow_Daggers_Gamma_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1391,7 +1391,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/059_★_Shadow_Daggers_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/059_%E2%98%85_Shadow_Daggers_Gamma_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1399,7 +1399,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/060_★_Shadow_Daggers_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/060_%E2%98%85_Shadow_Daggers_Gamma_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1407,7 +1407,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/061_★_Shadow_Daggers_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/061_%E2%98%85_Shadow_Daggers_Gamma_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1415,7 +1415,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Gamma Doppler",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/062_★_Shadow_Daggers_Gamma_Doppler.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/062_%E2%98%85_Shadow_Daggers_Gamma_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1423,7 +1423,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Lore",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/063_★_Shadow_Daggers_Lore.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/063_%E2%98%85_Shadow_Daggers_Lore.png",
         "marketHashName": "★ Shadow Daggers | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1431,7 +1431,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Autotronic",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/064_★_Shadow_Daggers_Autotronic.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/064_%E2%98%85_Shadow_Daggers_Autotronic.png",
         "marketHashName": "★ Shadow Daggers | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1439,7 +1439,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Black Laminate",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/065_★_Shadow_Daggers_Black_Laminate.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/065_%E2%98%85_Shadow_Daggers_Black_Laminate.png",
         "marketHashName": "★ Shadow Daggers | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1447,7 +1447,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Freehand",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/066_★_Shadow_Daggers_Freehand.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/066_%E2%98%85_Shadow_Daggers_Freehand.png",
         "marketHashName": "★ Shadow Daggers | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1455,7 +1455,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Bright Water",
-        "image": "assets/cases/dreams-and-nightmares-case/weapons/067_★_Shadow_Daggers_Bright_Water.png",
+        "image": "assets/cases/dreams-and-nightmares-case/weapons/067_%E2%98%85_Shadow_Daggers_Bright_Water.png",
         "marketHashName": "★ Shadow Daggers | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1607,7 +1607,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Broken Fang Gloves | Yellow-banded",
-        "image": "assets/cases/snakebite-case/weapons/018_★_Broken_Fang_Gloves_Yellow-banded.png",
+        "image": "assets/cases/snakebite-case/weapons/018_%E2%98%85_Broken_Fang_Gloves_Yellow-banded.png",
         "marketHashName": "★ Broken Fang Gloves | Yellow-banded",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1615,7 +1615,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Broken Fang Gloves | Unhinged",
-        "image": "assets/cases/snakebite-case/weapons/019_★_Broken_Fang_Gloves_Unhinged.png",
+        "image": "assets/cases/snakebite-case/weapons/019_%E2%98%85_Broken_Fang_Gloves_Unhinged.png",
         "marketHashName": "★ Broken Fang Gloves | Unhinged",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1623,7 +1623,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Broken Fang Gloves | Needle Point",
-        "image": "assets/cases/snakebite-case/weapons/020_★_Broken_Fang_Gloves_Needle_Point.png",
+        "image": "assets/cases/snakebite-case/weapons/020_%E2%98%85_Broken_Fang_Gloves_Needle_Point.png",
         "marketHashName": "★ Broken Fang Gloves | Needle Point",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1631,7 +1631,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Broken Fang Gloves | Jade",
-        "image": "assets/cases/snakebite-case/weapons/021_★_Broken_Fang_Gloves_Jade.png",
+        "image": "assets/cases/snakebite-case/weapons/021_%E2%98%85_Broken_Fang_Gloves_Jade.png",
         "marketHashName": "★ Broken Fang Gloves | Jade",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1639,7 +1639,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | Snow Leopard",
-        "image": "assets/cases/snakebite-case/weapons/022_★_Driver_Gloves_Snow_Leopard.png",
+        "image": "assets/cases/snakebite-case/weapons/022_%E2%98%85_Driver_Gloves_Snow_Leopard.png",
         "marketHashName": "★ Driver Gloves | Snow Leopard",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1647,7 +1647,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | Black Tie",
-        "image": "assets/cases/snakebite-case/weapons/023_★_Driver_Gloves_Black_Tie.png",
+        "image": "assets/cases/snakebite-case/weapons/023_%E2%98%85_Driver_Gloves_Black_Tie.png",
         "marketHashName": "★ Driver Gloves | Black Tie",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1655,7 +1655,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | Rezan the Red",
-        "image": "assets/cases/snakebite-case/weapons/024_★_Driver_Gloves_Rezan_the_Red.png",
+        "image": "assets/cases/snakebite-case/weapons/024_%E2%98%85_Driver_Gloves_Rezan_the_Red.png",
         "marketHashName": "★ Driver Gloves | Rezan the Red",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1663,7 +1663,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | Queen Jaguar",
-        "image": "assets/cases/snakebite-case/weapons/025_★_Driver_Gloves_Queen_Jaguar.png",
+        "image": "assets/cases/snakebite-case/weapons/025_%E2%98%85_Driver_Gloves_Queen_Jaguar.png",
         "marketHashName": "★ Driver Gloves | Queen Jaguar",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1671,7 +1671,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | CAUTION!",
-        "image": "assets/cases/snakebite-case/weapons/026_★_Hand_Wraps_CAUTION!.png",
+        "image": "assets/cases/snakebite-case/weapons/026_%E2%98%85_Hand_Wraps_CAUTION!.png",
         "marketHashName": "★ Hand Wraps | CAUTION!",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1679,7 +1679,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Giraffe",
-        "image": "assets/cases/snakebite-case/weapons/027_★_Hand_Wraps_Giraffe.png",
+        "image": "assets/cases/snakebite-case/weapons/027_%E2%98%85_Hand_Wraps_Giraffe.png",
         "marketHashName": "★ Hand Wraps | Giraffe",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1687,7 +1687,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Constrictor",
-        "image": "assets/cases/snakebite-case/weapons/028_★_Hand_Wraps_Constrictor.png",
+        "image": "assets/cases/snakebite-case/weapons/028_%E2%98%85_Hand_Wraps_Constrictor.png",
         "marketHashName": "★ Hand Wraps | Constrictor",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1695,7 +1695,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Desert Shamagh",
-        "image": "assets/cases/snakebite-case/weapons/029_★_Hand_Wraps_Desert_Shamagh.png",
+        "image": "assets/cases/snakebite-case/weapons/029_%E2%98%85_Hand_Wraps_Desert_Shamagh.png",
         "marketHashName": "★ Hand Wraps | Desert Shamagh",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1703,7 +1703,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | Blood Pressure",
-        "image": "assets/cases/snakebite-case/weapons/030_★_Moto_Gloves_Blood_Pressure.png",
+        "image": "assets/cases/snakebite-case/weapons/030_%E2%98%85_Moto_Gloves_Blood_Pressure.png",
         "marketHashName": "★ Moto Gloves | Blood Pressure",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1711,7 +1711,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | Smoke Out",
-        "image": "assets/cases/snakebite-case/weapons/031_★_Moto_Gloves_Smoke_Out.png",
+        "image": "assets/cases/snakebite-case/weapons/031_%E2%98%85_Moto_Gloves_Smoke_Out.png",
         "marketHashName": "★ Moto Gloves | Smoke Out",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1719,7 +1719,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | Finish Line",
-        "image": "assets/cases/snakebite-case/weapons/032_★_Moto_Gloves_Finish_Line.png",
+        "image": "assets/cases/snakebite-case/weapons/032_%E2%98%85_Moto_Gloves_Finish_Line.png",
         "marketHashName": "★ Moto Gloves | Finish Line",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1727,7 +1727,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | 3rd Commando Company",
-        "image": "assets/cases/snakebite-case/weapons/033_★_Moto_Gloves_3rd_Commando_Company.png",
+        "image": "assets/cases/snakebite-case/weapons/033_%E2%98%85_Moto_Gloves_3rd_Commando_Company.png",
         "marketHashName": "★ Moto Gloves | 3rd Commando Company",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1735,7 +1735,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Field Agent",
-        "image": "assets/cases/snakebite-case/weapons/034_★_Specialist_Gloves_Field_Agent.png",
+        "image": "assets/cases/snakebite-case/weapons/034_%E2%98%85_Specialist_Gloves_Field_Agent.png",
         "marketHashName": "★ Specialist Gloves | Field Agent",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1743,7 +1743,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Tiger Strike",
-        "image": "assets/cases/snakebite-case/weapons/035_★_Specialist_Gloves_Tiger_Strike.png",
+        "image": "assets/cases/snakebite-case/weapons/035_%E2%98%85_Specialist_Gloves_Tiger_Strike.png",
         "marketHashName": "★ Specialist Gloves | Tiger Strike",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1751,7 +1751,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Lt. Commander",
-        "image": "assets/cases/snakebite-case/weapons/036_★_Specialist_Gloves_Lt._Commander.png",
+        "image": "assets/cases/snakebite-case/weapons/036_%E2%98%85_Specialist_Gloves_Lt._Commander.png",
         "marketHashName": "★ Specialist Gloves | Lt. Commander",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1759,7 +1759,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Marble Fade",
-        "image": "assets/cases/snakebite-case/weapons/037_★_Specialist_Gloves_Marble_Fade.png",
+        "image": "assets/cases/snakebite-case/weapons/037_%E2%98%85_Specialist_Gloves_Marble_Fade.png",
         "marketHashName": "★ Specialist Gloves | Marble Fade",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1767,7 +1767,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Slingshot",
-        "image": "assets/cases/snakebite-case/weapons/038_★_Sport_Gloves_Slingshot.png",
+        "image": "assets/cases/snakebite-case/weapons/038_%E2%98%85_Sport_Gloves_Slingshot.png",
         "marketHashName": "★ Sport Gloves | Slingshot",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1775,7 +1775,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Scarlet Shamagh",
-        "image": "assets/cases/snakebite-case/weapons/039_★_Sport_Gloves_Scarlet_Shamagh.png",
+        "image": "assets/cases/snakebite-case/weapons/039_%E2%98%85_Sport_Gloves_Scarlet_Shamagh.png",
         "marketHashName": "★ Sport Gloves | Scarlet Shamagh",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1783,7 +1783,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Nocts",
-        "image": "assets/cases/snakebite-case/weapons/040_★_Sport_Gloves_Nocts.png",
+        "image": "assets/cases/snakebite-case/weapons/040_%E2%98%85_Sport_Gloves_Nocts.png",
         "marketHashName": "★ Sport Gloves | Nocts",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1791,7 +1791,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Big Game",
-        "image": "assets/cases/snakebite-case/weapons/041_★_Sport_Gloves_Big_Game.png",
+        "image": "assets/cases/snakebite-case/weapons/041_%E2%98%85_Sport_Gloves_Big_Game.png",
         "marketHashName": "★ Sport Gloves | Big Game",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -1943,7 +1943,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Nomad Knife",
-        "image": "assets/cases/fracture-case/weapons/018_★_Nomad_Knife.png",
+        "image": "assets/cases/fracture-case/weapons/018_%E2%98%85_Nomad_Knife.png",
         "marketHashName": "★ Nomad Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1951,7 +1951,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Nomad Knife | Fade",
-        "image": "assets/cases/fracture-case/weapons/019_★_Nomad_Knife_Fade.png",
+        "image": "assets/cases/fracture-case/weapons/019_%E2%98%85_Nomad_Knife_Fade.png",
         "marketHashName": "★ Nomad Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1959,7 +1959,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Nomad Knife | Crimson Web",
-        "image": "assets/cases/fracture-case/weapons/020_★_Nomad_Knife_Crimson_Web.png",
+        "image": "assets/cases/fracture-case/weapons/020_%E2%98%85_Nomad_Knife_Crimson_Web.png",
         "marketHashName": "★ Nomad Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1967,7 +1967,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Nomad Knife | Slaughter",
-        "image": "assets/cases/fracture-case/weapons/021_★_Nomad_Knife_Slaughter.png",
+        "image": "assets/cases/fracture-case/weapons/021_%E2%98%85_Nomad_Knife_Slaughter.png",
         "marketHashName": "★ Nomad Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1975,7 +1975,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Nomad Knife | Case Hardened",
-        "image": "assets/cases/fracture-case/weapons/022_★_Nomad_Knife_Case_Hardened.png",
+        "image": "assets/cases/fracture-case/weapons/022_%E2%98%85_Nomad_Knife_Case_Hardened.png",
         "marketHashName": "★ Nomad Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1983,7 +1983,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Nomad Knife | Urban Masked",
-        "image": "assets/cases/fracture-case/weapons/023_★_Nomad_Knife_Urban_Masked.png",
+        "image": "assets/cases/fracture-case/weapons/023_%E2%98%85_Nomad_Knife_Urban_Masked.png",
         "marketHashName": "★ Nomad Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1991,7 +1991,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Nomad Knife | Blue Steel",
-        "image": "assets/cases/fracture-case/weapons/024_★_Nomad_Knife_Blue_Steel.png",
+        "image": "assets/cases/fracture-case/weapons/024_%E2%98%85_Nomad_Knife_Blue_Steel.png",
         "marketHashName": "★ Nomad Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -1999,7 +1999,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Nomad Knife | Night Stripe",
-        "image": "assets/cases/fracture-case/weapons/025_★_Nomad_Knife_Night_Stripe.png",
+        "image": "assets/cases/fracture-case/weapons/025_%E2%98%85_Nomad_Knife_Night_Stripe.png",
         "marketHashName": "★ Nomad Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2007,7 +2007,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Nomad Knife | Stained",
-        "image": "assets/cases/fracture-case/weapons/026_★_Nomad_Knife_Stained.png",
+        "image": "assets/cases/fracture-case/weapons/026_%E2%98%85_Nomad_Knife_Stained.png",
         "marketHashName": "★ Nomad Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2015,7 +2015,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Nomad Knife | Forest DDPAT",
-        "image": "assets/cases/fracture-case/weapons/027_★_Nomad_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/fracture-case/weapons/027_%E2%98%85_Nomad_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Nomad Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2023,7 +2023,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Nomad Knife | Boreal Forest",
-        "image": "assets/cases/fracture-case/weapons/028_★_Nomad_Knife_Boreal_Forest.png",
+        "image": "assets/cases/fracture-case/weapons/028_%E2%98%85_Nomad_Knife_Boreal_Forest.png",
         "marketHashName": "★ Nomad Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2031,7 +2031,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Nomad Knife | Scorched",
-        "image": "assets/cases/fracture-case/weapons/029_★_Nomad_Knife_Scorched.png",
+        "image": "assets/cases/fracture-case/weapons/029_%E2%98%85_Nomad_Knife_Scorched.png",
         "marketHashName": "★ Nomad Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2039,7 +2039,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Nomad Knife | Safari Mesh",
-        "image": "assets/cases/fracture-case/weapons/030_★_Nomad_Knife_Safari_Mesh.png",
+        "image": "assets/cases/fracture-case/weapons/030_%E2%98%85_Nomad_Knife_Safari_Mesh.png",
         "marketHashName": "★ Nomad Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2047,7 +2047,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife",
-        "image": "assets/cases/fracture-case/weapons/031_★_Paracord_Knife.png",
+        "image": "assets/cases/fracture-case/weapons/031_%E2%98%85_Paracord_Knife.png",
         "marketHashName": "★ Paracord Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2055,7 +2055,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife | Fade",
-        "image": "assets/cases/fracture-case/weapons/032_★_Paracord_Knife_Fade.png",
+        "image": "assets/cases/fracture-case/weapons/032_%E2%98%85_Paracord_Knife_Fade.png",
         "marketHashName": "★ Paracord Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2063,7 +2063,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife | Crimson Web",
-        "image": "assets/cases/fracture-case/weapons/033_★_Paracord_Knife_Crimson_Web.png",
+        "image": "assets/cases/fracture-case/weapons/033_%E2%98%85_Paracord_Knife_Crimson_Web.png",
         "marketHashName": "★ Paracord Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2071,7 +2071,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife | Slaughter",
-        "image": "assets/cases/fracture-case/weapons/034_★_Paracord_Knife_Slaughter.png",
+        "image": "assets/cases/fracture-case/weapons/034_%E2%98%85_Paracord_Knife_Slaughter.png",
         "marketHashName": "★ Paracord Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2079,7 +2079,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife | Case Hardened",
-        "image": "assets/cases/fracture-case/weapons/035_★_Paracord_Knife_Case_Hardened.png",
+        "image": "assets/cases/fracture-case/weapons/035_%E2%98%85_Paracord_Knife_Case_Hardened.png",
         "marketHashName": "★ Paracord Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2087,7 +2087,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife | Urban Masked",
-        "image": "assets/cases/fracture-case/weapons/036_★_Paracord_Knife_Urban_Masked.png",
+        "image": "assets/cases/fracture-case/weapons/036_%E2%98%85_Paracord_Knife_Urban_Masked.png",
         "marketHashName": "★ Paracord Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2095,7 +2095,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife | Blue Steel",
-        "image": "assets/cases/fracture-case/weapons/037_★_Paracord_Knife_Blue_Steel.png",
+        "image": "assets/cases/fracture-case/weapons/037_%E2%98%85_Paracord_Knife_Blue_Steel.png",
         "marketHashName": "★ Paracord Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2103,7 +2103,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife | Night Stripe",
-        "image": "assets/cases/fracture-case/weapons/038_★_Paracord_Knife_Night_Stripe.png",
+        "image": "assets/cases/fracture-case/weapons/038_%E2%98%85_Paracord_Knife_Night_Stripe.png",
         "marketHashName": "★ Paracord Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2111,7 +2111,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife | Stained",
-        "image": "assets/cases/fracture-case/weapons/039_★_Paracord_Knife_Stained.png",
+        "image": "assets/cases/fracture-case/weapons/039_%E2%98%85_Paracord_Knife_Stained.png",
         "marketHashName": "★ Paracord Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2119,7 +2119,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife | Forest DDPAT",
-        "image": "assets/cases/fracture-case/weapons/040_★_Paracord_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/fracture-case/weapons/040_%E2%98%85_Paracord_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Paracord Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2127,7 +2127,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife | Boreal Forest",
-        "image": "assets/cases/fracture-case/weapons/041_★_Paracord_Knife_Boreal_Forest.png",
+        "image": "assets/cases/fracture-case/weapons/041_%E2%98%85_Paracord_Knife_Boreal_Forest.png",
         "marketHashName": "★ Paracord Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2135,7 +2135,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife | Scorched",
-        "image": "assets/cases/fracture-case/weapons/042_★_Paracord_Knife_Scorched.png",
+        "image": "assets/cases/fracture-case/weapons/042_%E2%98%85_Paracord_Knife_Scorched.png",
         "marketHashName": "★ Paracord Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2143,7 +2143,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Paracord Knife | Safari Mesh",
-        "image": "assets/cases/fracture-case/weapons/043_★_Paracord_Knife_Safari_Mesh.png",
+        "image": "assets/cases/fracture-case/weapons/043_%E2%98%85_Paracord_Knife_Safari_Mesh.png",
         "marketHashName": "★ Paracord Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2151,7 +2151,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife",
-        "image": "assets/cases/fracture-case/weapons/044_★_Skeleton_Knife.png",
+        "image": "assets/cases/fracture-case/weapons/044_%E2%98%85_Skeleton_Knife.png",
         "marketHashName": "★ Skeleton Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2159,7 +2159,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife | Fade",
-        "image": "assets/cases/fracture-case/weapons/045_★_Skeleton_Knife_Fade.png",
+        "image": "assets/cases/fracture-case/weapons/045_%E2%98%85_Skeleton_Knife_Fade.png",
         "marketHashName": "★ Skeleton Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2167,7 +2167,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife | Crimson Web",
-        "image": "assets/cases/fracture-case/weapons/046_★_Skeleton_Knife_Crimson_Web.png",
+        "image": "assets/cases/fracture-case/weapons/046_%E2%98%85_Skeleton_Knife_Crimson_Web.png",
         "marketHashName": "★ Skeleton Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2175,7 +2175,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife | Slaughter",
-        "image": "assets/cases/fracture-case/weapons/047_★_Skeleton_Knife_Slaughter.png",
+        "image": "assets/cases/fracture-case/weapons/047_%E2%98%85_Skeleton_Knife_Slaughter.png",
         "marketHashName": "★ Skeleton Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2183,7 +2183,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife | Case Hardened",
-        "image": "assets/cases/fracture-case/weapons/048_★_Skeleton_Knife_Case_Hardened.png",
+        "image": "assets/cases/fracture-case/weapons/048_%E2%98%85_Skeleton_Knife_Case_Hardened.png",
         "marketHashName": "★ Skeleton Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2191,7 +2191,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife | Urban Masked",
-        "image": "assets/cases/fracture-case/weapons/049_★_Skeleton_Knife_Urban_Masked.png",
+        "image": "assets/cases/fracture-case/weapons/049_%E2%98%85_Skeleton_Knife_Urban_Masked.png",
         "marketHashName": "★ Skeleton Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2199,7 +2199,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife | Blue Steel",
-        "image": "assets/cases/fracture-case/weapons/050_★_Skeleton_Knife_Blue_Steel.png",
+        "image": "assets/cases/fracture-case/weapons/050_%E2%98%85_Skeleton_Knife_Blue_Steel.png",
         "marketHashName": "★ Skeleton Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2207,7 +2207,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife | Night Stripe",
-        "image": "assets/cases/fracture-case/weapons/051_★_Skeleton_Knife_Night_Stripe.png",
+        "image": "assets/cases/fracture-case/weapons/051_%E2%98%85_Skeleton_Knife_Night_Stripe.png",
         "marketHashName": "★ Skeleton Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2215,7 +2215,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife | Stained",
-        "image": "assets/cases/fracture-case/weapons/052_★_Skeleton_Knife_Stained.png",
+        "image": "assets/cases/fracture-case/weapons/052_%E2%98%85_Skeleton_Knife_Stained.png",
         "marketHashName": "★ Skeleton Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2223,7 +2223,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife | Forest DDPAT",
-        "image": "assets/cases/fracture-case/weapons/053_★_Skeleton_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/fracture-case/weapons/053_%E2%98%85_Skeleton_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Skeleton Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2231,7 +2231,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife | Boreal Forest",
-        "image": "assets/cases/fracture-case/weapons/054_★_Skeleton_Knife_Boreal_Forest.png",
+        "image": "assets/cases/fracture-case/weapons/054_%E2%98%85_Skeleton_Knife_Boreal_Forest.png",
         "marketHashName": "★ Skeleton Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2239,7 +2239,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife | Scorched",
-        "image": "assets/cases/fracture-case/weapons/055_★_Skeleton_Knife_Scorched.png",
+        "image": "assets/cases/fracture-case/weapons/055_%E2%98%85_Skeleton_Knife_Scorched.png",
         "marketHashName": "★ Skeleton Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2247,7 +2247,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Skeleton Knife | Safari Mesh",
-        "image": "assets/cases/fracture-case/weapons/056_★_Skeleton_Knife_Safari_Mesh.png",
+        "image": "assets/cases/fracture-case/weapons/056_%E2%98%85_Skeleton_Knife_Safari_Mesh.png",
         "marketHashName": "★ Skeleton Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2255,7 +2255,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife",
-        "image": "assets/cases/fracture-case/weapons/057_★_Survival_Knife.png",
+        "image": "assets/cases/fracture-case/weapons/057_%E2%98%85_Survival_Knife.png",
         "marketHashName": "★ Survival Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2263,7 +2263,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife | Fade",
-        "image": "assets/cases/fracture-case/weapons/058_★_Survival_Knife_Fade.png",
+        "image": "assets/cases/fracture-case/weapons/058_%E2%98%85_Survival_Knife_Fade.png",
         "marketHashName": "★ Survival Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2271,7 +2271,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife | Crimson Web",
-        "image": "assets/cases/fracture-case/weapons/059_★_Survival_Knife_Crimson_Web.png",
+        "image": "assets/cases/fracture-case/weapons/059_%E2%98%85_Survival_Knife_Crimson_Web.png",
         "marketHashName": "★ Survival Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2279,7 +2279,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife | Slaughter",
-        "image": "assets/cases/fracture-case/weapons/060_★_Survival_Knife_Slaughter.png",
+        "image": "assets/cases/fracture-case/weapons/060_%E2%98%85_Survival_Knife_Slaughter.png",
         "marketHashName": "★ Survival Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2287,7 +2287,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife | Case Hardened",
-        "image": "assets/cases/fracture-case/weapons/061_★_Survival_Knife_Case_Hardened.png",
+        "image": "assets/cases/fracture-case/weapons/061_%E2%98%85_Survival_Knife_Case_Hardened.png",
         "marketHashName": "★ Survival Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2295,7 +2295,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife | Urban Masked",
-        "image": "assets/cases/fracture-case/weapons/062_★_Survival_Knife_Urban_Masked.png",
+        "image": "assets/cases/fracture-case/weapons/062_%E2%98%85_Survival_Knife_Urban_Masked.png",
         "marketHashName": "★ Survival Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2303,7 +2303,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife | Blue Steel",
-        "image": "assets/cases/fracture-case/weapons/063_★_Survival_Knife_Blue_Steel.png",
+        "image": "assets/cases/fracture-case/weapons/063_%E2%98%85_Survival_Knife_Blue_Steel.png",
         "marketHashName": "★ Survival Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2311,7 +2311,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife | Night Stripe",
-        "image": "assets/cases/fracture-case/weapons/064_★_Survival_Knife_Night_Stripe.png",
+        "image": "assets/cases/fracture-case/weapons/064_%E2%98%85_Survival_Knife_Night_Stripe.png",
         "marketHashName": "★ Survival Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2319,7 +2319,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife | Stained",
-        "image": "assets/cases/fracture-case/weapons/065_★_Survival_Knife_Stained.png",
+        "image": "assets/cases/fracture-case/weapons/065_%E2%98%85_Survival_Knife_Stained.png",
         "marketHashName": "★ Survival Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2327,7 +2327,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife | Forest DDPAT",
-        "image": "assets/cases/fracture-case/weapons/066_★_Survival_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/fracture-case/weapons/066_%E2%98%85_Survival_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Survival Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2335,7 +2335,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife | Boreal Forest",
-        "image": "assets/cases/fracture-case/weapons/067_★_Survival_Knife_Boreal_Forest.png",
+        "image": "assets/cases/fracture-case/weapons/067_%E2%98%85_Survival_Knife_Boreal_Forest.png",
         "marketHashName": "★ Survival Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2343,7 +2343,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife | Scorched",
-        "image": "assets/cases/fracture-case/weapons/068_★_Survival_Knife_Scorched.png",
+        "image": "assets/cases/fracture-case/weapons/068_%E2%98%85_Survival_Knife_Scorched.png",
         "marketHashName": "★ Survival Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2351,7 +2351,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Survival Knife | Safari Mesh",
-        "image": "assets/cases/fracture-case/weapons/069_★_Survival_Knife_Safari_Mesh.png",
+        "image": "assets/cases/fracture-case/weapons/069_%E2%98%85_Survival_Knife_Safari_Mesh.png",
         "marketHashName": "★ Survival Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2503,7 +2503,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Navaja Knife",
-        "image": "assets/cases/prisma-2-case/weapons/018_★_Navaja_Knife.png",
+        "image": "assets/cases/prisma-2-case/weapons/018_%E2%98%85_Navaja_Knife.png",
         "marketHashName": "★ Navaja Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2511,7 +2511,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Marble Fade",
-        "image": "assets/cases/prisma-2-case/weapons/019_★_Navaja_Knife_Marble_Fade.png",
+        "image": "assets/cases/prisma-2-case/weapons/019_%E2%98%85_Navaja_Knife_Marble_Fade.png",
         "marketHashName": "★ Navaja Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2519,7 +2519,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Tiger Tooth",
-        "image": "assets/cases/prisma-2-case/weapons/020_★_Navaja_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/prisma-2-case/weapons/020_%E2%98%85_Navaja_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Navaja Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2527,7 +2527,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/021_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/021_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2535,7 +2535,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/022_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/022_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2543,7 +2543,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/023_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/023_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2551,7 +2551,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/024_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/024_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2559,7 +2559,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/025_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/025_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2567,7 +2567,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/026_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/026_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2575,7 +2575,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/027_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/027_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2583,7 +2583,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Damascus Steel",
-        "image": "assets/cases/prisma-2-case/weapons/028_★_Navaja_Knife_Damascus_Steel.png",
+        "image": "assets/cases/prisma-2-case/weapons/028_%E2%98%85_Navaja_Knife_Damascus_Steel.png",
         "marketHashName": "★ Navaja Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2591,7 +2591,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Ultraviolet",
-        "image": "assets/cases/prisma-2-case/weapons/029_★_Navaja_Knife_Ultraviolet.png",
+        "image": "assets/cases/prisma-2-case/weapons/029_%E2%98%85_Navaja_Knife_Ultraviolet.png",
         "marketHashName": "★ Navaja Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2599,7 +2599,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Rust Coat",
-        "image": "assets/cases/prisma-2-case/weapons/030_★_Navaja_Knife_Rust_Coat.png",
+        "image": "assets/cases/prisma-2-case/weapons/030_%E2%98%85_Navaja_Knife_Rust_Coat.png",
         "marketHashName": "★ Navaja Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2607,7 +2607,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife",
-        "image": "assets/cases/prisma-2-case/weapons/031_★_Stiletto_Knife.png",
+        "image": "assets/cases/prisma-2-case/weapons/031_%E2%98%85_Stiletto_Knife.png",
         "marketHashName": "★ Stiletto Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2615,7 +2615,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Marble Fade",
-        "image": "assets/cases/prisma-2-case/weapons/032_★_Stiletto_Knife_Marble_Fade.png",
+        "image": "assets/cases/prisma-2-case/weapons/032_%E2%98%85_Stiletto_Knife_Marble_Fade.png",
         "marketHashName": "★ Stiletto Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2623,7 +2623,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Tiger Tooth",
-        "image": "assets/cases/prisma-2-case/weapons/033_★_Stiletto_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/prisma-2-case/weapons/033_%E2%98%85_Stiletto_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Stiletto Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2631,7 +2631,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/034_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/034_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2639,7 +2639,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/035_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/035_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2647,7 +2647,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/036_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/036_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2655,7 +2655,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/037_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/037_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2663,7 +2663,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/038_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/038_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2671,7 +2671,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/039_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/039_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2679,7 +2679,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/040_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/040_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2687,7 +2687,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Damascus Steel",
-        "image": "assets/cases/prisma-2-case/weapons/041_★_Stiletto_Knife_Damascus_Steel.png",
+        "image": "assets/cases/prisma-2-case/weapons/041_%E2%98%85_Stiletto_Knife_Damascus_Steel.png",
         "marketHashName": "★ Stiletto Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2695,7 +2695,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Ultraviolet",
-        "image": "assets/cases/prisma-2-case/weapons/042_★_Stiletto_Knife_Ultraviolet.png",
+        "image": "assets/cases/prisma-2-case/weapons/042_%E2%98%85_Stiletto_Knife_Ultraviolet.png",
         "marketHashName": "★ Stiletto Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2703,7 +2703,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Rust Coat",
-        "image": "assets/cases/prisma-2-case/weapons/043_★_Stiletto_Knife_Rust_Coat.png",
+        "image": "assets/cases/prisma-2-case/weapons/043_%E2%98%85_Stiletto_Knife_Rust_Coat.png",
         "marketHashName": "★ Stiletto Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2711,7 +2711,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife",
-        "image": "assets/cases/prisma-2-case/weapons/044_★_Talon_Knife.png",
+        "image": "assets/cases/prisma-2-case/weapons/044_%E2%98%85_Talon_Knife.png",
         "marketHashName": "★ Talon Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2719,7 +2719,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Marble Fade",
-        "image": "assets/cases/prisma-2-case/weapons/045_★_Talon_Knife_Marble_Fade.png",
+        "image": "assets/cases/prisma-2-case/weapons/045_%E2%98%85_Talon_Knife_Marble_Fade.png",
         "marketHashName": "★ Talon Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2727,7 +2727,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Tiger Tooth",
-        "image": "assets/cases/prisma-2-case/weapons/046_★_Talon_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/prisma-2-case/weapons/046_%E2%98%85_Talon_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Talon Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2735,7 +2735,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/047_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/047_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2743,7 +2743,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/048_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/048_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2751,7 +2751,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/049_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/049_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2759,7 +2759,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/050_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/050_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2767,7 +2767,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/051_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/051_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2775,7 +2775,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/052_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/052_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2783,7 +2783,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/053_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/053_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2791,7 +2791,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Damascus Steel",
-        "image": "assets/cases/prisma-2-case/weapons/054_★_Talon_Knife_Damascus_Steel.png",
+        "image": "assets/cases/prisma-2-case/weapons/054_%E2%98%85_Talon_Knife_Damascus_Steel.png",
         "marketHashName": "★ Talon Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2799,7 +2799,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Ultraviolet",
-        "image": "assets/cases/prisma-2-case/weapons/055_★_Talon_Knife_Ultraviolet.png",
+        "image": "assets/cases/prisma-2-case/weapons/055_%E2%98%85_Talon_Knife_Ultraviolet.png",
         "marketHashName": "★ Talon Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2807,7 +2807,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Rust Coat",
-        "image": "assets/cases/prisma-2-case/weapons/056_★_Talon_Knife_Rust_Coat.png",
+        "image": "assets/cases/prisma-2-case/weapons/056_%E2%98%85_Talon_Knife_Rust_Coat.png",
         "marketHashName": "★ Talon Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2815,7 +2815,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife",
-        "image": "assets/cases/prisma-2-case/weapons/057_★_Ursus_Knife.png",
+        "image": "assets/cases/prisma-2-case/weapons/057_%E2%98%85_Ursus_Knife.png",
         "marketHashName": "★ Ursus Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2823,7 +2823,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Marble Fade",
-        "image": "assets/cases/prisma-2-case/weapons/058_★_Ursus_Knife_Marble_Fade.png",
+        "image": "assets/cases/prisma-2-case/weapons/058_%E2%98%85_Ursus_Knife_Marble_Fade.png",
         "marketHashName": "★ Ursus Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2831,7 +2831,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Tiger Tooth",
-        "image": "assets/cases/prisma-2-case/weapons/059_★_Ursus_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/prisma-2-case/weapons/059_%E2%98%85_Ursus_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Ursus Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2839,7 +2839,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/060_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/060_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2847,7 +2847,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/061_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/061_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2855,7 +2855,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/062_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/062_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2863,7 +2863,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/063_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/063_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2871,7 +2871,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/064_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/064_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2879,7 +2879,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/065_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/065_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2887,7 +2887,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-2-case/weapons/066_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-2-case/weapons/066_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2895,7 +2895,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Damascus Steel",
-        "image": "assets/cases/prisma-2-case/weapons/067_★_Ursus_Knife_Damascus_Steel.png",
+        "image": "assets/cases/prisma-2-case/weapons/067_%E2%98%85_Ursus_Knife_Damascus_Steel.png",
         "marketHashName": "★ Ursus Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2903,7 +2903,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Ultraviolet",
-        "image": "assets/cases/prisma-2-case/weapons/068_★_Ursus_Knife_Ultraviolet.png",
+        "image": "assets/cases/prisma-2-case/weapons/068_%E2%98%85_Ursus_Knife_Ultraviolet.png",
         "marketHashName": "★ Ursus Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -2911,7 +2911,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Rust Coat",
-        "image": "assets/cases/prisma-2-case/weapons/069_★_Ursus_Knife_Rust_Coat.png",
+        "image": "assets/cases/prisma-2-case/weapons/069_%E2%98%85_Ursus_Knife_Rust_Coat.png",
         "marketHashName": "★ Ursus Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3063,7 +3063,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Classic Knife",
-        "image": "assets/cases/cs20-case/weapons/018_★_Classic_Knife.png",
+        "image": "assets/cases/cs20-case/weapons/018_%E2%98%85_Classic_Knife.png",
         "marketHashName": "★ Classic Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3071,7 +3071,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Classic Knife | Fade",
-        "image": "assets/cases/cs20-case/weapons/019_★_Classic_Knife_Fade.png",
+        "image": "assets/cases/cs20-case/weapons/019_%E2%98%85_Classic_Knife_Fade.png",
         "marketHashName": "★ Classic Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3079,7 +3079,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Classic Knife | Crimson Web",
-        "image": "assets/cases/cs20-case/weapons/020_★_Classic_Knife_Crimson_Web.png",
+        "image": "assets/cases/cs20-case/weapons/020_%E2%98%85_Classic_Knife_Crimson_Web.png",
         "marketHashName": "★ Classic Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3087,7 +3087,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Classic Knife | Slaughter",
-        "image": "assets/cases/cs20-case/weapons/021_★_Classic_Knife_Slaughter.png",
+        "image": "assets/cases/cs20-case/weapons/021_%E2%98%85_Classic_Knife_Slaughter.png",
         "marketHashName": "★ Classic Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3095,7 +3095,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Classic Knife | Case Hardened",
-        "image": "assets/cases/cs20-case/weapons/022_★_Classic_Knife_Case_Hardened.png",
+        "image": "assets/cases/cs20-case/weapons/022_%E2%98%85_Classic_Knife_Case_Hardened.png",
         "marketHashName": "★ Classic Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3103,7 +3103,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Classic Knife | Urban Masked",
-        "image": "assets/cases/cs20-case/weapons/023_★_Classic_Knife_Urban_Masked.png",
+        "image": "assets/cases/cs20-case/weapons/023_%E2%98%85_Classic_Knife_Urban_Masked.png",
         "marketHashName": "★ Classic Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3111,7 +3111,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Classic Knife | Blue Steel",
-        "image": "assets/cases/cs20-case/weapons/024_★_Classic_Knife_Blue_Steel.png",
+        "image": "assets/cases/cs20-case/weapons/024_%E2%98%85_Classic_Knife_Blue_Steel.png",
         "marketHashName": "★ Classic Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3119,7 +3119,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Classic Knife | Night Stripe",
-        "image": "assets/cases/cs20-case/weapons/025_★_Classic_Knife_Night_Stripe.png",
+        "image": "assets/cases/cs20-case/weapons/025_%E2%98%85_Classic_Knife_Night_Stripe.png",
         "marketHashName": "★ Classic Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3127,7 +3127,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Classic Knife | Stained",
-        "image": "assets/cases/cs20-case/weapons/026_★_Classic_Knife_Stained.png",
+        "image": "assets/cases/cs20-case/weapons/026_%E2%98%85_Classic_Knife_Stained.png",
         "marketHashName": "★ Classic Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3135,7 +3135,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Classic Knife | Forest DDPAT",
-        "image": "assets/cases/cs20-case/weapons/027_★_Classic_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/cs20-case/weapons/027_%E2%98%85_Classic_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Classic Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3143,7 +3143,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Classic Knife | Boreal Forest",
-        "image": "assets/cases/cs20-case/weapons/028_★_Classic_Knife_Boreal_Forest.png",
+        "image": "assets/cases/cs20-case/weapons/028_%E2%98%85_Classic_Knife_Boreal_Forest.png",
         "marketHashName": "★ Classic Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3151,7 +3151,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Classic Knife | Scorched",
-        "image": "assets/cases/cs20-case/weapons/029_★_Classic_Knife_Scorched.png",
+        "image": "assets/cases/cs20-case/weapons/029_%E2%98%85_Classic_Knife_Scorched.png",
         "marketHashName": "★ Classic Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3159,7 +3159,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Classic Knife | Safari Mesh",
-        "image": "assets/cases/cs20-case/weapons/030_★_Classic_Knife_Safari_Mesh.png",
+        "image": "assets/cases/cs20-case/weapons/030_%E2%98%85_Classic_Knife_Safari_Mesh.png",
         "marketHashName": "★ Classic Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3311,7 +3311,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Navaja Knife",
-        "image": "assets/cases/prisma-case/weapons/018_★_Navaja_Knife.png",
+        "image": "assets/cases/prisma-case/weapons/018_%E2%98%85_Navaja_Knife.png",
         "marketHashName": "★ Navaja Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3319,7 +3319,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Marble Fade",
-        "image": "assets/cases/prisma-case/weapons/019_★_Navaja_Knife_Marble_Fade.png",
+        "image": "assets/cases/prisma-case/weapons/019_%E2%98%85_Navaja_Knife_Marble_Fade.png",
         "marketHashName": "★ Navaja Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3327,7 +3327,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Tiger Tooth",
-        "image": "assets/cases/prisma-case/weapons/020_★_Navaja_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/prisma-case/weapons/020_%E2%98%85_Navaja_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Navaja Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3335,7 +3335,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/021_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/021_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3343,7 +3343,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/022_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/022_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3351,7 +3351,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/023_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/023_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3359,7 +3359,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/024_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/024_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3367,7 +3367,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/025_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/025_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3375,7 +3375,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/026_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/026_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3383,7 +3383,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/027_★_Navaja_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/027_%E2%98%85_Navaja_Knife_Doppler.png",
         "marketHashName": "★ Navaja Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3391,7 +3391,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Damascus Steel",
-        "image": "assets/cases/prisma-case/weapons/028_★_Navaja_Knife_Damascus_Steel.png",
+        "image": "assets/cases/prisma-case/weapons/028_%E2%98%85_Navaja_Knife_Damascus_Steel.png",
         "marketHashName": "★ Navaja Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3399,7 +3399,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Ultraviolet",
-        "image": "assets/cases/prisma-case/weapons/029_★_Navaja_Knife_Ultraviolet.png",
+        "image": "assets/cases/prisma-case/weapons/029_%E2%98%85_Navaja_Knife_Ultraviolet.png",
         "marketHashName": "★ Navaja Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3407,7 +3407,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Rust Coat",
-        "image": "assets/cases/prisma-case/weapons/030_★_Navaja_Knife_Rust_Coat.png",
+        "image": "assets/cases/prisma-case/weapons/030_%E2%98%85_Navaja_Knife_Rust_Coat.png",
         "marketHashName": "★ Navaja Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3415,7 +3415,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife",
-        "image": "assets/cases/prisma-case/weapons/031_★_Stiletto_Knife.png",
+        "image": "assets/cases/prisma-case/weapons/031_%E2%98%85_Stiletto_Knife.png",
         "marketHashName": "★ Stiletto Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3423,7 +3423,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Marble Fade",
-        "image": "assets/cases/prisma-case/weapons/032_★_Stiletto_Knife_Marble_Fade.png",
+        "image": "assets/cases/prisma-case/weapons/032_%E2%98%85_Stiletto_Knife_Marble_Fade.png",
         "marketHashName": "★ Stiletto Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3431,7 +3431,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Tiger Tooth",
-        "image": "assets/cases/prisma-case/weapons/033_★_Stiletto_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/prisma-case/weapons/033_%E2%98%85_Stiletto_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Stiletto Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3439,7 +3439,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/034_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/034_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3447,7 +3447,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/035_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/035_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3455,7 +3455,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/036_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/036_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3463,7 +3463,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/037_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/037_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3471,7 +3471,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/038_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/038_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3479,7 +3479,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/039_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/039_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3487,7 +3487,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/040_★_Stiletto_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/040_%E2%98%85_Stiletto_Knife_Doppler.png",
         "marketHashName": "★ Stiletto Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3495,7 +3495,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Damascus Steel",
-        "image": "assets/cases/prisma-case/weapons/041_★_Stiletto_Knife_Damascus_Steel.png",
+        "image": "assets/cases/prisma-case/weapons/041_%E2%98%85_Stiletto_Knife_Damascus_Steel.png",
         "marketHashName": "★ Stiletto Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3503,7 +3503,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Ultraviolet",
-        "image": "assets/cases/prisma-case/weapons/042_★_Stiletto_Knife_Ultraviolet.png",
+        "image": "assets/cases/prisma-case/weapons/042_%E2%98%85_Stiletto_Knife_Ultraviolet.png",
         "marketHashName": "★ Stiletto Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3511,7 +3511,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Rust Coat",
-        "image": "assets/cases/prisma-case/weapons/043_★_Stiletto_Knife_Rust_Coat.png",
+        "image": "assets/cases/prisma-case/weapons/043_%E2%98%85_Stiletto_Knife_Rust_Coat.png",
         "marketHashName": "★ Stiletto Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3519,7 +3519,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife",
-        "image": "assets/cases/prisma-case/weapons/044_★_Talon_Knife.png",
+        "image": "assets/cases/prisma-case/weapons/044_%E2%98%85_Talon_Knife.png",
         "marketHashName": "★ Talon Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3527,7 +3527,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Marble Fade",
-        "image": "assets/cases/prisma-case/weapons/045_★_Talon_Knife_Marble_Fade.png",
+        "image": "assets/cases/prisma-case/weapons/045_%E2%98%85_Talon_Knife_Marble_Fade.png",
         "marketHashName": "★ Talon Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3535,7 +3535,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Tiger Tooth",
-        "image": "assets/cases/prisma-case/weapons/046_★_Talon_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/prisma-case/weapons/046_%E2%98%85_Talon_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Talon Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3543,7 +3543,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/047_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/047_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3551,7 +3551,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/048_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/048_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3559,7 +3559,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/049_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/049_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3567,7 +3567,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/050_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/050_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3575,7 +3575,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/051_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/051_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3583,7 +3583,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/052_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/052_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3591,7 +3591,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/053_★_Talon_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/053_%E2%98%85_Talon_Knife_Doppler.png",
         "marketHashName": "★ Talon Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3599,7 +3599,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Damascus Steel",
-        "image": "assets/cases/prisma-case/weapons/054_★_Talon_Knife_Damascus_Steel.png",
+        "image": "assets/cases/prisma-case/weapons/054_%E2%98%85_Talon_Knife_Damascus_Steel.png",
         "marketHashName": "★ Talon Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3607,7 +3607,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Ultraviolet",
-        "image": "assets/cases/prisma-case/weapons/055_★_Talon_Knife_Ultraviolet.png",
+        "image": "assets/cases/prisma-case/weapons/055_%E2%98%85_Talon_Knife_Ultraviolet.png",
         "marketHashName": "★ Talon Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3615,7 +3615,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Rust Coat",
-        "image": "assets/cases/prisma-case/weapons/056_★_Talon_Knife_Rust_Coat.png",
+        "image": "assets/cases/prisma-case/weapons/056_%E2%98%85_Talon_Knife_Rust_Coat.png",
         "marketHashName": "★ Talon Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3623,7 +3623,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife",
-        "image": "assets/cases/prisma-case/weapons/057_★_Ursus_Knife.png",
+        "image": "assets/cases/prisma-case/weapons/057_%E2%98%85_Ursus_Knife.png",
         "marketHashName": "★ Ursus Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3631,7 +3631,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Marble Fade",
-        "image": "assets/cases/prisma-case/weapons/058_★_Ursus_Knife_Marble_Fade.png",
+        "image": "assets/cases/prisma-case/weapons/058_%E2%98%85_Ursus_Knife_Marble_Fade.png",
         "marketHashName": "★ Ursus Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3639,7 +3639,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Tiger Tooth",
-        "image": "assets/cases/prisma-case/weapons/059_★_Ursus_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/prisma-case/weapons/059_%E2%98%85_Ursus_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Ursus Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3647,7 +3647,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/060_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/060_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3655,7 +3655,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/061_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/061_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3663,7 +3663,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/062_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/062_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3671,7 +3671,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/063_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/063_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3679,7 +3679,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/064_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/064_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3687,7 +3687,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/065_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/065_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3695,7 +3695,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Doppler",
-        "image": "assets/cases/prisma-case/weapons/066_★_Ursus_Knife_Doppler.png",
+        "image": "assets/cases/prisma-case/weapons/066_%E2%98%85_Ursus_Knife_Doppler.png",
         "marketHashName": "★ Ursus Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3703,7 +3703,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Damascus Steel",
-        "image": "assets/cases/prisma-case/weapons/067_★_Ursus_Knife_Damascus_Steel.png",
+        "image": "assets/cases/prisma-case/weapons/067_%E2%98%85_Ursus_Knife_Damascus_Steel.png",
         "marketHashName": "★ Ursus Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3711,7 +3711,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Ultraviolet",
-        "image": "assets/cases/prisma-case/weapons/068_★_Ursus_Knife_Ultraviolet.png",
+        "image": "assets/cases/prisma-case/weapons/068_%E2%98%85_Ursus_Knife_Ultraviolet.png",
         "marketHashName": "★ Ursus Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3719,7 +3719,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Rust Coat",
-        "image": "assets/cases/prisma-case/weapons/069_★_Ursus_Knife_Rust_Coat.png",
+        "image": "assets/cases/prisma-case/weapons/069_%E2%98%85_Ursus_Knife_Rust_Coat.png",
         "marketHashName": "★ Ursus Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3871,7 +3871,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Navaja Knife",
-        "image": "assets/cases/danger-zone-case/weapons/018_★_Navaja_Knife.png",
+        "image": "assets/cases/danger-zone-case/weapons/018_%E2%98%85_Navaja_Knife.png",
         "marketHashName": "★ Navaja Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3879,7 +3879,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Fade",
-        "image": "assets/cases/danger-zone-case/weapons/019_★_Navaja_Knife_Fade.png",
+        "image": "assets/cases/danger-zone-case/weapons/019_%E2%98%85_Navaja_Knife_Fade.png",
         "marketHashName": "★ Navaja Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3887,7 +3887,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Crimson Web",
-        "image": "assets/cases/danger-zone-case/weapons/020_★_Navaja_Knife_Crimson_Web.png",
+        "image": "assets/cases/danger-zone-case/weapons/020_%E2%98%85_Navaja_Knife_Crimson_Web.png",
         "marketHashName": "★ Navaja Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3895,7 +3895,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Slaughter",
-        "image": "assets/cases/danger-zone-case/weapons/021_★_Navaja_Knife_Slaughter.png",
+        "image": "assets/cases/danger-zone-case/weapons/021_%E2%98%85_Navaja_Knife_Slaughter.png",
         "marketHashName": "★ Navaja Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3903,7 +3903,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Case Hardened",
-        "image": "assets/cases/danger-zone-case/weapons/022_★_Navaja_Knife_Case_Hardened.png",
+        "image": "assets/cases/danger-zone-case/weapons/022_%E2%98%85_Navaja_Knife_Case_Hardened.png",
         "marketHashName": "★ Navaja Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3911,7 +3911,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Urban Masked",
-        "image": "assets/cases/danger-zone-case/weapons/023_★_Navaja_Knife_Urban_Masked.png",
+        "image": "assets/cases/danger-zone-case/weapons/023_%E2%98%85_Navaja_Knife_Urban_Masked.png",
         "marketHashName": "★ Navaja Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3919,7 +3919,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Blue Steel",
-        "image": "assets/cases/danger-zone-case/weapons/024_★_Navaja_Knife_Blue_Steel.png",
+        "image": "assets/cases/danger-zone-case/weapons/024_%E2%98%85_Navaja_Knife_Blue_Steel.png",
         "marketHashName": "★ Navaja Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3927,7 +3927,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Night Stripe",
-        "image": "assets/cases/danger-zone-case/weapons/025_★_Navaja_Knife_Night_Stripe.png",
+        "image": "assets/cases/danger-zone-case/weapons/025_%E2%98%85_Navaja_Knife_Night_Stripe.png",
         "marketHashName": "★ Navaja Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3935,7 +3935,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Stained",
-        "image": "assets/cases/danger-zone-case/weapons/026_★_Navaja_Knife_Stained.png",
+        "image": "assets/cases/danger-zone-case/weapons/026_%E2%98%85_Navaja_Knife_Stained.png",
         "marketHashName": "★ Navaja Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3943,7 +3943,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Forest DDPAT",
-        "image": "assets/cases/danger-zone-case/weapons/027_★_Navaja_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/danger-zone-case/weapons/027_%E2%98%85_Navaja_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Navaja Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3951,7 +3951,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Boreal Forest",
-        "image": "assets/cases/danger-zone-case/weapons/028_★_Navaja_Knife_Boreal_Forest.png",
+        "image": "assets/cases/danger-zone-case/weapons/028_%E2%98%85_Navaja_Knife_Boreal_Forest.png",
         "marketHashName": "★ Navaja Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3959,7 +3959,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Scorched",
-        "image": "assets/cases/danger-zone-case/weapons/029_★_Navaja_Knife_Scorched.png",
+        "image": "assets/cases/danger-zone-case/weapons/029_%E2%98%85_Navaja_Knife_Scorched.png",
         "marketHashName": "★ Navaja Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3967,7 +3967,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Safari Mesh",
-        "image": "assets/cases/danger-zone-case/weapons/030_★_Navaja_Knife_Safari_Mesh.png",
+        "image": "assets/cases/danger-zone-case/weapons/030_%E2%98%85_Navaja_Knife_Safari_Mesh.png",
         "marketHashName": "★ Navaja Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3975,7 +3975,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife",
-        "image": "assets/cases/danger-zone-case/weapons/031_★_Stiletto_Knife.png",
+        "image": "assets/cases/danger-zone-case/weapons/031_%E2%98%85_Stiletto_Knife.png",
         "marketHashName": "★ Stiletto Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3983,7 +3983,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Fade",
-        "image": "assets/cases/danger-zone-case/weapons/032_★_Stiletto_Knife_Fade.png",
+        "image": "assets/cases/danger-zone-case/weapons/032_%E2%98%85_Stiletto_Knife_Fade.png",
         "marketHashName": "★ Stiletto Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3991,7 +3991,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Crimson Web",
-        "image": "assets/cases/danger-zone-case/weapons/033_★_Stiletto_Knife_Crimson_Web.png",
+        "image": "assets/cases/danger-zone-case/weapons/033_%E2%98%85_Stiletto_Knife_Crimson_Web.png",
         "marketHashName": "★ Stiletto Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -3999,7 +3999,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Slaughter",
-        "image": "assets/cases/danger-zone-case/weapons/034_★_Stiletto_Knife_Slaughter.png",
+        "image": "assets/cases/danger-zone-case/weapons/034_%E2%98%85_Stiletto_Knife_Slaughter.png",
         "marketHashName": "★ Stiletto Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4007,7 +4007,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Case Hardened",
-        "image": "assets/cases/danger-zone-case/weapons/035_★_Stiletto_Knife_Case_Hardened.png",
+        "image": "assets/cases/danger-zone-case/weapons/035_%E2%98%85_Stiletto_Knife_Case_Hardened.png",
         "marketHashName": "★ Stiletto Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4015,7 +4015,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Urban Masked",
-        "image": "assets/cases/danger-zone-case/weapons/036_★_Stiletto_Knife_Urban_Masked.png",
+        "image": "assets/cases/danger-zone-case/weapons/036_%E2%98%85_Stiletto_Knife_Urban_Masked.png",
         "marketHashName": "★ Stiletto Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4023,7 +4023,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Blue Steel",
-        "image": "assets/cases/danger-zone-case/weapons/037_★_Stiletto_Knife_Blue_Steel.png",
+        "image": "assets/cases/danger-zone-case/weapons/037_%E2%98%85_Stiletto_Knife_Blue_Steel.png",
         "marketHashName": "★ Stiletto Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4031,7 +4031,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Night Stripe",
-        "image": "assets/cases/danger-zone-case/weapons/038_★_Stiletto_Knife_Night_Stripe.png",
+        "image": "assets/cases/danger-zone-case/weapons/038_%E2%98%85_Stiletto_Knife_Night_Stripe.png",
         "marketHashName": "★ Stiletto Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4039,7 +4039,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Stained",
-        "image": "assets/cases/danger-zone-case/weapons/039_★_Stiletto_Knife_Stained.png",
+        "image": "assets/cases/danger-zone-case/weapons/039_%E2%98%85_Stiletto_Knife_Stained.png",
         "marketHashName": "★ Stiletto Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4047,7 +4047,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Forest DDPAT",
-        "image": "assets/cases/danger-zone-case/weapons/040_★_Stiletto_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/danger-zone-case/weapons/040_%E2%98%85_Stiletto_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Stiletto Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4055,7 +4055,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Boreal Forest",
-        "image": "assets/cases/danger-zone-case/weapons/041_★_Stiletto_Knife_Boreal_Forest.png",
+        "image": "assets/cases/danger-zone-case/weapons/041_%E2%98%85_Stiletto_Knife_Boreal_Forest.png",
         "marketHashName": "★ Stiletto Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4063,7 +4063,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Scorched",
-        "image": "assets/cases/danger-zone-case/weapons/042_★_Stiletto_Knife_Scorched.png",
+        "image": "assets/cases/danger-zone-case/weapons/042_%E2%98%85_Stiletto_Knife_Scorched.png",
         "marketHashName": "★ Stiletto Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4071,7 +4071,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Safari Mesh",
-        "image": "assets/cases/danger-zone-case/weapons/043_★_Stiletto_Knife_Safari_Mesh.png",
+        "image": "assets/cases/danger-zone-case/weapons/043_%E2%98%85_Stiletto_Knife_Safari_Mesh.png",
         "marketHashName": "★ Stiletto Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4079,7 +4079,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife",
-        "image": "assets/cases/danger-zone-case/weapons/044_★_Talon_Knife.png",
+        "image": "assets/cases/danger-zone-case/weapons/044_%E2%98%85_Talon_Knife.png",
         "marketHashName": "★ Talon Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4087,7 +4087,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Fade",
-        "image": "assets/cases/danger-zone-case/weapons/045_★_Talon_Knife_Fade.png",
+        "image": "assets/cases/danger-zone-case/weapons/045_%E2%98%85_Talon_Knife_Fade.png",
         "marketHashName": "★ Talon Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4095,7 +4095,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Crimson Web",
-        "image": "assets/cases/danger-zone-case/weapons/046_★_Talon_Knife_Crimson_Web.png",
+        "image": "assets/cases/danger-zone-case/weapons/046_%E2%98%85_Talon_Knife_Crimson_Web.png",
         "marketHashName": "★ Talon Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4103,7 +4103,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Slaughter",
-        "image": "assets/cases/danger-zone-case/weapons/047_★_Talon_Knife_Slaughter.png",
+        "image": "assets/cases/danger-zone-case/weapons/047_%E2%98%85_Talon_Knife_Slaughter.png",
         "marketHashName": "★ Talon Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4111,7 +4111,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Case Hardened",
-        "image": "assets/cases/danger-zone-case/weapons/048_★_Talon_Knife_Case_Hardened.png",
+        "image": "assets/cases/danger-zone-case/weapons/048_%E2%98%85_Talon_Knife_Case_Hardened.png",
         "marketHashName": "★ Talon Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4119,7 +4119,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Urban Masked",
-        "image": "assets/cases/danger-zone-case/weapons/049_★_Talon_Knife_Urban_Masked.png",
+        "image": "assets/cases/danger-zone-case/weapons/049_%E2%98%85_Talon_Knife_Urban_Masked.png",
         "marketHashName": "★ Talon Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4127,7 +4127,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Blue Steel",
-        "image": "assets/cases/danger-zone-case/weapons/050_★_Talon_Knife_Blue_Steel.png",
+        "image": "assets/cases/danger-zone-case/weapons/050_%E2%98%85_Talon_Knife_Blue_Steel.png",
         "marketHashName": "★ Talon Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4135,7 +4135,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Night Stripe",
-        "image": "assets/cases/danger-zone-case/weapons/051_★_Talon_Knife_Night_Stripe.png",
+        "image": "assets/cases/danger-zone-case/weapons/051_%E2%98%85_Talon_Knife_Night_Stripe.png",
         "marketHashName": "★ Talon Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4143,7 +4143,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Stained",
-        "image": "assets/cases/danger-zone-case/weapons/052_★_Talon_Knife_Stained.png",
+        "image": "assets/cases/danger-zone-case/weapons/052_%E2%98%85_Talon_Knife_Stained.png",
         "marketHashName": "★ Talon Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4151,7 +4151,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Forest DDPAT",
-        "image": "assets/cases/danger-zone-case/weapons/053_★_Talon_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/danger-zone-case/weapons/053_%E2%98%85_Talon_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Talon Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4159,7 +4159,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Boreal Forest",
-        "image": "assets/cases/danger-zone-case/weapons/054_★_Talon_Knife_Boreal_Forest.png",
+        "image": "assets/cases/danger-zone-case/weapons/054_%E2%98%85_Talon_Knife_Boreal_Forest.png",
         "marketHashName": "★ Talon Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4167,7 +4167,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Scorched",
-        "image": "assets/cases/danger-zone-case/weapons/055_★_Talon_Knife_Scorched.png",
+        "image": "assets/cases/danger-zone-case/weapons/055_%E2%98%85_Talon_Knife_Scorched.png",
         "marketHashName": "★ Talon Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4175,7 +4175,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Safari Mesh",
-        "image": "assets/cases/danger-zone-case/weapons/056_★_Talon_Knife_Safari_Mesh.png",
+        "image": "assets/cases/danger-zone-case/weapons/056_%E2%98%85_Talon_Knife_Safari_Mesh.png",
         "marketHashName": "★ Talon Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4183,7 +4183,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife",
-        "image": "assets/cases/danger-zone-case/weapons/057_★_Ursus_Knife.png",
+        "image": "assets/cases/danger-zone-case/weapons/057_%E2%98%85_Ursus_Knife.png",
         "marketHashName": "★ Ursus Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4191,7 +4191,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Fade",
-        "image": "assets/cases/danger-zone-case/weapons/058_★_Ursus_Knife_Fade.png",
+        "image": "assets/cases/danger-zone-case/weapons/058_%E2%98%85_Ursus_Knife_Fade.png",
         "marketHashName": "★ Ursus Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4199,7 +4199,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Crimson Web",
-        "image": "assets/cases/danger-zone-case/weapons/059_★_Ursus_Knife_Crimson_Web.png",
+        "image": "assets/cases/danger-zone-case/weapons/059_%E2%98%85_Ursus_Knife_Crimson_Web.png",
         "marketHashName": "★ Ursus Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4207,7 +4207,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Slaughter",
-        "image": "assets/cases/danger-zone-case/weapons/060_★_Ursus_Knife_Slaughter.png",
+        "image": "assets/cases/danger-zone-case/weapons/060_%E2%98%85_Ursus_Knife_Slaughter.png",
         "marketHashName": "★ Ursus Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4215,7 +4215,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Case Hardened",
-        "image": "assets/cases/danger-zone-case/weapons/061_★_Ursus_Knife_Case_Hardened.png",
+        "image": "assets/cases/danger-zone-case/weapons/061_%E2%98%85_Ursus_Knife_Case_Hardened.png",
         "marketHashName": "★ Ursus Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4223,7 +4223,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Urban Masked",
-        "image": "assets/cases/danger-zone-case/weapons/062_★_Ursus_Knife_Urban_Masked.png",
+        "image": "assets/cases/danger-zone-case/weapons/062_%E2%98%85_Ursus_Knife_Urban_Masked.png",
         "marketHashName": "★ Ursus Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4231,7 +4231,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Blue Steel",
-        "image": "assets/cases/danger-zone-case/weapons/063_★_Ursus_Knife_Blue_Steel.png",
+        "image": "assets/cases/danger-zone-case/weapons/063_%E2%98%85_Ursus_Knife_Blue_Steel.png",
         "marketHashName": "★ Ursus Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4239,7 +4239,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Night Stripe",
-        "image": "assets/cases/danger-zone-case/weapons/064_★_Ursus_Knife_Night_Stripe.png",
+        "image": "assets/cases/danger-zone-case/weapons/064_%E2%98%85_Ursus_Knife_Night_Stripe.png",
         "marketHashName": "★ Ursus Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4247,7 +4247,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Stained",
-        "image": "assets/cases/danger-zone-case/weapons/065_★_Ursus_Knife_Stained.png",
+        "image": "assets/cases/danger-zone-case/weapons/065_%E2%98%85_Ursus_Knife_Stained.png",
         "marketHashName": "★ Ursus Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4255,7 +4255,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Forest DDPAT",
-        "image": "assets/cases/danger-zone-case/weapons/066_★_Ursus_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/danger-zone-case/weapons/066_%E2%98%85_Ursus_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Ursus Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4263,7 +4263,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Boreal Forest",
-        "image": "assets/cases/danger-zone-case/weapons/067_★_Ursus_Knife_Boreal_Forest.png",
+        "image": "assets/cases/danger-zone-case/weapons/067_%E2%98%85_Ursus_Knife_Boreal_Forest.png",
         "marketHashName": "★ Ursus Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4271,7 +4271,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Scorched",
-        "image": "assets/cases/danger-zone-case/weapons/068_★_Ursus_Knife_Scorched.png",
+        "image": "assets/cases/danger-zone-case/weapons/068_%E2%98%85_Ursus_Knife_Scorched.png",
         "marketHashName": "★ Ursus Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4279,7 +4279,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Safari Mesh",
-        "image": "assets/cases/danger-zone-case/weapons/069_★_Ursus_Knife_Safari_Mesh.png",
+        "image": "assets/cases/danger-zone-case/weapons/069_%E2%98%85_Ursus_Knife_Safari_Mesh.png",
         "marketHashName": "★ Ursus Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4431,7 +4431,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Navaja Knife",
-        "image": "assets/cases/horizon-case/weapons/018_★_Navaja_Knife.png",
+        "image": "assets/cases/horizon-case/weapons/018_%E2%98%85_Navaja_Knife.png",
         "marketHashName": "★ Navaja Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4439,7 +4439,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Fade",
-        "image": "assets/cases/horizon-case/weapons/019_★_Navaja_Knife_Fade.png",
+        "image": "assets/cases/horizon-case/weapons/019_%E2%98%85_Navaja_Knife_Fade.png",
         "marketHashName": "★ Navaja Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4447,7 +4447,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Crimson Web",
-        "image": "assets/cases/horizon-case/weapons/020_★_Navaja_Knife_Crimson_Web.png",
+        "image": "assets/cases/horizon-case/weapons/020_%E2%98%85_Navaja_Knife_Crimson_Web.png",
         "marketHashName": "★ Navaja Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4455,7 +4455,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Slaughter",
-        "image": "assets/cases/horizon-case/weapons/021_★_Navaja_Knife_Slaughter.png",
+        "image": "assets/cases/horizon-case/weapons/021_%E2%98%85_Navaja_Knife_Slaughter.png",
         "marketHashName": "★ Navaja Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4463,7 +4463,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Case Hardened",
-        "image": "assets/cases/horizon-case/weapons/022_★_Navaja_Knife_Case_Hardened.png",
+        "image": "assets/cases/horizon-case/weapons/022_%E2%98%85_Navaja_Knife_Case_Hardened.png",
         "marketHashName": "★ Navaja Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4471,7 +4471,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Urban Masked",
-        "image": "assets/cases/horizon-case/weapons/023_★_Navaja_Knife_Urban_Masked.png",
+        "image": "assets/cases/horizon-case/weapons/023_%E2%98%85_Navaja_Knife_Urban_Masked.png",
         "marketHashName": "★ Navaja Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4479,7 +4479,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Blue Steel",
-        "image": "assets/cases/horizon-case/weapons/024_★_Navaja_Knife_Blue_Steel.png",
+        "image": "assets/cases/horizon-case/weapons/024_%E2%98%85_Navaja_Knife_Blue_Steel.png",
         "marketHashName": "★ Navaja Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4487,7 +4487,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Night Stripe",
-        "image": "assets/cases/horizon-case/weapons/025_★_Navaja_Knife_Night_Stripe.png",
+        "image": "assets/cases/horizon-case/weapons/025_%E2%98%85_Navaja_Knife_Night_Stripe.png",
         "marketHashName": "★ Navaja Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4495,7 +4495,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Stained",
-        "image": "assets/cases/horizon-case/weapons/026_★_Navaja_Knife_Stained.png",
+        "image": "assets/cases/horizon-case/weapons/026_%E2%98%85_Navaja_Knife_Stained.png",
         "marketHashName": "★ Navaja Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4503,7 +4503,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Forest DDPAT",
-        "image": "assets/cases/horizon-case/weapons/027_★_Navaja_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/horizon-case/weapons/027_%E2%98%85_Navaja_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Navaja Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4511,7 +4511,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Boreal Forest",
-        "image": "assets/cases/horizon-case/weapons/028_★_Navaja_Knife_Boreal_Forest.png",
+        "image": "assets/cases/horizon-case/weapons/028_%E2%98%85_Navaja_Knife_Boreal_Forest.png",
         "marketHashName": "★ Navaja Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4519,7 +4519,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Scorched",
-        "image": "assets/cases/horizon-case/weapons/029_★_Navaja_Knife_Scorched.png",
+        "image": "assets/cases/horizon-case/weapons/029_%E2%98%85_Navaja_Knife_Scorched.png",
         "marketHashName": "★ Navaja Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4527,7 +4527,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Navaja Knife | Safari Mesh",
-        "image": "assets/cases/horizon-case/weapons/030_★_Navaja_Knife_Safari_Mesh.png",
+        "image": "assets/cases/horizon-case/weapons/030_%E2%98%85_Navaja_Knife_Safari_Mesh.png",
         "marketHashName": "★ Navaja Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4535,7 +4535,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife",
-        "image": "assets/cases/horizon-case/weapons/031_★_Stiletto_Knife.png",
+        "image": "assets/cases/horizon-case/weapons/031_%E2%98%85_Stiletto_Knife.png",
         "marketHashName": "★ Stiletto Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4543,7 +4543,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Fade",
-        "image": "assets/cases/horizon-case/weapons/032_★_Stiletto_Knife_Fade.png",
+        "image": "assets/cases/horizon-case/weapons/032_%E2%98%85_Stiletto_Knife_Fade.png",
         "marketHashName": "★ Stiletto Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4551,7 +4551,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Crimson Web",
-        "image": "assets/cases/horizon-case/weapons/033_★_Stiletto_Knife_Crimson_Web.png",
+        "image": "assets/cases/horizon-case/weapons/033_%E2%98%85_Stiletto_Knife_Crimson_Web.png",
         "marketHashName": "★ Stiletto Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4559,7 +4559,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Slaughter",
-        "image": "assets/cases/horizon-case/weapons/034_★_Stiletto_Knife_Slaughter.png",
+        "image": "assets/cases/horizon-case/weapons/034_%E2%98%85_Stiletto_Knife_Slaughter.png",
         "marketHashName": "★ Stiletto Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4567,7 +4567,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Case Hardened",
-        "image": "assets/cases/horizon-case/weapons/035_★_Stiletto_Knife_Case_Hardened.png",
+        "image": "assets/cases/horizon-case/weapons/035_%E2%98%85_Stiletto_Knife_Case_Hardened.png",
         "marketHashName": "★ Stiletto Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4575,7 +4575,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Urban Masked",
-        "image": "assets/cases/horizon-case/weapons/036_★_Stiletto_Knife_Urban_Masked.png",
+        "image": "assets/cases/horizon-case/weapons/036_%E2%98%85_Stiletto_Knife_Urban_Masked.png",
         "marketHashName": "★ Stiletto Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4583,7 +4583,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Blue Steel",
-        "image": "assets/cases/horizon-case/weapons/037_★_Stiletto_Knife_Blue_Steel.png",
+        "image": "assets/cases/horizon-case/weapons/037_%E2%98%85_Stiletto_Knife_Blue_Steel.png",
         "marketHashName": "★ Stiletto Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4591,7 +4591,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Night Stripe",
-        "image": "assets/cases/horizon-case/weapons/038_★_Stiletto_Knife_Night_Stripe.png",
+        "image": "assets/cases/horizon-case/weapons/038_%E2%98%85_Stiletto_Knife_Night_Stripe.png",
         "marketHashName": "★ Stiletto Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4599,7 +4599,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Stained",
-        "image": "assets/cases/horizon-case/weapons/039_★_Stiletto_Knife_Stained.png",
+        "image": "assets/cases/horizon-case/weapons/039_%E2%98%85_Stiletto_Knife_Stained.png",
         "marketHashName": "★ Stiletto Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4607,7 +4607,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Forest DDPAT",
-        "image": "assets/cases/horizon-case/weapons/040_★_Stiletto_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/horizon-case/weapons/040_%E2%98%85_Stiletto_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Stiletto Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4615,7 +4615,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Boreal Forest",
-        "image": "assets/cases/horizon-case/weapons/041_★_Stiletto_Knife_Boreal_Forest.png",
+        "image": "assets/cases/horizon-case/weapons/041_%E2%98%85_Stiletto_Knife_Boreal_Forest.png",
         "marketHashName": "★ Stiletto Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4623,7 +4623,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Scorched",
-        "image": "assets/cases/horizon-case/weapons/042_★_Stiletto_Knife_Scorched.png",
+        "image": "assets/cases/horizon-case/weapons/042_%E2%98%85_Stiletto_Knife_Scorched.png",
         "marketHashName": "★ Stiletto Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4631,7 +4631,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Stiletto Knife | Safari Mesh",
-        "image": "assets/cases/horizon-case/weapons/043_★_Stiletto_Knife_Safari_Mesh.png",
+        "image": "assets/cases/horizon-case/weapons/043_%E2%98%85_Stiletto_Knife_Safari_Mesh.png",
         "marketHashName": "★ Stiletto Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4639,7 +4639,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife",
-        "image": "assets/cases/horizon-case/weapons/044_★_Talon_Knife.png",
+        "image": "assets/cases/horizon-case/weapons/044_%E2%98%85_Talon_Knife.png",
         "marketHashName": "★ Talon Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4647,7 +4647,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Fade",
-        "image": "assets/cases/horizon-case/weapons/045_★_Talon_Knife_Fade.png",
+        "image": "assets/cases/horizon-case/weapons/045_%E2%98%85_Talon_Knife_Fade.png",
         "marketHashName": "★ Talon Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4655,7 +4655,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Crimson Web",
-        "image": "assets/cases/horizon-case/weapons/046_★_Talon_Knife_Crimson_Web.png",
+        "image": "assets/cases/horizon-case/weapons/046_%E2%98%85_Talon_Knife_Crimson_Web.png",
         "marketHashName": "★ Talon Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4663,7 +4663,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Slaughter",
-        "image": "assets/cases/horizon-case/weapons/047_★_Talon_Knife_Slaughter.png",
+        "image": "assets/cases/horizon-case/weapons/047_%E2%98%85_Talon_Knife_Slaughter.png",
         "marketHashName": "★ Talon Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4671,7 +4671,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Case Hardened",
-        "image": "assets/cases/horizon-case/weapons/048_★_Talon_Knife_Case_Hardened.png",
+        "image": "assets/cases/horizon-case/weapons/048_%E2%98%85_Talon_Knife_Case_Hardened.png",
         "marketHashName": "★ Talon Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4679,7 +4679,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Urban Masked",
-        "image": "assets/cases/horizon-case/weapons/049_★_Talon_Knife_Urban_Masked.png",
+        "image": "assets/cases/horizon-case/weapons/049_%E2%98%85_Talon_Knife_Urban_Masked.png",
         "marketHashName": "★ Talon Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4687,7 +4687,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Blue Steel",
-        "image": "assets/cases/horizon-case/weapons/050_★_Talon_Knife_Blue_Steel.png",
+        "image": "assets/cases/horizon-case/weapons/050_%E2%98%85_Talon_Knife_Blue_Steel.png",
         "marketHashName": "★ Talon Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4695,7 +4695,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Night Stripe",
-        "image": "assets/cases/horizon-case/weapons/051_★_Talon_Knife_Night_Stripe.png",
+        "image": "assets/cases/horizon-case/weapons/051_%E2%98%85_Talon_Knife_Night_Stripe.png",
         "marketHashName": "★ Talon Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4703,7 +4703,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Stained",
-        "image": "assets/cases/horizon-case/weapons/052_★_Talon_Knife_Stained.png",
+        "image": "assets/cases/horizon-case/weapons/052_%E2%98%85_Talon_Knife_Stained.png",
         "marketHashName": "★ Talon Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4711,7 +4711,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Forest DDPAT",
-        "image": "assets/cases/horizon-case/weapons/053_★_Talon_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/horizon-case/weapons/053_%E2%98%85_Talon_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Talon Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4719,7 +4719,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Boreal Forest",
-        "image": "assets/cases/horizon-case/weapons/054_★_Talon_Knife_Boreal_Forest.png",
+        "image": "assets/cases/horizon-case/weapons/054_%E2%98%85_Talon_Knife_Boreal_Forest.png",
         "marketHashName": "★ Talon Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4727,7 +4727,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Scorched",
-        "image": "assets/cases/horizon-case/weapons/055_★_Talon_Knife_Scorched.png",
+        "image": "assets/cases/horizon-case/weapons/055_%E2%98%85_Talon_Knife_Scorched.png",
         "marketHashName": "★ Talon Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4735,7 +4735,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Talon Knife | Safari Mesh",
-        "image": "assets/cases/horizon-case/weapons/056_★_Talon_Knife_Safari_Mesh.png",
+        "image": "assets/cases/horizon-case/weapons/056_%E2%98%85_Talon_Knife_Safari_Mesh.png",
         "marketHashName": "★ Talon Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4743,7 +4743,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife",
-        "image": "assets/cases/horizon-case/weapons/057_★_Ursus_Knife.png",
+        "image": "assets/cases/horizon-case/weapons/057_%E2%98%85_Ursus_Knife.png",
         "marketHashName": "★ Ursus Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4751,7 +4751,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Fade",
-        "image": "assets/cases/horizon-case/weapons/058_★_Ursus_Knife_Fade.png",
+        "image": "assets/cases/horizon-case/weapons/058_%E2%98%85_Ursus_Knife_Fade.png",
         "marketHashName": "★ Ursus Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4759,7 +4759,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Crimson Web",
-        "image": "assets/cases/horizon-case/weapons/059_★_Ursus_Knife_Crimson_Web.png",
+        "image": "assets/cases/horizon-case/weapons/059_%E2%98%85_Ursus_Knife_Crimson_Web.png",
         "marketHashName": "★ Ursus Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4767,7 +4767,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Slaughter",
-        "image": "assets/cases/horizon-case/weapons/060_★_Ursus_Knife_Slaughter.png",
+        "image": "assets/cases/horizon-case/weapons/060_%E2%98%85_Ursus_Knife_Slaughter.png",
         "marketHashName": "★ Ursus Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4775,7 +4775,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Case Hardened",
-        "image": "assets/cases/horizon-case/weapons/061_★_Ursus_Knife_Case_Hardened.png",
+        "image": "assets/cases/horizon-case/weapons/061_%E2%98%85_Ursus_Knife_Case_Hardened.png",
         "marketHashName": "★ Ursus Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4783,7 +4783,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Urban Masked",
-        "image": "assets/cases/horizon-case/weapons/062_★_Ursus_Knife_Urban_Masked.png",
+        "image": "assets/cases/horizon-case/weapons/062_%E2%98%85_Ursus_Knife_Urban_Masked.png",
         "marketHashName": "★ Ursus Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4791,7 +4791,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Blue Steel",
-        "image": "assets/cases/horizon-case/weapons/063_★_Ursus_Knife_Blue_Steel.png",
+        "image": "assets/cases/horizon-case/weapons/063_%E2%98%85_Ursus_Knife_Blue_Steel.png",
         "marketHashName": "★ Ursus Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4799,7 +4799,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Night Stripe",
-        "image": "assets/cases/horizon-case/weapons/064_★_Ursus_Knife_Night_Stripe.png",
+        "image": "assets/cases/horizon-case/weapons/064_%E2%98%85_Ursus_Knife_Night_Stripe.png",
         "marketHashName": "★ Ursus Knife | Night Stripe",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4807,7 +4807,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Stained",
-        "image": "assets/cases/horizon-case/weapons/065_★_Ursus_Knife_Stained.png",
+        "image": "assets/cases/horizon-case/weapons/065_%E2%98%85_Ursus_Knife_Stained.png",
         "marketHashName": "★ Ursus Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4815,7 +4815,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Forest DDPAT",
-        "image": "assets/cases/horizon-case/weapons/066_★_Ursus_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/horizon-case/weapons/066_%E2%98%85_Ursus_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Ursus Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4823,7 +4823,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Boreal Forest",
-        "image": "assets/cases/horizon-case/weapons/067_★_Ursus_Knife_Boreal_Forest.png",
+        "image": "assets/cases/horizon-case/weapons/067_%E2%98%85_Ursus_Knife_Boreal_Forest.png",
         "marketHashName": "★ Ursus Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4831,7 +4831,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Scorched",
-        "image": "assets/cases/horizon-case/weapons/068_★_Ursus_Knife_Scorched.png",
+        "image": "assets/cases/horizon-case/weapons/068_%E2%98%85_Ursus_Knife_Scorched.png",
         "marketHashName": "★ Ursus Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4839,7 +4839,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Ursus Knife | Safari Mesh",
-        "image": "assets/cases/horizon-case/weapons/069_★_Ursus_Knife_Safari_Mesh.png",
+        "image": "assets/cases/horizon-case/weapons/069_%E2%98%85_Ursus_Knife_Safari_Mesh.png",
         "marketHashName": "★ Ursus Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -4991,7 +4991,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Driver Gloves | Imperial Plaid",
-        "image": "assets/cases/clutch-case/weapons/018_★_Driver_Gloves_Imperial_Plaid.png",
+        "image": "assets/cases/clutch-case/weapons/018_%E2%98%85_Driver_Gloves_Imperial_Plaid.png",
         "marketHashName": "★ Driver Gloves | Imperial Plaid",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -4999,7 +4999,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | King Snake",
-        "image": "assets/cases/clutch-case/weapons/019_★_Driver_Gloves_King_Snake.png",
+        "image": "assets/cases/clutch-case/weapons/019_%E2%98%85_Driver_Gloves_King_Snake.png",
         "marketHashName": "★ Driver Gloves | King Snake",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5007,7 +5007,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | Racing Green",
-        "image": "assets/cases/clutch-case/weapons/020_★_Driver_Gloves_Racing_Green.png",
+        "image": "assets/cases/clutch-case/weapons/020_%E2%98%85_Driver_Gloves_Racing_Green.png",
         "marketHashName": "★ Driver Gloves | Racing Green",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5015,7 +5015,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Driver Gloves | Overtake",
-        "image": "assets/cases/clutch-case/weapons/021_★_Driver_Gloves_Overtake.png",
+        "image": "assets/cases/clutch-case/weapons/021_%E2%98%85_Driver_Gloves_Overtake.png",
         "marketHashName": "★ Driver Gloves | Overtake",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5023,7 +5023,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Cobalt Skulls",
-        "image": "assets/cases/clutch-case/weapons/022_★_Hand_Wraps_Cobalt_Skulls.png",
+        "image": "assets/cases/clutch-case/weapons/022_%E2%98%85_Hand_Wraps_Cobalt_Skulls.png",
         "marketHashName": "★ Hand Wraps | Cobalt Skulls",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5031,7 +5031,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Overprint",
-        "image": "assets/cases/clutch-case/weapons/023_★_Hand_Wraps_Overprint.png",
+        "image": "assets/cases/clutch-case/weapons/023_%E2%98%85_Hand_Wraps_Overprint.png",
         "marketHashName": "★ Hand Wraps | Overprint",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5039,7 +5039,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Arboreal",
-        "image": "assets/cases/clutch-case/weapons/024_★_Hand_Wraps_Arboreal.png",
+        "image": "assets/cases/clutch-case/weapons/024_%E2%98%85_Hand_Wraps_Arboreal.png",
         "marketHashName": "★ Hand Wraps | Arboreal",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5047,7 +5047,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hand Wraps | Duct Tape",
-        "image": "assets/cases/clutch-case/weapons/025_★_Hand_Wraps_Duct_Tape.png",
+        "image": "assets/cases/clutch-case/weapons/025_%E2%98%85_Hand_Wraps_Duct_Tape.png",
         "marketHashName": "★ Hand Wraps | Duct Tape",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5055,7 +5055,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hydra Gloves | Case Hardened",
-        "image": "assets/cases/clutch-case/weapons/026_★_Hydra_Gloves_Case_Hardened.png",
+        "image": "assets/cases/clutch-case/weapons/026_%E2%98%85_Hydra_Gloves_Case_Hardened.png",
         "marketHashName": "★ Hydra Gloves | Case Hardened",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5063,7 +5063,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hydra Gloves | Emerald",
-        "image": "assets/cases/clutch-case/weapons/027_★_Hydra_Gloves_Emerald.png",
+        "image": "assets/cases/clutch-case/weapons/027_%E2%98%85_Hydra_Gloves_Emerald.png",
         "marketHashName": "★ Hydra Gloves | Emerald",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5071,7 +5071,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hydra Gloves | Rattler",
-        "image": "assets/cases/clutch-case/weapons/028_★_Hydra_Gloves_Rattler.png",
+        "image": "assets/cases/clutch-case/weapons/028_%E2%98%85_Hydra_Gloves_Rattler.png",
         "marketHashName": "★ Hydra Gloves | Rattler",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5079,7 +5079,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Hydra Gloves | Mangrove",
-        "image": "assets/cases/clutch-case/weapons/029_★_Hydra_Gloves_Mangrove.png",
+        "image": "assets/cases/clutch-case/weapons/029_%E2%98%85_Hydra_Gloves_Mangrove.png",
         "marketHashName": "★ Hydra Gloves | Mangrove",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5087,7 +5087,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | POW!",
-        "image": "assets/cases/clutch-case/weapons/030_★_Moto_Gloves_POW!.png",
+        "image": "assets/cases/clutch-case/weapons/030_%E2%98%85_Moto_Gloves_POW!.png",
         "marketHashName": "★ Moto Gloves | POW!",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5095,7 +5095,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | Polygon",
-        "image": "assets/cases/clutch-case/weapons/031_★_Moto_Gloves_Polygon.png",
+        "image": "assets/cases/clutch-case/weapons/031_%E2%98%85_Moto_Gloves_Polygon.png",
         "marketHashName": "★ Moto Gloves | Polygon",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5103,7 +5103,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | Turtle",
-        "image": "assets/cases/clutch-case/weapons/032_★_Moto_Gloves_Turtle.png",
+        "image": "assets/cases/clutch-case/weapons/032_%E2%98%85_Moto_Gloves_Turtle.png",
         "marketHashName": "★ Moto Gloves | Turtle",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5111,7 +5111,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Moto Gloves | Transport",
-        "image": "assets/cases/clutch-case/weapons/033_★_Moto_Gloves_Transport.png",
+        "image": "assets/cases/clutch-case/weapons/033_%E2%98%85_Moto_Gloves_Transport.png",
         "marketHashName": "★ Moto Gloves | Transport",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5119,7 +5119,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Crimson Web",
-        "image": "assets/cases/clutch-case/weapons/034_★_Specialist_Gloves_Crimson_Web.png",
+        "image": "assets/cases/clutch-case/weapons/034_%E2%98%85_Specialist_Gloves_Crimson_Web.png",
         "marketHashName": "★ Specialist Gloves | Crimson Web",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5127,7 +5127,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Mogul",
-        "image": "assets/cases/clutch-case/weapons/035_★_Specialist_Gloves_Mogul.png",
+        "image": "assets/cases/clutch-case/weapons/035_%E2%98%85_Specialist_Gloves_Mogul.png",
         "marketHashName": "★ Specialist Gloves | Mogul",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5135,7 +5135,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Fade",
-        "image": "assets/cases/clutch-case/weapons/036_★_Specialist_Gloves_Fade.png",
+        "image": "assets/cases/clutch-case/weapons/036_%E2%98%85_Specialist_Gloves_Fade.png",
         "marketHashName": "★ Specialist Gloves | Fade",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5143,7 +5143,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Specialist Gloves | Buckshot",
-        "image": "assets/cases/clutch-case/weapons/037_★_Specialist_Gloves_Buckshot.png",
+        "image": "assets/cases/clutch-case/weapons/037_%E2%98%85_Specialist_Gloves_Buckshot.png",
         "marketHashName": "★ Specialist Gloves | Buckshot",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5151,7 +5151,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Vice",
-        "image": "assets/cases/clutch-case/weapons/038_★_Sport_Gloves_Vice.png",
+        "image": "assets/cases/clutch-case/weapons/038_%E2%98%85_Sport_Gloves_Vice.png",
         "marketHashName": "★ Sport Gloves | Vice",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5159,7 +5159,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Amphibious",
-        "image": "assets/cases/clutch-case/weapons/039_★_Sport_Gloves_Amphibious.png",
+        "image": "assets/cases/clutch-case/weapons/039_%E2%98%85_Sport_Gloves_Amphibious.png",
         "marketHashName": "★ Sport Gloves | Amphibious",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5167,7 +5167,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Omega",
-        "image": "assets/cases/clutch-case/weapons/040_★_Sport_Gloves_Omega.png",
+        "image": "assets/cases/clutch-case/weapons/040_%E2%98%85_Sport_Gloves_Omega.png",
         "marketHashName": "★ Sport Gloves | Omega",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5175,7 +5175,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Sport Gloves | Bronze Morph",
-        "image": "assets/cases/clutch-case/weapons/041_★_Sport_Gloves_Bronze_Morph.png",
+        "image": "assets/cases/clutch-case/weapons/041_%E2%98%85_Sport_Gloves_Bronze_Morph.png",
         "marketHashName": "★ Sport Gloves | Bronze Morph",
         "rarity": "Extraordinary",
         "floatMin": 0,
@@ -5327,7 +5327,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Bowie Knife | Marble Fade",
-        "image": "assets/cases/spectrum-2-case/weapons/018_★_Bowie_Knife_Marble_Fade.png",
+        "image": "assets/cases/spectrum-2-case/weapons/018_%E2%98%85_Bowie_Knife_Marble_Fade.png",
         "marketHashName": "★ Bowie Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5335,7 +5335,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Tiger Tooth",
-        "image": "assets/cases/spectrum-2-case/weapons/019_★_Bowie_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/spectrum-2-case/weapons/019_%E2%98%85_Bowie_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Bowie Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5343,7 +5343,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/020_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/020_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5351,7 +5351,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/021_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/021_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5359,7 +5359,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/022_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/022_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5367,7 +5367,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/023_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/023_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5375,7 +5375,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/024_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/024_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5383,7 +5383,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/025_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/025_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5391,7 +5391,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/026_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/026_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5399,7 +5399,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Damascus Steel",
-        "image": "assets/cases/spectrum-2-case/weapons/027_★_Bowie_Knife_Damascus_Steel.png",
+        "image": "assets/cases/spectrum-2-case/weapons/027_%E2%98%85_Bowie_Knife_Damascus_Steel.png",
         "marketHashName": "★ Bowie Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5407,7 +5407,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Ultraviolet",
-        "image": "assets/cases/spectrum-2-case/weapons/028_★_Bowie_Knife_Ultraviolet.png",
+        "image": "assets/cases/spectrum-2-case/weapons/028_%E2%98%85_Bowie_Knife_Ultraviolet.png",
         "marketHashName": "★ Bowie Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5415,7 +5415,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Rust Coat",
-        "image": "assets/cases/spectrum-2-case/weapons/029_★_Bowie_Knife_Rust_Coat.png",
+        "image": "assets/cases/spectrum-2-case/weapons/029_%E2%98%85_Bowie_Knife_Rust_Coat.png",
         "marketHashName": "★ Bowie Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5423,7 +5423,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Marble Fade",
-        "image": "assets/cases/spectrum-2-case/weapons/030_★_Butterfly_Knife_Marble_Fade.png",
+        "image": "assets/cases/spectrum-2-case/weapons/030_%E2%98%85_Butterfly_Knife_Marble_Fade.png",
         "marketHashName": "★ Butterfly Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5431,7 +5431,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Tiger Tooth",
-        "image": "assets/cases/spectrum-2-case/weapons/031_★_Butterfly_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/spectrum-2-case/weapons/031_%E2%98%85_Butterfly_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Butterfly Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5439,7 +5439,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/032_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/032_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5447,7 +5447,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/033_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/033_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5455,7 +5455,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/034_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/034_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5463,7 +5463,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/035_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/035_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5471,7 +5471,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/036_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/036_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5479,7 +5479,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/037_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/037_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5487,7 +5487,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/038_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/038_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5495,7 +5495,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Damascus Steel",
-        "image": "assets/cases/spectrum-2-case/weapons/039_★_Butterfly_Knife_Damascus_Steel.png",
+        "image": "assets/cases/spectrum-2-case/weapons/039_%E2%98%85_Butterfly_Knife_Damascus_Steel.png",
         "marketHashName": "★ Butterfly Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5503,7 +5503,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Ultraviolet",
-        "image": "assets/cases/spectrum-2-case/weapons/040_★_Butterfly_Knife_Ultraviolet.png",
+        "image": "assets/cases/spectrum-2-case/weapons/040_%E2%98%85_Butterfly_Knife_Ultraviolet.png",
         "marketHashName": "★ Butterfly Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5511,7 +5511,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Rust Coat",
-        "image": "assets/cases/spectrum-2-case/weapons/041_★_Butterfly_Knife_Rust_Coat.png",
+        "image": "assets/cases/spectrum-2-case/weapons/041_%E2%98%85_Butterfly_Knife_Rust_Coat.png",
         "marketHashName": "★ Butterfly Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5519,7 +5519,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Marble Fade",
-        "image": "assets/cases/spectrum-2-case/weapons/042_★_Falchion_Knife_Marble_Fade.png",
+        "image": "assets/cases/spectrum-2-case/weapons/042_%E2%98%85_Falchion_Knife_Marble_Fade.png",
         "marketHashName": "★ Falchion Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5527,7 +5527,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Tiger Tooth",
-        "image": "assets/cases/spectrum-2-case/weapons/043_★_Falchion_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/spectrum-2-case/weapons/043_%E2%98%85_Falchion_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Falchion Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5535,7 +5535,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/044_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/044_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5543,7 +5543,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/045_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/045_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5551,7 +5551,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/046_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/046_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5559,7 +5559,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/047_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/047_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5567,7 +5567,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/048_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/048_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5575,7 +5575,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/049_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/049_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5583,7 +5583,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/050_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/050_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5591,7 +5591,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Damascus Steel",
-        "image": "assets/cases/spectrum-2-case/weapons/051_★_Falchion_Knife_Damascus_Steel.png",
+        "image": "assets/cases/spectrum-2-case/weapons/051_%E2%98%85_Falchion_Knife_Damascus_Steel.png",
         "marketHashName": "★ Falchion Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5599,7 +5599,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Ultraviolet",
-        "image": "assets/cases/spectrum-2-case/weapons/052_★_Falchion_Knife_Ultraviolet.png",
+        "image": "assets/cases/spectrum-2-case/weapons/052_%E2%98%85_Falchion_Knife_Ultraviolet.png",
         "marketHashName": "★ Falchion Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5607,7 +5607,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Rust Coat",
-        "image": "assets/cases/spectrum-2-case/weapons/053_★_Falchion_Knife_Rust_Coat.png",
+        "image": "assets/cases/spectrum-2-case/weapons/053_%E2%98%85_Falchion_Knife_Rust_Coat.png",
         "marketHashName": "★ Falchion Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5615,7 +5615,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Marble Fade",
-        "image": "assets/cases/spectrum-2-case/weapons/054_★_Huntsman_Knife_Marble_Fade.png",
+        "image": "assets/cases/spectrum-2-case/weapons/054_%E2%98%85_Huntsman_Knife_Marble_Fade.png",
         "marketHashName": "★ Huntsman Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5623,7 +5623,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Tiger Tooth",
-        "image": "assets/cases/spectrum-2-case/weapons/055_★_Huntsman_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/spectrum-2-case/weapons/055_%E2%98%85_Huntsman_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Huntsman Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5631,7 +5631,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/056_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/056_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5639,7 +5639,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/057_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/057_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5647,7 +5647,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/058_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/058_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5655,7 +5655,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/059_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/059_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5663,7 +5663,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/060_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/060_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5671,7 +5671,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/061_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/061_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5679,7 +5679,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/062_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/062_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5687,7 +5687,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Damascus Steel",
-        "image": "assets/cases/spectrum-2-case/weapons/063_★_Huntsman_Knife_Damascus_Steel.png",
+        "image": "assets/cases/spectrum-2-case/weapons/063_%E2%98%85_Huntsman_Knife_Damascus_Steel.png",
         "marketHashName": "★ Huntsman Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5695,7 +5695,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Ultraviolet",
-        "image": "assets/cases/spectrum-2-case/weapons/064_★_Huntsman_Knife_Ultraviolet.png",
+        "image": "assets/cases/spectrum-2-case/weapons/064_%E2%98%85_Huntsman_Knife_Ultraviolet.png",
         "marketHashName": "★ Huntsman Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5703,7 +5703,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Rust Coat",
-        "image": "assets/cases/spectrum-2-case/weapons/065_★_Huntsman_Knife_Rust_Coat.png",
+        "image": "assets/cases/spectrum-2-case/weapons/065_%E2%98%85_Huntsman_Knife_Rust_Coat.png",
         "marketHashName": "★ Huntsman Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5711,7 +5711,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Marble Fade",
-        "image": "assets/cases/spectrum-2-case/weapons/066_★_Shadow_Daggers_Marble_Fade.png",
+        "image": "assets/cases/spectrum-2-case/weapons/066_%E2%98%85_Shadow_Daggers_Marble_Fade.png",
         "marketHashName": "★ Shadow Daggers | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5719,7 +5719,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Tiger Tooth",
-        "image": "assets/cases/spectrum-2-case/weapons/067_★_Shadow_Daggers_Tiger_Tooth.png",
+        "image": "assets/cases/spectrum-2-case/weapons/067_%E2%98%85_Shadow_Daggers_Tiger_Tooth.png",
         "marketHashName": "★ Shadow Daggers | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5727,7 +5727,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/068_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/068_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5735,7 +5735,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/069_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/069_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5743,7 +5743,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/070_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/070_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5751,7 +5751,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/071_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/071_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5759,7 +5759,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/072_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/072_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5767,7 +5767,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/073_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/073_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5775,7 +5775,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-2-case/weapons/074_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-2-case/weapons/074_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5783,7 +5783,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Damascus Steel",
-        "image": "assets/cases/spectrum-2-case/weapons/075_★_Shadow_Daggers_Damascus_Steel.png",
+        "image": "assets/cases/spectrum-2-case/weapons/075_%E2%98%85_Shadow_Daggers_Damascus_Steel.png",
         "marketHashName": "★ Shadow Daggers | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5791,7 +5791,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Ultraviolet",
-        "image": "assets/cases/spectrum-2-case/weapons/076_★_Shadow_Daggers_Ultraviolet.png",
+        "image": "assets/cases/spectrum-2-case/weapons/076_%E2%98%85_Shadow_Daggers_Ultraviolet.png",
         "marketHashName": "★ Shadow Daggers | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5799,7 +5799,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Rust Coat",
-        "image": "assets/cases/spectrum-2-case/weapons/077_★_Shadow_Daggers_Rust_Coat.png",
+        "image": "assets/cases/spectrum-2-case/weapons/077_%E2%98%85_Shadow_Daggers_Rust_Coat.png",
         "marketHashName": "★ Shadow Daggers | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5951,7 +5951,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Bowie Knife | Marble Fade",
-        "image": "assets/cases/spectrum-case/weapons/018_★_Bowie_Knife_Marble_Fade.png",
+        "image": "assets/cases/spectrum-case/weapons/018_%E2%98%85_Bowie_Knife_Marble_Fade.png",
         "marketHashName": "★ Bowie Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5959,7 +5959,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Tiger Tooth",
-        "image": "assets/cases/spectrum-case/weapons/019_★_Bowie_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/spectrum-case/weapons/019_%E2%98%85_Bowie_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Bowie Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5967,7 +5967,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/020_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/020_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5975,7 +5975,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/021_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/021_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5983,7 +5983,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/022_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/022_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5991,7 +5991,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/023_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/023_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -5999,7 +5999,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/024_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/024_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6007,7 +6007,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/025_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/025_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6015,7 +6015,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/026_★_Bowie_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/026_%E2%98%85_Bowie_Knife_Doppler.png",
         "marketHashName": "★ Bowie Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6023,7 +6023,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Damascus Steel",
-        "image": "assets/cases/spectrum-case/weapons/027_★_Bowie_Knife_Damascus_Steel.png",
+        "image": "assets/cases/spectrum-case/weapons/027_%E2%98%85_Bowie_Knife_Damascus_Steel.png",
         "marketHashName": "★ Bowie Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6031,7 +6031,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Ultraviolet",
-        "image": "assets/cases/spectrum-case/weapons/028_★_Bowie_Knife_Ultraviolet.png",
+        "image": "assets/cases/spectrum-case/weapons/028_%E2%98%85_Bowie_Knife_Ultraviolet.png",
         "marketHashName": "★ Bowie Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6039,7 +6039,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Rust Coat",
-        "image": "assets/cases/spectrum-case/weapons/029_★_Bowie_Knife_Rust_Coat.png",
+        "image": "assets/cases/spectrum-case/weapons/029_%E2%98%85_Bowie_Knife_Rust_Coat.png",
         "marketHashName": "★ Bowie Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6047,7 +6047,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Marble Fade",
-        "image": "assets/cases/spectrum-case/weapons/030_★_Butterfly_Knife_Marble_Fade.png",
+        "image": "assets/cases/spectrum-case/weapons/030_%E2%98%85_Butterfly_Knife_Marble_Fade.png",
         "marketHashName": "★ Butterfly Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6055,7 +6055,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Tiger Tooth",
-        "image": "assets/cases/spectrum-case/weapons/031_★_Butterfly_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/spectrum-case/weapons/031_%E2%98%85_Butterfly_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Butterfly Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6063,7 +6063,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/032_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/032_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6071,7 +6071,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/033_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/033_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6079,7 +6079,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/034_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/034_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6087,7 +6087,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/035_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/035_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6095,7 +6095,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/036_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/036_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6103,7 +6103,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/037_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/037_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6111,7 +6111,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/038_★_Butterfly_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/038_%E2%98%85_Butterfly_Knife_Doppler.png",
         "marketHashName": "★ Butterfly Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6119,7 +6119,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Damascus Steel",
-        "image": "assets/cases/spectrum-case/weapons/039_★_Butterfly_Knife_Damascus_Steel.png",
+        "image": "assets/cases/spectrum-case/weapons/039_%E2%98%85_Butterfly_Knife_Damascus_Steel.png",
         "marketHashName": "★ Butterfly Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6127,7 +6127,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Ultraviolet",
-        "image": "assets/cases/spectrum-case/weapons/040_★_Butterfly_Knife_Ultraviolet.png",
+        "image": "assets/cases/spectrum-case/weapons/040_%E2%98%85_Butterfly_Knife_Ultraviolet.png",
         "marketHashName": "★ Butterfly Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6135,7 +6135,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Rust Coat",
-        "image": "assets/cases/spectrum-case/weapons/041_★_Butterfly_Knife_Rust_Coat.png",
+        "image": "assets/cases/spectrum-case/weapons/041_%E2%98%85_Butterfly_Knife_Rust_Coat.png",
         "marketHashName": "★ Butterfly Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6143,7 +6143,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Marble Fade",
-        "image": "assets/cases/spectrum-case/weapons/042_★_Falchion_Knife_Marble_Fade.png",
+        "image": "assets/cases/spectrum-case/weapons/042_%E2%98%85_Falchion_Knife_Marble_Fade.png",
         "marketHashName": "★ Falchion Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6151,7 +6151,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Tiger Tooth",
-        "image": "assets/cases/spectrum-case/weapons/043_★_Falchion_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/spectrum-case/weapons/043_%E2%98%85_Falchion_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Falchion Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6159,7 +6159,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/044_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/044_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6167,7 +6167,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/045_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/045_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6175,7 +6175,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/046_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/046_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6183,7 +6183,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/047_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/047_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6191,7 +6191,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/048_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/048_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6199,7 +6199,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/049_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/049_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6207,7 +6207,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/050_★_Falchion_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/050_%E2%98%85_Falchion_Knife_Doppler.png",
         "marketHashName": "★ Falchion Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6215,7 +6215,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Damascus Steel",
-        "image": "assets/cases/spectrum-case/weapons/051_★_Falchion_Knife_Damascus_Steel.png",
+        "image": "assets/cases/spectrum-case/weapons/051_%E2%98%85_Falchion_Knife_Damascus_Steel.png",
         "marketHashName": "★ Falchion Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6223,7 +6223,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Ultraviolet",
-        "image": "assets/cases/spectrum-case/weapons/052_★_Falchion_Knife_Ultraviolet.png",
+        "image": "assets/cases/spectrum-case/weapons/052_%E2%98%85_Falchion_Knife_Ultraviolet.png",
         "marketHashName": "★ Falchion Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6231,7 +6231,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Rust Coat",
-        "image": "assets/cases/spectrum-case/weapons/053_★_Falchion_Knife_Rust_Coat.png",
+        "image": "assets/cases/spectrum-case/weapons/053_%E2%98%85_Falchion_Knife_Rust_Coat.png",
         "marketHashName": "★ Falchion Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6239,7 +6239,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Marble Fade",
-        "image": "assets/cases/spectrum-case/weapons/054_★_Huntsman_Knife_Marble_Fade.png",
+        "image": "assets/cases/spectrum-case/weapons/054_%E2%98%85_Huntsman_Knife_Marble_Fade.png",
         "marketHashName": "★ Huntsman Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6247,7 +6247,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Tiger Tooth",
-        "image": "assets/cases/spectrum-case/weapons/055_★_Huntsman_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/spectrum-case/weapons/055_%E2%98%85_Huntsman_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Huntsman Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6255,7 +6255,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/056_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/056_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6263,7 +6263,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/057_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/057_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6271,7 +6271,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/058_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/058_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6279,7 +6279,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/059_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/059_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6287,7 +6287,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/060_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/060_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6295,7 +6295,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/061_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/061_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6303,7 +6303,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/062_★_Huntsman_Knife_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/062_%E2%98%85_Huntsman_Knife_Doppler.png",
         "marketHashName": "★ Huntsman Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6311,7 +6311,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Damascus Steel",
-        "image": "assets/cases/spectrum-case/weapons/063_★_Huntsman_Knife_Damascus_Steel.png",
+        "image": "assets/cases/spectrum-case/weapons/063_%E2%98%85_Huntsman_Knife_Damascus_Steel.png",
         "marketHashName": "★ Huntsman Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6319,7 +6319,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Ultraviolet",
-        "image": "assets/cases/spectrum-case/weapons/064_★_Huntsman_Knife_Ultraviolet.png",
+        "image": "assets/cases/spectrum-case/weapons/064_%E2%98%85_Huntsman_Knife_Ultraviolet.png",
         "marketHashName": "★ Huntsman Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6327,7 +6327,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Rust Coat",
-        "image": "assets/cases/spectrum-case/weapons/065_★_Huntsman_Knife_Rust_Coat.png",
+        "image": "assets/cases/spectrum-case/weapons/065_%E2%98%85_Huntsman_Knife_Rust_Coat.png",
         "marketHashName": "★ Huntsman Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6335,7 +6335,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Marble Fade",
-        "image": "assets/cases/spectrum-case/weapons/066_★_Shadow_Daggers_Marble_Fade.png",
+        "image": "assets/cases/spectrum-case/weapons/066_%E2%98%85_Shadow_Daggers_Marble_Fade.png",
         "marketHashName": "★ Shadow Daggers | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6343,7 +6343,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Tiger Tooth",
-        "image": "assets/cases/spectrum-case/weapons/067_★_Shadow_Daggers_Tiger_Tooth.png",
+        "image": "assets/cases/spectrum-case/weapons/067_%E2%98%85_Shadow_Daggers_Tiger_Tooth.png",
         "marketHashName": "★ Shadow Daggers | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6351,7 +6351,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/068_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/068_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6359,7 +6359,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/069_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/069_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6367,7 +6367,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/070_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/070_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6375,7 +6375,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/071_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/071_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6383,7 +6383,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/072_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/072_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6391,7 +6391,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/073_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/073_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6399,7 +6399,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Doppler",
-        "image": "assets/cases/spectrum-case/weapons/074_★_Shadow_Daggers_Doppler.png",
+        "image": "assets/cases/spectrum-case/weapons/074_%E2%98%85_Shadow_Daggers_Doppler.png",
         "marketHashName": "★ Shadow Daggers | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6407,7 +6407,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Damascus Steel",
-        "image": "assets/cases/spectrum-case/weapons/075_★_Shadow_Daggers_Damascus_Steel.png",
+        "image": "assets/cases/spectrum-case/weapons/075_%E2%98%85_Shadow_Daggers_Damascus_Steel.png",
         "marketHashName": "★ Shadow Daggers | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6415,7 +6415,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Ultraviolet",
-        "image": "assets/cases/spectrum-case/weapons/076_★_Shadow_Daggers_Ultraviolet.png",
+        "image": "assets/cases/spectrum-case/weapons/076_%E2%98%85_Shadow_Daggers_Ultraviolet.png",
         "marketHashName": "★ Shadow Daggers | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6423,7 +6423,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Shadow Daggers | Rust Coat",
-        "image": "assets/cases/spectrum-case/weapons/077_★_Shadow_Daggers_Rust_Coat.png",
+        "image": "assets/cases/spectrum-case/weapons/077_%E2%98%85_Shadow_Daggers_Rust_Coat.png",
         "marketHashName": "★ Shadow Daggers | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6575,7 +6575,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/018_★_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/018_%E2%98%85_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6583,7 +6583,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/019_★_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/019_%E2%98%85_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6591,7 +6591,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/020_★_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/020_%E2%98%85_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6599,7 +6599,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/021_★_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/021_%E2%98%85_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6607,7 +6607,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/022_★_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/022_%E2%98%85_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6615,7 +6615,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Lore",
-        "image": "assets/cases/gamma-2-case/weapons/023_★_Bayonet_Lore.png",
+        "image": "assets/cases/gamma-2-case/weapons/023_%E2%98%85_Bayonet_Lore.png",
         "marketHashName": "★ Bayonet | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6623,7 +6623,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Autotronic",
-        "image": "assets/cases/gamma-2-case/weapons/024_★_Bayonet_Autotronic.png",
+        "image": "assets/cases/gamma-2-case/weapons/024_%E2%98%85_Bayonet_Autotronic.png",
         "marketHashName": "★ Bayonet | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6631,7 +6631,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Black Laminate",
-        "image": "assets/cases/gamma-2-case/weapons/025_★_Bayonet_Black_Laminate.png",
+        "image": "assets/cases/gamma-2-case/weapons/025_%E2%98%85_Bayonet_Black_Laminate.png",
         "marketHashName": "★ Bayonet | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6639,7 +6639,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Freehand",
-        "image": "assets/cases/gamma-2-case/weapons/026_★_Bayonet_Freehand.png",
+        "image": "assets/cases/gamma-2-case/weapons/026_%E2%98%85_Bayonet_Freehand.png",
         "marketHashName": "★ Bayonet | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6647,7 +6647,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Bright Water",
-        "image": "assets/cases/gamma-2-case/weapons/027_★_Bayonet_Bright_Water.png",
+        "image": "assets/cases/gamma-2-case/weapons/027_%E2%98%85_Bayonet_Bright_Water.png",
         "marketHashName": "★ Bayonet | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6655,7 +6655,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/028_★_Flip_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/028_%E2%98%85_Flip_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Flip Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6663,7 +6663,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/029_★_Flip_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/029_%E2%98%85_Flip_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Flip Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6671,7 +6671,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/030_★_Flip_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/030_%E2%98%85_Flip_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Flip Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6679,7 +6679,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/031_★_Flip_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/031_%E2%98%85_Flip_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Flip Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6687,7 +6687,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/032_★_Flip_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/032_%E2%98%85_Flip_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Flip Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6695,7 +6695,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Lore",
-        "image": "assets/cases/gamma-2-case/weapons/033_★_Flip_Knife_Lore.png",
+        "image": "assets/cases/gamma-2-case/weapons/033_%E2%98%85_Flip_Knife_Lore.png",
         "marketHashName": "★ Flip Knife | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6703,7 +6703,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Autotronic",
-        "image": "assets/cases/gamma-2-case/weapons/034_★_Flip_Knife_Autotronic.png",
+        "image": "assets/cases/gamma-2-case/weapons/034_%E2%98%85_Flip_Knife_Autotronic.png",
         "marketHashName": "★ Flip Knife | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6711,7 +6711,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Black Laminate",
-        "image": "assets/cases/gamma-2-case/weapons/035_★_Flip_Knife_Black_Laminate.png",
+        "image": "assets/cases/gamma-2-case/weapons/035_%E2%98%85_Flip_Knife_Black_Laminate.png",
         "marketHashName": "★ Flip Knife | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6719,7 +6719,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Freehand",
-        "image": "assets/cases/gamma-2-case/weapons/036_★_Flip_Knife_Freehand.png",
+        "image": "assets/cases/gamma-2-case/weapons/036_%E2%98%85_Flip_Knife_Freehand.png",
         "marketHashName": "★ Flip Knife | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6727,7 +6727,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Bright Water",
-        "image": "assets/cases/gamma-2-case/weapons/037_★_Flip_Knife_Bright_Water.png",
+        "image": "assets/cases/gamma-2-case/weapons/037_%E2%98%85_Flip_Knife_Bright_Water.png",
         "marketHashName": "★ Flip Knife | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6735,7 +6735,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/038_★_Gut_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/038_%E2%98%85_Gut_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Gut Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6743,7 +6743,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/039_★_Gut_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/039_%E2%98%85_Gut_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Gut Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6751,7 +6751,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/040_★_Gut_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/040_%E2%98%85_Gut_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Gut Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6759,7 +6759,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/041_★_Gut_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/041_%E2%98%85_Gut_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Gut Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6767,7 +6767,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/042_★_Gut_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/042_%E2%98%85_Gut_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Gut Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6775,7 +6775,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Lore",
-        "image": "assets/cases/gamma-2-case/weapons/043_★_Gut_Knife_Lore.png",
+        "image": "assets/cases/gamma-2-case/weapons/043_%E2%98%85_Gut_Knife_Lore.png",
         "marketHashName": "★ Gut Knife | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6783,7 +6783,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Autotronic",
-        "image": "assets/cases/gamma-2-case/weapons/044_★_Gut_Knife_Autotronic.png",
+        "image": "assets/cases/gamma-2-case/weapons/044_%E2%98%85_Gut_Knife_Autotronic.png",
         "marketHashName": "★ Gut Knife | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6791,7 +6791,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Black Laminate",
-        "image": "assets/cases/gamma-2-case/weapons/045_★_Gut_Knife_Black_Laminate.png",
+        "image": "assets/cases/gamma-2-case/weapons/045_%E2%98%85_Gut_Knife_Black_Laminate.png",
         "marketHashName": "★ Gut Knife | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6799,7 +6799,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Bright Water",
-        "image": "assets/cases/gamma-2-case/weapons/046_★_Gut_Knife_Bright_Water.png",
+        "image": "assets/cases/gamma-2-case/weapons/046_%E2%98%85_Gut_Knife_Bright_Water.png",
         "marketHashName": "★ Gut Knife | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6807,7 +6807,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Freehand",
-        "image": "assets/cases/gamma-2-case/weapons/047_★_Gut_Knife_Freehand.png",
+        "image": "assets/cases/gamma-2-case/weapons/047_%E2%98%85_Gut_Knife_Freehand.png",
         "marketHashName": "★ Gut Knife | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6815,7 +6815,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/048_★_Karambit_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/048_%E2%98%85_Karambit_Gamma_Doppler.png",
         "marketHashName": "★ Karambit | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6823,7 +6823,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/049_★_Karambit_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/049_%E2%98%85_Karambit_Gamma_Doppler.png",
         "marketHashName": "★ Karambit | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6831,7 +6831,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/050_★_Karambit_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/050_%E2%98%85_Karambit_Gamma_Doppler.png",
         "marketHashName": "★ Karambit | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6839,7 +6839,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/051_★_Karambit_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/051_%E2%98%85_Karambit_Gamma_Doppler.png",
         "marketHashName": "★ Karambit | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6847,7 +6847,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/052_★_Karambit_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/052_%E2%98%85_Karambit_Gamma_Doppler.png",
         "marketHashName": "★ Karambit | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6855,7 +6855,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Lore",
-        "image": "assets/cases/gamma-2-case/weapons/053_★_Karambit_Lore.png",
+        "image": "assets/cases/gamma-2-case/weapons/053_%E2%98%85_Karambit_Lore.png",
         "marketHashName": "★ Karambit | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6863,7 +6863,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Autotronic",
-        "image": "assets/cases/gamma-2-case/weapons/054_★_Karambit_Autotronic.png",
+        "image": "assets/cases/gamma-2-case/weapons/054_%E2%98%85_Karambit_Autotronic.png",
         "marketHashName": "★ Karambit | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6871,7 +6871,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Black Laminate",
-        "image": "assets/cases/gamma-2-case/weapons/055_★_Karambit_Black_Laminate.png",
+        "image": "assets/cases/gamma-2-case/weapons/055_%E2%98%85_Karambit_Black_Laminate.png",
         "marketHashName": "★ Karambit | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6879,7 +6879,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Freehand",
-        "image": "assets/cases/gamma-2-case/weapons/056_★_Karambit_Freehand.png",
+        "image": "assets/cases/gamma-2-case/weapons/056_%E2%98%85_Karambit_Freehand.png",
         "marketHashName": "★ Karambit | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6887,7 +6887,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Bright Water",
-        "image": "assets/cases/gamma-2-case/weapons/057_★_Karambit_Bright_Water.png",
+        "image": "assets/cases/gamma-2-case/weapons/057_%E2%98%85_Karambit_Bright_Water.png",
         "marketHashName": "★ Karambit | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6895,7 +6895,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/058_★_M9_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/058_%E2%98%85_M9_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6903,7 +6903,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/059_★_M9_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/059_%E2%98%85_M9_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6911,7 +6911,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/060_★_M9_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/060_%E2%98%85_M9_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6919,7 +6919,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/061_★_M9_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/061_%E2%98%85_M9_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6927,7 +6927,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-2-case/weapons/062_★_M9_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-2-case/weapons/062_%E2%98%85_M9_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6935,7 +6935,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Lore",
-        "image": "assets/cases/gamma-2-case/weapons/063_★_M9_Bayonet_Lore.png",
+        "image": "assets/cases/gamma-2-case/weapons/063_%E2%98%85_M9_Bayonet_Lore.png",
         "marketHashName": "★ M9 Bayonet | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6943,7 +6943,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Autotronic",
-        "image": "assets/cases/gamma-2-case/weapons/064_★_M9_Bayonet_Autotronic.png",
+        "image": "assets/cases/gamma-2-case/weapons/064_%E2%98%85_M9_Bayonet_Autotronic.png",
         "marketHashName": "★ M9 Bayonet | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6951,7 +6951,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Black Laminate",
-        "image": "assets/cases/gamma-2-case/weapons/065_★_M9_Bayonet_Black_Laminate.png",
+        "image": "assets/cases/gamma-2-case/weapons/065_%E2%98%85_M9_Bayonet_Black_Laminate.png",
         "marketHashName": "★ M9 Bayonet | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6959,7 +6959,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Bright Water",
-        "image": "assets/cases/gamma-2-case/weapons/066_★_M9_Bayonet_Bright_Water.png",
+        "image": "assets/cases/gamma-2-case/weapons/066_%E2%98%85_M9_Bayonet_Bright_Water.png",
         "marketHashName": "★ M9 Bayonet | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -6967,7 +6967,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Freehand",
-        "image": "assets/cases/gamma-2-case/weapons/067_★_M9_Bayonet_Freehand.png",
+        "image": "assets/cases/gamma-2-case/weapons/067_%E2%98%85_M9_Bayonet_Freehand.png",
         "marketHashName": "★ M9 Bayonet | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7119,7 +7119,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/018_★_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/018_%E2%98%85_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7127,7 +7127,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/019_★_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/019_%E2%98%85_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7135,7 +7135,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/020_★_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/020_%E2%98%85_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7143,7 +7143,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/021_★_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/021_%E2%98%85_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7151,7 +7151,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/022_★_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/022_%E2%98%85_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7159,7 +7159,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Lore",
-        "image": "assets/cases/gamma-case/weapons/023_★_Bayonet_Lore.png",
+        "image": "assets/cases/gamma-case/weapons/023_%E2%98%85_Bayonet_Lore.png",
         "marketHashName": "★ Bayonet | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7167,7 +7167,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Autotronic",
-        "image": "assets/cases/gamma-case/weapons/024_★_Bayonet_Autotronic.png",
+        "image": "assets/cases/gamma-case/weapons/024_%E2%98%85_Bayonet_Autotronic.png",
         "marketHashName": "★ Bayonet | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7175,7 +7175,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Black Laminate",
-        "image": "assets/cases/gamma-case/weapons/025_★_Bayonet_Black_Laminate.png",
+        "image": "assets/cases/gamma-case/weapons/025_%E2%98%85_Bayonet_Black_Laminate.png",
         "marketHashName": "★ Bayonet | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7183,7 +7183,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Freehand",
-        "image": "assets/cases/gamma-case/weapons/026_★_Bayonet_Freehand.png",
+        "image": "assets/cases/gamma-case/weapons/026_%E2%98%85_Bayonet_Freehand.png",
         "marketHashName": "★ Bayonet | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7191,7 +7191,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Bright Water",
-        "image": "assets/cases/gamma-case/weapons/027_★_Bayonet_Bright_Water.png",
+        "image": "assets/cases/gamma-case/weapons/027_%E2%98%85_Bayonet_Bright_Water.png",
         "marketHashName": "★ Bayonet | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7199,7 +7199,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/028_★_Flip_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/028_%E2%98%85_Flip_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Flip Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7207,7 +7207,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/029_★_Flip_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/029_%E2%98%85_Flip_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Flip Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7215,7 +7215,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/030_★_Flip_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/030_%E2%98%85_Flip_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Flip Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7223,7 +7223,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/031_★_Flip_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/031_%E2%98%85_Flip_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Flip Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7231,7 +7231,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/032_★_Flip_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/032_%E2%98%85_Flip_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Flip Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7239,7 +7239,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Lore",
-        "image": "assets/cases/gamma-case/weapons/033_★_Flip_Knife_Lore.png",
+        "image": "assets/cases/gamma-case/weapons/033_%E2%98%85_Flip_Knife_Lore.png",
         "marketHashName": "★ Flip Knife | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7247,7 +7247,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Autotronic",
-        "image": "assets/cases/gamma-case/weapons/034_★_Flip_Knife_Autotronic.png",
+        "image": "assets/cases/gamma-case/weapons/034_%E2%98%85_Flip_Knife_Autotronic.png",
         "marketHashName": "★ Flip Knife | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7255,7 +7255,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Black Laminate",
-        "image": "assets/cases/gamma-case/weapons/035_★_Flip_Knife_Black_Laminate.png",
+        "image": "assets/cases/gamma-case/weapons/035_%E2%98%85_Flip_Knife_Black_Laminate.png",
         "marketHashName": "★ Flip Knife | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7263,7 +7263,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Freehand",
-        "image": "assets/cases/gamma-case/weapons/036_★_Flip_Knife_Freehand.png",
+        "image": "assets/cases/gamma-case/weapons/036_%E2%98%85_Flip_Knife_Freehand.png",
         "marketHashName": "★ Flip Knife | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7271,7 +7271,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Bright Water",
-        "image": "assets/cases/gamma-case/weapons/037_★_Flip_Knife_Bright_Water.png",
+        "image": "assets/cases/gamma-case/weapons/037_%E2%98%85_Flip_Knife_Bright_Water.png",
         "marketHashName": "★ Flip Knife | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7279,7 +7279,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/038_★_Gut_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/038_%E2%98%85_Gut_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Gut Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7287,7 +7287,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/039_★_Gut_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/039_%E2%98%85_Gut_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Gut Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7295,7 +7295,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/040_★_Gut_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/040_%E2%98%85_Gut_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Gut Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7303,7 +7303,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/041_★_Gut_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/041_%E2%98%85_Gut_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Gut Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7311,7 +7311,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/042_★_Gut_Knife_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/042_%E2%98%85_Gut_Knife_Gamma_Doppler.png",
         "marketHashName": "★ Gut Knife | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7319,7 +7319,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Lore",
-        "image": "assets/cases/gamma-case/weapons/043_★_Gut_Knife_Lore.png",
+        "image": "assets/cases/gamma-case/weapons/043_%E2%98%85_Gut_Knife_Lore.png",
         "marketHashName": "★ Gut Knife | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7327,7 +7327,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Autotronic",
-        "image": "assets/cases/gamma-case/weapons/044_★_Gut_Knife_Autotronic.png",
+        "image": "assets/cases/gamma-case/weapons/044_%E2%98%85_Gut_Knife_Autotronic.png",
         "marketHashName": "★ Gut Knife | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7335,7 +7335,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Black Laminate",
-        "image": "assets/cases/gamma-case/weapons/045_★_Gut_Knife_Black_Laminate.png",
+        "image": "assets/cases/gamma-case/weapons/045_%E2%98%85_Gut_Knife_Black_Laminate.png",
         "marketHashName": "★ Gut Knife | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7343,7 +7343,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Bright Water",
-        "image": "assets/cases/gamma-case/weapons/046_★_Gut_Knife_Bright_Water.png",
+        "image": "assets/cases/gamma-case/weapons/046_%E2%98%85_Gut_Knife_Bright_Water.png",
         "marketHashName": "★ Gut Knife | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7351,7 +7351,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Freehand",
-        "image": "assets/cases/gamma-case/weapons/047_★_Gut_Knife_Freehand.png",
+        "image": "assets/cases/gamma-case/weapons/047_%E2%98%85_Gut_Knife_Freehand.png",
         "marketHashName": "★ Gut Knife | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7359,7 +7359,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/048_★_Karambit_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/048_%E2%98%85_Karambit_Gamma_Doppler.png",
         "marketHashName": "★ Karambit | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7367,7 +7367,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/049_★_Karambit_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/049_%E2%98%85_Karambit_Gamma_Doppler.png",
         "marketHashName": "★ Karambit | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7375,7 +7375,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/050_★_Karambit_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/050_%E2%98%85_Karambit_Gamma_Doppler.png",
         "marketHashName": "★ Karambit | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7383,7 +7383,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/051_★_Karambit_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/051_%E2%98%85_Karambit_Gamma_Doppler.png",
         "marketHashName": "★ Karambit | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7391,7 +7391,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/052_★_Karambit_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/052_%E2%98%85_Karambit_Gamma_Doppler.png",
         "marketHashName": "★ Karambit | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7399,7 +7399,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Lore",
-        "image": "assets/cases/gamma-case/weapons/053_★_Karambit_Lore.png",
+        "image": "assets/cases/gamma-case/weapons/053_%E2%98%85_Karambit_Lore.png",
         "marketHashName": "★ Karambit | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7407,7 +7407,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Autotronic",
-        "image": "assets/cases/gamma-case/weapons/054_★_Karambit_Autotronic.png",
+        "image": "assets/cases/gamma-case/weapons/054_%E2%98%85_Karambit_Autotronic.png",
         "marketHashName": "★ Karambit | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7415,7 +7415,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Black Laminate",
-        "image": "assets/cases/gamma-case/weapons/055_★_Karambit_Black_Laminate.png",
+        "image": "assets/cases/gamma-case/weapons/055_%E2%98%85_Karambit_Black_Laminate.png",
         "marketHashName": "★ Karambit | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7423,7 +7423,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Freehand",
-        "image": "assets/cases/gamma-case/weapons/056_★_Karambit_Freehand.png",
+        "image": "assets/cases/gamma-case/weapons/056_%E2%98%85_Karambit_Freehand.png",
         "marketHashName": "★ Karambit | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7431,7 +7431,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Bright Water",
-        "image": "assets/cases/gamma-case/weapons/057_★_Karambit_Bright_Water.png",
+        "image": "assets/cases/gamma-case/weapons/057_%E2%98%85_Karambit_Bright_Water.png",
         "marketHashName": "★ Karambit | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7439,7 +7439,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/058_★_M9_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/058_%E2%98%85_M9_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7447,7 +7447,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/059_★_M9_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/059_%E2%98%85_M9_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7455,7 +7455,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/060_★_M9_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/060_%E2%98%85_M9_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7463,7 +7463,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/061_★_M9_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/061_%E2%98%85_M9_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7471,7 +7471,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Gamma Doppler",
-        "image": "assets/cases/gamma-case/weapons/062_★_M9_Bayonet_Gamma_Doppler.png",
+        "image": "assets/cases/gamma-case/weapons/062_%E2%98%85_M9_Bayonet_Gamma_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Gamma Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7479,7 +7479,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Lore",
-        "image": "assets/cases/gamma-case/weapons/063_★_M9_Bayonet_Lore.png",
+        "image": "assets/cases/gamma-case/weapons/063_%E2%98%85_M9_Bayonet_Lore.png",
         "marketHashName": "★ M9 Bayonet | Lore",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7487,7 +7487,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Autotronic",
-        "image": "assets/cases/gamma-case/weapons/064_★_M9_Bayonet_Autotronic.png",
+        "image": "assets/cases/gamma-case/weapons/064_%E2%98%85_M9_Bayonet_Autotronic.png",
         "marketHashName": "★ M9 Bayonet | Autotronic",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7495,7 +7495,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Black Laminate",
-        "image": "assets/cases/gamma-case/weapons/065_★_M9_Bayonet_Black_Laminate.png",
+        "image": "assets/cases/gamma-case/weapons/065_%E2%98%85_M9_Bayonet_Black_Laminate.png",
         "marketHashName": "★ M9 Bayonet | Black Laminate",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7503,7 +7503,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Bright Water",
-        "image": "assets/cases/gamma-case/weapons/066_★_M9_Bayonet_Bright_Water.png",
+        "image": "assets/cases/gamma-case/weapons/066_%E2%98%85_M9_Bayonet_Bright_Water.png",
         "marketHashName": "★ M9 Bayonet | Bright Water",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7511,7 +7511,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Freehand",
-        "image": "assets/cases/gamma-case/weapons/067_★_M9_Bayonet_Freehand.png",
+        "image": "assets/cases/gamma-case/weapons/067_%E2%98%85_M9_Bayonet_Freehand.png",
         "marketHashName": "★ M9 Bayonet | Freehand",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7663,7 +7663,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Bayonet | Marble Fade",
-        "image": "assets/cases/chroma-3-case/weapons/018_★_Bayonet_Marble_Fade.png",
+        "image": "assets/cases/chroma-3-case/weapons/018_%E2%98%85_Bayonet_Marble_Fade.png",
         "marketHashName": "★ Bayonet | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7671,7 +7671,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Tiger Tooth",
-        "image": "assets/cases/chroma-3-case/weapons/019_★_Bayonet_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-3-case/weapons/019_%E2%98%85_Bayonet_Tiger_Tooth.png",
         "marketHashName": "★ Bayonet | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7679,7 +7679,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/020_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/020_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7687,7 +7687,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/021_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/021_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7695,7 +7695,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/022_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/022_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7703,7 +7703,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/023_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/023_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7711,7 +7711,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/024_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/024_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7719,7 +7719,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/025_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/025_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7727,7 +7727,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/026_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/026_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7735,7 +7735,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Damascus Steel",
-        "image": "assets/cases/chroma-3-case/weapons/027_★_Bayonet_Damascus_Steel.png",
+        "image": "assets/cases/chroma-3-case/weapons/027_%E2%98%85_Bayonet_Damascus_Steel.png",
         "marketHashName": "★ Bayonet | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7743,7 +7743,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Ultraviolet",
-        "image": "assets/cases/chroma-3-case/weapons/028_★_Bayonet_Ultraviolet.png",
+        "image": "assets/cases/chroma-3-case/weapons/028_%E2%98%85_Bayonet_Ultraviolet.png",
         "marketHashName": "★ Bayonet | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7751,7 +7751,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Rust Coat",
-        "image": "assets/cases/chroma-3-case/weapons/029_★_Bayonet_Rust_Coat.png",
+        "image": "assets/cases/chroma-3-case/weapons/029_%E2%98%85_Bayonet_Rust_Coat.png",
         "marketHashName": "★ Bayonet | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7759,7 +7759,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Marble Fade",
-        "image": "assets/cases/chroma-3-case/weapons/030_★_Flip_Knife_Marble_Fade.png",
+        "image": "assets/cases/chroma-3-case/weapons/030_%E2%98%85_Flip_Knife_Marble_Fade.png",
         "marketHashName": "★ Flip Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7767,7 +7767,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Tiger Tooth",
-        "image": "assets/cases/chroma-3-case/weapons/031_★_Flip_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-3-case/weapons/031_%E2%98%85_Flip_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Flip Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7775,7 +7775,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/032_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/032_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7783,7 +7783,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/033_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/033_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7791,7 +7791,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/034_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/034_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7799,7 +7799,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/035_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/035_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7807,7 +7807,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/036_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/036_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7815,7 +7815,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/037_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/037_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7823,7 +7823,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/038_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/038_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7831,7 +7831,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Damascus Steel",
-        "image": "assets/cases/chroma-3-case/weapons/039_★_Flip_Knife_Damascus_Steel.png",
+        "image": "assets/cases/chroma-3-case/weapons/039_%E2%98%85_Flip_Knife_Damascus_Steel.png",
         "marketHashName": "★ Flip Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7839,7 +7839,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Ultraviolet",
-        "image": "assets/cases/chroma-3-case/weapons/040_★_Flip_Knife_Ultraviolet.png",
+        "image": "assets/cases/chroma-3-case/weapons/040_%E2%98%85_Flip_Knife_Ultraviolet.png",
         "marketHashName": "★ Flip Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7847,7 +7847,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Rust Coat",
-        "image": "assets/cases/chroma-3-case/weapons/041_★_Flip_Knife_Rust_Coat.png",
+        "image": "assets/cases/chroma-3-case/weapons/041_%E2%98%85_Flip_Knife_Rust_Coat.png",
         "marketHashName": "★ Flip Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7855,7 +7855,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Marble Fade",
-        "image": "assets/cases/chroma-3-case/weapons/042_★_Gut_Knife_Marble_Fade.png",
+        "image": "assets/cases/chroma-3-case/weapons/042_%E2%98%85_Gut_Knife_Marble_Fade.png",
         "marketHashName": "★ Gut Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7863,7 +7863,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Tiger Tooth",
-        "image": "assets/cases/chroma-3-case/weapons/043_★_Gut_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-3-case/weapons/043_%E2%98%85_Gut_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Gut Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7871,7 +7871,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/044_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/044_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7879,7 +7879,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/045_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/045_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7887,7 +7887,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/046_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/046_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7895,7 +7895,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/047_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/047_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7903,7 +7903,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/048_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/048_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7911,7 +7911,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/049_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/049_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7919,7 +7919,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/050_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/050_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7927,7 +7927,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Damascus Steel",
-        "image": "assets/cases/chroma-3-case/weapons/051_★_Gut_Knife_Damascus_Steel.png",
+        "image": "assets/cases/chroma-3-case/weapons/051_%E2%98%85_Gut_Knife_Damascus_Steel.png",
         "marketHashName": "★ Gut Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7935,7 +7935,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Ultraviolet",
-        "image": "assets/cases/chroma-3-case/weapons/052_★_Gut_Knife_Ultraviolet.png",
+        "image": "assets/cases/chroma-3-case/weapons/052_%E2%98%85_Gut_Knife_Ultraviolet.png",
         "marketHashName": "★ Gut Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7943,7 +7943,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Rust Coat",
-        "image": "assets/cases/chroma-3-case/weapons/053_★_Gut_Knife_Rust_Coat.png",
+        "image": "assets/cases/chroma-3-case/weapons/053_%E2%98%85_Gut_Knife_Rust_Coat.png",
         "marketHashName": "★ Gut Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7951,7 +7951,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Marble Fade",
-        "image": "assets/cases/chroma-3-case/weapons/054_★_Karambit_Marble_Fade.png",
+        "image": "assets/cases/chroma-3-case/weapons/054_%E2%98%85_Karambit_Marble_Fade.png",
         "marketHashName": "★ Karambit | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7959,7 +7959,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Tiger Tooth",
-        "image": "assets/cases/chroma-3-case/weapons/055_★_Karambit_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-3-case/weapons/055_%E2%98%85_Karambit_Tiger_Tooth.png",
         "marketHashName": "★ Karambit | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7967,7 +7967,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/056_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/056_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7975,7 +7975,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/057_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/057_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7983,7 +7983,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/058_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/058_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7991,7 +7991,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/059_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/059_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -7999,7 +7999,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/060_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/060_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8007,7 +8007,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/061_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/061_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8015,7 +8015,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/062_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/062_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8023,7 +8023,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Damascus Steel",
-        "image": "assets/cases/chroma-3-case/weapons/063_★_Karambit_Damascus_Steel.png",
+        "image": "assets/cases/chroma-3-case/weapons/063_%E2%98%85_Karambit_Damascus_Steel.png",
         "marketHashName": "★ Karambit | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8031,7 +8031,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Ultraviolet",
-        "image": "assets/cases/chroma-3-case/weapons/064_★_Karambit_Ultraviolet.png",
+        "image": "assets/cases/chroma-3-case/weapons/064_%E2%98%85_Karambit_Ultraviolet.png",
         "marketHashName": "★ Karambit | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8039,7 +8039,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Rust Coat",
-        "image": "assets/cases/chroma-3-case/weapons/065_★_Karambit_Rust_Coat.png",
+        "image": "assets/cases/chroma-3-case/weapons/065_%E2%98%85_Karambit_Rust_Coat.png",
         "marketHashName": "★ Karambit | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8047,7 +8047,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Marble Fade",
-        "image": "assets/cases/chroma-3-case/weapons/066_★_M9_Bayonet_Marble_Fade.png",
+        "image": "assets/cases/chroma-3-case/weapons/066_%E2%98%85_M9_Bayonet_Marble_Fade.png",
         "marketHashName": "★ M9 Bayonet | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8055,7 +8055,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Tiger Tooth",
-        "image": "assets/cases/chroma-3-case/weapons/067_★_M9_Bayonet_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-3-case/weapons/067_%E2%98%85_M9_Bayonet_Tiger_Tooth.png",
         "marketHashName": "★ M9 Bayonet | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8063,7 +8063,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/068_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/068_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8071,7 +8071,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/069_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/069_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8079,7 +8079,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/070_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/070_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8087,7 +8087,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/071_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/071_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8095,7 +8095,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/072_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/072_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8103,7 +8103,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/073_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/073_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8111,7 +8111,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-3-case/weapons/074_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-3-case/weapons/074_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8119,7 +8119,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Damascus Steel",
-        "image": "assets/cases/chroma-3-case/weapons/075_★_M9_Bayonet_Damascus_Steel.png",
+        "image": "assets/cases/chroma-3-case/weapons/075_%E2%98%85_M9_Bayonet_Damascus_Steel.png",
         "marketHashName": "★ M9 Bayonet | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8127,7 +8127,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Ultraviolet",
-        "image": "assets/cases/chroma-3-case/weapons/076_★_M9_Bayonet_Ultraviolet.png",
+        "image": "assets/cases/chroma-3-case/weapons/076_%E2%98%85_M9_Bayonet_Ultraviolet.png",
         "marketHashName": "★ M9 Bayonet | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8135,7 +8135,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Rust Coat",
-        "image": "assets/cases/chroma-3-case/weapons/077_★_M9_Bayonet_Rust_Coat.png",
+        "image": "assets/cases/chroma-3-case/weapons/077_%E2%98%85_M9_Bayonet_Rust_Coat.png",
         "marketHashName": "★ M9 Bayonet | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8271,7 +8271,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Bayonet | Marble Fade",
-        "image": "assets/cases/chroma-2-case/weapons/016_★_Bayonet_Marble_Fade.png",
+        "image": "assets/cases/chroma-2-case/weapons/016_%E2%98%85_Bayonet_Marble_Fade.png",
         "marketHashName": "★ Bayonet | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8279,7 +8279,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Tiger Tooth",
-        "image": "assets/cases/chroma-2-case/weapons/017_★_Bayonet_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-2-case/weapons/017_%E2%98%85_Bayonet_Tiger_Tooth.png",
         "marketHashName": "★ Bayonet | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8287,7 +8287,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/018_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/018_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8295,7 +8295,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/019_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/019_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8303,7 +8303,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/020_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/020_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8311,7 +8311,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/021_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/021_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8319,7 +8319,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/022_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/022_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8327,7 +8327,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/023_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/023_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8335,7 +8335,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/024_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/024_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8343,7 +8343,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Damascus Steel",
-        "image": "assets/cases/chroma-2-case/weapons/025_★_Bayonet_Damascus_Steel.png",
+        "image": "assets/cases/chroma-2-case/weapons/025_%E2%98%85_Bayonet_Damascus_Steel.png",
         "marketHashName": "★ Bayonet | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8351,7 +8351,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Ultraviolet",
-        "image": "assets/cases/chroma-2-case/weapons/026_★_Bayonet_Ultraviolet.png",
+        "image": "assets/cases/chroma-2-case/weapons/026_%E2%98%85_Bayonet_Ultraviolet.png",
         "marketHashName": "★ Bayonet | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8359,7 +8359,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Rust Coat",
-        "image": "assets/cases/chroma-2-case/weapons/027_★_Bayonet_Rust_Coat.png",
+        "image": "assets/cases/chroma-2-case/weapons/027_%E2%98%85_Bayonet_Rust_Coat.png",
         "marketHashName": "★ Bayonet | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8367,7 +8367,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Marble Fade",
-        "image": "assets/cases/chroma-2-case/weapons/028_★_Flip_Knife_Marble_Fade.png",
+        "image": "assets/cases/chroma-2-case/weapons/028_%E2%98%85_Flip_Knife_Marble_Fade.png",
         "marketHashName": "★ Flip Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8375,7 +8375,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Tiger Tooth",
-        "image": "assets/cases/chroma-2-case/weapons/029_★_Flip_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-2-case/weapons/029_%E2%98%85_Flip_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Flip Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8383,7 +8383,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/030_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/030_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8391,7 +8391,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/031_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/031_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8399,7 +8399,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/032_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/032_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8407,7 +8407,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/033_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/033_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8415,7 +8415,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/034_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/034_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8423,7 +8423,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/035_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/035_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8431,7 +8431,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/036_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/036_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8439,7 +8439,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Damascus Steel",
-        "image": "assets/cases/chroma-2-case/weapons/037_★_Flip_Knife_Damascus_Steel.png",
+        "image": "assets/cases/chroma-2-case/weapons/037_%E2%98%85_Flip_Knife_Damascus_Steel.png",
         "marketHashName": "★ Flip Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8447,7 +8447,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Ultraviolet",
-        "image": "assets/cases/chroma-2-case/weapons/038_★_Flip_Knife_Ultraviolet.png",
+        "image": "assets/cases/chroma-2-case/weapons/038_%E2%98%85_Flip_Knife_Ultraviolet.png",
         "marketHashName": "★ Flip Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8455,7 +8455,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Rust Coat",
-        "image": "assets/cases/chroma-2-case/weapons/039_★_Flip_Knife_Rust_Coat.png",
+        "image": "assets/cases/chroma-2-case/weapons/039_%E2%98%85_Flip_Knife_Rust_Coat.png",
         "marketHashName": "★ Flip Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8463,7 +8463,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Marble Fade",
-        "image": "assets/cases/chroma-2-case/weapons/040_★_Gut_Knife_Marble_Fade.png",
+        "image": "assets/cases/chroma-2-case/weapons/040_%E2%98%85_Gut_Knife_Marble_Fade.png",
         "marketHashName": "★ Gut Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8471,7 +8471,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Tiger Tooth",
-        "image": "assets/cases/chroma-2-case/weapons/041_★_Gut_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-2-case/weapons/041_%E2%98%85_Gut_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Gut Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8479,7 +8479,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/042_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/042_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8487,7 +8487,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/043_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/043_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8495,7 +8495,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/044_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/044_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8503,7 +8503,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/045_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/045_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8511,7 +8511,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/046_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/046_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8519,7 +8519,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/047_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/047_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8527,7 +8527,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/048_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/048_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8535,7 +8535,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Damascus Steel",
-        "image": "assets/cases/chroma-2-case/weapons/049_★_Gut_Knife_Damascus_Steel.png",
+        "image": "assets/cases/chroma-2-case/weapons/049_%E2%98%85_Gut_Knife_Damascus_Steel.png",
         "marketHashName": "★ Gut Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8543,7 +8543,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Ultraviolet",
-        "image": "assets/cases/chroma-2-case/weapons/050_★_Gut_Knife_Ultraviolet.png",
+        "image": "assets/cases/chroma-2-case/weapons/050_%E2%98%85_Gut_Knife_Ultraviolet.png",
         "marketHashName": "★ Gut Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8551,7 +8551,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Rust Coat",
-        "image": "assets/cases/chroma-2-case/weapons/051_★_Gut_Knife_Rust_Coat.png",
+        "image": "assets/cases/chroma-2-case/weapons/051_%E2%98%85_Gut_Knife_Rust_Coat.png",
         "marketHashName": "★ Gut Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8559,7 +8559,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Marble Fade",
-        "image": "assets/cases/chroma-2-case/weapons/052_★_Karambit_Marble_Fade.png",
+        "image": "assets/cases/chroma-2-case/weapons/052_%E2%98%85_Karambit_Marble_Fade.png",
         "marketHashName": "★ Karambit | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8567,7 +8567,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Tiger Tooth",
-        "image": "assets/cases/chroma-2-case/weapons/053_★_Karambit_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-2-case/weapons/053_%E2%98%85_Karambit_Tiger_Tooth.png",
         "marketHashName": "★ Karambit | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8575,7 +8575,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/054_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/054_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8583,7 +8583,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/055_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/055_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8591,7 +8591,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/056_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/056_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8599,7 +8599,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/057_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/057_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8607,7 +8607,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/058_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/058_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8615,7 +8615,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/059_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/059_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8623,7 +8623,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/060_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/060_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8631,7 +8631,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Damascus Steel",
-        "image": "assets/cases/chroma-2-case/weapons/061_★_Karambit_Damascus_Steel.png",
+        "image": "assets/cases/chroma-2-case/weapons/061_%E2%98%85_Karambit_Damascus_Steel.png",
         "marketHashName": "★ Karambit | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8639,7 +8639,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Ultraviolet",
-        "image": "assets/cases/chroma-2-case/weapons/062_★_Karambit_Ultraviolet.png",
+        "image": "assets/cases/chroma-2-case/weapons/062_%E2%98%85_Karambit_Ultraviolet.png",
         "marketHashName": "★ Karambit | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8647,7 +8647,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Rust Coat",
-        "image": "assets/cases/chroma-2-case/weapons/063_★_Karambit_Rust_Coat.png",
+        "image": "assets/cases/chroma-2-case/weapons/063_%E2%98%85_Karambit_Rust_Coat.png",
         "marketHashName": "★ Karambit | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8655,7 +8655,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Marble Fade",
-        "image": "assets/cases/chroma-2-case/weapons/064_★_M9_Bayonet_Marble_Fade.png",
+        "image": "assets/cases/chroma-2-case/weapons/064_%E2%98%85_M9_Bayonet_Marble_Fade.png",
         "marketHashName": "★ M9 Bayonet | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8663,7 +8663,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Tiger Tooth",
-        "image": "assets/cases/chroma-2-case/weapons/065_★_M9_Bayonet_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-2-case/weapons/065_%E2%98%85_M9_Bayonet_Tiger_Tooth.png",
         "marketHashName": "★ M9 Bayonet | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8671,7 +8671,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/066_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/066_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8679,7 +8679,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/067_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/067_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8687,7 +8687,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/068_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/068_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8695,7 +8695,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/069_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/069_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8703,7 +8703,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/070_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/070_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8711,7 +8711,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/071_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/071_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8719,7 +8719,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-2-case/weapons/072_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-2-case/weapons/072_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8727,7 +8727,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Damascus Steel",
-        "image": "assets/cases/chroma-2-case/weapons/073_★_M9_Bayonet_Damascus_Steel.png",
+        "image": "assets/cases/chroma-2-case/weapons/073_%E2%98%85_M9_Bayonet_Damascus_Steel.png",
         "marketHashName": "★ M9 Bayonet | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8735,7 +8735,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Ultraviolet",
-        "image": "assets/cases/chroma-2-case/weapons/074_★_M9_Bayonet_Ultraviolet.png",
+        "image": "assets/cases/chroma-2-case/weapons/074_%E2%98%85_M9_Bayonet_Ultraviolet.png",
         "marketHashName": "★ M9 Bayonet | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8743,7 +8743,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Rust Coat",
-        "image": "assets/cases/chroma-2-case/weapons/075_★_M9_Bayonet_Rust_Coat.png",
+        "image": "assets/cases/chroma-2-case/weapons/075_%E2%98%85_M9_Bayonet_Rust_Coat.png",
         "marketHashName": "★ M9 Bayonet | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8837,7 +8837,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "M4A4 | 龍王 (Dragon King)",
-        "image": "assets/cases/chroma-case/weapons/011_M4A4_龍王_(Dragon_King).png",
+        "image": "assets/cases/chroma-case/weapons/011_M4A4_%E9%BE%8D%E7%8E%8B_(Dragon_King).png",
         "marketHashName": "M4A4 | 龍王 (Dragon King)",
         "rarity": "Classified",
         "floatMin": 0,
@@ -8871,7 +8871,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Bayonet | Marble Fade",
-        "image": "assets/cases/chroma-case/weapons/015_★_Bayonet_Marble_Fade.png",
+        "image": "assets/cases/chroma-case/weapons/015_%E2%98%85_Bayonet_Marble_Fade.png",
         "marketHashName": "★ Bayonet | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8879,7 +8879,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Tiger Tooth",
-        "image": "assets/cases/chroma-case/weapons/016_★_Bayonet_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-case/weapons/016_%E2%98%85_Bayonet_Tiger_Tooth.png",
         "marketHashName": "★ Bayonet | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8887,7 +8887,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/017_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/017_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8895,7 +8895,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/018_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/018_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8903,7 +8903,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/019_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/019_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8911,7 +8911,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/020_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/020_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8919,7 +8919,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/021_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/021_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8927,7 +8927,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/022_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/022_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8935,7 +8935,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/023_★_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/023_%E2%98%85_Bayonet_Doppler.png",
         "marketHashName": "★ Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8943,7 +8943,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Damascus Steel",
-        "image": "assets/cases/chroma-case/weapons/024_★_Bayonet_Damascus_Steel.png",
+        "image": "assets/cases/chroma-case/weapons/024_%E2%98%85_Bayonet_Damascus_Steel.png",
         "marketHashName": "★ Bayonet | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8951,7 +8951,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Ultraviolet",
-        "image": "assets/cases/chroma-case/weapons/025_★_Bayonet_Ultraviolet.png",
+        "image": "assets/cases/chroma-case/weapons/025_%E2%98%85_Bayonet_Ultraviolet.png",
         "marketHashName": "★ Bayonet | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8959,7 +8959,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Rust Coat",
-        "image": "assets/cases/chroma-case/weapons/026_★_Bayonet_Rust_Coat.png",
+        "image": "assets/cases/chroma-case/weapons/026_%E2%98%85_Bayonet_Rust_Coat.png",
         "marketHashName": "★ Bayonet | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8967,7 +8967,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Marble Fade",
-        "image": "assets/cases/chroma-case/weapons/027_★_Flip_Knife_Marble_Fade.png",
+        "image": "assets/cases/chroma-case/weapons/027_%E2%98%85_Flip_Knife_Marble_Fade.png",
         "marketHashName": "★ Flip Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8975,7 +8975,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Tiger Tooth",
-        "image": "assets/cases/chroma-case/weapons/028_★_Flip_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-case/weapons/028_%E2%98%85_Flip_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Flip Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8983,7 +8983,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/029_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/029_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8991,7 +8991,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/030_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/030_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -8999,7 +8999,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/031_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/031_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9007,7 +9007,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/032_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/032_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9015,7 +9015,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/033_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/033_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9023,7 +9023,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/034_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/034_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9031,7 +9031,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/035_★_Flip_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/035_%E2%98%85_Flip_Knife_Doppler.png",
         "marketHashName": "★ Flip Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9039,7 +9039,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Damascus Steel",
-        "image": "assets/cases/chroma-case/weapons/036_★_Flip_Knife_Damascus_Steel.png",
+        "image": "assets/cases/chroma-case/weapons/036_%E2%98%85_Flip_Knife_Damascus_Steel.png",
         "marketHashName": "★ Flip Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9047,7 +9047,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Ultraviolet",
-        "image": "assets/cases/chroma-case/weapons/037_★_Flip_Knife_Ultraviolet.png",
+        "image": "assets/cases/chroma-case/weapons/037_%E2%98%85_Flip_Knife_Ultraviolet.png",
         "marketHashName": "★ Flip Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9055,7 +9055,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Rust Coat",
-        "image": "assets/cases/chroma-case/weapons/038_★_Flip_Knife_Rust_Coat.png",
+        "image": "assets/cases/chroma-case/weapons/038_%E2%98%85_Flip_Knife_Rust_Coat.png",
         "marketHashName": "★ Flip Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9063,7 +9063,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Marble Fade",
-        "image": "assets/cases/chroma-case/weapons/039_★_Gut_Knife_Marble_Fade.png",
+        "image": "assets/cases/chroma-case/weapons/039_%E2%98%85_Gut_Knife_Marble_Fade.png",
         "marketHashName": "★ Gut Knife | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9071,7 +9071,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Tiger Tooth",
-        "image": "assets/cases/chroma-case/weapons/040_★_Gut_Knife_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-case/weapons/040_%E2%98%85_Gut_Knife_Tiger_Tooth.png",
         "marketHashName": "★ Gut Knife | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9079,7 +9079,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/041_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/041_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9087,7 +9087,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/042_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/042_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9095,7 +9095,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/043_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/043_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9103,7 +9103,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/044_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/044_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9111,7 +9111,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/045_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/045_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9119,7 +9119,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/046_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/046_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9127,7 +9127,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Doppler",
-        "image": "assets/cases/chroma-case/weapons/047_★_Gut_Knife_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/047_%E2%98%85_Gut_Knife_Doppler.png",
         "marketHashName": "★ Gut Knife | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9135,7 +9135,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Damascus Steel",
-        "image": "assets/cases/chroma-case/weapons/048_★_Gut_Knife_Damascus_Steel.png",
+        "image": "assets/cases/chroma-case/weapons/048_%E2%98%85_Gut_Knife_Damascus_Steel.png",
         "marketHashName": "★ Gut Knife | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9143,7 +9143,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Ultraviolet",
-        "image": "assets/cases/chroma-case/weapons/049_★_Gut_Knife_Ultraviolet.png",
+        "image": "assets/cases/chroma-case/weapons/049_%E2%98%85_Gut_Knife_Ultraviolet.png",
         "marketHashName": "★ Gut Knife | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9151,7 +9151,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Rust Coat",
-        "image": "assets/cases/chroma-case/weapons/050_★_Gut_Knife_Rust_Coat.png",
+        "image": "assets/cases/chroma-case/weapons/050_%E2%98%85_Gut_Knife_Rust_Coat.png",
         "marketHashName": "★ Gut Knife | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9159,7 +9159,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Marble Fade",
-        "image": "assets/cases/chroma-case/weapons/051_★_Karambit_Marble_Fade.png",
+        "image": "assets/cases/chroma-case/weapons/051_%E2%98%85_Karambit_Marble_Fade.png",
         "marketHashName": "★ Karambit | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9167,7 +9167,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Tiger Tooth",
-        "image": "assets/cases/chroma-case/weapons/052_★_Karambit_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-case/weapons/052_%E2%98%85_Karambit_Tiger_Tooth.png",
         "marketHashName": "★ Karambit | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9175,7 +9175,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-case/weapons/053_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/053_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9183,7 +9183,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-case/weapons/054_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/054_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9191,7 +9191,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-case/weapons/055_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/055_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9199,7 +9199,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-case/weapons/056_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/056_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9207,7 +9207,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-case/weapons/057_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/057_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9215,7 +9215,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-case/weapons/058_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/058_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9223,7 +9223,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Doppler",
-        "image": "assets/cases/chroma-case/weapons/059_★_Karambit_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/059_%E2%98%85_Karambit_Doppler.png",
         "marketHashName": "★ Karambit | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9231,7 +9231,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Damascus Steel",
-        "image": "assets/cases/chroma-case/weapons/060_★_Karambit_Damascus_Steel.png",
+        "image": "assets/cases/chroma-case/weapons/060_%E2%98%85_Karambit_Damascus_Steel.png",
         "marketHashName": "★ Karambit | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9239,7 +9239,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Ultraviolet",
-        "image": "assets/cases/chroma-case/weapons/061_★_Karambit_Ultraviolet.png",
+        "image": "assets/cases/chroma-case/weapons/061_%E2%98%85_Karambit_Ultraviolet.png",
         "marketHashName": "★ Karambit | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9247,7 +9247,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Rust Coat",
-        "image": "assets/cases/chroma-case/weapons/062_★_Karambit_Rust_Coat.png",
+        "image": "assets/cases/chroma-case/weapons/062_%E2%98%85_Karambit_Rust_Coat.png",
         "marketHashName": "★ Karambit | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9255,7 +9255,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Marble Fade",
-        "image": "assets/cases/chroma-case/weapons/063_★_M9_Bayonet_Marble_Fade.png",
+        "image": "assets/cases/chroma-case/weapons/063_%E2%98%85_M9_Bayonet_Marble_Fade.png",
         "marketHashName": "★ M9 Bayonet | Marble Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9263,7 +9263,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Tiger Tooth",
-        "image": "assets/cases/chroma-case/weapons/064_★_M9_Bayonet_Tiger_Tooth.png",
+        "image": "assets/cases/chroma-case/weapons/064_%E2%98%85_M9_Bayonet_Tiger_Tooth.png",
         "marketHashName": "★ M9 Bayonet | Tiger Tooth",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9271,7 +9271,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/065_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/065_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9279,7 +9279,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/066_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/066_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9287,7 +9287,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/067_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/067_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9295,7 +9295,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/068_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/068_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9303,7 +9303,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/069_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/069_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9311,7 +9311,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/070_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/070_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9319,7 +9319,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Doppler",
-        "image": "assets/cases/chroma-case/weapons/071_★_M9_Bayonet_Doppler.png",
+        "image": "assets/cases/chroma-case/weapons/071_%E2%98%85_M9_Bayonet_Doppler.png",
         "marketHashName": "★ M9 Bayonet | Doppler",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9327,7 +9327,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Damascus Steel",
-        "image": "assets/cases/chroma-case/weapons/072_★_M9_Bayonet_Damascus_Steel.png",
+        "image": "assets/cases/chroma-case/weapons/072_%E2%98%85_M9_Bayonet_Damascus_Steel.png",
         "marketHashName": "★ M9 Bayonet | Damascus Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9335,7 +9335,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Ultraviolet",
-        "image": "assets/cases/chroma-case/weapons/073_★_M9_Bayonet_Ultraviolet.png",
+        "image": "assets/cases/chroma-case/weapons/073_%E2%98%85_M9_Bayonet_Ultraviolet.png",
         "marketHashName": "★ M9 Bayonet | Ultraviolet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9343,7 +9343,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Rust Coat",
-        "image": "assets/cases/chroma-case/weapons/074_★_M9_Bayonet_Rust_Coat.png",
+        "image": "assets/cases/chroma-case/weapons/074_%E2%98%85_M9_Bayonet_Rust_Coat.png",
         "marketHashName": "★ M9 Bayonet | Rust Coat",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9487,7 +9487,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Falchion Knife",
-        "image": "assets/cases/falchion-case/weapons/017_★_Falchion_Knife.png",
+        "image": "assets/cases/falchion-case/weapons/017_%E2%98%85_Falchion_Knife.png",
         "marketHashName": "★ Falchion Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9495,7 +9495,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Fade",
-        "image": "assets/cases/falchion-case/weapons/018_★_Falchion_Knife_Fade.png",
+        "image": "assets/cases/falchion-case/weapons/018_%E2%98%85_Falchion_Knife_Fade.png",
         "marketHashName": "★ Falchion Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9503,7 +9503,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Crimson Web",
-        "image": "assets/cases/falchion-case/weapons/019_★_Falchion_Knife_Crimson_Web.png",
+        "image": "assets/cases/falchion-case/weapons/019_%E2%98%85_Falchion_Knife_Crimson_Web.png",
         "marketHashName": "★ Falchion Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9511,7 +9511,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Slaughter",
-        "image": "assets/cases/falchion-case/weapons/020_★_Falchion_Knife_Slaughter.png",
+        "image": "assets/cases/falchion-case/weapons/020_%E2%98%85_Falchion_Knife_Slaughter.png",
         "marketHashName": "★ Falchion Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9519,7 +9519,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Case Hardened",
-        "image": "assets/cases/falchion-case/weapons/021_★_Falchion_Knife_Case_Hardened.png",
+        "image": "assets/cases/falchion-case/weapons/021_%E2%98%85_Falchion_Knife_Case_Hardened.png",
         "marketHashName": "★ Falchion Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9527,7 +9527,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Urban Masked",
-        "image": "assets/cases/falchion-case/weapons/022_★_Falchion_Knife_Urban_Masked.png",
+        "image": "assets/cases/falchion-case/weapons/022_%E2%98%85_Falchion_Knife_Urban_Masked.png",
         "marketHashName": "★ Falchion Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9535,7 +9535,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Blue Steel",
-        "image": "assets/cases/falchion-case/weapons/023_★_Falchion_Knife_Blue_Steel.png",
+        "image": "assets/cases/falchion-case/weapons/023_%E2%98%85_Falchion_Knife_Blue_Steel.png",
         "marketHashName": "★ Falchion Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9543,7 +9543,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Night",
-        "image": "assets/cases/falchion-case/weapons/024_★_Falchion_Knife_Night.png",
+        "image": "assets/cases/falchion-case/weapons/024_%E2%98%85_Falchion_Knife_Night.png",
         "marketHashName": "★ Falchion Knife | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9551,7 +9551,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Stained",
-        "image": "assets/cases/falchion-case/weapons/025_★_Falchion_Knife_Stained.png",
+        "image": "assets/cases/falchion-case/weapons/025_%E2%98%85_Falchion_Knife_Stained.png",
         "marketHashName": "★ Falchion Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9559,7 +9559,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Forest DDPAT",
-        "image": "assets/cases/falchion-case/weapons/026_★_Falchion_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/falchion-case/weapons/026_%E2%98%85_Falchion_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Falchion Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9567,7 +9567,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Boreal Forest",
-        "image": "assets/cases/falchion-case/weapons/027_★_Falchion_Knife_Boreal_Forest.png",
+        "image": "assets/cases/falchion-case/weapons/027_%E2%98%85_Falchion_Knife_Boreal_Forest.png",
         "marketHashName": "★ Falchion Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9575,7 +9575,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Scorched",
-        "image": "assets/cases/falchion-case/weapons/028_★_Falchion_Knife_Scorched.png",
+        "image": "assets/cases/falchion-case/weapons/028_%E2%98%85_Falchion_Knife_Scorched.png",
         "marketHashName": "★ Falchion Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9583,7 +9583,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Falchion Knife | Safari Mesh",
-        "image": "assets/cases/falchion-case/weapons/029_★_Falchion_Knife_Safari_Mesh.png",
+        "image": "assets/cases/falchion-case/weapons/029_%E2%98%85_Falchion_Knife_Safari_Mesh.png",
         "marketHashName": "★ Falchion Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9727,7 +9727,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Bowie Knife",
-        "image": "assets/cases/operation-wildfire-case/weapons/017_★_Bowie_Knife.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/017_%E2%98%85_Bowie_Knife.png",
         "marketHashName": "★ Bowie Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9735,7 +9735,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Fade",
-        "image": "assets/cases/operation-wildfire-case/weapons/018_★_Bowie_Knife_Fade.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/018_%E2%98%85_Bowie_Knife_Fade.png",
         "marketHashName": "★ Bowie Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9743,7 +9743,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Crimson Web",
-        "image": "assets/cases/operation-wildfire-case/weapons/019_★_Bowie_Knife_Crimson_Web.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/019_%E2%98%85_Bowie_Knife_Crimson_Web.png",
         "marketHashName": "★ Bowie Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9751,7 +9751,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Slaughter",
-        "image": "assets/cases/operation-wildfire-case/weapons/020_★_Bowie_Knife_Slaughter.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/020_%E2%98%85_Bowie_Knife_Slaughter.png",
         "marketHashName": "★ Bowie Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9759,7 +9759,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Case Hardened",
-        "image": "assets/cases/operation-wildfire-case/weapons/021_★_Bowie_Knife_Case_Hardened.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/021_%E2%98%85_Bowie_Knife_Case_Hardened.png",
         "marketHashName": "★ Bowie Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9767,7 +9767,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Urban Masked",
-        "image": "assets/cases/operation-wildfire-case/weapons/022_★_Bowie_Knife_Urban_Masked.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/022_%E2%98%85_Bowie_Knife_Urban_Masked.png",
         "marketHashName": "★ Bowie Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9775,7 +9775,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Blue Steel",
-        "image": "assets/cases/operation-wildfire-case/weapons/023_★_Bowie_Knife_Blue_Steel.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/023_%E2%98%85_Bowie_Knife_Blue_Steel.png",
         "marketHashName": "★ Bowie Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9783,7 +9783,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Night",
-        "image": "assets/cases/operation-wildfire-case/weapons/024_★_Bowie_Knife_Night.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/024_%E2%98%85_Bowie_Knife_Night.png",
         "marketHashName": "★ Bowie Knife | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9791,7 +9791,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Stained",
-        "image": "assets/cases/operation-wildfire-case/weapons/025_★_Bowie_Knife_Stained.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/025_%E2%98%85_Bowie_Knife_Stained.png",
         "marketHashName": "★ Bowie Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9799,7 +9799,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Forest DDPAT",
-        "image": "assets/cases/operation-wildfire-case/weapons/026_★_Bowie_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/026_%E2%98%85_Bowie_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Bowie Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9807,7 +9807,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Boreal Forest",
-        "image": "assets/cases/operation-wildfire-case/weapons/027_★_Bowie_Knife_Boreal_Forest.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/027_%E2%98%85_Bowie_Knife_Boreal_Forest.png",
         "marketHashName": "★ Bowie Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9815,7 +9815,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Scorched",
-        "image": "assets/cases/operation-wildfire-case/weapons/028_★_Bowie_Knife_Scorched.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/028_%E2%98%85_Bowie_Knife_Scorched.png",
         "marketHashName": "★ Bowie Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9823,7 +9823,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bowie Knife | Safari Mesh",
-        "image": "assets/cases/operation-wildfire-case/weapons/029_★_Bowie_Knife_Safari_Mesh.png",
+        "image": "assets/cases/operation-wildfire-case/weapons/029_%E2%98%85_Bowie_Knife_Safari_Mesh.png",
         "marketHashName": "★ Bowie Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9951,7 +9951,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Butterfly Knife",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/015_★_Butterfly_Knife.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/015_%E2%98%85_Butterfly_Knife.png",
         "marketHashName": "★ Butterfly Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9959,7 +9959,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Fade",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/016_★_Butterfly_Knife_Fade.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/016_%E2%98%85_Butterfly_Knife_Fade.png",
         "marketHashName": "★ Butterfly Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9967,7 +9967,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Crimson Web",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/017_★_Butterfly_Knife_Crimson_Web.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/017_%E2%98%85_Butterfly_Knife_Crimson_Web.png",
         "marketHashName": "★ Butterfly Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9975,7 +9975,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Slaughter",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/018_★_Butterfly_Knife_Slaughter.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/018_%E2%98%85_Butterfly_Knife_Slaughter.png",
         "marketHashName": "★ Butterfly Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9983,7 +9983,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Case Hardened",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/019_★_Butterfly_Knife_Case_Hardened.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/019_%E2%98%85_Butterfly_Knife_Case_Hardened.png",
         "marketHashName": "★ Butterfly Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9991,7 +9991,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Urban Masked",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/020_★_Butterfly_Knife_Urban_Masked.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/020_%E2%98%85_Butterfly_Knife_Urban_Masked.png",
         "marketHashName": "★ Butterfly Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -9999,7 +9999,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Blue Steel",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/021_★_Butterfly_Knife_Blue_Steel.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/021_%E2%98%85_Butterfly_Knife_Blue_Steel.png",
         "marketHashName": "★ Butterfly Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10007,7 +10007,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Night",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/022_★_Butterfly_Knife_Night.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/022_%E2%98%85_Butterfly_Knife_Night.png",
         "marketHashName": "★ Butterfly Knife | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10015,7 +10015,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Stained",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/023_★_Butterfly_Knife_Stained.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/023_%E2%98%85_Butterfly_Knife_Stained.png",
         "marketHashName": "★ Butterfly Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10023,7 +10023,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Forest DDPAT",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/024_★_Butterfly_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/024_%E2%98%85_Butterfly_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Butterfly Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10031,7 +10031,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Boreal Forest",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/025_★_Butterfly_Knife_Boreal_Forest.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/025_%E2%98%85_Butterfly_Knife_Boreal_Forest.png",
         "marketHashName": "★ Butterfly Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10039,7 +10039,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Scorched",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/026_★_Butterfly_Knife_Scorched.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/026_%E2%98%85_Butterfly_Knife_Scorched.png",
         "marketHashName": "★ Butterfly Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10047,7 +10047,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Butterfly Knife | Safari Mesh",
-        "image": "assets/cases/operation-breakout-weapon-case/weapons/027_★_Butterfly_Knife_Safari_Mesh.png",
+        "image": "assets/cases/operation-breakout-weapon-case/weapons/027_%E2%98%85_Butterfly_Knife_Safari_Mesh.png",
         "marketHashName": "★ Butterfly Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10175,7 +10175,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Bayonet",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/015_★_Bayonet.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/015_%E2%98%85_Bayonet.png",
         "marketHashName": "★ Bayonet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10183,7 +10183,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Fade",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/016_★_Bayonet_Fade.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/016_%E2%98%85_Bayonet_Fade.png",
         "marketHashName": "★ Bayonet | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10191,7 +10191,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Slaughter",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/017_★_Bayonet_Slaughter.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/017_%E2%98%85_Bayonet_Slaughter.png",
         "marketHashName": "★ Bayonet | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10199,7 +10199,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Case Hardened",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/018_★_Bayonet_Case_Hardened.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/018_%E2%98%85_Bayonet_Case_Hardened.png",
         "marketHashName": "★ Bayonet | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10207,7 +10207,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Night",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/019_★_Bayonet_Night.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/019_%E2%98%85_Bayonet_Night.png",
         "marketHashName": "★ Bayonet | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10215,7 +10215,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Blue Steel",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/020_★_Bayonet_Blue_Steel.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/020_%E2%98%85_Bayonet_Blue_Steel.png",
         "marketHashName": "★ Bayonet | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10223,7 +10223,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Crimson Web",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/021_★_Bayonet_Crimson_Web.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/021_%E2%98%85_Bayonet_Crimson_Web.png",
         "marketHashName": "★ Bayonet | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10231,7 +10231,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Stained",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/022_★_Bayonet_Stained.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/022_%E2%98%85_Bayonet_Stained.png",
         "marketHashName": "★ Bayonet | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10239,7 +10239,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Scorched",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/023_★_Bayonet_Scorched.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/023_%E2%98%85_Bayonet_Scorched.png",
         "marketHashName": "★ Bayonet | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10247,7 +10247,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Safari Mesh",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/024_★_Bayonet_Safari_Mesh.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/024_%E2%98%85_Bayonet_Safari_Mesh.png",
         "marketHashName": "★ Bayonet | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10255,7 +10255,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Boreal Forest",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/025_★_Bayonet_Boreal_Forest.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/025_%E2%98%85_Bayonet_Boreal_Forest.png",
         "marketHashName": "★ Bayonet | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10263,7 +10263,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Urban Masked",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/026_★_Bayonet_Urban_Masked.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/026_%E2%98%85_Bayonet_Urban_Masked.png",
         "marketHashName": "★ Bayonet | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10271,7 +10271,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Forest DDPAT",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/027_★_Bayonet_Forest_DDPAT.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/027_%E2%98%85_Bayonet_Forest_DDPAT.png",
         "marketHashName": "★ Bayonet | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10279,7 +10279,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/028_★_Flip_Knife.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/028_%E2%98%85_Flip_Knife.png",
         "marketHashName": "★ Flip Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10287,7 +10287,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Fade",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/029_★_Flip_Knife_Fade.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/029_%E2%98%85_Flip_Knife_Fade.png",
         "marketHashName": "★ Flip Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10295,7 +10295,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Slaughter",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/030_★_Flip_Knife_Slaughter.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/030_%E2%98%85_Flip_Knife_Slaughter.png",
         "marketHashName": "★ Flip Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10303,7 +10303,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Case Hardened",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/031_★_Flip_Knife_Case_Hardened.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/031_%E2%98%85_Flip_Knife_Case_Hardened.png",
         "marketHashName": "★ Flip Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10311,7 +10311,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Night",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/032_★_Flip_Knife_Night.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/032_%E2%98%85_Flip_Knife_Night.png",
         "marketHashName": "★ Flip Knife | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10319,7 +10319,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Blue Steel",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/033_★_Flip_Knife_Blue_Steel.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/033_%E2%98%85_Flip_Knife_Blue_Steel.png",
         "marketHashName": "★ Flip Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10327,7 +10327,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Crimson Web",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/034_★_Flip_Knife_Crimson_Web.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/034_%E2%98%85_Flip_Knife_Crimson_Web.png",
         "marketHashName": "★ Flip Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10335,7 +10335,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Stained",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/035_★_Flip_Knife_Stained.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/035_%E2%98%85_Flip_Knife_Stained.png",
         "marketHashName": "★ Flip Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10343,7 +10343,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Scorched",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/036_★_Flip_Knife_Scorched.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/036_%E2%98%85_Flip_Knife_Scorched.png",
         "marketHashName": "★ Flip Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10351,7 +10351,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Safari Mesh",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/037_★_Flip_Knife_Safari_Mesh.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/037_%E2%98%85_Flip_Knife_Safari_Mesh.png",
         "marketHashName": "★ Flip Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10359,7 +10359,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Boreal Forest",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/038_★_Flip_Knife_Boreal_Forest.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/038_%E2%98%85_Flip_Knife_Boreal_Forest.png",
         "marketHashName": "★ Flip Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10367,7 +10367,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Urban Masked",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/039_★_Flip_Knife_Urban_Masked.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/039_%E2%98%85_Flip_Knife_Urban_Masked.png",
         "marketHashName": "★ Flip Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10375,7 +10375,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Forest DDPAT",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/040_★_Flip_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/040_%E2%98%85_Flip_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Flip Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10383,7 +10383,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/041_★_Gut_Knife.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/041_%E2%98%85_Gut_Knife.png",
         "marketHashName": "★ Gut Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10391,7 +10391,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Fade",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/042_★_Gut_Knife_Fade.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/042_%E2%98%85_Gut_Knife_Fade.png",
         "marketHashName": "★ Gut Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10399,7 +10399,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Slaughter",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/043_★_Gut_Knife_Slaughter.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/043_%E2%98%85_Gut_Knife_Slaughter.png",
         "marketHashName": "★ Gut Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10407,7 +10407,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Case Hardened",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/044_★_Gut_Knife_Case_Hardened.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/044_%E2%98%85_Gut_Knife_Case_Hardened.png",
         "marketHashName": "★ Gut Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10415,7 +10415,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Night",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/045_★_Gut_Knife_Night.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/045_%E2%98%85_Gut_Knife_Night.png",
         "marketHashName": "★ Gut Knife | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10423,7 +10423,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Blue Steel",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/046_★_Gut_Knife_Blue_Steel.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/046_%E2%98%85_Gut_Knife_Blue_Steel.png",
         "marketHashName": "★ Gut Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10431,7 +10431,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Crimson Web",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/047_★_Gut_Knife_Crimson_Web.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/047_%E2%98%85_Gut_Knife_Crimson_Web.png",
         "marketHashName": "★ Gut Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10439,7 +10439,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Stained",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/048_★_Gut_Knife_Stained.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/048_%E2%98%85_Gut_Knife_Stained.png",
         "marketHashName": "★ Gut Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10447,7 +10447,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Scorched",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/049_★_Gut_Knife_Scorched.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/049_%E2%98%85_Gut_Knife_Scorched.png",
         "marketHashName": "★ Gut Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10455,7 +10455,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Safari Mesh",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/050_★_Gut_Knife_Safari_Mesh.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/050_%E2%98%85_Gut_Knife_Safari_Mesh.png",
         "marketHashName": "★ Gut Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10463,7 +10463,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Boreal Forest",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/051_★_Gut_Knife_Boreal_Forest.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/051_%E2%98%85_Gut_Knife_Boreal_Forest.png",
         "marketHashName": "★ Gut Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10471,7 +10471,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Urban Masked",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/052_★_Gut_Knife_Urban_Masked.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/052_%E2%98%85_Gut_Knife_Urban_Masked.png",
         "marketHashName": "★ Gut Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10479,7 +10479,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Forest DDPAT",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/053_★_Gut_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/053_%E2%98%85_Gut_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Gut Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10487,7 +10487,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/054_★_Karambit.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/054_%E2%98%85_Karambit.png",
         "marketHashName": "★ Karambit",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10495,7 +10495,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Fade",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/055_★_Karambit_Fade.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/055_%E2%98%85_Karambit_Fade.png",
         "marketHashName": "★ Karambit | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10503,7 +10503,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Slaughter",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/056_★_Karambit_Slaughter.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/056_%E2%98%85_Karambit_Slaughter.png",
         "marketHashName": "★ Karambit | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10511,7 +10511,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Case Hardened",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/057_★_Karambit_Case_Hardened.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/057_%E2%98%85_Karambit_Case_Hardened.png",
         "marketHashName": "★ Karambit | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10519,7 +10519,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Night",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/058_★_Karambit_Night.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/058_%E2%98%85_Karambit_Night.png",
         "marketHashName": "★ Karambit | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10527,7 +10527,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Blue Steel",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/059_★_Karambit_Blue_Steel.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/059_%E2%98%85_Karambit_Blue_Steel.png",
         "marketHashName": "★ Karambit | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10535,7 +10535,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Crimson Web",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/060_★_Karambit_Crimson_Web.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/060_%E2%98%85_Karambit_Crimson_Web.png",
         "marketHashName": "★ Karambit | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10543,7 +10543,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Stained",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/061_★_Karambit_Stained.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/061_%E2%98%85_Karambit_Stained.png",
         "marketHashName": "★ Karambit | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10551,7 +10551,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Scorched",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/062_★_Karambit_Scorched.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/062_%E2%98%85_Karambit_Scorched.png",
         "marketHashName": "★ Karambit | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10559,7 +10559,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Safari Mesh",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/063_★_Karambit_Safari_Mesh.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/063_%E2%98%85_Karambit_Safari_Mesh.png",
         "marketHashName": "★ Karambit | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10567,7 +10567,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Boreal Forest",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/064_★_Karambit_Boreal_Forest.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/064_%E2%98%85_Karambit_Boreal_Forest.png",
         "marketHashName": "★ Karambit | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10575,7 +10575,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Urban Masked",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/065_★_Karambit_Urban_Masked.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/065_%E2%98%85_Karambit_Urban_Masked.png",
         "marketHashName": "★ Karambit | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10583,7 +10583,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Forest DDPAT",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/066_★_Karambit_Forest_DDPAT.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/066_%E2%98%85_Karambit_Forest_DDPAT.png",
         "marketHashName": "★ Karambit | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10591,7 +10591,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/067_★_M9_Bayonet.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/067_%E2%98%85_M9_Bayonet.png",
         "marketHashName": "★ M9 Bayonet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10599,7 +10599,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Fade",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/068_★_M9_Bayonet_Fade.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/068_%E2%98%85_M9_Bayonet_Fade.png",
         "marketHashName": "★ M9 Bayonet | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10607,7 +10607,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Slaughter",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/069_★_M9_Bayonet_Slaughter.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/069_%E2%98%85_M9_Bayonet_Slaughter.png",
         "marketHashName": "★ M9 Bayonet | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10615,7 +10615,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Case Hardened",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/070_★_M9_Bayonet_Case_Hardened.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/070_%E2%98%85_M9_Bayonet_Case_Hardened.png",
         "marketHashName": "★ M9 Bayonet | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10623,7 +10623,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Night",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/071_★_M9_Bayonet_Night.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/071_%E2%98%85_M9_Bayonet_Night.png",
         "marketHashName": "★ M9 Bayonet | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10631,7 +10631,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Blue Steel",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/072_★_M9_Bayonet_Blue_Steel.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/072_%E2%98%85_M9_Bayonet_Blue_Steel.png",
         "marketHashName": "★ M9 Bayonet | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10639,7 +10639,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Crimson Web",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/073_★_M9_Bayonet_Crimson_Web.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/073_%E2%98%85_M9_Bayonet_Crimson_Web.png",
         "marketHashName": "★ M9 Bayonet | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10647,7 +10647,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Stained",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/074_★_M9_Bayonet_Stained.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/074_%E2%98%85_M9_Bayonet_Stained.png",
         "marketHashName": "★ M9 Bayonet | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10655,7 +10655,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Scorched",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/075_★_M9_Bayonet_Scorched.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/075_%E2%98%85_M9_Bayonet_Scorched.png",
         "marketHashName": "★ M9 Bayonet | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10663,7 +10663,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Safari Mesh",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/076_★_M9_Bayonet_Safari_Mesh.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/076_%E2%98%85_M9_Bayonet_Safari_Mesh.png",
         "marketHashName": "★ M9 Bayonet | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10671,7 +10671,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Boreal Forest",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/077_★_M9_Bayonet_Boreal_Forest.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/077_%E2%98%85_M9_Bayonet_Boreal_Forest.png",
         "marketHashName": "★ M9 Bayonet | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10679,7 +10679,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Urban Masked",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/078_★_M9_Bayonet_Urban_Masked.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/078_%E2%98%85_M9_Bayonet_Urban_Masked.png",
         "marketHashName": "★ M9 Bayonet | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10687,7 +10687,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Forest DDPAT",
-        "image": "assets/cases/operation-vanguard-weapon-case/weapons/079_★_M9_Bayonet_Forest_DDPAT.png",
+        "image": "assets/cases/operation-vanguard-weapon-case/weapons/079_%E2%98%85_M9_Bayonet_Forest_DDPAT.png",
         "marketHashName": "★ M9 Bayonet | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10807,7 +10807,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Bayonet",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/014_★_Bayonet.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/014_%E2%98%85_Bayonet.png",
         "marketHashName": "★ Bayonet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10815,7 +10815,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Fade",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/015_★_Bayonet_Fade.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/015_%E2%98%85_Bayonet_Fade.png",
         "marketHashName": "★ Bayonet | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10823,7 +10823,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Slaughter",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/016_★_Bayonet_Slaughter.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/016_%E2%98%85_Bayonet_Slaughter.png",
         "marketHashName": "★ Bayonet | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10831,7 +10831,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Case Hardened",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/017_★_Bayonet_Case_Hardened.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/017_%E2%98%85_Bayonet_Case_Hardened.png",
         "marketHashName": "★ Bayonet | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10839,7 +10839,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Night",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/018_★_Bayonet_Night.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/018_%E2%98%85_Bayonet_Night.png",
         "marketHashName": "★ Bayonet | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10847,7 +10847,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Blue Steel",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/019_★_Bayonet_Blue_Steel.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/019_%E2%98%85_Bayonet_Blue_Steel.png",
         "marketHashName": "★ Bayonet | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10855,7 +10855,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Crimson Web",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/020_★_Bayonet_Crimson_Web.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/020_%E2%98%85_Bayonet_Crimson_Web.png",
         "marketHashName": "★ Bayonet | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10863,7 +10863,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Stained",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/021_★_Bayonet_Stained.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/021_%E2%98%85_Bayonet_Stained.png",
         "marketHashName": "★ Bayonet | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10871,7 +10871,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Scorched",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/022_★_Bayonet_Scorched.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/022_%E2%98%85_Bayonet_Scorched.png",
         "marketHashName": "★ Bayonet | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10879,7 +10879,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Safari Mesh",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/023_★_Bayonet_Safari_Mesh.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/023_%E2%98%85_Bayonet_Safari_Mesh.png",
         "marketHashName": "★ Bayonet | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10887,7 +10887,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Boreal Forest",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/024_★_Bayonet_Boreal_Forest.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/024_%E2%98%85_Bayonet_Boreal_Forest.png",
         "marketHashName": "★ Bayonet | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10895,7 +10895,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Urban Masked",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/025_★_Bayonet_Urban_Masked.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/025_%E2%98%85_Bayonet_Urban_Masked.png",
         "marketHashName": "★ Bayonet | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10903,7 +10903,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Bayonet | Forest DDPAT",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/026_★_Bayonet_Forest_DDPAT.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/026_%E2%98%85_Bayonet_Forest_DDPAT.png",
         "marketHashName": "★ Bayonet | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10911,7 +10911,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/027_★_Flip_Knife.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/027_%E2%98%85_Flip_Knife.png",
         "marketHashName": "★ Flip Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10919,7 +10919,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Fade",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/028_★_Flip_Knife_Fade.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/028_%E2%98%85_Flip_Knife_Fade.png",
         "marketHashName": "★ Flip Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10927,7 +10927,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Slaughter",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/029_★_Flip_Knife_Slaughter.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/029_%E2%98%85_Flip_Knife_Slaughter.png",
         "marketHashName": "★ Flip Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10935,7 +10935,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Case Hardened",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/030_★_Flip_Knife_Case_Hardened.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/030_%E2%98%85_Flip_Knife_Case_Hardened.png",
         "marketHashName": "★ Flip Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10943,7 +10943,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Night",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/031_★_Flip_Knife_Night.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/031_%E2%98%85_Flip_Knife_Night.png",
         "marketHashName": "★ Flip Knife | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10951,7 +10951,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Blue Steel",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/032_★_Flip_Knife_Blue_Steel.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/032_%E2%98%85_Flip_Knife_Blue_Steel.png",
         "marketHashName": "★ Flip Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10959,7 +10959,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Crimson Web",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/033_★_Flip_Knife_Crimson_Web.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/033_%E2%98%85_Flip_Knife_Crimson_Web.png",
         "marketHashName": "★ Flip Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10967,7 +10967,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Stained",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/034_★_Flip_Knife_Stained.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/034_%E2%98%85_Flip_Knife_Stained.png",
         "marketHashName": "★ Flip Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10975,7 +10975,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Scorched",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/035_★_Flip_Knife_Scorched.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/035_%E2%98%85_Flip_Knife_Scorched.png",
         "marketHashName": "★ Flip Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10983,7 +10983,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Safari Mesh",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/036_★_Flip_Knife_Safari_Mesh.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/036_%E2%98%85_Flip_Knife_Safari_Mesh.png",
         "marketHashName": "★ Flip Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10991,7 +10991,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Boreal Forest",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/037_★_Flip_Knife_Boreal_Forest.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/037_%E2%98%85_Flip_Knife_Boreal_Forest.png",
         "marketHashName": "★ Flip Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -10999,7 +10999,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Urban Masked",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/038_★_Flip_Knife_Urban_Masked.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/038_%E2%98%85_Flip_Knife_Urban_Masked.png",
         "marketHashName": "★ Flip Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11007,7 +11007,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Flip Knife | Forest DDPAT",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/039_★_Flip_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/039_%E2%98%85_Flip_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Flip Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11015,7 +11015,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/040_★_Gut_Knife.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/040_%E2%98%85_Gut_Knife.png",
         "marketHashName": "★ Gut Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11023,7 +11023,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Fade",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/041_★_Gut_Knife_Fade.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/041_%E2%98%85_Gut_Knife_Fade.png",
         "marketHashName": "★ Gut Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11031,7 +11031,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Slaughter",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/042_★_Gut_Knife_Slaughter.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/042_%E2%98%85_Gut_Knife_Slaughter.png",
         "marketHashName": "★ Gut Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11039,7 +11039,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Case Hardened",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/043_★_Gut_Knife_Case_Hardened.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/043_%E2%98%85_Gut_Knife_Case_Hardened.png",
         "marketHashName": "★ Gut Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11047,7 +11047,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Night",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/044_★_Gut_Knife_Night.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/044_%E2%98%85_Gut_Knife_Night.png",
         "marketHashName": "★ Gut Knife | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11055,7 +11055,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Blue Steel",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/045_★_Gut_Knife_Blue_Steel.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/045_%E2%98%85_Gut_Knife_Blue_Steel.png",
         "marketHashName": "★ Gut Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11063,7 +11063,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Crimson Web",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/046_★_Gut_Knife_Crimson_Web.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/046_%E2%98%85_Gut_Knife_Crimson_Web.png",
         "marketHashName": "★ Gut Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11071,7 +11071,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Stained",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/047_★_Gut_Knife_Stained.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/047_%E2%98%85_Gut_Knife_Stained.png",
         "marketHashName": "★ Gut Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11079,7 +11079,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Scorched",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/048_★_Gut_Knife_Scorched.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/048_%E2%98%85_Gut_Knife_Scorched.png",
         "marketHashName": "★ Gut Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11087,7 +11087,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Safari Mesh",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/049_★_Gut_Knife_Safari_Mesh.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/049_%E2%98%85_Gut_Knife_Safari_Mesh.png",
         "marketHashName": "★ Gut Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11095,7 +11095,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Boreal Forest",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/050_★_Gut_Knife_Boreal_Forest.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/050_%E2%98%85_Gut_Knife_Boreal_Forest.png",
         "marketHashName": "★ Gut Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11103,7 +11103,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Urban Masked",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/051_★_Gut_Knife_Urban_Masked.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/051_%E2%98%85_Gut_Knife_Urban_Masked.png",
         "marketHashName": "★ Gut Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11111,7 +11111,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Gut Knife | Forest DDPAT",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/052_★_Gut_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/052_%E2%98%85_Gut_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Gut Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11119,7 +11119,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/053_★_Karambit.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/053_%E2%98%85_Karambit.png",
         "marketHashName": "★ Karambit",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11127,7 +11127,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Fade",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/054_★_Karambit_Fade.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/054_%E2%98%85_Karambit_Fade.png",
         "marketHashName": "★ Karambit | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11135,7 +11135,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Slaughter",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/055_★_Karambit_Slaughter.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/055_%E2%98%85_Karambit_Slaughter.png",
         "marketHashName": "★ Karambit | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11143,7 +11143,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Case Hardened",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/056_★_Karambit_Case_Hardened.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/056_%E2%98%85_Karambit_Case_Hardened.png",
         "marketHashName": "★ Karambit | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11151,7 +11151,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Night",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/057_★_Karambit_Night.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/057_%E2%98%85_Karambit_Night.png",
         "marketHashName": "★ Karambit | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11159,7 +11159,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Blue Steel",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/058_★_Karambit_Blue_Steel.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/058_%E2%98%85_Karambit_Blue_Steel.png",
         "marketHashName": "★ Karambit | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11167,7 +11167,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Crimson Web",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/059_★_Karambit_Crimson_Web.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/059_%E2%98%85_Karambit_Crimson_Web.png",
         "marketHashName": "★ Karambit | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11175,7 +11175,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Stained",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/060_★_Karambit_Stained.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/060_%E2%98%85_Karambit_Stained.png",
         "marketHashName": "★ Karambit | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11183,7 +11183,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Scorched",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/061_★_Karambit_Scorched.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/061_%E2%98%85_Karambit_Scorched.png",
         "marketHashName": "★ Karambit | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11191,7 +11191,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Safari Mesh",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/062_★_Karambit_Safari_Mesh.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/062_%E2%98%85_Karambit_Safari_Mesh.png",
         "marketHashName": "★ Karambit | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11199,7 +11199,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Boreal Forest",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/063_★_Karambit_Boreal_Forest.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/063_%E2%98%85_Karambit_Boreal_Forest.png",
         "marketHashName": "★ Karambit | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11207,7 +11207,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Urban Masked",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/064_★_Karambit_Urban_Masked.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/064_%E2%98%85_Karambit_Urban_Masked.png",
         "marketHashName": "★ Karambit | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11215,7 +11215,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Karambit | Forest DDPAT",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/065_★_Karambit_Forest_DDPAT.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/065_%E2%98%85_Karambit_Forest_DDPAT.png",
         "marketHashName": "★ Karambit | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11223,7 +11223,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/066_★_M9_Bayonet.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/066_%E2%98%85_M9_Bayonet.png",
         "marketHashName": "★ M9 Bayonet",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11231,7 +11231,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Fade",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/067_★_M9_Bayonet_Fade.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/067_%E2%98%85_M9_Bayonet_Fade.png",
         "marketHashName": "★ M9 Bayonet | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11239,7 +11239,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Slaughter",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/068_★_M9_Bayonet_Slaughter.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/068_%E2%98%85_M9_Bayonet_Slaughter.png",
         "marketHashName": "★ M9 Bayonet | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11247,7 +11247,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Case Hardened",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/069_★_M9_Bayonet_Case_Hardened.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/069_%E2%98%85_M9_Bayonet_Case_Hardened.png",
         "marketHashName": "★ M9 Bayonet | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11255,7 +11255,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Night",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/070_★_M9_Bayonet_Night.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/070_%E2%98%85_M9_Bayonet_Night.png",
         "marketHashName": "★ M9 Bayonet | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11263,7 +11263,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Blue Steel",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/071_★_M9_Bayonet_Blue_Steel.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/071_%E2%98%85_M9_Bayonet_Blue_Steel.png",
         "marketHashName": "★ M9 Bayonet | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11271,7 +11271,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Crimson Web",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/072_★_M9_Bayonet_Crimson_Web.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/072_%E2%98%85_M9_Bayonet_Crimson_Web.png",
         "marketHashName": "★ M9 Bayonet | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11279,7 +11279,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Stained",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/073_★_M9_Bayonet_Stained.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/073_%E2%98%85_M9_Bayonet_Stained.png",
         "marketHashName": "★ M9 Bayonet | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11287,7 +11287,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Scorched",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/074_★_M9_Bayonet_Scorched.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/074_%E2%98%85_M9_Bayonet_Scorched.png",
         "marketHashName": "★ M9 Bayonet | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11295,7 +11295,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Safari Mesh",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/075_★_M9_Bayonet_Safari_Mesh.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/075_%E2%98%85_M9_Bayonet_Safari_Mesh.png",
         "marketHashName": "★ M9 Bayonet | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11303,7 +11303,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Boreal Forest",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/076_★_M9_Bayonet_Boreal_Forest.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/076_%E2%98%85_M9_Bayonet_Boreal_Forest.png",
         "marketHashName": "★ M9 Bayonet | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11311,7 +11311,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Urban Masked",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/077_★_M9_Bayonet_Urban_Masked.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/077_%E2%98%85_M9_Bayonet_Urban_Masked.png",
         "marketHashName": "★ M9 Bayonet | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11319,7 +11319,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ M9 Bayonet | Forest DDPAT",
-        "image": "assets/cases/operation-phoenix-weapon-case/weapons/078_★_M9_Bayonet_Forest_DDPAT.png",
+        "image": "assets/cases/operation-phoenix-weapon-case/weapons/078_%E2%98%85_M9_Bayonet_Forest_DDPAT.png",
         "marketHashName": "★ M9 Bayonet | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11455,7 +11455,7 @@ window.CASE_DROPS_CACHE = {
     "specials": [
       {
         "name": "★ Huntsman Knife",
-        "image": "assets/cases/huntsman-weapon-case/weapons/016_★_Huntsman_Knife.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/016_%E2%98%85_Huntsman_Knife.png",
         "marketHashName": "★ Huntsman Knife",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11463,7 +11463,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Fade",
-        "image": "assets/cases/huntsman-weapon-case/weapons/017_★_Huntsman_Knife_Fade.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/017_%E2%98%85_Huntsman_Knife_Fade.png",
         "marketHashName": "★ Huntsman Knife | Fade",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11471,7 +11471,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Crimson Web",
-        "image": "assets/cases/huntsman-weapon-case/weapons/018_★_Huntsman_Knife_Crimson_Web.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/018_%E2%98%85_Huntsman_Knife_Crimson_Web.png",
         "marketHashName": "★ Huntsman Knife | Crimson Web",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11479,7 +11479,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Slaughter",
-        "image": "assets/cases/huntsman-weapon-case/weapons/019_★_Huntsman_Knife_Slaughter.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/019_%E2%98%85_Huntsman_Knife_Slaughter.png",
         "marketHashName": "★ Huntsman Knife | Slaughter",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11487,7 +11487,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Case Hardened",
-        "image": "assets/cases/huntsman-weapon-case/weapons/020_★_Huntsman_Knife_Case_Hardened.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/020_%E2%98%85_Huntsman_Knife_Case_Hardened.png",
         "marketHashName": "★ Huntsman Knife | Case Hardened",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11495,7 +11495,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Urban Masked",
-        "image": "assets/cases/huntsman-weapon-case/weapons/021_★_Huntsman_Knife_Urban_Masked.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/021_%E2%98%85_Huntsman_Knife_Urban_Masked.png",
         "marketHashName": "★ Huntsman Knife | Urban Masked",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11503,7 +11503,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Blue Steel",
-        "image": "assets/cases/huntsman-weapon-case/weapons/022_★_Huntsman_Knife_Blue_Steel.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/022_%E2%98%85_Huntsman_Knife_Blue_Steel.png",
         "marketHashName": "★ Huntsman Knife | Blue Steel",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11511,7 +11511,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Night",
-        "image": "assets/cases/huntsman-weapon-case/weapons/023_★_Huntsman_Knife_Night.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/023_%E2%98%85_Huntsman_Knife_Night.png",
         "marketHashName": "★ Huntsman Knife | Night",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11519,7 +11519,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Stained",
-        "image": "assets/cases/huntsman-weapon-case/weapons/024_★_Huntsman_Knife_Stained.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/024_%E2%98%85_Huntsman_Knife_Stained.png",
         "marketHashName": "★ Huntsman Knife | Stained",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11527,7 +11527,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Forest DDPAT",
-        "image": "assets/cases/huntsman-weapon-case/weapons/025_★_Huntsman_Knife_Forest_DDPAT.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/025_%E2%98%85_Huntsman_Knife_Forest_DDPAT.png",
         "marketHashName": "★ Huntsman Knife | Forest DDPAT",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11535,7 +11535,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Boreal Forest",
-        "image": "assets/cases/huntsman-weapon-case/weapons/026_★_Huntsman_Knife_Boreal_Forest.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/026_%E2%98%85_Huntsman_Knife_Boreal_Forest.png",
         "marketHashName": "★ Huntsman Knife | Boreal Forest",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11543,7 +11543,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Scorched",
-        "image": "assets/cases/huntsman-weapon-case/weapons/027_★_Huntsman_Knife_Scorched.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/027_%E2%98%85_Huntsman_Knife_Scorched.png",
         "marketHashName": "★ Huntsman Knife | Scorched",
         "rarity": "Covert",
         "floatMin": 0,
@@ -11551,7 +11551,7 @@ window.CASE_DROPS_CACHE = {
       },
       {
         "name": "★ Huntsman Knife | Safari Mesh",
-        "image": "assets/cases/huntsman-weapon-case/weapons/028_★_Huntsman_Knife_Safari_Mesh.png",
+        "image": "assets/cases/huntsman-weapon-case/weapons/028_%E2%98%85_Huntsman_Knife_Safari_Mesh.png",
         "marketHashName": "★ Huntsman Knife | Safari Mesh",
         "rarity": "Covert",
         "floatMin": 0,

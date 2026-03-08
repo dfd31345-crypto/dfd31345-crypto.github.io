@@ -6,8 +6,8 @@
   <title>CS2 Trading — Premium Marketplace</title>
   <link rel="stylesheet" href="styles.css?v=20260308-2">
   <script src="app-config.js?v=20260307-4"></script>
-  <script src="case-drops-cache.local.js?v=20260308-7"></script>
-  <script src="case-local-images.local.js?v=20260308-7"></script>
+  <script src="case-drops-cache.local.js?v=20260308-8"></script>
+  <script src="case-local-images.local.js?v=20260308-8"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -509,8 +509,10 @@
         .replace(/^\.\/assets\//i, 'assets/')
         .replace(/^assets\//i, 'assets/');
 
-      // Use document-relative assets paths so previews work both on file:// and hosted pages.
-      const localUrl = /^assets\//i.test(normalizedLocal) ? `./${normalizedLocal}` : normalizedLocal;
+      // Resolve local assets against current document URL for robust loading in all deploy contexts.
+      const localUrl = /^assets\//i.test(normalizedLocal)
+        ? new URL(normalizedLocal, document.baseURI || window.location.href).href
+        : normalizedLocal;
 
       return localUrl
         .replace('https://community.cloudflare.steamstatic.com/economy/image/', 'https://steamcommunity-a.akamaihd.net/economy/image/')
@@ -1038,9 +1040,9 @@
       const noLeadingSlash = noDotPrefix.replace(/^\//, '');
 
       if (/^assets\//i.test(noLeadingSlash)) {
+        add(noLeadingSlash);
         add(`./${noLeadingSlash}`);
         add(`/${noLeadingSlash}`);
-        add(noLeadingSlash);
         try {
           add(new URL(noLeadingSlash, document.baseURI || window.location.href).href);
         } catch {
