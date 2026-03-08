@@ -1344,13 +1344,11 @@
 
     async function fetchSteamPriceOverviewViaRelay(marketHashName) {
       if (!marketHashName) return null;
-      const steamUrl = `http://steamcommunity.com/market/priceoverview/?currency=1&appid=${STEAM_APP_ID}&market_hash_name=${encodeURIComponent(marketHashName)}`;
-      const relayUrl = `https://r.jina.ai/${steamUrl}`;
-      try {
-        const res = await fetch(relayUrl);
-        if (!res.ok) return null;
-        const text = await res.text();
-        const jsonText = extractJsonObjectFromText(text);
+
+      const parsePricePayload = (payloadText) => {
+        const raw = String(payloadText || '').trim();
+        if (!raw) return null;
+        const jsonText = raw.startsWith('{') ? raw : extractJsonObjectFromText(raw);
         if (!jsonText) return null;
         const parsed = JSON.parse(jsonText);
         if (!parsed || parsed.success !== true) return null;
@@ -1364,6 +1362,24 @@
           sellPriceText: lowest || median,
           listingUrl: `https://steamcommunity.com/market/listings/730/${encodeURIComponent(marketHashName)}`
         };
+      };
+
+      const steamUrl = `https://steamcommunity.com/market/priceoverview/?currency=1&appid=${STEAM_APP_ID}&market_hash_name=${encodeURIComponent(marketHashName)}`;
+      const relayUrl = `https://api.codetabs.com/v1/proxy/?quest=${encodeURIComponent(steamUrl)}`;
+      try {
+        const res = await fetch(relayUrl);
+        if (res.ok) {
+          const text = await res.text();
+          const parsed = parsePricePayload(text);
+          if (parsed) return parsed;
+        }
+
+        // Secondary relay fallback for environments where codetabs is unreachable.
+        const backupRelayUrl = `https://r.jina.ai/http://steamcommunity.com/market/priceoverview/?currency=1&appid=${STEAM_APP_ID}&market_hash_name=${encodeURIComponent(marketHashName)}`;
+        const backupRes = await fetch(backupRelayUrl);
+        if (!backupRes.ok) return null;
+        const backupText = await backupRes.text();
+        return parsePricePayload(backupText);
       } catch {
         return null;
       }
