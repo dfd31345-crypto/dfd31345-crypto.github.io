@@ -1,129 +1,129 @@
 window.CASE_LOCAL_IMAGES = {
-  "generatedAt": "2026-03-08T03:33:48.369Z",
+  "generatedAt": "2026-03-08T04:15:12.408Z",
   "source": "local-assets-cases-plus-bymykel-crates",
   "cases": {
     "Kilowatt Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/kilowatt-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_frnEVvqf_a6VoIfGSXz7Hlbwg57QwSS_mxhl15jiGyN37c3_GZw91W8BwRflK7EfKsa2sfw",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/kilowatt-case",
       "csgContainerUrl": ""
     },
     "Revolution Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/revolution-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_frnAVvfb6aqduc_TFVjTCxbx05OU4S3jilE9w4DzRnImtIy2Sa1JzDJEhRPlK7EcO4U8gfA",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/revolution-case",
       "csgContainerUrl": ""
     },
     "Recoil Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/recoil-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_frnMVu6b-avA-JqSSCjSWwuhz47U9TCzlxh9yt2WGnNqgIi-fbgUkWMNxFPlK7EdIJF6a2Q",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/recoil-case",
       "csgContainerUrl": ""
     },
     "Dreams & Nightmares Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/dreams-and-nightmares-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_frnIV7Kb5OaU-JqfHDzXFle0u4LY8Gy_kkRgisGzcm4v4J3vDOAQmDMdyRvlK7EcmeCU3yw",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/dreams-and-nightmares-case",
       "csgContainerUrl": ""
     },
     "Snakebite Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/snakebite-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fr3oVvvT4bfI4dvTLCGTCmLl16ec7TX_mk08k42iHwtqscy-WPVUmCZJ4R_lK7Ed8Q6OYtw",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/snakebite-case",
       "csgContainerUrl": ""
     },
     "Fracture Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/fracture-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fr3QV7aD7OP01IfbGDzPCmbsm4LU5GnvkzUsi4WvUmIqtci_CPQNyApsjE_lK7EfrhW545A",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/fracture-case",
       "csgContainerUrl": ""
     },
     "Prisma 2 Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/prisma-2-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fr3cV6vT9avBvefWWDDGTxbZ14rhsTX7qkE90sDiHwt2pdC-TblJ2DsB1QPlK7Ee9riHKAA",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/prisma-2-case",
       "csgContainerUrl": ""
     },
     "CS20 Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/cs20-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fr3YVvfD9aqVveKaQDDKSl7134bg_HH3hlBty6z7Vn9v6eXmeZgBxWJd0EflK7Efs4hZiKQ",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/cs20-case",
       "csgContainerUrl": ""
     },
     "Prisma Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/prisma-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fr3AV6aD8O6BpdKKQVmPEwr1zs-c8Tnngl09w52zTmY2sc3jBag8jXpohE_lK7Ede7E2Kfw",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/prisma-case",
       "csgContainerUrl": ""
     },
     "Danger Zone Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/danger-zone-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fr3MVv_H4a6FucPPBWjDIkbdz4rg4Syyyxxsi5mzRntuvJCqVbwAgDZBwRPlK7EcZJ5GkQA",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/danger-zone-case",
       "csgContainerUrl": ""
     },
     "Horizon Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/horizon-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fr3IV6vSrbfw8eaiWCjWVkewgseM9TXyxl0wi6mSHn9-tIHqUbg5yDpEmEPlK7EcXFmSLsw",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/horizon-case",
       "csgContainerUrl": ""
     },
     "Clutch Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/clutch-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_frHsVtqr8a_dsdKTAWDWVxLgjsrAwHSvgwEQk4m-ByYuqIC2eO1VyD5QiR_lK7EcxQQPYQA",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/clutch-case",
       "csgContainerUrl": ""
     },
     "Spectrum 2 Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/spectrum-2-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_frHoVu6D7PaA0JaDACjKUwOom47VrTSzrw0Vx4W_Sydz9JC7FZgckCZYjRPlK7EcPuDAQzw",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/spectrum-2-case",
       "csgContainerUrl": ""
     },
     "Spectrum Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/spectrum-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_frHQV7qCra_JscqPGCzLCl78ktuAxHSzmzUh_sjvWzdqoI33CaQF2DscjR_lK7EeF3oM7TA",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/spectrum-case",
       "csgContainerUrl": ""
     },
     "Gamma 2 Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/gamma-2-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bjz61TqQCKj0JfipHMN7aX2bfM9eaPDXT7Glbx1s7Y8HHHnw0sltWXSmYmqcH-UaAU-Sswn_16VNj0",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/gamma-2-case",
       "csgContainerUrl": ""
     },
     "Gamma Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/gamma-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_frHEVtvP5bPZrd6XECmOSxe0v4bRoTnnjwBkitWrRm4yoeX3GagMnCZZ2FPlK7EcEv22BnQ",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/gamma-case",
       "csgContainerUrl": ""
     },
     "Chroma 3 Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/chroma-3-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_frHAVuKf7PaJucPLHW2TExb9z4OdvHirixEomtW7cyduvci2VZ1AiCsR2Q_lK7EdW_VBhrw",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/chroma-3-case",
       "csgContainerUrl": ""
     },
     "Chroma 2 Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/chroma-2-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fqmwOuKD2PqI6caDBWDeUkO8uteM9SnDglklw6miEn9j6IHKfblNxA5pxW6dU5UH4LtBe",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/chroma-2-case",
       "csgContainerUrl": ""
     },
     "Chroma Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/chroma-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fq2wP7qr6bqI5cvHDCzfBlbcv57JqF3zrxRkj4W6Dwo34dy6QPQAoC5ZyW6dU5cxvklfG",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/chroma-case",
       "csgContainerUrl": ""
     },
     "Falchion Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/falchion-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fpWwI7Pb-P6Y5dvPEDGSSlrsh57U8HHHiwx5yt2-Dwo7_JSnCOw8oCJF0W6dU5dgrLNA1",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/falchion-case",
       "csgContainerUrl": ""
     },
     "Operation Wildfire Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/operation-wildfire-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_frHMVu6r9MaA6ePPAWjbGwrwm47dtTnu2kUl14mzUnomudnqQaQ4iApF5TPlK7Ee3MsZV-w",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/operation-wildfire-case",
       "csgContainerUrl": ""
     },
     "Operation Breakout Weapon Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/operation-breakout-weapon-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fqWxdv_b8O_w5eKXBWWXHw-smtrBvTHDmwEsl4jvWn4z_I3qWZwV1X5ZwW6dU5RcRF1o0",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/operation-breakout-weapon-case",
       "csgContainerUrl": ""
     },
     "Operation Vanguard Weapon Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/operation-vanguard-weapon-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fqGwPtvP9MKA_JKOSCGGWmL8useQ6TXywwB8k4T-EyImgeCmXbA4oAsRzW6dU5QwRm5UL",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/operation-vanguard-weapon-case",
       "csgContainerUrl": ""
     },
     "Operation Phoenix Weapon Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/operation-phoenix-weapon-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_fr2wPtqP5PKVvJPSQDWSSl7sn6eMxHC3hwhl3sDuDztivJHrEagJzWZd3W6dU5fXcT7oM",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/operation-phoenix-weapon-case",
       "csgContainerUrl": ""
     },
     "Huntsman Weapon Case": {
-      "image": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/huntsman-weapon-case/case-thumb.png",
+      "image": "https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGJKz2lu_XsnXwtmkJjSU91dh8bj35VTqVBP4io_frmxY6qr9OqU0cvbKCGTDk7dys7k-S36yzU114GrRmNaoeSmXaVV0WJp0W6dU5Q_KKWwm",
       "folder": "https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/assets/cases/huntsman-weapon-case",
       "csgContainerUrl": ""
     }

@@ -257,8 +257,10 @@ async function main() {
     const caseThumbSource = casePreviewImage ? path.join(SITE_DIR, casePreviewImage.image) : '';
     const hasCaseThumb = ensureFixedImageCopy(caseThumbSource, caseThumbPath);
 
+    const crateImage = String(crate.image || '').trim();
+
     localImages.cases[caseName] = {
-      image: hasCaseThumb ? `assets/cases/${folder}/${CASE_THUMB_NAME}` : '',
+      image: crateImage || (hasCaseThumb ? `assets/cases/${folder}/${CASE_THUMB_NAME}` : ''),
       folder: `assets/cases/${folder}`,
       csgContainerUrl: ''
     };
