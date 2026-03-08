@@ -424,20 +424,6 @@ body::after {
   --my: 50%;
 }
 
-.weapon-thumb::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 56px;
-  height: 34px;
-  pointer-events: none;
-  background:
-    linear-gradient(135deg, rgba(14, 20, 34, 0.98) 0%, rgba(14, 20, 34, 0.9) 65%, rgba(14, 20, 34, 0) 100%);
-  border-bottom-left-radius: 10px;
-  z-index: 2;
-}
-
 .weapon-thumb img {
   width: 94%;
   height: 98px;
@@ -547,6 +533,41 @@ body::after {
   color: var(--text-secondary);
   line-height: 1.45;
   font-size: 0.9rem;
+}
+
+.inspect-wear-menu-wrap {
+  position: relative;
+}
+
+.inspect-wear-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.35rem);
+  background: rgba(16, 23, 40, 0.98);
+  border: 1px solid rgba(130, 151, 246, 0.42);
+  border-radius: 10px;
+  padding: 0.35rem;
+  min-width: 180px;
+  display: grid;
+  gap: 0.25rem;
+  z-index: 20;
+}
+
+.inspect-wear-option {
+  background: rgba(58, 78, 146, 0.2);
+  border: 1px solid rgba(130, 151, 246, 0.35);
+  color: #e5edff;
+  border-radius: 8px;
+  padding: 0.42rem 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.inspect-wear-option:hover {
+  background: rgba(88, 117, 214, 0.36);
+  border-color: rgba(160, 181, 255, 0.65);
 }
 
 /* Home */

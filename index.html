@@ -109,7 +109,10 @@
           <p class="inspect-description" id="inspectItemCs2Description"></p>
           <p class="inspect-description" id="inspectItemSteamDescription"></p>
           <div class="case-preview-actions">
-            <a id="inspectItemSteamLink" class="btn-primary" href="#" target="_blank" rel="noopener">Inspect Item on Steam</a>
+            <div class="inspect-wear-menu-wrap">
+              <button id="inspectItemSteamLink" class="btn-primary" onclick="toggleInspectWearMenu()">Inspect Item on Steam</button>
+              <div id="inspectWearMenu" class="inspect-wear-menu" style="display:none;"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -260,6 +263,8 @@
     let currentPage = 'home';
     let selectedCaseIndex = null;
     let inspectBackPage = 'casePreview';
+    let currentInspectMarketBase = '';
+    let currentInspectWearOptions = [];
 
     function apiUrl(path) {
       return `${API_BASE_URL}${path}`;
@@ -430,6 +435,40 @@
         return String(name || '').trim();
       }
       return `${base} (Field-Tested)`;
+    }
+
+    function getSupportedWearOptions(floatMin, floatMax) {
+      const min = clampFloat(floatMin);
+      const max = clampFloat(floatMax);
+      const supported = wearOrder.filter((wear) => {
+        const range = wearRanges[wear];
+        if (!range) return false;
+        return Math.max(min, range[0]) <= Math.min(max, range[1]);
+      });
+      return supported.length ? supported : ['Factory New', 'Minimal Wear', 'Field-Tested', 'Well-Worn', 'Battle-Scarred'];
+    }
+
+    function getSteamListingForWear(baseMarketName, wear) {
+      const hash = `${stripWearSuffix(baseMarketName)} (${wear})`;
+      return `https://steamcommunity.com/market/listings/730/${encodeURIComponent(hash)}`;
+    }
+
+    function closeInspectWearMenu() {
+      const menu = document.getElementById('inspectWearMenu');
+      if (menu) menu.style.display = 'none';
+    }
+
+    function toggleInspectWearMenu() {
+      const menu = document.getElementById('inspectWearMenu');
+      if (!menu) return;
+      menu.style.display = menu.style.display === 'none' ? 'grid' : 'none';
+    }
+
+    function openInspectWearOnSteam(wear) {
+      if (!currentInspectMarketBase) return;
+      const url = getSteamListingForWear(currentInspectMarketBase, wear);
+      window.open(url, '_blank', 'noopener');
+      closeInspectWearMenu();
     }
 
     function getCaseDropPool(selectedCase) {
@@ -1006,17 +1045,22 @@
 
       const displayName = stripWearSuffix(item.name || item.marketHashName || '');
       const normalizedImage = normalizeImageUrl(item.image || getHardcodedWeaponImage(item.marketHashName || item.name));
-      const fieldTestedHash = ensureFieldTestedMarketHash(item.marketHashName || item.name || displayName);
-      const steamListingUrl = `https://steamcommunity.com/market/listings/730/${encodeURIComponent(fieldTestedHash)}`;
+      const marketBaseName = stripWearSuffix(item.marketHashName || item.name || displayName);
+      const wearOptions = getSupportedWearOptions(item.floatMin, item.floatMax);
+      const defaultWear = wearOptions.includes('Field-Tested') ? 'Field-Tested' : wearOptions[0];
+      const defaultHash = `${marketBaseName} (${defaultWear})`;
 
       document.getElementById('itemInspectTitle').textContent = `Inspect ${displayName}`;
       document.getElementById('itemInspectMeta').textContent = `${selectedCase.name} • ${inferCategoryFromName(displayName)} • ${item.rarity || 'Mil-Spec'}`;
       document.getElementById('inspectItemName').textContent = displayName;
       document.getElementById('inspectItemCaseLine').textContent = `Case: ${selectedCase.name}`;
       document.getElementById('inspectItemRarityLine').textContent = `Rarity: ${item.rarity || 'Mil-Spec'}`;
-      document.getElementById('inspectItemWearLine').textContent = `Available wears: ${getWearCoverageText(item.floatMin, item.floatMax)}`;
+      document.getElementById('inspectItemWearLine').textContent = `Available wears: ${wearOptions.join(' • ')}`;
       document.getElementById('inspectItemCs2Description').textContent = buildCs2SkinDescription(item, selectedCase.name);
       document.getElementById('inspectItemSteamDescription').textContent = 'Loading Steam description...';
+
+      currentInspectMarketBase = marketBaseName;
+      currentInspectWearOptions = wearOptions.slice();
 
       const inspectThumb = document.getElementById('inspectItemThumb');
       inspectThumb.innerHTML = normalizedImage
@@ -1024,17 +1068,23 @@
         : '<div class="weapon-placeholder">Weapon Image</div>';
 
       const inspectSteamLink = document.getElementById('inspectItemSteamLink');
-      inspectSteamLink.href = steamListingUrl;
       inspectSteamLink.textContent = 'Inspect Item on Steam';
+
+      const inspectWearMenu = document.getElementById('inspectWearMenu');
+      inspectWearMenu.innerHTML = wearOptions.map((wear) =>
+        `<button class="inspect-wear-option" onclick="openInspectWearOnSteam('${wear}')">${wear}</button>`
+      ).join('');
+      inspectWearMenu.style.display = 'none';
 
       wireWeaponThumbZoom();
 
-      const snapshot = await getWeaponSnapshotWithFallback(fieldTestedHash);
+      const snapshot = await getWeaponSnapshotWithFallback(defaultHash);
       const steamDescription = extractSteamDescription(snapshot, displayName);
       document.getElementById('inspectItemSteamDescription').textContent = steamDescription;
     }
 
     function backFromItemInspect() {
+      closeInspectWearMenu();
       if (inspectBackPage === 'caseSpecial' && Number.isInteger(selectedCaseIndex)) {
         openSpecialDropsPreview(selectedCaseIndex);
         return;
