@@ -172,7 +172,7 @@ async function main() {
       const item = all[i] || {};
       const itemName = String(item.name || item.market_hash_name || `Item ${i + 1}`).trim();
       const fileName = fs.existsSync(weaponsDir) ? fileByIndex(weaponsDir, i + 1) : '';
-      const relPath = fileName ? `/assets/cases/${folder}/weapons/${fileName}` : '';
+      const relPath = fileName ? `assets/cases/${folder}/weapons/${fileName}` : '';
 
       const baseEntry = {
         name: itemName,
@@ -198,8 +198,10 @@ async function main() {
       specials
     };
 
+    const casePreviewImage = weapons.find((w) => w.image) || specials.find((s) => s.image) || null;
+
     localImages.cases[caseName] = {
-      image: '',
+      image: casePreviewImage ? casePreviewImage.image : '',
       folder: `assets/cases/${folder}`,
       csgContainerUrl: ''
     };

@@ -6,8 +6,8 @@
   <title>CS2 Trading — Premium Marketplace</title>
   <link rel="stylesheet" href="styles.css?v=20260308-1">
   <script src="app-config.js?v=20260307-4"></script>
-  <script src="case-drops-cache.js?v=20260308-4"></script>
-  <script src="case-local-images.js?v=20260308-4"></script>
+  <script src="case-drops-cache.js?v=20260308-5"></script>
+  <script src="case-local-images.js?v=20260308-5"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -505,10 +505,14 @@
       const decodedSocial = decodeCsgoskinsSocialImageUrl(url);
       const sourceUrl = decodedSocial || String(url);
       const normalizedLocal = sourceUrl
-        .replace(/^\.\/assets\//i, '/assets/')
-        .replace(/^assets\//i, '/assets/');
+        .replace(/^\/+assets\//i, 'assets/')
+        .replace(/^\.\/assets\//i, 'assets/')
+        .replace(/^assets\//i, 'assets/');
 
-      return normalizedLocal
+      // Use document-relative assets paths so previews work both on file:// and hosted pages.
+      const localUrl = /^assets\//i.test(normalizedLocal) ? `./${normalizedLocal}` : normalizedLocal;
+
+      return localUrl
         .replace('https://community.cloudflare.steamstatic.com/economy/image/', 'https://steamcommunity-a.akamaihd.net/economy/image/')
         .replace('https://community.cloudflare.steamstatic.com', 'https://steamcommunity-a.akamaihd.net');
     }
