@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CS2 Trading — Premium Marketplace</title>
-  <link rel="stylesheet" href="styles.css?v=20260308-1">
+  <link rel="stylesheet" href="styles.css?v=20260308-2">
   <script src="app-config.js?v=20260307-4"></script>
-  <script src="case-drops-cache.js?v=20260308-5"></script>
-  <script src="case-local-images.js?v=20260308-5"></script>
+  <script src="case-drops-cache.js?v=20260308-6"></script>
+  <script src="case-local-images.js?v=20260308-6"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -1008,14 +1008,66 @@
 
     function setCaseThumbFallback(element) {
       if (!element || !element.parentElement) return;
+      if (tryNextLocalImage(element)) return;
       element.remove();
       element.parentElement.innerHTML = '<div class="case-placeholder">Case Image</div>';
     }
 
     function setWeaponThumbFallback(element) {
       if (!element || !element.parentElement) return;
+      if (tryNextLocalImage(element)) return;
       element.remove();
       element.parentElement.innerHTML = '<div class="weapon-placeholder">Weapon Image</div>';
+    }
+
+    function buildLocalImageCandidates(url) {
+      const value = String(url || '').trim();
+      if (!value) return [];
+
+      const candidates = [];
+      const add = (candidate) => {
+        const c = String(candidate || '').trim();
+        if (!c) return;
+        if (!candidates.includes(c)) candidates.push(c);
+      };
+
+      add(value);
+
+      const strippedHost = value.replace(/^https?:\/\/[^/]+/i, '');
+      const noDotPrefix = strippedHost.replace(/^\.\//, '');
+      const noLeadingSlash = noDotPrefix.replace(/^\//, '');
+
+      if (/^assets\//i.test(noLeadingSlash)) {
+        add(`./${noLeadingSlash}`);
+        add(`/${noLeadingSlash}`);
+        add(noLeadingSlash);
+        try {
+          add(new URL(noLeadingSlash, document.baseURI || window.location.href).href);
+        } catch {
+          // Ignore URL parsing failures.
+        }
+      }
+
+      return candidates;
+    }
+
+    function tryNextLocalImage(element) {
+      if (!element) return false;
+
+      if (!element.__localImageCandidates) {
+        const seed = element.getAttribute('data-local-src') || element.getAttribute('src') || '';
+        element.__localImageCandidates = buildLocalImageCandidates(seed);
+        const currentSrc = element.getAttribute('src') || '';
+        const currentIdx = element.__localImageCandidates.indexOf(currentSrc);
+        element.__localImageIndex = currentIdx >= 0 ? currentIdx : 0;
+      }
+
+      const nextIndex = Number(element.__localImageIndex || 0) + 1;
+      if (nextIndex >= element.__localImageCandidates.length) return false;
+
+      element.__localImageIndex = nextIndex;
+      element.src = element.__localImageCandidates[nextIndex];
+      return true;
     }
 
     function wireWeaponThumbZoom() {
@@ -1046,7 +1098,7 @@
         <article class="case-card-home" id="case-card-${idx}">
           <div class="case-thumb" id="case-thumb-${idx}">
             ${getHardcodedCaseImage(cs.name)
-              ? `<img src="${getHardcodedCaseImage(cs.name)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setCaseThumbFallback(this)">`
+              ? `<img src="${getHardcodedCaseImage(cs.name)}" data-local-src="${getHardcodedCaseImage(cs.name)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setCaseThumbFallback(this)">`
               : '<div class="case-placeholder">Case Image</div>'}
           </div>
           <div class="case-body">
@@ -1126,7 +1178,7 @@
         return `
         <article class="weapon-card rarity-frame-${rarityClass(item.rarity)}" id="weapon-card-${idx}">
           <div class="weapon-thumb" id="weapon-thumb-${idx}">
-            ${item.image ? `<img src="${normalizeImageUrl(item.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">` : '<div class="weapon-placeholder">Weapon Image</div>'}
+            ${item.image ? `<img src="${normalizeImageUrl(item.image)}" data-local-src="${normalizeImageUrl(item.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">` : '<div class="weapon-placeholder">Weapon Image</div>'}
           </div>
           <div class="weapon-body">
             <h4>${item.name}</h4>
@@ -1157,7 +1209,7 @@
         if (thumb) {
           const fallbackImage = getHardcodedWeaponImage(item.marketHashName) || getHardcodedWeaponImage(item.name);
           if (fallbackImage) {
-            thumb.innerHTML = `<img src="${fallbackImage}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
+            thumb.innerHTML = `<img src="${fallbackImage}" data-local-src="${fallbackImage}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
           }
         }
         btn.textContent = 'Buy Now on Steam';
@@ -1191,7 +1243,7 @@
       grid.innerHTML = specialItems.map((item, idx) => `
         <article class="weapon-card rarity-frame-extraordinary" id="special-card-${idx}">
           <div class="weapon-thumb" id="special-thumb-${idx}">
-            ${item.image ? `<img src="${normalizeImageUrl(item.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">` : '<div class="weapon-placeholder">Special Item Image</div>'}
+            ${item.image ? `<img src="${normalizeImageUrl(item.image)}" data-local-src="${normalizeImageUrl(item.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">` : '<div class="weapon-placeholder">Special Item Image</div>'}
           </div>
           <div class="weapon-body">
             <h4>${item.name}</h4>
@@ -1219,7 +1271,7 @@
         if (thumb) {
           const fallbackImage = getHardcodedWeaponImage(item.marketHashName) || getHardcodedWeaponImage(item.name);
           if (fallbackImage) {
-            thumb.innerHTML = `<img src="${fallbackImage}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
+            thumb.innerHTML = `<img src="${fallbackImage}" data-local-src="${fallbackImage}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
           }
         }
         btn.textContent = 'Buy Now on Steam';
