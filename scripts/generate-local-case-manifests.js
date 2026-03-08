@@ -208,11 +208,18 @@ async function main() {
   }
 
   const localManifestPath = path.join(SITE_DIR, 'case-local-images.js');
+  const localManifestAliasPath = path.join(SITE_DIR, 'case-local-images.local.js');
   const dropsCachePath = path.join(SITE_DIR, 'case-drops-cache.js');
+  const dropsCacheAliasPath = path.join(SITE_DIR, 'case-drops-cache.local.js');
   const missingPath = path.join(SITE_DIR, 'assets', 'cases-manifest-missing.json');
 
-  fs.writeFileSync(localManifestPath, `window.CASE_LOCAL_IMAGES = ${JSON.stringify(localImages, null, 2)};\n`);
-  fs.writeFileSync(dropsCachePath, `window.CASE_DROPS_CACHE = ${JSON.stringify(dropsCache, null, 2)};\n`);
+  const localManifestPayload = `window.CASE_LOCAL_IMAGES = ${JSON.stringify(localImages, null, 2)};\n`;
+  const dropsCachePayload = `window.CASE_DROPS_CACHE = ${JSON.stringify(dropsCache, null, 2)};\n`;
+
+  fs.writeFileSync(localManifestPath, localManifestPayload);
+  fs.writeFileSync(localManifestAliasPath, localManifestPayload);
+  fs.writeFileSync(dropsCachePath, dropsCachePayload);
+  fs.writeFileSync(dropsCacheAliasPath, dropsCachePayload);
   fs.writeFileSync(missingPath, `${JSON.stringify({ generatedAt: new Date().toISOString(), missing }, null, 2)}\n`);
 
   console.log(`Wrote ${localManifestPath}`);
