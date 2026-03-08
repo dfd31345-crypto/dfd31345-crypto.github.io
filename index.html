@@ -1285,9 +1285,13 @@
     }
 
     const steamSnapshotCache = new Map();
-    const SNAPSHOT_STORAGE_KEY = 'steam_snapshot_cache_v1';
+    const SNAPSHOT_STORAGE_KEY = 'steam_snapshot_cache_v2';
+    const PRICE_REFRESH_META_KEY = 'steam_price_refresh_meta_v1';
+    const SNAPSHOT_TTL_MS = 48 * 60 * 60 * 1000;
     let marketApiCooldownUntil = 0;
     let snapshotQueue = Promise.resolve();
+    let bulkPriceRefreshPromise = null;
+    let bulkPriceRefreshActive = false;
 
     function loadStoredSnapshots() {
       try {
@@ -1313,13 +1317,38 @@
         steamSnapshotCache.forEach((snapshot, key) => {
           out[key] = {
             snapshot,
-            expiresAt: now + 10 * 60 * 1000
+            expiresAt: now + SNAPSHOT_TTL_MS
           };
         });
         localStorage.setItem(SNAPSHOT_STORAGE_KEY, JSON.stringify(out));
       } catch {
         // Ignore storage failures.
       }
+    }
+
+    function getPriceRefreshMeta() {
+      try {
+        const raw = localStorage.getItem(PRICE_REFRESH_META_KEY);
+        if (!raw) return {};
+        const parsed = JSON.parse(raw);
+        return parsed && typeof parsed === 'object' ? parsed : {};
+      } catch {
+        return {};
+      }
+    }
+
+    function setPriceRefreshMeta(meta) {
+      try {
+        localStorage.setItem(PRICE_REFRESH_META_KEY, JSON.stringify(meta || {}));
+      } catch {
+        // Ignore storage failures.
+      }
+    }
+
+    function isPriceRefreshDue() {
+      const meta = getPriceRefreshMeta();
+      const nextRefreshAt = Number(meta.nextRefreshAt || 0);
+      return !Number.isFinite(nextRefreshAt) || nextRefreshAt <= Date.now();
     }
 
     loadStoredSnapshots();
@@ -1403,6 +1432,12 @@
       if (steamSnapshotCache.has(marketHashName)) {
         return steamSnapshotCache.get(marketHashName);
       }
+
+      // Between scheduled refresh windows, avoid repeated network pulls.
+      if (!bulkPriceRefreshActive && !isPriceRefreshDue()) {
+        return null;
+      }
+
       return enqueueSnapshotTask(async () => {
         if (steamSnapshotCache.has(marketHashName)) {
           return steamSnapshotCache.get(marketHashName);
@@ -1443,6 +1478,101 @@
 
         return null;
       });
+    }
+
+    function supportsStatTrakForItem(baseName) {
+      const category = inferCategoryFromName(baseName);
+      return category !== 'Knives' && category !== 'Gloves';
+    }
+
+    function collectPriceRefreshItemRanges() {
+      const ranges = new Map();
+      const addItem = (name, floatMin, floatMax) => {
+        const baseName = stripWearSuffix(name || '');
+        if (!baseName) return;
+        const min = clampFloat(Number.isFinite(floatMin) ? floatMin : 0.00);
+        const max = clampFloat(Number.isFinite(floatMax) ? floatMax : 1.00);
+        if (!ranges.has(baseName)) {
+          ranges.set(baseName, { baseName, floatMin: min, floatMax: max });
+          return;
+        }
+        const existing = ranges.get(baseName);
+        existing.floatMin = Math.min(existing.floatMin, min);
+        existing.floatMax = Math.max(existing.floatMax, max);
+      };
+
+      const staticCache = window.CASE_DROPS_CACHE || {};
+      Object.values(staticCache).forEach((dropSet) => {
+        const weapons = Array.isArray(dropSet && dropSet.weapons) ? dropSet.weapons : [];
+        const specials = Array.isArray(dropSet && dropSet.specials) ? dropSet.specials : [];
+        weapons.forEach((entry) => addItem(entry.marketHashName || entry.name, entry.floatMin, entry.floatMax));
+        specials.forEach((entry) => addItem(entry.marketHashName || entry.name, entry.floatMin, entry.floatMax));
+      });
+
+      cs2Cases.forEach((cs) => {
+        (cs.weapons || []).forEach((name) => addItem(name, 0.00, 1.00));
+      });
+
+      Object.values(specialDropsByCase).forEach((list) => {
+        (list || []).forEach((name) => addItem(name, 0.00, 1.00));
+      });
+
+      return Array.from(ranges.values());
+    }
+
+    function buildAllPriceHashesForRefresh() {
+      const hashes = new Set();
+      collectPriceRefreshItemRanges().forEach((item) => {
+        const wears = getSupportedWearOptions(item.floatMin, item.floatMax);
+        if (!wears.length) return;
+        const edgeWears = wears.length > 1 ? [wears[0], wears[wears.length - 1]] : [wears[0]];
+        edgeWears.forEach((wear) => {
+          hashes.add(`${item.baseName} (${wear})`);
+          if (supportsStatTrakForItem(item.baseName)) {
+            hashes.add(`StatTrak(TM) ${item.baseName} (${wear})`);
+          }
+        });
+      });
+      return Array.from(hashes);
+    }
+
+    async function refreshStoredPricesIfDue(force = false) {
+      const due = force || isPriceRefreshDue();
+      if (!due) return;
+      if (bulkPriceRefreshPromise) {
+        await bulkPriceRefreshPromise;
+        return;
+      }
+
+      bulkPriceRefreshActive = true;
+      const refreshStartedAt = Date.now();
+      setPriceRefreshMeta({
+        lastRefreshAt: Number(getPriceRefreshMeta().lastRefreshAt || 0),
+        nextRefreshAt: Number(getPriceRefreshMeta().nextRefreshAt || 0),
+        refreshStartedAt
+      });
+
+      bulkPriceRefreshPromise = (async () => {
+        const hashes = buildAllPriceHashesForRefresh();
+        for (let i = 0; i < hashes.length; i += 1) {
+          await fetchSnapshotWithRetry(hashes[i], 2);
+          if ((i + 1) % 30 === 0) {
+            await wait(180);
+          }
+        }
+        persistSnapshots();
+        const refreshedAt = Date.now();
+        setPriceRefreshMeta({
+          lastRefreshAt: refreshedAt,
+          nextRefreshAt: refreshedAt + SNAPSHOT_TTL_MS,
+          totalHashes: hashes.length
+        });
+      })().finally(() => {
+        bulkPriceRefreshActive = false;
+        bulkPriceRefreshPromise = null;
+      });
+
+      await bulkPriceRefreshPromise;
     }
 
     function rarityBtnClass(rarity) {
@@ -1666,6 +1796,10 @@
       title.textContent = `${selectedCase.name} Weapons`;
       meta.textContent = `Showing possible drops for ${selectedCase.name}, including blue/purple/red tiers and rare gold special items.`;
       buyCaseLink.href = `https://steamcommunity.com/market/listings/730/${encodeURIComponent(selectedCase.steamHashName)}`;
+
+      loading.style.display = 'block';
+      loading.textContent = 'Loading stored price ranges...';
+      await refreshStoredPricesIfDue();
 
       const resolvedDrops = await resolveCasePreviewDrops(selectedCase);
       const weaponItems = resolvedDrops.weapons;
@@ -1975,6 +2109,7 @@
       captureTokenFromUrl();
       await ensureCaseManifestsLoaded();
       buildHardcodedImageMaps();
+      refreshStoredPricesIfDue().catch(() => null);
       openRouteFromPath();
 
       getCurrentUser().then((user) => {
