@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CS2 Trading — Premium Marketplace</title>
-  <link rel="stylesheet" href="styles.css?v=20260308-3">
+  <link rel="stylesheet" href="styles.css?v=20260308-4">
   <script src="app-config.js?v=20260307-4"></script>
 </head>
 <body>
@@ -111,7 +111,10 @@
           <div class="case-preview-actions">
             <div class="inspect-wear-menu-wrap">
               <button id="inspectItemSteamLink" class="btn-primary" onclick="toggleInspectWearMenu()">Inspect Item on Steam</button>
-              <div id="inspectWearMenu" class="inspect-wear-menu" style="display:none;"></div>
+              <div id="inspectWearMenu" class="inspect-wear-menu" style="display:none;">
+                <div class="inspect-wear-section" id="inspectWearMenuNormal"></div>
+                <div class="inspect-wear-section inspect-wear-section-stattrak" id="inspectWearMenuStattrak"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -448,9 +451,67 @@
       return supported.length ? supported : ['Factory New', 'Minimal Wear', 'Field-Tested', 'Well-Worn', 'Battle-Scarred'];
     }
 
-    function getSteamListingForWear(baseMarketName, wear) {
-      const hash = `${stripWearSuffix(baseMarketName)} (${wear})`;
+    function getSteamListingForWear(baseMarketName, wear, isStatTrak = false) {
+      const prefix = isStatTrak ? 'StatTrak(TM) ' : '';
+      const hash = `${prefix}${stripWearSuffix(baseMarketName)} (${wear})`;
       return `https://steamcommunity.com/market/listings/730/${encodeURIComponent(hash)}`;
+    }
+
+    function getSnapshotPrice(snapshot) {
+      if (!snapshot) return '';
+      const raw = [snapshot.lowestPrice, snapshot.sellPriceText, snapshot.medianPrice]
+        .find((value) => typeof value === 'string' && value.trim().length > 0);
+      return raw ? raw.trim() : '';
+    }
+
+    async function getWearEdgePrices(baseMarketName, wearOptions, isStatTrak = false) {
+      if (!baseMarketName || !Array.isArray(wearOptions) || wearOptions.length === 0) {
+        return { low: '', high: '' };
+      }
+
+      const bestWear = wearOptions[0];
+      const worstWear = wearOptions[wearOptions.length - 1];
+      const bestHash = `${isStatTrak ? 'StatTrak(TM) ' : ''}${baseMarketName} (${bestWear})`;
+      const worstHash = `${isStatTrak ? 'StatTrak(TM) ' : ''}${baseMarketName} (${worstWear})`;
+
+      const [worstSnapshot, bestSnapshot] = await Promise.all([
+        getWeaponSnapshotWithFallback(worstHash),
+        getWeaponSnapshotWithFallback(bestHash)
+      ]);
+
+      return {
+        low: getSnapshotPrice(worstSnapshot),
+        high: getSnapshotPrice(bestSnapshot)
+      };
+    }
+
+    function renderPriceRange(lowPrice, highPrice) {
+      if (!lowPrice && !highPrice) return 'N/A';
+      if (!lowPrice) return `N/A-${highPrice}`;
+      if (!highPrice) return `${lowPrice}-N/A`;
+      return `${lowPrice}-${highPrice}`;
+    }
+
+    async function updateWeaponPriceRanges(cardIndex, item) {
+      const normalLine = document.getElementById(`weapon-price-normal-${cardIndex}`);
+      const stattrakLine = document.getElementById(`weapon-price-stattrak-${cardIndex}`);
+      if (!normalLine || !stattrakLine || !item) return;
+
+      const baseMarketName = stripWearSuffix(item.marketHashName || item.name || '');
+      const wearOptions = getSupportedWearOptions(item.floatMin, item.floatMax);
+      if (!baseMarketName || wearOptions.length === 0) {
+        normalLine.textContent = 'N/A';
+        stattrakLine.textContent = 'N/A';
+        return;
+      }
+
+      const [normalRange, stattrakRange] = await Promise.all([
+        getWearEdgePrices(baseMarketName, wearOptions, false),
+        getWearEdgePrices(baseMarketName, wearOptions, true)
+      ]);
+
+      normalLine.textContent = renderPriceRange(normalRange.low, normalRange.high);
+      stattrakLine.textContent = renderPriceRange(stattrakRange.low, stattrakRange.high);
     }
 
     function closeInspectWearMenu() {
@@ -464,9 +525,9 @@
       menu.style.display = menu.style.display === 'none' ? 'grid' : 'none';
     }
 
-    function openInspectWearOnSteam(wear) {
+    function openInspectWearOnSteam(wear, isStatTrak = false) {
       if (!currentInspectMarketBase) return;
-      const url = getSteamListingForWear(currentInspectMarketBase, wear);
+      const url = getSteamListingForWear(currentInspectMarketBase, wear, isStatTrak);
       window.open(url, '_blank', 'noopener');
       closeInspectWearMenu();
     }
@@ -1071,9 +1132,20 @@
       inspectSteamLink.textContent = 'Inspect Item on Steam';
 
       const inspectWearMenu = document.getElementById('inspectWearMenu');
-      inspectWearMenu.innerHTML = wearOptions.map((wear) =>
-        `<button class="inspect-wear-option" onclick="openInspectWearOnSteam('${wear}')">${wear}</button>`
-      ).join('');
+      const inspectWearMenuNormal = document.getElementById('inspectWearMenuNormal');
+      const inspectWearMenuStattrak = document.getElementById('inspectWearMenuStattrak');
+      inspectWearMenuNormal.innerHTML = `
+        <div class="inspect-wear-heading">Normal</div>
+        ${wearOptions.map((wear) =>
+          `<button class="inspect-wear-option" onclick="openInspectWearOnSteam('${wear}', false)">${wear}</button>`
+        ).join('')}
+      `;
+      inspectWearMenuStattrak.innerHTML = `
+        <div class="inspect-wear-heading inspect-wear-heading-stattrak">StatTrak</div>
+        ${wearOptions.map((wear) =>
+          `<button class="inspect-wear-option inspect-wear-option-stattrak" onclick="openInspectWearOnSteam('${wear}', true)">StatTrak ${wear}</button>`
+        ).join('')}
+      `;
       inspectWearMenu.style.display = 'none';
 
       wireWeaponThumbZoom();
@@ -1558,6 +1630,8 @@
             </div>
             <div class="float-range-line">Wear Tiers: ${getWearCoverageText(item.floatMin, item.floatMax)}</div>
             <div class="float-range-line">Float Range: ${Number(item.floatMin).toFixed(2)} - ${Number(item.floatMax).toFixed(2)}</div>
+            <div class="price-range-line" id="weapon-price-normal-${idx}">Loading normal prices...</div>
+            <div class="price-range-line price-range-line-stattrak" id="weapon-price-stattrak-${idx}">Loading StatTrak prices...</div>
             <button class="rarity-buy-btn ${rarityBtnClass(item.rarity)}" id="weapon-buy-${idx}" data-market-hash="${item.marketHashName}">Inspect Item</button>
           </div>
         </article>
@@ -1582,6 +1656,8 @@
           }
         }
         btn.textContent = 'Inspect Item';
+
+        updateWeaponPriceRanges(idx, item);
       });
     }
 

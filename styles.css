@@ -471,6 +471,19 @@ body::after {
   margin-bottom: 0.45rem;
 }
 
+.price-range-line {
+  font-size: 0.74rem;
+  color: #f3f7ff;
+  margin-bottom: 0.28rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.price-range-line-stattrak {
+  color: #ff6f6f;
+  margin-bottom: 0.5rem;
+}
+
 .rarity-buy-btn {
   width: 100%;
   border: none;
@@ -546,11 +559,30 @@ body::after {
   background: rgba(16, 23, 40, 0.98);
   border: 1px solid rgba(130, 151, 246, 0.42);
   border-radius: 10px;
-  padding: 0.35rem;
-  min-width: 180px;
+  padding: 0.45rem;
+  min-width: 260px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.4rem;
+  z-index: 20;
+}
+
+.inspect-wear-section {
   display: grid;
   gap: 0.25rem;
-  z-index: 20;
+}
+
+.inspect-wear-heading {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #d6e2ff;
+  font-weight: 700;
+  padding: 0.1rem 0.15rem;
+}
+
+.inspect-wear-heading-stattrak {
+  color: #ff8080;
 }
 
 .inspect-wear-option {
@@ -568,6 +600,17 @@ body::after {
 .inspect-wear-option:hover {
   background: rgba(88, 117, 214, 0.36);
   border-color: rgba(160, 181, 255, 0.65);
+}
+
+.inspect-wear-option-stattrak {
+  color: #ffd0d0;
+  border-color: rgba(235, 94, 94, 0.42);
+  background: rgba(130, 38, 38, 0.25);
+}
+
+.inspect-wear-option-stattrak:hover {
+  background: rgba(176, 52, 52, 0.35);
+  border-color: rgba(255, 120, 120, 0.62);
 }
 
 /* Home */
@@ -1592,6 +1635,11 @@ body::after {
 
   .inspect-weapon-thumb img {
     height: 190px;
+  }
+
+  .inspect-wear-menu {
+    min-width: 220px;
+    grid-template-columns: 1fr;
   }
 }
 
