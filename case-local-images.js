@@ -1,5 +1,5 @@
 window.CASE_LOCAL_IMAGES = {
-  "generatedAt": "2026-03-08T03:32:43.342Z",
+  "generatedAt": "2026-03-08T03:33:48.369Z",
   "source": "local-assets-cases-plus-bymykel-crates",
   "cases": {
     "Kilowatt Case": {

@@ -7,7 +7,7 @@ const CASES_DIR = path.join(SITE_DIR, 'assets', 'cases');
 const CRATES_URL = 'https://raw.githubusercontent.com/ByMykel/CSGO-API/main/public/api/en/crates.json';
 const FIXED_WEAPONS_DIRNAME = 'weapons-fixed';
 const CASE_THUMB_NAME = 'case-thumb.png';
-const ASSET_BASE_URL = 'https://dfd31345-crypto.github.io';
+const ASSET_BASE_URL = 'https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main';
 
 const TARGET_CASES = [
   'Kilowatt Case',
