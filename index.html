@@ -6,8 +6,6 @@
   <title>CS2 Trading — Premium Marketplace</title>
   <link rel="stylesheet" href="styles.css?v=20260308-2">
   <script src="app-config.js?v=20260307-4"></script>
-  <script src="https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/case-drops-cache.hardcoded.js?v=20260308-11"></script>
-  <script src="https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/case-local-images.hardcoded.js?v=20260308-11"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -1043,6 +1041,11 @@
         add(noLeadingSlash);
         add(`./${noLeadingSlash}`);
         add(`/${noLeadingSlash}`);
+        add(`https://shipzibi.com/${noLeadingSlash}`);
+        add(`https://www.shipzibi.com/${noLeadingSlash}`);
+        add(`https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/${noLeadingSlash}`);
+        add(`https://raw.githubusercontent.com/dfd31345-crypto/dfd31345-crypto.github.io/main/${noLeadingSlash}`);
+        add(`https://dfd31345-crypto.github.io/${noLeadingSlash}`);
         try {
           add(new URL(noLeadingSlash, document.baseURI || window.location.href).href);
         } catch {
@@ -1050,7 +1053,87 @@
         }
       }
 
+      const cdnPathMatch = value.match(/https:\/\/cdn\.jsdelivr\.net\/gh\/dfd31345-crypto\/dfd31345-crypto\.github\.io@main\/(assets\/.*)$/i);
+      if (cdnPathMatch && cdnPathMatch[1]) {
+        const p = cdnPathMatch[1];
+        add(`/${p}`);
+        add(`https://shipzibi.com/${p}`);
+        add(`https://www.shipzibi.com/${p}`);
+        add(`https://raw.githubusercontent.com/dfd31345-crypto/dfd31345-crypto.github.io/main/${p}`);
+        add(`https://dfd31345-crypto.github.io/${p}`);
+      }
+
+      const shipzibiPathMatch = value.match(/^https?:\/\/(?:www\.)?shipzibi\.com\/(assets\/.*)$/i);
+      if (shipzibiPathMatch && shipzibiPathMatch[1]) {
+        const p = shipzibiPathMatch[1];
+        add(`/${p}`);
+        add(`https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/${p}`);
+        add(`https://raw.githubusercontent.com/dfd31345-crypto/dfd31345-crypto.github.io/main/${p}`);
+        add(`https://dfd31345-crypto.github.io/${p}`);
+      }
+
       return candidates;
+    }
+
+    function loadExternalScript(url, timeoutMs = 12000) {
+      return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = url;
+        script.async = true;
+        script.crossOrigin = 'anonymous';
+
+        const timeout = setTimeout(() => {
+          script.remove();
+          reject(new Error(`Script load timeout: ${url}`));
+        }, timeoutMs);
+
+        script.onload = () => {
+          clearTimeout(timeout);
+          resolve(true);
+        };
+
+        script.onerror = () => {
+          clearTimeout(timeout);
+          script.remove();
+          reject(new Error(`Script load failed: ${url}`));
+        };
+
+        document.head.appendChild(script);
+      });
+    }
+
+    async function loadFromCandidates(candidates, isReady) {
+      for (const url of candidates) {
+        try {
+          await loadExternalScript(url);
+          if (isReady()) return true;
+        } catch {
+          // Keep trying next candidate.
+        }
+      }
+      return isReady();
+    }
+
+    async function ensureCaseManifestsLoaded() {
+      const dropsReady = () => !!(window.CASE_DROPS_CACHE && typeof window.CASE_DROPS_CACHE === 'object');
+      const localReady = () => !!(window.CASE_LOCAL_IMAGES && typeof window.CASE_LOCAL_IMAGES === 'object');
+
+      const dropsCandidates = [
+        '/case-drops-cache.hardcoded.js?v=20260308-12',
+        'https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/case-drops-cache.hardcoded.js?v=20260308-12',
+        'https://raw.githubusercontent.com/dfd31345-crypto/dfd31345-crypto.github.io/main/case-drops-cache.hardcoded.js',
+        'https://dfd31345-crypto.github.io/case-drops-cache.hardcoded.js?v=20260308-12'
+      ];
+
+      const localCandidates = [
+        '/case-local-images.hardcoded.js?v=20260308-12',
+        'https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/case-local-images.hardcoded.js?v=20260308-12',
+        'https://raw.githubusercontent.com/dfd31345-crypto/dfd31345-crypto.github.io/main/case-local-images.hardcoded.js',
+        'https://dfd31345-crypto.github.io/case-local-images.hardcoded.js?v=20260308-12'
+      ];
+
+      if (!dropsReady()) await loadFromCandidates(dropsCandidates, dropsReady);
+      if (!localReady()) await loadFromCandidates(localCandidates, localReady);
     }
 
     function tryNextLocalImage(element) {
@@ -1435,17 +1518,23 @@
       `;
     }
 
-    // Initialize: render home immediately so case cards are never blocked.
-    captureTokenFromUrl();
-    renderHomeCases();
-    showPage('home');
-    getCurrentUser().then((user) => {
-      currentUser = user;
-      renderAuthState();
-      // Repaint once auth settles so UI stays consistent.
-      if (currentPage === 'home') renderHomeCases();
-    });
-    trackRevisit();
+    // Initialize: ensure manifests are available, then paint with robust image fallbacks.
+    (async () => {
+      captureTokenFromUrl();
+      await ensureCaseManifestsLoaded();
+      buildHardcodedImageMaps();
+      renderHomeCases();
+      showPage('home');
+
+      getCurrentUser().then((user) => {
+        currentUser = user;
+        renderAuthState();
+        // Repaint once auth settles so UI stays consistent.
+        if (currentPage === 'home') renderHomeCases();
+      });
+
+      trackRevisit();
+    })();
   </script>
 </body>
 </html>
