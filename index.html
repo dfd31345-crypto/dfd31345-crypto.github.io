@@ -1025,10 +1025,14 @@
     }
 
     function snapshotMatchesWeapon(requestedName, snapshot) {
-      if (!snapshot || !snapshot.iconUrl) return false;
+      if (!snapshot) return false;
+      const hasUsefulMarketData = Boolean(snapshot.iconUrl || snapshot.lowestPrice || snapshot.medianPrice || snapshot.sellPriceText || snapshot.listingUrl);
+      if (!hasUsefulMarketData) return false;
       const requestedWeaponLike = isWeaponLikeName(requestedName);
       const returnedName = snapshot.marketHashName || '';
       if (!requestedWeaponLike) return true;
+      // Some snapshot responses may omit marketHashName but still include valid pricing/listing data.
+      if (!returnedName) return true;
       if (!isWeaponLikeName(returnedName)) return false;
       if (isCaseLikeName(returnedName)) return false;
       return true;
