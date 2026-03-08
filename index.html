@@ -813,7 +813,22 @@
         ? staticCache.specials.map((item) => normalizeDropItem({ ...item, rarity: 'Extraordinary' }, 'Extraordinary'))
         : [];
 
-      const localWeapons = buildCaseWeaponItems(selectedCase);
+      if (cachedWeapons.length > 0 || cachedSpecials.length > 0) {
+        const mergedWeapons = mergeDropCollections([cachedWeapons]).map((item) => ({
+          ...item,
+          image: item.image || getHardcodedWeaponImage(item.marketHashName || item.name)
+        }));
+        const mergedSpecials = mergeDropCollections([cachedSpecials]).map((item) => ({
+          ...item,
+          image: item.image || getHardcodedWeaponImage(item.marketHashName || item.name)
+        }));
+        return { weapons: mergedWeapons, specials: mergedSpecials, source: 'static-cache' };
+      }
+
+      const localWeapons = buildCaseWeaponItems(selectedCase).map((item) => ({
+        ...item,
+        image: item.image || getHardcodedWeaponImage(item.marketHashName || item.name)
+      }));
       const localSpecials = getSpecialDropsForCase(selectedCase.name).map((name) => ({
         name,
         marketHashName: name,
@@ -824,9 +839,9 @@
         floatMax: 1.00
       }));
 
-      const mergedWeapons = mergeDropCollections([cachedWeapons, localWeapons]);
-      const mergedSpecials = mergeDropCollections([cachedSpecials, localSpecials]);
-      const source = (cachedWeapons.length > 0 || cachedSpecials.length > 0) ? 'static-cache' : 'local';
+      const mergedWeapons = mergeDropCollections([localWeapons]);
+      const mergedSpecials = mergeDropCollections([localSpecials]);
+      const source = 'local';
 
       return { weapons: mergedWeapons, specials: mergedSpecials, source };
     }
@@ -1285,22 +1300,49 @@
       const resolvedDrops = await resolveCasePreviewDrops(selectedCase);
       const weaponItems = resolvedDrops.weapons;
       const specialDrops = resolvedDrops.specials;
-      specialBtn.style.display = 'none';
+      specialBtn.style.display = specialDrops.length ? 'inline-flex' : 'none';
 
-      const allDrops = mergeDropCollections([weaponItems, specialDrops]);
-      meta.textContent = `Showing all ${allDrops.length} possible drops for ${selectedCase.name}.`;
+      const cards = weaponItems.map((item) => ({ kind: 'weapon', item }));
+      if (specialDrops.length) {
+        const hasGloves = specialDrops.some((entry) => /glove|wrap/i.test(entry.name || ''));
+        const hasKnives = specialDrops.some((entry) => /knife|bayonet|karambit|talon|falchion|bowie|navaja|ursus|stiletto|skeleton|paracord|survival|nomad|kukri|huntsman|flip|gut|dagger/i.test(entry.name || ''));
+        const specialTypeLabel = hasGloves && hasKnives ? 'Knives / Gloves' : (hasGloves ? 'Gloves' : 'Knives');
+        cards.push({ kind: 'mystery', specialTypeLabel, count: specialDrops.length });
+      }
 
-      const cards = allDrops.map((item) => ({ kind: 'weapon', item }));
+      meta.textContent = `Showing ${weaponItems.length} case drops for ${selectedCase.name}. Gold special items are behind the mystery card.`;
 
       grid.innerHTML = cards.map((card, idx) => {
+        if (card.kind === 'mystery') {
+          return `
+            <article class="weapon-card rarity-frame-contraband special-mystery-card" onclick="openSpecialDropsPreview(${caseIndex})">
+              <div class="weapon-thumb special-thumb">
+                <div class="mystery-star">&#9733;</div>
+                <div class="weapon-placeholder">Rare Special Item</div>
+              </div>
+              <div class="weapon-body">
+                <h4>${card.specialTypeLabel} Mystery Drop</h4>
+                <div class="weapon-row">
+                  <span class="chip chip-wear">Extraordinary</span>
+                  <span class="chip chip-pattern">Gold Tier</span>
+                </div>
+                <div class="float-range-line">Contains ${card.count} possible ${card.specialTypeLabel.toLowerCase()} for this case</div>
+                <div class="float-range-line">Click to preview every possible special drop</div>
+                <button class="rarity-buy-btn rarity-btn-contraband">View ${card.specialTypeLabel}</button>
+              </div>
+            </article>
+          `;
+        }
+
         const item = card.item;
+        const displayName = stripWearSuffix(item.name || item.marketHashName || '');
         return `
         <article class="weapon-card rarity-frame-${rarityClass(item.rarity)}" id="weapon-card-${idx}">
           <div class="weapon-thumb" id="weapon-thumb-${idx}">
             ${item.image ? `<img src="${normalizeImageUrl(item.image)}" data-local-src="${normalizeImageUrl(item.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">` : '<div class="weapon-placeholder">Weapon Image</div>'}
           </div>
           <div class="weapon-body">
-            <h4>${item.name}</h4>
+            <h4>${displayName || item.name}</h4>
             <div class="weapon-row">
               <span class="chip chip-wear">${item.rarity}</span>
               <span class="chip chip-pattern">${item.pattern}</span>
@@ -1317,7 +1359,7 @@
 
       loading.style.display = 'none';
 
-      allDrops.forEach((item, idx) => {
+      weaponItems.forEach((item, idx) => {
         const thumb = document.getElementById(`weapon-thumb-${idx}`);
         const btn = document.getElementById(`weapon-buy-${idx}`);
         if (!btn) return;
@@ -1365,7 +1407,7 @@
             ${item.image ? `<img src="${normalizeImageUrl(item.image)}" data-local-src="${normalizeImageUrl(item.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">` : '<div class="weapon-placeholder">Special Item Image</div>'}
           </div>
           <div class="weapon-body">
-            <h4>${item.name}</h4>
+            <h4>${stripWearSuffix(item.name) || item.name}</h4>
             <div class="weapon-row">
               <span class="chip chip-wear">Extraordinary</span>
               <span class="chip chip-pattern">${item.pattern}</span>
