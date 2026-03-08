@@ -4,9 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CS2 Trading — Premium Marketplace</title>
-  <link rel="stylesheet" href="styles.css?v=20260307-4">
+  <link rel="stylesheet" href="styles.css?v=20260308-1">
   <script src="app-config.js?v=20260307-4"></script>
-  <script src="case-drops-cache.js?v=20260307-1"></script>
+  <script src="case-drops-cache.js?v=20260307-2"></script>
+  <script src="case-local-images.js?v=20260307-2"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -252,10 +253,14 @@
 
     async function getCurrentUser() {
       try {
-        const res = await fetch(apiUrl('/api/auth/me'), { 
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 4500);
+        const res = await fetch(apiUrl('/api/auth/me'), {
           credentials: 'include',
-          headers: getAuthHeaders()
+          headers: getAuthHeaders(),
+          signal: controller.signal
         });
+        clearTimeout(timeoutId);
         if (!res.ok) return null;
         const data = await res.json();
         return data && data.authenticated ? data.user : null;
@@ -479,9 +484,27 @@
       'Huntsman Weapon Case': ['Huntsman Knife | Fade (Factory New)', 'Huntsman Knife | Slaughter (Minimal Wear)', 'Huntsman Knife | Crimson Web (Field-Tested)', 'Huntsman Knife | Case Hardened (Field-Tested)', 'Huntsman Knife | Blue Steel (Field-Tested)', 'Huntsman Knife | Forest DDPAT (Field-Tested)']
     };
 
+    function decodeCsgoskinsSocialImageUrl(url) {
+      const socialMatch = String(url || '').match(/csgoskins\.gg\/social-images\/([^/?#]+)\.png/i);
+      if (!socialMatch) return '';
+      try {
+        const token = socialMatch[1];
+        const normalized = token.replace(/-/g, '+').replace(/_/g, '/');
+        const paddingLength = normalized.length % 4 === 0 ? 0 : 4 - (normalized.length % 4);
+        const payload = normalized + '='.repeat(paddingLength);
+        const decoded = atob(payload);
+        const parsed = JSON.parse(decoded);
+        return parsed && parsed.image_url ? String(parsed.image_url) : '';
+      } catch {
+        return '';
+      }
+    }
+
     function normalizeImageUrl(url) {
       if (!url) return '';
-      return String(url)
+      const decodedSocial = decodeCsgoskinsSocialImageUrl(url);
+      const sourceUrl = decodedSocial || String(url);
+      return sourceUrl
         .replace('https://community.cloudflare.steamstatic.com/economy/image/', 'https://steamcommunity-a.akamaihd.net/economy/image/')
         .replace('https://community.cloudflare.steamstatic.com', 'https://steamcommunity-a.akamaihd.net');
     }
@@ -547,6 +570,7 @@
         return {
           name: weaponName,
           marketHashName: weaponName,
+          image: getHardcodedWeaponImage(weaponName),
           rarity: details.rarity || fallbackRarity,
           floatMin: Number.isFinite(details.floatMin) ? details.floatMin : 0.00,
           floatMax: Number.isFinite(details.floatMax) ? details.floatMax : 1.00,
@@ -567,88 +591,178 @@
       return specialDropsByCase[caseName] || [];
     }
 
-    const caseDropsCache = new Map();
+    function normalizeDropItem(rawItem, fallbackRarity = 'Mil-Spec') {
+      const itemName = (rawItem && (rawItem.name || rawItem.marketHashName)) || 'CS2 Item';
+      return {
+        name: itemName,
+        marketHashName: (rawItem && (rawItem.marketHashName || rawItem.name)) || itemName,
+        image: (rawItem && rawItem.image) || '',
+        rarity: (rawItem && rawItem.rarity) || fallbackRarity,
+        floatMin: Number.isFinite(rawItem && rawItem.floatMin) ? rawItem.floatMin : 0.00,
+        floatMax: Number.isFinite(rawItem && rawItem.floatMax) ? rawItem.floatMax : 1.00,
+        pattern: detectPatternType(itemName)
+      };
+    }
 
-    async function getCaseDropsFromApi(caseName) {
-      if (!caseName) return null;
-      if (caseDropsCache.has(caseName)) return caseDropsCache.get(caseName);
-      try {
-        const res = await fetch(apiUrl(`/api/cases/drops?caseName=${encodeURIComponent(caseName)}`), {
-          credentials: 'include',
-          headers: getAuthHeaders()
+    function dropItemKey(item) {
+      const base = stripWearSuffix(item.marketHashName || item.name || '');
+      return String(base || item.marketHashName || item.name || '').toLowerCase();
+    }
+
+    function mergeDropCollections(collections) {
+      const merged = new Map();
+      collections.forEach((items) => {
+        (items || []).forEach((item) => {
+          const key = dropItemKey(item);
+          if (!key) return;
+          if (!merged.has(key)) {
+            merged.set(key, { ...item });
+            return;
+          }
+          const existing = merged.get(key);
+          if (!existing.image && item.image) existing.image = item.image;
+          if ((!existing.marketHashName || existing.marketHashName === existing.name) && item.marketHashName) existing.marketHashName = item.marketHashName;
+          if ((!existing.rarity || existing.rarity === 'Mil-Spec') && item.rarity) existing.rarity = item.rarity;
+          if (existing.floatMin === 0.00 && existing.floatMax === 1.00 && (item.floatMin !== 0.00 || item.floatMax !== 1.00)) {
+            existing.floatMin = item.floatMin;
+            existing.floatMax = item.floatMax;
+          }
+          if (!existing.pattern && item.pattern) existing.pattern = item.pattern;
         });
-        if (!res.ok) return null;
-        const data = await res.json();
-        if (!data || !data.ok || !data.drops) return null;
-        caseDropsCache.set(caseName, data.drops);
-        return data.drops;
-      } catch {
-        return null;
+      });
+      return Array.from(merged.values());
+    }
+
+    const hardcodedWeaponImagesExact = new Map();
+    const hardcodedWeaponImagesBase = new Map();
+    const hardcodedCaseThumbs = new Map();
+
+    function registerHardcodedWeaponImage(name, imageUrl) {
+      const cleanName = String(name || '').trim();
+      const normalizedImage = normalizeImageUrl(imageUrl);
+      if (!cleanName || !normalizedImage) return;
+      const exactKey = cleanName.toLowerCase();
+      const baseKey = stripWearSuffix(cleanName).toLowerCase();
+      if (!hardcodedWeaponImagesExact.has(exactKey)) {
+        hardcodedWeaponImagesExact.set(exactKey, normalizedImage);
       }
+      if (baseKey && !hardcodedWeaponImagesBase.has(baseKey)) {
+        hardcodedWeaponImagesBase.set(baseKey, normalizedImage);
+      }
+    }
+
+    function getHardcodedWeaponImage(name) {
+      const cleanName = String(name || '').trim();
+      if (!cleanName) return '';
+      const localManifest = window.CASE_LOCAL_IMAGES || {};
+      const localWeapons = localManifest.weapons || {};
+      const localByExact = localWeapons[cleanName];
+      if (localByExact) return normalizeImageUrl(localByExact);
+      const baseKey = stripWearSuffix(cleanName).toLowerCase();
+      const localByBase = localWeapons[stripWearSuffix(cleanName)] || localWeapons[baseKey];
+      if (localByBase) return normalizeImageUrl(localByBase);
+      return buildGeneratedSvgImage(cleanName, 'weapon');
+    }
+
+    function getHardcodedCaseImage(caseName) {
+      const cleanName = String(caseName || '').trim();
+      const localManifest = window.CASE_LOCAL_IMAGES || {};
+      const localCaseEntry = localManifest.cases && localManifest.cases[cleanName];
+      if (localCaseEntry && localCaseEntry.image) {
+        return normalizeImageUrl(localCaseEntry.image);
+      }
+      return buildGeneratedSvgImage(cleanName || 'CS2 Case', 'case');
+    }
+
+    function escapeSvgText(text) {
+      return String(text || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
+    }
+
+    function buildGeneratedSvgImage(label, type = 'weapon') {
+      const safeLabel = escapeSvgText(label).slice(0, 42);
+      const title = type === 'case' ? 'CS2 CASE' : 'CS2 WEAPON';
+      const palette = type === 'case'
+        ? { a: '#253766', b: '#131f3a', c: '#5f7cff' }
+        : { a: '#2a3f6f', b: '#16233f', c: '#8eb0ff' };
+      const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='512' height='384' viewBox='0 0 512 384'>
+<defs>
+<linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+<stop offset='0%' stop-color='${palette.a}'/>
+<stop offset='100%' stop-color='${palette.b}'/>
+</linearGradient>
+<radialGradient id='glow' cx='0.22' cy='0.2' r='0.65'>
+<stop offset='0%' stop-color='${palette.c}' stop-opacity='0.45'/>
+<stop offset='100%' stop-color='${palette.c}' stop-opacity='0'/>
+</radialGradient>
+</defs>
+<rect width='512' height='384' rx='20' fill='url(#bg)'/>
+<rect width='512' height='384' rx='20' fill='url(#glow)'/>
+<rect x='20' y='20' width='472' height='344' rx='14' fill='none' stroke='rgba(255,255,255,0.18)'/>
+<text x='256' y='146' text-anchor='middle' fill='rgba(222,234,255,0.9)' font-family='Segoe UI, Arial, sans-serif' font-size='28' font-weight='700'>${title}</text>
+<text x='256' y='198' text-anchor='middle' fill='rgba(208,224,255,0.86)' font-family='Segoe UI, Arial, sans-serif' font-size='24' font-weight='600'>${safeLabel}</text>
+</svg>`;
+      return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+    }
+
+    function buildHardcodedImageMaps() {
+      hardcodedWeaponImagesExact.clear();
+      hardcodedWeaponImagesBase.clear();
+      hardcodedCaseThumbs.clear();
+
+      marketplaceItems.forEach((item) => {
+        registerHardcodedWeaponImage(item.name, item.image);
+      });
+
+      const cache = window.CASE_DROPS_CACHE || {};
+      Object.entries(cache).forEach(([caseName, dropSet]) => {
+        const weaponEntries = Array.isArray(dropSet.weapons) ? dropSet.weapons : [];
+        const specialEntries = Array.isArray(dropSet.specials) ? dropSet.specials : [];
+
+        weaponEntries.forEach((entry) => {
+          registerHardcodedWeaponImage(entry.name || entry.marketHashName, entry.image);
+        });
+        specialEntries.forEach((entry) => {
+          registerHardcodedWeaponImage(entry.name || entry.marketHashName, entry.image);
+        });
+
+        const caseVisual = (weaponEntries.find((entry) => entry && entry.image) || specialEntries.find((entry) => entry && entry.image) || {}).image;
+        if (caseVisual) {
+          hardcodedCaseThumbs.set(caseName, normalizeImageUrl(caseVisual));
+        }
+      });
     }
 
     async function resolveCasePreviewDrops(selectedCase) {
       const staticCache = (window.CASE_DROPS_CACHE && window.CASE_DROPS_CACHE[selectedCase.name]) || null;
-      if (staticCache && Array.isArray(staticCache.weapons) && staticCache.weapons.length) {
-        const cachedWeapons = staticCache.weapons.map((item) => ({
-          name: item.name || item.marketHashName || 'CS2 Item',
-          marketHashName: item.marketHashName || item.name || '',
-          image: item.image || '',
-          rarity: item.rarity || 'Mil-Spec',
-          floatMin: Number.isFinite(item.floatMin) ? item.floatMin : 0.00,
-          floatMax: Number.isFinite(item.floatMax) ? item.floatMax : 1.00,
-          pattern: detectPatternType(item.name || item.marketHashName || '')
-        }));
-        const cachedSpecials = Array.isArray(staticCache.specials)
-          ? staticCache.specials.map((item) => ({
-              name: item.name || item.marketHashName || 'Rare Special Item',
-              marketHashName: item.marketHashName || item.name || '',
-              image: item.image || '',
-              rarity: 'Extraordinary',
-              pattern: detectPatternType(item.name || item.marketHashName || ''),
-              floatMin: Number.isFinite(item.floatMin) ? item.floatMin : 0.00,
-              floatMax: Number.isFinite(item.floatMax) ? item.floatMax : 1.00
-            }))
-          : [];
-        return { weapons: cachedWeapons, specials: cachedSpecials, source: 'static-cache' };
-      }
 
-      const remote = await getCaseDropsFromApi(selectedCase.name);
-      if (remote && Array.isArray(remote.weapons) && remote.weapons.length) {
-        const remoteWeapons = remote.weapons.map((item) => ({
-          name: item.name || item.marketHashName || 'CS2 Item',
-          marketHashName: item.marketHashName || item.name || '',
-          image: item.image || '',
-          rarity: item.rarity || 'Mil-Spec',
-          floatMin: Number.isFinite(item.floatMin) ? item.floatMin : 0.00,
-          floatMax: Number.isFinite(item.floatMax) ? item.floatMax : 1.00,
-          pattern: detectPatternType(item.name || item.marketHashName || '')
-        }));
-        const remoteSpecials = Array.isArray(remote.specials)
-          ? remote.specials.map((item) => ({
-              name: item.name || item.marketHashName || 'Rare Special Item',
-              marketHashName: item.marketHashName || item.name || '',
-              image: item.image || '',
-              rarity: 'Extraordinary',
-              pattern: detectPatternType(item.name || item.marketHashName || ''),
-              floatMin: Number.isFinite(item.floatMin) ? item.floatMin : 0.00,
-              floatMax: Number.isFinite(item.floatMax) ? item.floatMax : 1.00
-            }))
-          : [];
-        return { weapons: remoteWeapons, specials: remoteSpecials, source: 'csgoskins' };
-      }
+      const cachedWeapons = (staticCache && Array.isArray(staticCache.weapons))
+        ? staticCache.weapons.map((item) => normalizeDropItem(item, 'Mil-Spec'))
+        : [];
+      const cachedSpecials = (staticCache && Array.isArray(staticCache.specials))
+        ? staticCache.specials.map((item) => normalizeDropItem({ ...item, rarity: 'Extraordinary' }, 'Extraordinary'))
+        : [];
 
       const localWeapons = buildCaseWeaponItems(selectedCase);
       const localSpecials = getSpecialDropsForCase(selectedCase.name).map((name) => ({
         name,
         marketHashName: name,
-        image: '',
+        image: getHardcodedWeaponImage(name),
         rarity: 'Extraordinary',
         pattern: detectPatternType(name),
         floatMin: 0.00,
         floatMax: 1.00
       }));
-      return { weapons: localWeapons, specials: localSpecials, source: 'local' };
+
+      const mergedWeapons = mergeDropCollections([cachedWeapons, localWeapons]);
+      const mergedSpecials = mergeDropCollections([cachedSpecials, localSpecials]);
+      const source = (cachedWeapons.length > 0 || cachedSpecials.length > 0) ? 'static-cache' : 'local';
+
+      return { weapons: mergedWeapons, specials: mergedSpecials, source };
     }
 
     function buildWeaponImageCandidates(marketHashName) {
@@ -751,6 +865,8 @@
       item.raritiesAvailable = meta.raritiesAvailable || [item.rarity];
       item.float = clampFloat(item.float);
     });
+
+    buildHardcodedImageMaps();
 
     function loadMarketplace() {
       const searchInput = document.getElementById('searchInput');
@@ -921,7 +1037,9 @@
       caseGrid.innerHTML = cs2Cases.map((cs, idx) => `
         <article class="case-card-home" id="case-card-${idx}">
           <div class="case-thumb" id="case-thumb-${idx}">
-            <div class="case-placeholder">Case Image</div>
+            ${getHardcodedCaseImage(cs.name)
+              ? `<img src="${getHardcodedCaseImage(cs.name)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setCaseThumbFallback(this)">`
+              : '<div class="case-placeholder">Case Image</div>'}
           </div>
           <div class="case-body">
             <h3>${cs.name}</h3>
@@ -933,13 +1051,7 @@
         </article>
       `).join('');
 
-      cs2Cases.forEach(async (cs, idx) => {
-        const snapshot = await fetchSnapshotWithRetry(cs.steamHashName, 6);
-        if (!snapshot || !snapshot.iconUrl) return;
-        const thumb = document.getElementById(`case-thumb-${idx}`);
-        if (!thumb) return;
-        thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setCaseThumbFallback(this)">`;
-      });
+      // Home page case thumbnails intentionally use local manifest assets only.
     }
 
     async function openCasePreview(caseIndex) {
@@ -968,11 +1080,15 @@
         meta.textContent = `Showing official cached drops for ${selectedCase.name} (local cache, no live server fetch needed).`;
       } else if (resolvedDrops.source === 'csgoskins') {
         meta.textContent = `Showing only official drops listed for ${selectedCase.name} (source: csgoskins.gg).`;
+      } else if (resolvedDrops.source === 'hybrid') {
+        meta.textContent = `Showing merged drop data for ${selectedCase.name} (official sources + local fallback).`;
       }
 
       const cards = weaponItems.map((item) => ({ kind: 'weapon', item }));
       if (specialDrops.length) {
-        const specialTypeLabel = specialDrops.some((entry) => /glove|wrap/i.test(entry.name || '')) ? 'Gloves' : 'Knives';
+        const hasGloves = specialDrops.some((entry) => /glove|wrap/i.test(entry.name || ''));
+        const hasKnives = specialDrops.some((entry) => /knife|bayonet|karambit|talon|falchion|bowie|navaja|ursus|stiletto|skeleton|paracord|survival|nomad|kukri|huntsman|flip|gut|dagger/i.test(entry.name || ''));
+        const specialTypeLabel = hasGloves && hasKnives ? 'Knives / Gloves' : (hasGloves ? 'Gloves' : 'Knives');
         cards.push({ kind: 'mystery', specialTypeLabel, count: specialDrops.length });
       }
 
@@ -1020,37 +1136,24 @@
 
       wireWeaponThumbZoom();
 
-      loading.style.display = 'block';
+      loading.style.display = 'none';
 
-      await Promise.all(weaponItems.map(async (item, idx) => {
-        const snapshot = await getWeaponSnapshotWithFallback(item.marketHashName);
-
+      weaponItems.forEach((item, idx) => {
         const thumb = document.getElementById(`weapon-thumb-${idx}`);
         const btn = document.getElementById(`weapon-buy-${idx}`);
         if (!btn) return;
 
-        const steamUrl = snapshot && snapshot.listingUrl
-          ? snapshot.listingUrl
-          : `https://steamcommunity.com/market/listings/730/${encodeURIComponent(item.marketHashName)}`;
+        const steamUrl = `https://steamcommunity.com/market/listings/730/${encodeURIComponent(item.marketHashName)}`;
         btn.onclick = () => window.open(steamUrl, '_blank', 'noopener');
 
-        if (snapshot && snapshot.iconUrl && thumb) {
-          thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
-        } else if (thumb) {
-          const base = stripWearSuffix(item.marketHashName).toLowerCase();
-          const localMatch = marketplaceItems.find((m) => stripWearSuffix(m.name).toLowerCase() === base && m.image);
-          if (localMatch && localMatch.image) {
-            thumb.innerHTML = `<img src="${normalizeImageUrl(localMatch.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
+        if (thumb) {
+          const fallbackImage = getHardcodedWeaponImage(item.marketHashName) || getHardcodedWeaponImage(item.name);
+          if (fallbackImage) {
+            thumb.innerHTML = `<img src="${fallbackImage}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
           }
         }
-        if (snapshot && snapshot.lowestPrice) {
-          btn.textContent = `Buy Now ${snapshot.lowestPrice}`;
-        } else {
-          btn.textContent = 'Buy Now on Steam';
-        }
-      }));
-
-      loading.style.display = 'none';
+        btn.textContent = 'Buy Now on Steam';
+      });
     }
 
     async function openSpecialDropsPreview(caseIndex) {
@@ -1095,28 +1198,24 @@
       `).join('');
 
       wireWeaponThumbZoom();
-      loading.style.display = 'block';
+      loading.style.display = 'none';
 
-      await Promise.all(specialItems.map(async (item, idx) => {
-        const snapshot = await getWeaponSnapshotWithFallback(item.marketHashName);
+      specialItems.forEach((item, idx) => {
         const thumb = document.getElementById(`special-thumb-${idx}`);
         const btn = document.getElementById(`special-buy-${idx}`);
         if (!btn) return;
 
-        const steamUrl = snapshot && snapshot.listingUrl
-          ? snapshot.listingUrl
-          : `https://steamcommunity.com/market/listings/730/${encodeURIComponent(item.marketHashName)}`;
+        const steamUrl = `https://steamcommunity.com/market/listings/730/${encodeURIComponent(item.marketHashName)}`;
         btn.onclick = () => window.open(steamUrl, '_blank', 'noopener');
 
-        if (snapshot && snapshot.iconUrl && thumb) {
-          thumb.innerHTML = `<img src="${snapshot.iconUrl}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
+        if (thumb) {
+          const fallbackImage = getHardcodedWeaponImage(item.marketHashName) || getHardcodedWeaponImage(item.name);
+          if (fallbackImage) {
+            thumb.innerHTML = `<img src="${fallbackImage}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="setWeaponThumbFallback(this)">`;
+          }
         }
-        if (snapshot && snapshot.lowestPrice) {
-          btn.textContent = `Buy Now ${snapshot.lowestPrice}`;
-        }
-      }));
-
-      loading.style.display = 'none';
+        btn.textContent = 'Buy Now on Steam';
+      });
     }
 
     function showItemDetail(itemId) {
@@ -1274,12 +1373,15 @@
       `;
     }
 
-    // Initialize
+    // Initialize: render home immediately so case cards are never blocked.
     captureTokenFromUrl();
-    getCurrentUser().then(user => {
+    renderHomeCases();
+    showPage('home');
+    getCurrentUser().then((user) => {
       currentUser = user;
       renderAuthState();
-      showPage('home');
+      // Repaint once auth settles so UI stays consistent.
+      if (currentPage === 'home') renderHomeCases();
     });
     trackRevisit();
   </script>

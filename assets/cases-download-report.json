@@ -1,0 +1,136 @@
+{
+  "generatedAt": "2026-03-07T18:20:59.377Z",
+  "source": "https://raw.githubusercontent.com/ByMykel/CSGO-API/main/public/api/en/crates.json",
+  "perCase": {
+    "Kilowatt Case": {
+      "slug": "kilowatt-case",
+      "expected": 30,
+      "saved": 30
+    },
+    "Revolution Case": {
+      "slug": "revolution-case",
+      "expected": 41,
+      "saved": 41
+    },
+    "Recoil Case": {
+      "slug": "recoil-case",
+      "expected": 41,
+      "saved": 41
+    },
+    "Dreams & Nightmares Case": {
+      "slug": "dreams-and-nightmares-case",
+      "expected": 67,
+      "saved": 67
+    },
+    "Snakebite Case": {
+      "slug": "snakebite-case",
+      "expected": 41,
+      "saved": 41
+    },
+    "Fracture Case": {
+      "slug": "fracture-case",
+      "expected": 69,
+      "saved": 69
+    },
+    "Prisma 2 Case": {
+      "slug": "prisma-2-case",
+      "expected": 69,
+      "saved": 69
+    },
+    "CS20 Case": {
+      "slug": "cs20-case",
+      "expected": 30,
+      "saved": 30
+    },
+    "Prisma Case": {
+      "slug": "prisma-case",
+      "expected": 69,
+      "saved": 69
+    },
+    "Danger Zone Case": {
+      "slug": "danger-zone-case",
+      "expected": 69,
+      "saved": 69
+    },
+    "Horizon Case": {
+      "slug": "horizon-case",
+      "expected": 69,
+      "saved": 69
+    },
+    "Clutch Case": {
+      "slug": "clutch-case",
+      "expected": 41,
+      "saved": 41
+    },
+    "Spectrum 2 Case": {
+      "slug": "spectrum-2-case",
+      "expected": 77,
+      "saved": 77
+    },
+    "Spectrum Case": {
+      "slug": "spectrum-case",
+      "expected": 77,
+      "saved": 77
+    },
+    "Gamma 2 Case": {
+      "slug": "gamma-2-case",
+      "expected": 67,
+      "saved": 67
+    },
+    "Gamma Case": {
+      "slug": "gamma-case",
+      "expected": 67,
+      "saved": 67
+    },
+    "Chroma 3 Case": {
+      "slug": "chroma-3-case",
+      "expected": 77,
+      "saved": 77
+    },
+    "Chroma 2 Case": {
+      "slug": "chroma-2-case",
+      "expected": 75,
+      "saved": 75
+    },
+    "Chroma Case": {
+      "slug": "chroma-case",
+      "expected": 74,
+      "saved": 74
+    },
+    "Falchion Case": {
+      "slug": "falchion-case",
+      "expected": 29,
+      "saved": 29
+    },
+    "Operation Wildfire Case": {
+      "slug": "operation-wildfire-case",
+      "expected": 29,
+      "saved": 29
+    },
+    "Operation Breakout Weapon Case": {
+      "slug": "operation-breakout-weapon-case",
+      "expected": 27,
+      "saved": 27
+    },
+    "Operation Vanguard Weapon Case": {
+      "slug": "operation-vanguard-weapon-case",
+      "expected": 79,
+      "saved": 79
+    },
+    "Operation Phoenix Weapon Case": {
+      "slug": "operation-phoenix-weapon-case",
+      "expected": 78,
+      "saved": 78
+    },
+    "Huntsman Weapon Case": {
+      "slug": "huntsman-weapon-case",
+      "expected": 28,
+      "saved": 28
+    }
+  },
+  "missingCasesInSource": [],
+  "missingCaseFolders": [],
+  "failedItems": {},
+  "totalExpected": 1420,
+  "totalSaved": 1420
+}
