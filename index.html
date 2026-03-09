@@ -464,6 +464,91 @@
       return raw ? raw.trim() : '';
     }
 
+    function parsePriceTextToNumber(value) {
+      const text = String(value || '').trim();
+      if (!text) return NaN;
+      const m = text.match(/\$\s*([0-9][0-9,]*(?:\.[0-9]{1,2})?)/);
+      if (!m || !m[1]) return NaN;
+      const n = Number(m[1].replace(/,/g, ''));
+      return Number.isFinite(n) ? n : NaN;
+    }
+
+    function formatUsdNumber(value) {
+      const n = Number(value);
+      if (!Number.isFinite(n) || n <= 0) return '$0.01';
+      return `$${n.toFixed(2)}`;
+    }
+
+    function collectModePrices(isStatTrak) {
+      const out = [];
+      steamSnapshotCache.forEach((snapshot, key) => {
+        const keyText = String(key || '');
+        const isSt = /^StatTrak\(TM\)\s+/i.test(keyText);
+        if (Boolean(isStatTrak) !== isSt) return;
+        const n = parsePriceTextToNumber(getSnapshotPrice(snapshot));
+        if (Number.isFinite(n) && n > 0) out.push(n);
+      });
+      return out;
+    }
+
+    function estimateFallbackRangeForItem(item, isStatTrak = false) {
+      const rarity = String(item && item.rarity || 'Mil-Spec');
+      const category = inferCategoryFromName(item && (item.marketHashName || item.name) || '');
+
+      const rarityBase = {
+        'Consumer': [0.02, 0.30],
+        'Industrial': [0.03, 0.80],
+        'Mil-Spec': [0.08, 2.20],
+        'Restricted': [0.40, 10.00],
+        'Classified': [2.00, 45.00],
+        'Covert': [8.00, 220.00],
+        'Contraband': [80.00, 1800.00],
+        'Extraordinary': [60.00, 1400.00]
+      };
+
+      let baseRange = rarityBase[rarity] || rarityBase['Mil-Spec'];
+
+      // Knives/gloves are usually much higher than weapon-skin rarity buckets.
+      if (category === 'Knives' || category === 'Gloves') {
+        baseRange = [70.00, 1200.00];
+      }
+
+      let [low, high] = baseRange;
+      if (isStatTrak) {
+        low *= 1.35;
+        high *= 1.8;
+      }
+
+      const modePrices = collectModePrices(isStatTrak);
+      if (modePrices.length >= 20) {
+        modePrices.sort((a, b) => a - b);
+        const p20 = modePrices[Math.max(0, Math.floor(modePrices.length * 0.20) - 1)] || low;
+        const p80 = modePrices[Math.max(0, Math.floor(modePrices.length * 0.80) - 1)] || high;
+        low = Math.max(0.01, Math.min(low, p20));
+        high = Math.max(low, Math.max(high, p80));
+      }
+
+      return {
+        low: formatUsdNumber(low),
+        high: formatUsdNumber(high)
+      };
+    }
+
+    function getCachedWearSnapshot(baseMarketName, wear, isStatTrak = false) {
+      const hash = `${isStatTrak ? 'StatTrak(TM) ' : ''}${baseMarketName} (${wear})`;
+      return steamSnapshotCache.get(hash) || null;
+    }
+
+    function getNearestCachedWearSnapshot(baseMarketName, wearOptions, preferLowPrice = true, isStatTrak = false) {
+      if (!baseMarketName || !Array.isArray(wearOptions) || !wearOptions.length) return null;
+      const ordered = preferLowPrice ? wearOptions.slice().reverse() : wearOptions.slice();
+      for (const wear of ordered) {
+        const snapshot = getCachedWearSnapshot(baseMarketName, wear, isStatTrak);
+        if (snapshot) return snapshot;
+      }
+      return null;
+    }
+
     async function getWearEdgePrices(baseMarketName, wearOptions, isStatTrak = false) {
       if (!baseMarketName || !Array.isArray(wearOptions) || wearOptions.length === 0) {
         return { low: '', high: '' };
@@ -474,10 +559,17 @@
       const bestHash = `${isStatTrak ? 'StatTrak(TM) ' : ''}${baseMarketName} (${bestWear})`;
       const worstHash = `${isStatTrak ? 'StatTrak(TM) ' : ''}${baseMarketName} (${worstWear})`;
 
-      const [worstSnapshot, bestSnapshot] = await Promise.all([
+      let [worstSnapshot, bestSnapshot] = await Promise.all([
         getWeaponSnapshotWithFallback(worstHash),
         getWeaponSnapshotWithFallback(bestHash)
       ]);
+
+      if (!worstSnapshot) {
+        worstSnapshot = getNearestCachedWearSnapshot(baseMarketName, wearOptions, true, isStatTrak);
+      }
+      if (!bestSnapshot) {
+        bestSnapshot = getNearestCachedWearSnapshot(baseMarketName, wearOptions, false, isStatTrak);
+      }
 
       return {
         low: getSnapshotPrice(worstSnapshot),
@@ -486,9 +578,9 @@
     }
 
     function renderPriceRange(lowPrice, highPrice) {
-      if (!lowPrice && !highPrice) return 'N/A';
-      if (!lowPrice) return `N/A-${highPrice}`;
-      if (!highPrice) return `${lowPrice}-N/A`;
+      if (!lowPrice && !highPrice) return '$0.01-$0.01';
+      if (!lowPrice) return `${highPrice}-${highPrice}`;
+      if (!highPrice) return `${lowPrice}-${lowPrice}`;
       return `${lowPrice}-${highPrice}`;
     }
 
@@ -502,21 +594,38 @@
       const baseMarketName = stripWearSuffix(item.marketHashName || item.name || '');
       const wearOptions = getSupportedWearOptions(item.floatMin, item.floatMax);
       if (!baseMarketName || wearOptions.length === 0) {
-        normalLine.textContent = 'N/A';
-        stattrakLine.textContent = 'N/A';
+        const normalEstimated = estimateFallbackRangeForItem(item, false);
+        const statEstimated = estimateFallbackRangeForItem(item, true);
+        normalLine.textContent = renderPriceRange(normalEstimated.low, normalEstimated.high);
+        stattrakLine.textContent = renderPriceRange(statEstimated.low, statEstimated.high);
         return;
       }
 
       if (cacheOnly) {
-        const bestWear = wearOptions[0];
-        const worstWear = wearOptions[wearOptions.length - 1];
-        const normalLowSnapshot = steamSnapshotCache.get(`${baseMarketName} (${worstWear})`) || null;
-        const normalHighSnapshot = steamSnapshotCache.get(`${baseMarketName} (${bestWear})`) || null;
-        const statLowSnapshot = steamSnapshotCache.get(`StatTrak(TM) ${baseMarketName} (${worstWear})`) || null;
-        const statHighSnapshot = steamSnapshotCache.get(`StatTrak(TM) ${baseMarketName} (${bestWear})`) || null;
+        const normalLowSnapshot = getNearestCachedWearSnapshot(baseMarketName, wearOptions, true, false);
+        const normalHighSnapshot = getNearestCachedWearSnapshot(baseMarketName, wearOptions, false, false);
+        const statLowSnapshot = getNearestCachedWearSnapshot(baseMarketName, wearOptions, true, true);
+        const statHighSnapshot = getNearestCachedWearSnapshot(baseMarketName, wearOptions, false, true);
 
-        normalLine.textContent = renderPriceRange(getSnapshotPrice(normalLowSnapshot), getSnapshotPrice(normalHighSnapshot));
-        stattrakLine.textContent = renderPriceRange(getSnapshotPrice(statLowSnapshot), getSnapshotPrice(statHighSnapshot));
+        let normalLow = getSnapshotPrice(normalLowSnapshot);
+        let normalHigh = getSnapshotPrice(normalHighSnapshot);
+        let statLow = getSnapshotPrice(statLowSnapshot);
+        let statHigh = getSnapshotPrice(statHighSnapshot);
+
+        if (!normalLow || !normalHigh) {
+          const est = estimateFallbackRangeForItem(item, false);
+          normalLow = normalLow || est.low;
+          normalHigh = normalHigh || est.high;
+        }
+
+        if (!statLow || !statHigh) {
+          const est = estimateFallbackRangeForItem(item, true);
+          statLow = statLow || est.low;
+          statHigh = statHigh || est.high;
+        }
+
+        normalLine.textContent = renderPriceRange(normalLow, normalHigh);
+        stattrakLine.textContent = renderPriceRange(statLow, statHigh);
         return;
       }
 
@@ -525,8 +634,11 @@
         getWearEdgePrices(baseMarketName, wearOptions, true)
       ]);
 
-      normalLine.textContent = renderPriceRange(normalRange.low, normalRange.high);
-      stattrakLine.textContent = renderPriceRange(stattrakRange.low, stattrakRange.high);
+      const normalEstimated = estimateFallbackRangeForItem(item, false);
+      const statEstimated = estimateFallbackRangeForItem(item, true);
+
+      normalLine.textContent = renderPriceRange(normalRange.low || normalEstimated.low, normalRange.high || normalEstimated.high);
+      stattrakLine.textContent = renderPriceRange(stattrakRange.low || statEstimated.low, stattrakRange.high || statEstimated.high);
     }
 
     function closeInspectWearMenu() {
@@ -1325,6 +1437,20 @@
       }
     }
 
+    function loadHardcodedPriceSnapshots() {
+      try {
+        const payload = window.CASE_PRICE_CACHE;
+        const snapshots = payload && typeof payload === 'object' ? payload.snapshots : null;
+        if (!snapshots || typeof snapshots !== 'object') return;
+        Object.entries(snapshots).forEach(([k, v]) => {
+          if (!k || !v || typeof v !== 'object') return;
+          steamSnapshotCache.set(k, v);
+        });
+      } catch {
+        // Ignore malformed hardcoded cache.
+      }
+    }
+
     function persistSnapshots() {
       try {
         const now = Date.now();
@@ -1447,52 +1573,8 @@
       if (steamSnapshotCache.has(marketHashName)) {
         return steamSnapshotCache.get(marketHashName);
       }
-
-      // Between scheduled refresh windows, avoid repeated network pulls.
-      if (!bulkPriceRefreshActive && !isPriceRefreshDue()) {
-        return null;
-      }
-
-      return enqueueSnapshotTask(async () => {
-        if (steamSnapshotCache.has(marketHashName)) {
-          return steamSnapshotCache.get(marketHashName);
-        }
-
-        const now = Date.now();
-        const canCallBackend = now >= marketApiCooldownUntil;
-
-        if (canCallBackend) {
-          try {
-            const res = await fetch(apiUrl(`/api/steam/market/snapshot?marketHashName=${encodeURIComponent(marketHashName)}`), {
-              credentials: 'include',
-              headers: getAuthHeaders()
-            });
-
-            if (res.status === 429) {
-              const retryAfterSec = Number(res.headers.get('retry-after') || '60');
-              marketApiCooldownUntil = Date.now() + (Number.isFinite(retryAfterSec) ? retryAfterSec * 1000 : 60000);
-            } else if (res.ok) {
-              const data = await res.json();
-              if (data && data.ok && data.snapshot) {
-                steamSnapshotCache.set(marketHashName, data.snapshot);
-                persistSnapshots();
-                return data.snapshot;
-              }
-            }
-          } catch {
-            // Fall through to relay-based fallback.
-          }
-        }
-
-        const relaySnapshot = await fetchSteamPriceOverviewViaRelay(marketHashName);
-        if (relaySnapshot) {
-          steamSnapshotCache.set(marketHashName, relaySnapshot);
-          persistSnapshots();
-          return relaySnapshot;
-        }
-
-        return null;
-      });
+      // Price data is hardcoded and prebuilt; no runtime market fetches.
+      return null;
     }
 
     function supportsStatTrakForItem(baseName) {
@@ -1552,42 +1634,20 @@
     }
 
     async function refreshStoredPricesIfDue(force = false) {
-      const due = force || isPriceRefreshDue();
-      if (!due) return;
-      if (bulkPriceRefreshPromise) {
-        await bulkPriceRefreshPromise;
-        return;
-      }
+      const payload = window.CASE_PRICE_CACHE || {};
+      const generatedAtEpochMs = Number(payload.generatedAtEpochMs || 0);
+      const nextRefreshAtEpochMs = Number(payload.nextRefreshAtEpochMs || 0);
+      const totalHashes = Number(payload.totalHashes || 0);
 
-      bulkPriceRefreshActive = true;
-      const refreshStartedAt = Date.now();
       setPriceRefreshMeta({
-        lastRefreshAt: Number(getPriceRefreshMeta().lastRefreshAt || 0),
-        nextRefreshAt: Number(getPriceRefreshMeta().nextRefreshAt || 0),
-        refreshStartedAt
+        lastRefreshAt: Number.isFinite(generatedAtEpochMs) ? generatedAtEpochMs : 0,
+        nextRefreshAt: Number.isFinite(nextRefreshAtEpochMs) ? nextRefreshAtEpochMs : 0,
+        totalHashes: Number.isFinite(totalHashes) ? totalHashes : 0,
+        source: 'hardcoded'
       });
 
-      bulkPriceRefreshPromise = (async () => {
-        const hashes = buildAllPriceHashesForRefresh();
-        for (let i = 0; i < hashes.length; i += 1) {
-          await fetchSnapshotWithRetry(hashes[i], 2);
-          if ((i + 1) % 30 === 0) {
-            await wait(180);
-          }
-        }
-        persistSnapshots();
-        const refreshedAt = Date.now();
-        setPriceRefreshMeta({
-          lastRefreshAt: refreshedAt,
-          nextRefreshAt: refreshedAt + SNAPSHOT_TTL_MS,
-          totalHashes: hashes.length
-        });
-      })().finally(() => {
-        bulkPriceRefreshActive = false;
-        bulkPriceRefreshPromise = null;
-      });
-
-      await bulkPriceRefreshPromise;
+      persistSnapshots();
+      return;
     }
 
     function rarityBtnClass(rarity) {
@@ -1690,10 +1750,10 @@
       });
     }
 
-    async function loadFromCandidates(candidates, isReady) {
+    async function loadFromCandidates(candidates, isReady, timeoutMs = 12000) {
       for (const url of candidates) {
         try {
-          await loadExternalScript(url);
+          await loadExternalScript(url, timeoutMs);
           if (isReady()) return true;
         } catch {
           // Keep trying next candidate.
@@ -1705,6 +1765,7 @@
     async function ensureCaseManifestsLoaded() {
       const dropsReady = () => !!(window.CASE_DROPS_CACHE && typeof window.CASE_DROPS_CACHE === 'object');
       const localReady = () => !!(window.CASE_LOCAL_IMAGES && typeof window.CASE_LOCAL_IMAGES === 'object');
+      const priceReady = () => !!(window.CASE_PRICE_CACHE && window.CASE_PRICE_CACHE.snapshots && typeof window.CASE_PRICE_CACHE.snapshots === 'object');
 
       const dropsCandidates = [
         '/case-drops-cache.hardcoded.js?v=20260308-12',
@@ -1720,8 +1781,17 @@
         'https://dfd31345-crypto.github.io/case-local-images.hardcoded.js?v=20260308-12'
       ];
 
+      const priceCandidates = [
+        '/case-price-cache.hardcoded.js?v=20260308-2',
+        'https://cdn.jsdelivr.net/gh/dfd31345-crypto/dfd31345-crypto.github.io@main/case-price-cache.hardcoded.js?v=20260308-2',
+        'https://raw.githubusercontent.com/dfd31345-crypto/dfd31345-crypto.github.io/main/case-price-cache.hardcoded.js',
+        'https://dfd31345-crypto.github.io/case-price-cache.hardcoded.js?v=20260308-2'
+      ];
+
       if (!dropsReady()) await loadFromCandidates(dropsCandidates, dropsReady);
       if (!localReady()) await loadFromCandidates(localCandidates, localReady);
+      // Price cache file is large; allow a longer timeout to avoid false load failures.
+      if (!priceReady()) await loadFromCandidates(priceCandidates, priceReady, 45000);
     }
 
     function tryNextLocalImage(element) {
@@ -1896,10 +1966,8 @@
         updateWeaponPriceRanges(idx, item, { cacheOnly: true });
       });
 
-      // Keep navigation responsive: refresh price store in background, then repaint card prices.
-      refreshStoredPricesIfDue()
-        .then(() => Promise.all(weaponItems.map((item, idx) => updateWeaponPriceRanges(idx, item))))
-        .catch(() => null);
+      // Price ranges are prebuilt and loaded from hardcoded cache.
+      Promise.all(weaponItems.map((item, idx) => updateWeaponPriceRanges(idx, item, { cacheOnly: true }))).catch(() => null);
     }
 
     async function openSpecialDropsPreview(caseIndex) {
@@ -2122,11 +2190,86 @@
       openRouteFromPath();
     });
 
+    const VISIT_TRACKING_SESSION_KEY = 'visit_tracking_session_id';
+    let visitTrackingSessionId = null;
+    let visitLeaveSent = false;
+
+    function buildVisitTrackingSessionId() {
+      if (window.crypto && typeof window.crypto.randomUUID === 'function') {
+        return window.crypto.randomUUID();
+      }
+      return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+    }
+
+    function getVisitTrackingSessionId() {
+      if (visitTrackingSessionId) return visitTrackingSessionId;
+
+      try {
+        const existing = sessionStorage.getItem(VISIT_TRACKING_SESSION_KEY);
+        if (existing) {
+          visitTrackingSessionId = existing;
+          return visitTrackingSessionId;
+        }
+      } catch {
+        // Ignore storage availability errors.
+      }
+
+      visitTrackingSessionId = buildVisitTrackingSessionId();
+      try {
+        sessionStorage.setItem(VISIT_TRACKING_SESSION_KEY, visitTrackingSessionId);
+      } catch {
+        // Ignore storage availability errors.
+      }
+      return visitTrackingSessionId;
+    }
+
+    function sendVisitTrackingEvent(type) {
+      const sessionId = getVisitTrackingSessionId();
+      if (!sessionId) return;
+
+      const payload = JSON.stringify({ sessionId });
+      const endpoint = type === 'start' ? apiUrl('/api/visit/start') : apiUrl('/api/visit/end');
+
+      // sendBeacon is best-effort and designed for unload/pagehide delivery.
+      if (navigator.sendBeacon) {
+        const blob = new Blob([payload], { type: 'application/json' });
+        navigator.sendBeacon(endpoint, blob);
+        return;
+      }
+
+      fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: payload,
+        keepalive: type === 'end'
+      }).catch(() => null);
+    }
+
+    function startVisitTracking() {
+      sendVisitTrackingEvent('start');
+    }
+
+    function endVisitTracking() {
+      if (visitLeaveSent) return;
+      visitLeaveSent = true;
+      sendVisitTrackingEvent('end');
+      try {
+        sessionStorage.removeItem(VISIT_TRACKING_SESSION_KEY);
+      } catch {
+        // Ignore storage availability errors.
+      }
+    }
+
+    window.addEventListener('pagehide', endVisitTracking);
+    window.addEventListener('beforeunload', endVisitTracking);
+
     // Initialize: ensure manifests are available, then paint with robust image fallbacks.
     (async () => {
+      startVisitTracking();
       captureTokenFromUrl();
       await ensureCaseManifestsLoaded();
       buildHardcodedImageMaps();
+      loadHardcodedPriceSnapshots();
       refreshStoredPricesIfDue().catch(() => null);
       openRouteFromPath();
 
