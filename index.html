@@ -2192,7 +2192,6 @@
 
     const VISIT_TRACKING_SESSION_KEY = 'visit_tracking_session_id';
     let visitTrackingSessionId = null;
-    let visitLeaveSent = false;
 
     function buildVisitTrackingSessionId() {
       if (window.crypto && typeof window.crypto.randomUUID === 'function') {
@@ -2228,7 +2227,7 @@
       if (!sessionId) return;
 
       const payload = JSON.stringify({ sessionId });
-      const endpoint = type === 'start' ? apiUrl('/api/visit/start') : apiUrl('/api/visit/end');
+      const endpoint = apiUrl('/api/visit/start');
 
       // sendBeacon is best-effort and designed for unload/pagehide delivery.
       if (navigator.sendBeacon) {
@@ -2241,27 +2240,13 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: payload,
-        keepalive: type === 'end'
+        keepalive: false
       }).catch(() => null);
     }
 
     function startVisitTracking() {
       sendVisitTrackingEvent('start');
     }
-
-    function endVisitTracking() {
-      if (visitLeaveSent) return;
-      visitLeaveSent = true;
-      sendVisitTrackingEvent('end');
-      try {
-        sessionStorage.removeItem(VISIT_TRACKING_SESSION_KEY);
-      } catch {
-        // Ignore storage availability errors.
-      }
-    }
-
-    window.addEventListener('pagehide', endVisitTracking);
-    window.addEventListener('beforeunload', endVisitTracking);
 
     // Initialize: ensure manifests are available, then paint with robust image fallbacks.
     (async () => {
